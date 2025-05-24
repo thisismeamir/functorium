@@ -1,0 +1,4 @@
+---
+sticker: lucide//lightbulb
+---
+#postulate

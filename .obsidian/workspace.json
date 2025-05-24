@@ -1,0 +1,238 @@
+{
+  "main": {
+    "id": "c04e36027926f45d",
+    "type": "split",
+    "children": [
+      {
+        "id": "5f9d2ad084f37e72",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "617c2a8bc3d8ff4a",
+            "type": "leaf",
+            "state": {
+              "type": "big-calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Big Calendar"
+            }
+          },
+          {
+            "id": "0884822ca95f8bcb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Trace/May 24 2025.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "May 24 2025"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "6a7d41b60a3fdc97",
+    "type": "split",
+    "children": [
+      {
+        "id": "5ba4bc87d133e4d0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "72e6471509fa8d12",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "11ff0e26cf2b182d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#scheme",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "7073d67eb76a10fd",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          },
+          {
+            "id": "0d669a2c32c60956",
+            "type": "leaf",
+            "state": {
+              "type": "mk-path-view",
+              "state": {},
+              "icon": "layout-grid",
+              "title": "Navigator"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "horizontal",
+    "width": 261.5,
+    "collapsed": true
+  },
+  "right": {
+    "id": "baa585f95f27f7d7",
+    "type": "split",
+    "children": [
+      {
+        "id": "3ad0094ea60057a5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5f4edb6e5ece8dad",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "3dfdfb8843e1e291",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "c7a0b12f3421397d",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "9ea4eefbcc595c65",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "command-palette:Open command palette": false,
+      "audio-recorder:Start/stop recording": false,
+      "markdown-importer:Open format converter": false,
+      "templates:Insert template": false,
+      "obsidian-kanban:Create new board": false,
+      "templater-obsidian:Templater": false,
+      "big-calendar:Big Calendar": false
+    }
+  },
+  "active": "0884822ca95f8bcb",
+  "lastOpenFiles": [
+    "Trace/May 23 2025.md",
+    "Trace/May 24 2025.md",
+    "Scheme/Objective/NuKleus/NuKleus Design.md",
+    "Scheme/Objective/Computer Science Studies/Backend Development Studies.md",
+    "Scheme/Objective/Gravitational Physics/Kerr Metric Analysis.md",
+    "Scheme/Objective/Gravitational Physics/Study Journal.md",
+    "Scheme/Objective/Independent Society of Knowledge/Design/Rebranding.md",
+    "Scheme/Entropy/Entropy.md",
+    "Scheme/Objective/Computer Science Studies/Dev Ops.md",
+    "Scheme/Objective/Computer Science Studies/Linux.md",
+    "Scheme/Objective/Runik/Runik Core Module.md",
+    "Scheme/Objective/Einstein Atlas/Spacetime loader module.md",
+    "Scheme/Objective/Qomp.nb/Notebook Development.md",
+    "Scheme/Objective/Independent Society of Knowledge/Education/Python Advanced Course.md",
+    "Scheme/Objective/Independent Society of Knowledge/Education/Python Introductory.md",
+    "Scheme/Objective/Independent Society of Knowledge/Education/Git and GitHub Complete Course.md",
+    "Scheme/Objective/Runik/Runik Vue Module.md",
+    "Scheme/Objective/Mithra/Mithra Product Side Objectives.md",
+    "Scheme/Objective/Mithra/Mithra Front-End.md",
+    "Scheme/Objective/Mithra/Mithra Design.md",
+    "Scheme/Objective/Mithra/Mithra Core.md",
+    "Scheme/Objective/Mithra/Mithra Backend.md",
+    "Scheme/Objective/Numerical Relativity/Study Journey.md",
+    "Scheme/Objective/Numerical Relativity/Research.md",
+    "Scheme/Objective/Numerical Relativity/Reading Sessions.md",
+    "Scheme/Objective/Numerical Relativity/Numerical Relativity.md",
+    "Scheme/Objective/Einstein Atlas",
+    "Scheme/Objective/Qomp.nb",
+    "Concept/Postulates/Physics",
+    "Range",
+    "Scheme/Objective/Computer Science Studies",
+    "Scheme/Objective/Gravitational Physics",
+    "Scheme/Objective/Numerical Relativity",
+    "Scheme/Objective/Computational Quantum Mechanics",
+    "Scheme/Objective/NuKleus",
+    "Scheme/Objective/Independent Society of Knowledge/Develop",
+    "Untitled.canvas",
+    "//Untitled.canvas"
+  ]
+}

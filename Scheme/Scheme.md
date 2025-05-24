@@ -1,0 +1,4 @@
+---
+sticker: lucide//sprout
+---
+#scheme

@@ -1,0 +1,6 @@
+{
+  "folder": "Trace",
+  "template": "Meta/templates/New TRace",
+  "autorun": true,
+  "format": "MMMM DD YYYY"
+}

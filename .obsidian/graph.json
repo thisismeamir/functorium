@@ -1,0 +1,65 @@
+{
+  "collapse-filter": false,
+  "search": "",
+  "showTags": true,
+  "showAttachments": true,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "path:\"Natural Transformations\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 14048348
+      }
+    },
+    {
+      "query": "path:Concept/Postulates  ",
+      "color": {
+        "a": 1,
+        "rgb": 6068182
+      }
+    },
+    {
+      "query": "path:Concept/Threads  ",
+      "color": {
+        "a": 1,
+        "rgb": 11492566
+      }
+    },
+    {
+      "query": "path:Scheme  ",
+      "color": {
+        "a": 1,
+        "rgb": 14068060
+      }
+    },
+    {
+      "query": "path:Theory/Atom  ",
+      "color": {
+        "a": 1,
+        "rgb": 6084269
+      }
+    },
+    {
+      "query": "path:Theory/Model  ",
+      "color": {
+        "a": 1,
+        "rgb": 14059356
+      }
+    }
+  ],
+  "collapse-display": false,
+  "showArrow": true,
+  "textFadeMultiplier": 0.7,
+  "nodeSizeMultiplier": 0.865625,
+  "lineSizeMultiplier": 0.686979166666667,
+  "collapse-forces": false,
+  "centerStrength": 0.313313802083333,
+  "repelStrength": 10,
+  "linkStrength": 1,
+  "linkDistance": 250,
+  "scale": 0.1975308641975308,
+  "close": true
+}

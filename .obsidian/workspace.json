@@ -23,12 +23,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Trace/May 24 2025.md",
+                "file": "Scheme/Objective/Computer Science Studies/Backend Development Studies.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "May 24 2025"
+              "title": "Backend Development Studies"
             }
           }
         ],
@@ -86,7 +86,7 @@
             }
           },
           {
-            "id": "0d669a2c32c60956",
+            "id": "b3b044106fe73a70",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -96,12 +96,11 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 261.5,
-    "collapsed": true
+    "width": 261.5
   },
   "right": {
     "id": "baa585f95f27f7d7",
@@ -196,32 +195,32 @@
   },
   "active": "0884822ca95f8bcb",
   "lastOpenFiles": [
-    "Trace/May 23 2025.md",
-    "Trace/May 24 2025.md",
-    "Scheme/Objective/NuKleus/NuKleus Design.md",
+    "Scheme/Objective/Computer Science Studies/Dev Ops.md",
+    "Scheme/Objective/Computer Science Studies/Linux.md",
+    "Trace/May 27 2025.md",
+    "Scheme/Objective/Qomp.nb/Notebook Development.md",
+    "Scheme/Objective/Runik/Runik Core Module.md",
+    "Scheme/Objective/Mithra/Mithra Core.md",
+    "Scheme/Objective/Mithra/Mithra Backend.md",
     "Scheme/Objective/Computer Science Studies/Backend Development Studies.md",
+    "Scheme/Objective/Einstein Atlas/Spacetime loader module.md",
+    "Trace/May 26 2025.md",
+    "Trace/May 25 2025.md",
+    "Scheme/Objective/Qomp.nb/Qomp.nb.md",
+    "Scheme/Objective/Independent Society of Knowledge/Education/Python Advanced Course.md",
+    "Scheme/Objective/Independent Society of Knowledge/Education/Python Introductory.md",
+    "Scheme/Objective/Independent Society of Knowledge/Education/Git and GitHub Complete Course.md",
+    "Trace/May 24 2025.md",
+    "Trace/May 23 2025.md",
+    "Scheme/Objective/NuKleus/NuKleus Design.md",
     "Scheme/Objective/Gravitational Physics/Kerr Metric Analysis.md",
     "Scheme/Objective/Gravitational Physics/Study Journal.md",
     "Scheme/Objective/Independent Society of Knowledge/Design/Rebranding.md",
     "Scheme/Entropy/Entropy.md",
-    "Scheme/Objective/Computer Science Studies/Dev Ops.md",
-    "Scheme/Objective/Computer Science Studies/Linux.md",
-    "Scheme/Objective/Runik/Runik Core Module.md",
-    "Scheme/Objective/Einstein Atlas/Spacetime loader module.md",
-    "Scheme/Objective/Qomp.nb/Notebook Development.md",
-    "Scheme/Objective/Independent Society of Knowledge/Education/Python Advanced Course.md",
-    "Scheme/Objective/Independent Society of Knowledge/Education/Python Introductory.md",
-    "Scheme/Objective/Independent Society of Knowledge/Education/Git and GitHub Complete Course.md",
     "Scheme/Objective/Runik/Runik Vue Module.md",
     "Scheme/Objective/Mithra/Mithra Product Side Objectives.md",
     "Scheme/Objective/Mithra/Mithra Front-End.md",
     "Scheme/Objective/Mithra/Mithra Design.md",
-    "Scheme/Objective/Mithra/Mithra Core.md",
-    "Scheme/Objective/Mithra/Mithra Backend.md",
-    "Scheme/Objective/Numerical Relativity/Study Journey.md",
-    "Scheme/Objective/Numerical Relativity/Research.md",
-    "Scheme/Objective/Numerical Relativity/Reading Sessions.md",
-    "Scheme/Objective/Numerical Relativity/Numerical Relativity.md",
     "Scheme/Objective/Einstein Atlas",
     "Scheme/Objective/Qomp.nb",
     "Concept/Postulates/Physics",

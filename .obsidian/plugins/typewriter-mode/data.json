@@ -11,7 +11,7 @@
   "linesAboveAndBelow": 5,
   "isMaxCharsPerLineEnabled": false,
   "maxCharsPerLine": 64,
-  "isDimUnfocusedEnabled": true,
+  "isDimUnfocusedEnabled": false,
   "isDimHighlightListParentEnabled": false,
   "isDimTableAsOneEnabled": true,
   "dimUnfocusedMode": "paragraphs",

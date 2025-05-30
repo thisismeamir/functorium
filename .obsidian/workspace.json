@@ -23,12 +23,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Scheme/Objective/Computer Science Studies/Backend Development Studies.md",
+                "file": "Scheme/Objective/Qomp.nb/Notebook Development.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Backend Development Studies"
+              "title": "Notebook Development"
             }
           }
         ],
@@ -86,7 +86,7 @@
             }
           },
           {
-            "id": "b3b044106fe73a70",
+            "id": "8ec0a08aefb9e0b6",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -195,6 +195,11 @@
   },
   "active": "0884822ca95f8bcb",
   "lastOpenFiles": [
+    "Scheme/Objective/Einstein Atlas/Spacetime loader module.md",
+    "Scheme/Objective/Gravitational Physics/Kerr Metric Analysis.md",
+    "Trace/May 30 2025.md",
+    "Trace/May 29 2025.md",
+    "Scheme/Objective/Computer Science Studies/Backend Development Studies.md",
     "Scheme/Objective/Computer Science Studies/Dev Ops.md",
     "Scheme/Objective/Computer Science Studies/Linux.md",
     "Trace/May 27 2025.md",
@@ -202,8 +207,6 @@
     "Scheme/Objective/Runik/Runik Core Module.md",
     "Scheme/Objective/Mithra/Mithra Core.md",
     "Scheme/Objective/Mithra/Mithra Backend.md",
-    "Scheme/Objective/Computer Science Studies/Backend Development Studies.md",
-    "Scheme/Objective/Einstein Atlas/Spacetime loader module.md",
     "Trace/May 26 2025.md",
     "Trace/May 25 2025.md",
     "Scheme/Objective/Qomp.nb/Qomp.nb.md",
@@ -213,14 +216,11 @@
     "Trace/May 24 2025.md",
     "Trace/May 23 2025.md",
     "Scheme/Objective/NuKleus/NuKleus Design.md",
-    "Scheme/Objective/Gravitational Physics/Kerr Metric Analysis.md",
     "Scheme/Objective/Gravitational Physics/Study Journal.md",
     "Scheme/Objective/Independent Society of Knowledge/Design/Rebranding.md",
     "Scheme/Entropy/Entropy.md",
     "Scheme/Objective/Runik/Runik Vue Module.md",
     "Scheme/Objective/Mithra/Mithra Product Side Objectives.md",
-    "Scheme/Objective/Mithra/Mithra Front-End.md",
-    "Scheme/Objective/Mithra/Mithra Design.md",
     "Scheme/Objective/Einstein Atlas",
     "Scheme/Objective/Qomp.nb",
     "Concept/Postulates/Physics",

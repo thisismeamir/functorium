@@ -4,7 +4,7 @@ sticker: lucide//rocket
 # Kerr Metric Analysis
 
 ## Overview
-We're working on analyzing Kerr Metric in Toroidal Coordinates.
+We're working on analyzing Kerr Metric in Toroidal Coordinates. **==This project is halted due to the fact that there already exists a paper on this topic.==**
 ## Investigation
 - [x] **Report 1**: ✅ 2025-05-23
       Provide a single Mathematica Notebook where:

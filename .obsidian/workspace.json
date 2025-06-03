@@ -23,12 +23,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Scheme/Objective/Qomp.nb/Notebook Development.md",
+                "file": "Trace/June 03 2025.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Notebook Development"
+              "title": "June 03 2025"
             }
           }
         ],
@@ -86,7 +86,7 @@
             }
           },
           {
-            "id": "8ec0a08aefb9e0b6",
+            "id": "1e94cbb69d44ffa7",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -96,11 +96,12 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 261.5
+    "width": 261.5,
+    "collapsed": true
   },
   "right": {
     "id": "baa585f95f27f7d7",
@@ -195,32 +196,33 @@
   },
   "active": "0884822ca95f8bcb",
   "lastOpenFiles": [
-    "Scheme/Objective/Einstein Atlas/Spacetime loader module.md",
+    "Scheme/Objective/Gravitational Physics/Relativity Group Study Plan.md",
+    "Trace/June 03 2025.md",
+    "Scheme/Objective/Gravitational Physics/Study Journal.md",
+    "Scheme/Objective/Gravitational Physics/Gravitational Physics.md",
+    "Trace/June 01 2025.md",
+    "Trace/May 31 2025.md",
+    "Scheme/Objective/Computer Science Studies/Backend Development Studies.md",
+    "Scheme/Objective/Runik/Runik Core Module.md",
+    "Scheme/Objective/Runik/Runik.md",
     "Scheme/Objective/Gravitational Physics/Kerr Metric Analysis.md",
+    "Scheme/Objective/Computer Science Studies/Linux.md",
+    "Scheme/Objective/Einstein Atlas/Spacetime loader module.md",
+    "Scheme/Objective/Qomp.nb/Notebook Development.md",
+    "Scheme/Objective/Runik/Runik Vue Module.md",
+    "Scheme/Objective/Independent Society of Knowledge/Education/Python Advanced Course.md",
+    "Hub/Welcome.md",
+    "Hub",
+    "Scheme/Objective/Numerical Relativity/Research.md",
+    "Scheme/Objective/Mithra/Mithra Product Side Objectives.md",
+    "Scheme/Objective/Independent Society of Knowledge/Education/Python Introductory.md",
     "Trace/May 30 2025.md",
     "Trace/May 29 2025.md",
-    "Scheme/Objective/Computer Science Studies/Backend Development Studies.md",
     "Scheme/Objective/Computer Science Studies/Dev Ops.md",
-    "Scheme/Objective/Computer Science Studies/Linux.md",
     "Trace/May 27 2025.md",
-    "Scheme/Objective/Qomp.nb/Notebook Development.md",
-    "Scheme/Objective/Runik/Runik Core Module.md",
     "Scheme/Objective/Mithra/Mithra Core.md",
     "Scheme/Objective/Mithra/Mithra Backend.md",
     "Trace/May 26 2025.md",
-    "Trace/May 25 2025.md",
-    "Scheme/Objective/Qomp.nb/Qomp.nb.md",
-    "Scheme/Objective/Independent Society of Knowledge/Education/Python Advanced Course.md",
-    "Scheme/Objective/Independent Society of Knowledge/Education/Python Introductory.md",
-    "Scheme/Objective/Independent Society of Knowledge/Education/Git and GitHub Complete Course.md",
-    "Trace/May 24 2025.md",
-    "Trace/May 23 2025.md",
-    "Scheme/Objective/NuKleus/NuKleus Design.md",
-    "Scheme/Objective/Gravitational Physics/Study Journal.md",
-    "Scheme/Objective/Independent Society of Knowledge/Design/Rebranding.md",
-    "Scheme/Entropy/Entropy.md",
-    "Scheme/Objective/Runik/Runik Vue Module.md",
-    "Scheme/Objective/Mithra/Mithra Product Side Objectives.md",
     "Scheme/Objective/Einstein Atlas",
     "Scheme/Objective/Qomp.nb",
     "Concept/Postulates/Physics",
@@ -230,7 +232,6 @@
     "Scheme/Objective/Numerical Relativity",
     "Scheme/Objective/Computational Quantum Mechanics",
     "Scheme/Objective/NuKleus",
-    "Scheme/Objective/Independent Society of Knowledge/Develop",
     "Untitled.canvas",
     "//Untitled.canvas"
   ]

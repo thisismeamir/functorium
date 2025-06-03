@@ -10,7 +10,7 @@ sticker: lucide//rocket
 
 Get the solid foundations in place, Arch-style.
 
-- [x] **Systemd: Services, Targets, Journals** ✅ 2025-05-27
+- [x] **Systemd: Services, Targets, Journals** ✅ 2025-05-30
     
 - [ ] **Pacman & AUR: Pacman Flags, Hooks, Paru/Yay**
     

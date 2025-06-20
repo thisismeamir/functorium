@@ -10,7 +10,7 @@ This is a one to one composition of Runik as a general idea to Runik as a genera
 
 
 ## Argument
-[[Runik|Postulate:Runik]]
+[[Scheme/Objective/Runik/Runik|Postulate:Runik]]
 [[Runik Core Module]]
 ## Tags
 #NaTT 

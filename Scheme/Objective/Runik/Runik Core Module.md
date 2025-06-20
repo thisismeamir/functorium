@@ -5,8 +5,8 @@ sticker: lucide//rocket
 ## Overview
 Building the means of developing a block-based editor in web applications.
 ## Investigation
-- [ ] ⏫ 🆔 ahq6nz  **Editors block wrapper** 📅 2025-05-28 
-- [ ] ⏫ 🆔 budw8h **Block ID issue** 📅 2025-05-28 
+- [x] ⏫ 🆔 ahq6nz  **Editors block wrapper** 📅 2025-05-28 ✅ 2025-06-09
+- [x] ⏫ 🆔 budw8h **Block ID issue** 📅 2025-05-28 ✅ 2025-06-09
 - [ ] ⏫ 🆔 vbnqoj **Building the plugin system** 📅 2025-05-28 
 ## Resources
 12 hours this week.

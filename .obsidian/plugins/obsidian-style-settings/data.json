@@ -6,9 +6,5 @@
   "custom-diegoeis-obsidianotion@@eis-empty-bg": false,
   "custom-diegoeis-simple@@eis-sidebar-dark": true,
   "custom-diegoeis-simple@@font-default": "IBM Plex Sans",
-  "custom-diegoeis-simple@@eis-font-type": "eis-font-ibm",
-  "minimal-advanced@@hide-settings-desc": true,
-  "minimal-style@@base@@dark": "#030303",
-  "minimal-style@@ui2@@dark": "#1793D1",
-  "minimal-style@@ax1@@dark": "#7017FF"
+  "custom-diegoeis-simple@@eis-font-type": "eis-font-ibm"
 }

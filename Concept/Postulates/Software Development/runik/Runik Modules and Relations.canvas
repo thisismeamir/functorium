@@ -1,0 +1,195 @@
+{
+  "edges": [
+    {
+      "fromNode": "9a1ba3d545e2e544",
+      "fromSide": "bottom",
+      "id": "b70474e9fcc9ac49",
+      "label": "Adding, Removing and Updating Blocks and Styling",
+      "toNode": "879fbbb624d42f42",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "b3b4333742472c34",
+      "fromSide": "left",
+      "id": "a6a7caef4ba1f8a1",
+      "label": "Requesting \na change in \nthe document",
+      "toNode": "9a1ba3d545e2e544",
+      "toSide": "right"
+    },
+    {
+      "fromNode": "357bc47955cdd76e",
+      "fromSide": "bottom",
+      "id": "bfec45d5783b3c2e",
+      "toNode": "9a1ba3d545e2e544",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "57f48328e07134fb",
+      "fromSide": "bottom",
+      "id": "ee623ba22a0c8e96",
+      "toNode": "357bc47955cdd76e",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "0d5acc12eace4c79",
+      "fromSide": "bottom",
+      "id": "728eed3d9a982df2",
+      "toNode": "357bc47955cdd76e",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "74817f657b79818b",
+      "fromSide": "bottom",
+      "id": "73b8ea69a64ec897",
+      "toNode": "357bc47955cdd76e",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "879fbbb624d42f42",
+      "fromSide": "right",
+      "id": "cbccffc21a46a8ac",
+      "label": "View",
+      "toNode": "b3b4333742472c34",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "9c4fdfb41a4a0f0a",
+      "fromSide": "bottom",
+      "id": "e6a51f201549139b",
+      "toNode": "47b7b1cd59202f1d",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "de12f71d77d0ab18",
+      "fromSide": "bottom",
+      "id": "b5d825806ca47a5f",
+      "toNode": "4c5b1fa55f1a348e",
+      "toSide": "top"
+    }
+  ],
+  "metadata": {
+    "frontmatter": {
+    },
+    "version": "1.0-1.0"
+  },
+  "nodes": [
+    {
+      "color": "3",
+      "height": 160,
+      "id": "357bc47955cdd76e",
+      "text": "# Editor Configuration\nStates the types of content we have in the document, how to render them and more configurations for the editor (for example plugins, wrappers, themes, etc)",
+      "type": "text",
+      "width": 1000,
+      "x": -680,
+      "y": -400
+    },
+    {
+      "color": "5",
+      "height": 140,
+      "id": "74817f657b79818b",
+      "text": "# Block Registry\n\nSets up types, and rendering functions for blocks.",
+      "type": "text",
+      "width": 320,
+      "x": -680,
+      "y": -680
+    },
+    {
+      "color": "6",
+      "height": 140,
+      "id": "57f48328e07134fb",
+      "text": "# Plugin Registry\n\nSets up plugins that are being used in the editor.",
+      "type": "text",
+      "width": 320,
+      "x": -340,
+      "y": -680
+    },
+    {
+      "color": "4",
+      "height": 140,
+      "id": "0d5acc12eace4c79",
+      "text": "# Theme Registry\n\nSets up themes and styling to be used in the editor",
+      "type": "text",
+      "width": 320,
+      "x": 0,
+      "y": -680
+    },
+    {
+      "color": "2",
+      "height": 120,
+      "id": "9a1ba3d545e2e544",
+      "text": "# Editor\nManages the document (parsing HTML/CSS, LaTeX or anything else via renders and configured maps)",
+      "type": "text",
+      "width": 1000,
+      "x": -680,
+      "y": -120
+    },
+    {
+      "height": 60,
+      "id": "ad0e43977d7e2d82",
+      "text": "",
+      "type": "text",
+      "width": 250,
+      "x": -60,
+      "y": -240
+    },
+    {
+      "color": "#ffffff",
+      "height": 50,
+      "id": "879fbbb624d42f42",
+      "text": "# Document",
+      "type": "text",
+      "width": 1000,
+      "x": -680,
+      "y": 180
+    },
+    {
+      "height": 50,
+      "id": "b3b4333742472c34",
+      "text": "# User",
+      "type": "text",
+      "width": 250,
+      "x": 500,
+      "y": 180
+    },
+    {
+      "color": "#7caefe",
+      "height": 200,
+      "id": "47b7b1cd59202f1d",
+      "text": "# Block\nUnit of Content for the editor. Can be image, text, code, runnable script or anything the developer wants.",
+      "type": "text",
+      "width": 320,
+      "x": -680,
+      "y": -1020
+    },
+    {
+      "color": "#7caefe",
+      "height": 60,
+      "id": "9c4fdfb41a4a0f0a",
+      "text": "# Block Type",
+      "type": "text",
+      "width": 320,
+      "x": -680,
+      "y": -1120
+    },
+    {
+      "color": "#7caefe",
+      "height": 200,
+      "id": "4c5b1fa55f1a348e",
+      "text": "# Render Function\nFor specific type of block `<block-type>` would produce rendered form of the content.",
+      "type": "text",
+      "width": 320,
+      "x": -320,
+      "y": -1020
+    },
+    {
+      "color": "#7caefe",
+      "height": 200,
+      "id": "de12f71d77d0ab18",
+      "text": "# Plugin\nFor a specific type of block, wrapper, or editor manipulates code, add, or remove things.",
+      "type": "text",
+      "width": 320,
+      "x": -320,
+      "y": -1320
+    }
+  ]
+}

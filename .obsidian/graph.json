@@ -8,58 +8,44 @@
   "collapse-color-groups": false,
   "colorGroups": [
     {
-      "query": "path:\"Natural Transformations\"  ",
-      "color": {
-        "a": 1,
-        "rgb": 14048348
-      }
-    },
-    {
-      "query": "path:Concept/Postulates  ",
-      "color": {
-        "a": 1,
-        "rgb": 6068182
-      }
-    },
-    {
-      "query": "path:Concept/Threads  ",
-      "color": {
-        "a": 1,
-        "rgb": 11492566
-      }
-    },
-    {
-      "query": "path:Scheme  ",
-      "color": {
-        "a": 1,
-        "rgb": 14068060
-      }
-    },
-    {
       "query": "path:Theory/Atom  ",
       "color": {
         "a": 1,
-        "rgb": 6084269
+        "rgb": 14701138
       }
     },
     {
       "query": "path:Theory/Model  ",
       "color": {
         "a": 1,
-        "rgb": 14059356
+        "rgb": 16755200
+      }
+    },
+    {
+      "query": "path:Trace  ",
+      "color": {
+        "a": 1,
+        "rgb": 5407200
+      }
+    },
+    {
+      "query": "path:Scheme/",
+      "color": {
+        "a": 1,
+        "rgb": 11105200
       }
     }
   ],
   "collapse-display": false,
-  "showArrow": true,
-  "textFadeMultiplier": 0.7,
-  "nodeSizeMultiplier": 0.865625,
-  "lineSizeMultiplier": 0.686979166666667,
+  "showArrow": false,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 0.77326909350464,
+  "lineSizeMultiplier": 0.913169164882227,
   "collapse-forces": false,
-  "centerStrength": 0.313313802083333,
-  "repelStrength": 10,
+  "centerStrength": 0.617059243397573,
+  "repelStrength": 20,
   "linkStrength": 1,
-  "linkDistance": 250,
-  "scale": 0.1975308641975308,
+  "linkDistance": 280,
+  "scale": 0.08779149519890257,
   "close": true
 }

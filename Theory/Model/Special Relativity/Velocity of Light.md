@@ -8,6 +8,7 @@ The speed of light, is the cornerstone of modern theory of gravitation, relativi
 ## Chronological Reading
 
 - [[Historical Model of Speed of Light]]
+- [[Rigidity]]
 - [[Speed of Light as a Constant]]
 
 ## Investigation

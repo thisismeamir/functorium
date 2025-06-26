@@ -22,7 +22,7 @@
   "spacesEnabled": true,
   "syncFormulaToFrontmatter": true,
   "spacesPerformance": false,
-  "currentWaypoint": 3,
+  "currentWaypoint": 0,
   "enableFolderNote": true,
   "folderIndentationLines": true,
   "revealActiveFile": false,
@@ -126,7 +126,8 @@
     "Theory/Theory/Atom/Theory/Atom/Pure Definitions",
     "Theory/Theory/Atom/Theory/Atom/Classical Mechanics",
     "Theory/Theory/Atom/Theory/Atom/Electromagnetism",
-    "Theory/Theory/Atom/Theory/Atom/Electromagnetism/Theory/Atom/Electromagnetism/Historical"
+    "Theory/Theory/Atom/Theory/Atom/Electromagnetism/Theory/Atom/Electromagnetism/Historical",
+    "//Theory/Theory/Model/Theory/Model/Classical Mechanics"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",

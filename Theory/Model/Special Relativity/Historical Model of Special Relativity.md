@@ -17,7 +17,7 @@ sticker: lucide//box
 - Depends on
 	  [[Historical Model of Electromagnetism]]
 - Is included in: 
-	  [[Special Relativity]]
+	  [[Model of Special Relativity]]
 - Refined by
 - Is Equivalence to
 

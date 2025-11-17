@@ -1,2 +1,3 @@
-# Episteme
-Writings, while nature entertains.
+# Functorium
+
+My personal knowledge, all in one place.

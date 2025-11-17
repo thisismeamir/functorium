@@ -1,0 +1,415 @@
+\documentclass[10pt,twocoloumn]{article}
+
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{kida}
+
+\usepackage{float}
+\usepackage{svg}
+\usepackage{graphicx}
+\newcommand{\addsvg}[4][1.0]{
+    \begin{figure}[H]
+        \centering
+        \includesvg[width=#1\textwidth]{#2}
+        \caption{#4}
+        \label{fig:#3}
+    \end{figure}
+}
+
+\title{Gravitation 1 Assignment 1}
+\author{Amir Hossein Ebrahimnezhad - 404461001}
+\date{due: \today}
+
+\begin{document}
+\maketitle
+\section*{Problem 1}
+\subsection*{Problem Statement}
+For Newtonian gravity the potential is related to the mass density by Poisson's equation
+\begin{equation}
+\nabla^2\Phi(\vec{x},t) = 4\pi G \rho(\vec x , t)
+\end{equation}
+Before Special relativity, Galilean transformation was used to relate the space and time coordinates of an event as observed in two different inertial reference.
+
+\begin{itemize}
+    \item Show that the Poisson's equation is invariant under a Galilean transformation.
+    \item Then show that Poisson's equation is not invariant under a Lorentz transformation.
+\end{itemize}
+\subsection*{Solution}
+Let's consider to coordinate systems $S$ and $S'$ with relative velocity $v$. Consider the Poisson's equation in $S$ coordinate as:
+
+\begin{equation}
+\left(\frac{\partial^2}{\partial x^2} + \frac{\partial^2}{\partial y^2} + \frac{\partial^2}{\partial z^2}\right)\Phi  = \alpha \rho
+\end{equation}
+
+where $\alpha = 4\pi G$. Galilean transformation imposes the following rules of transformation from $S$ to $S'$:
+
+\begin{align}
+x'&= x +  vt\\
+y'&=y\\
+z'&=z \\
+t'&=t
+\end{align}
+
+we therefore expand the Poisson's equation and write in terms of the $S'$ coordinates:
+
+\begin{equation}
+\partial_{x'}\left(\partial_{x'}\Phi \partial_xx' \right)\partial_xx' + \partial_{y'}\left(\partial_{y'}\Phi \partial_yy' \right)\partial_yy' +\partial_{z'}\left(\partial_{z'}\Phi \partial_zz' \right)\partial_zz'
+\end{equation}
+
+now we know by the rules that:
+\begin{equation}
+    \partial_i i' = 1
+\end{equation}
+where $i=x,y,z$ and $i'=x',y',z'$
+
+Therefore:
+\begin{equation}
+\nabla^2 = \nabla'^2
+\end{equation}
+Now the Poisson's equation becomes:
+\begin{equation}
+\nabla'^2 \Phi(\vec x',t') = 4\pi G\rho(\vec x' , t'), \ \qed
+\end{equation}
+
+Following this, we know that the transformation rules imposed by Lorentz transformations are:
+\begin{align}
+t' &= \gamma(t - v x)\\
+x' &= \gamma(x - v t)\\
+y' &= y\\
+z' &= z
+\end{align}
+where $\gamma \equiv (1-v^2)^{-1/2}$ and we work in units with $c=1$.
+
+Using the chain rule we express derivatives in the unprimed frame in terms of primed derivatives:
+\begin{align}
+\partial_x &= \frac{\partial x'}{\partial x}\partial_{x'} + \frac{\partial t'}{\partial x}\partial_{t'}
+= \gamma\partial_{x'} - \gamma v \partial_{t'}\\
+\partial_t &= \frac{\partial x'}{\partial t}\partial_{x'} + \frac{\partial t'}{\partial t}\partial_{t'}
+= -\gamma v\partial_{x'} + \gamma\partial_{t'}.
+\end{align}
+Now compute the second $x$–derivative:
+\begin{align}
+\partial_x^2
+&= (\gamma\partial_{x'} - \gamma v \partial_{t'})^2 \\
+&= \gamma^2\big(\partial_{x'}^2 - 2v\partial_{x'}\partial_{t'} + v^2\partial_{t'}^2\big).
+\end{align}
+Therefore the Laplacian in the unprimed frame becomes
+\begin{align}
+\nabla^2
+&= \partial_x^2 + \partial_y^2 + \partial_z^2 \\
+&= \gamma^2\big(\partial_{x'}^2 - 2v\partial_{x'}\partial_{t'} + v^2\partial_{t'}^2\big)
++ \partial_{y'}^2 + \partial_{z'}^2.
+  \end{align}
+
+Compare this to the primed-frame spatial Laplacian,
+\begin{equation}
+\nabla'^2 = \partial_{x'}^2 + \partial_{y'}^2 + \partial_{z'}^2.
+\end{equation}
+Clearly $\nabla^2\neq\nabla'^2$ in general: extra mixed and time–derivative terms (those containing $\partial_{t'}$ and $\partial_{x'}\partial_{t'}$) appear when expressing $\nabla^2$ in primed coordinates unless $v=0$ or the field is time-independent in the primed frame. Consequently, applying the transformation to Poisson's equation gives
+\begin{equation}
+\nabla'^2\Phi + \big(\gamma^2-1\big)\partial_{x'}^2\Phi
+-2\gamma^2 v\partial_{x'}\partial_{t'}\Phi + \gamma^2 v^2 \partial_{t'}^2\Phi
+= 4\pi G\rho',
+\end{equation}
+so extra derivative terms of the potential appear on the left-hand side. Since the right-hand side is simply $4\pi G\rho'$ (and $\rho'$ transforms as a scalar density under boosts, not in a way that cancels these additional derivatives), the transformed equation will not in general take the same Poisson form
+\begin{equation}
+\nabla'^2\Phi(\vec x',t') = 4\pi G\rho(\vec x',t').
+\end{equation}
+
+Thus Poisson's equation is \emph{not} invariant under Lorentz transformations: Lorentz covariance instead requires the wave operator (or modifications that include retardation) rather than the purely spatial Laplacian appearing in Poisson's equation.
+
+\section*{Problem 2}
+\subsection*{Problem Statement}
+There are hypothetical particles calle Tachyons, which always move faster than light.
+\begin{itemize}
+    \item Show that the four-velocity of Tachyons is space-like.
+    \item Also prove that this property is invariant under a Lorentz boos? (Show that if a Tachyon moves faster in one inertial frame, then it moves faster in all inertial frames)
+\end{itemize}
+\subsection*{Solution}
+Assume the Minkowski metric with signature $n_{\mu\nu} = \text{diag}(-1,+1,+1,+1)$. Let $v^\mu$ be a space-like four-velocity (a tachyon $4$-velocity-like vecotr), and let $c^\mu$ be a null (light-like) four-vector.
+\begin{quote}
+    The usual notion of a normalized four-velocity
+    \begin{equation}
+        u^\mu u_\mu = -1
+    \end{equation}
+    does not apply to tachyons.
+\end{quote}
+By assumption:
+\begin{equation}
+    v^\mu v_\mu = \eta_{\mu\nu} v^\mu v^\nu > c^\mu c_\mu
+\end{equation}
+Therefore, since $c^\mu c_\mu = 0$ we've proven that:
+\begin{equation}
+    v^\mu v_\mu >0
+\end{equation}
+and thus a space-like four-vector. Now, a Lorentz transformation acts as:
+\begin{equation}
+    v'^\alpha = \Lambda^\alpha_{\ \ \beta} v^\beta
+\end{equation}
+with the property:
+\begin{equation}
+\eta_{\alpha\beta}\Lambda^{\alpha}_{\ \ \mu}\Lambda^{\beta}_{\ \ \nu} = \eta_{\mu\nu}
+\end{equation}
+
+By this the Minkwoski norm would be invariant:
+\begin{align}
+    v'^\alpha v'_\alpha &= \eta_{\alpha\beta}v'^\alpha v'^\beta = \eta_{\alpha\beta}\Lambda^{\alpha}_{\ \ \mu}\Lambda^{\beta}_{\ \ \nu}v^\mu v^\nu \\
+    &= \eta_{\mu\nu}v^{\mu}v^\nu = v^\mu v_\mu > 0 \qed
+\end{align}
+\section*{Problem 3}
+\subsection*{Problem Statement}
+\begin{itemize}
+    \item Show that if two events are time-like separated, there is a Lorentz frame in which they occur at the same point, i.e. at the same spatial coordinate values.
+    \item Similarly, show that if two events are space-like separated, there is a Lorentz frame in which they are simultaneous
+\end{itemize}
+\subsection*{Solution}
+Let us imagine two events $a^\mu$ and $b^\mu$. The difference between these two can be shown by:
+\begin{equation}
+\Delta^\mu = a^\mu - b^\mu
+\end{equation}
+Now $\Delta^\mu$ is by definition above, a 4-vector. For $|\Delta^\mu|$ there are three scenarios again:
+
+\begin{equation}
+\begin{cases}
+|\Delta^\mu| > 0, &\text{Space-like}\\
+|\Delta^\mu| < 0 , &\text{Time-like}\\
+|\Delta^\mu| = 0 , &\text{null}
+\end{cases}
+\end{equation}
+We can in principle choose two coordinates where $\Delta^\mu$ lies on the $x$-axis. Then:
+
+\begin{equation}
+\Delta^\mu = (\Delta t , \Delta x , 0,0)
+\end{equation}
+Assume we're in the $S$ inertial frame, we want to find $S'$ such that:
+\begin{equation}
+\Delta^{\mu'} = (\Delta t',0,0,0)
+\end{equation}
+We know the transformation rule between inertial frame are given by the Lorentz transformations therefore:
+
+\begin{equation}
+\Delta^{\mu'}= \Lambda^{\mu'}_{\ \ \ \mu} \Delta^{\mu}
+\end{equation}
+Expanding it means:
+\begin{equation}
+\begin{cases}
+\Delta t' = \gamma(\Delta t  - v \Delta x) \\
+\Delta x' = \gamma (\Delta x - v \Delta t)
+\end{cases}
+\end{equation}
+We want $\Delta x' = 0$
+Achieving this is possible by finding $v$ of our transformation satisfying:
+\begin{align}
+\gamma (\Delta x - v\Delta t) &= 0\\
+v &= \frac{\Delta x}{\Delta t}
+\end{align}
+
+If the events are time-like separated then $\Delta x / \Delta t < 1$. We've shown that there exists a transformation $S \rightarrow S' = S_v$ such that in that frame, the spacial components of the distance between these events would be zero. Interpreting this physically means:
+
+> You moved to the rest frame of the worldline joining the two events.
+
+The crucial condition to be added here is that we need the events be in such distance that $v \not > c$ otherwise the condition only applies when the inertial frame is moving faster than the speed of light.
+
+Following this reasoning we consider that this time $\Delta x / \Delta t >1$. Considering the same equations hold:
+\begin{equation}
+\begin{cases}
+\Delta t' = \gamma(\Delta t  - v \Delta x) \\
+\Delta x' = \gamma (\Delta x - v \Delta t)
+\end{cases}
+\end{equation}
+Setting $\Delta t'=0$ would yield:
+
+\begin{align}
+\gamma(\Delta t - v\Delta x) &= 0\\
+v &= \frac{\Delta t}{\Delta x}
+\end{align}
+
+and since $\Delta t / \Delta x < 1$ we're sure that $v < c$, therefore we've shown that there exists a transformation $S \rightarrow S' = S_v$ in which the distance in the final inertial frame have no temporal component.
+\section*{Problem 5}
+\subsection*{Problem Statement}
+Imagine that space (not spacetime) is actually a finite box, or in more sophisticated terms, a three-torus, of size $L$. By this we mean that there is a coordinate system $x^\mu = (t,x,y,z)$ such that every point with coordinates $(t,x,y,z)$ is identified with every point with coordinates $(t,x+L,y,z)$, $(t,x,y+L,z$), and $(t,x,y,z+L)$. Note that the time coordinate is the same. Now consider two observers; observer $A$ is at rest in this coordinate system (constant spatial coordinates), while observer $B$ moves in the $x$-direction with constant velocity $v$. $A$ and $B$ begins at the same events, and while $A$ remains still, $B$ moves once around the universe and comes back to intersect the world-line of $A$ without ever having to accelerate (since the universe is periodic).
+\begin{itemize}
+\item What are the relative proper times experienced in this interval by $A$ and $B$?
+\item Is this consistent with your understanding of Lorentz invariance?
+\end{itemize}
+\subsection*{Solution}
+Space is a $3$-torus of circumference $L$ in each spatial direction, so the identification is:
+\begin{equation}
+(t,x,y,z)\sim (t,x+L,y,z)
+\end{equation}
+Time coordinate $t$ is the same at identified points.
+Observer $A$ sits at fixed spatial coordinates (so $A$ is at rest in the coordinates that define the identifications). Observer $B$ moves at constant velocity $v$ in the $x$-direction and, because of the periodic identification, returns to intersect $A$'s world-line after one circuit without any acceleration.
+
+We use units with $c=1$ and $0< |v| < 1$.
+
+Along $B$'s path in the given coordinates, the spatial distance travelled in the $x$-direction (from starting event to reunion event) is exactly $\Delta x = L$. Since $B$ moves with velocity $v$ in these coordinates,
+
+\begin{equation}
+v = \frac{\Delta x}{\Delta t} \Rightarrow \Delta t = \frac{\Delta x}{v}=\frac{L}{v}
+\end{equation}
+
+For observer $A$ (world-line: fixed $x,y,z$):
+\begin{equation}
+d\tau_A^2 = -ds^2 = dt^2 \Rightarrow \Delta \tau_A = \Delta t = \frac{L}{v}
+\end{equation}
+For observer $B$ (constant velocity $v$):
+The line element for a straight inertial world-line with coordinate velocity $v$ is
+\addsvg[0.5]{./spacetime.svg}{spt}{}
+\begin{equation}
+d\tau_B = dt\sqrt{1-v^2}=\frac{dt}{\gamma}.
+\end{equation}
+Integrating over the trip,
+\begin{equation}
+\Delta \tau_B = \Delta t \sqrt{1-v^2}=\frac{\Delta t}{\gamma}=\frac{L}{v\gamma},
+\end{equation}
+where $\gamma=1/\sqrt{1-v^2}$. Thus
+\begin{equation}
+\boxed{\Delta \tau_A = \frac{L}{v},  \ \ \Delta\tau_B = \frac{L}{v\gamma}}
+\end{equation}
+So $B$ ages less: $\Delta\tau_B = \Delta\tau_A/\gamma$. Locally the metric is Minkowski and Lorentz invariance holds: time dilation formula and proper-time calculation used above are standard. The identification $x\sim x+L$ at the same coordinate time $t$ singles out the coordinate frame in which the identifications are purely spatial.
+\addsvg[0.5]{./time-dialation.svg}{td}{}
+That frame is therefore preferred by the global structure of this spacetime.
+
+If you boost to another inertial frame, the identification no longer connects purely spatial points but connects events separated in time as well. Under a boost with velocity $v$ the identification vector $(\Delta t, \Delta x) = (0,L)$ transforms to:
+\begin{equation}
+\Delta t' = \gamma(0-vL) = -\gamma vL , \ \ \Delta x' = \gamma L,
+\end{equation}
+so the identification links events with a nonzero time difference in the primed frame. In other words, the periodic spatial identification breaks global Lorentz symmetry even though the local metric is Lorentzian.
+
+Because of the global asymmetry, the two inertial, non-accelerating world-lines $A$ and $B$ are not equivalent global paths between the same pair of events.
+\addsvg[0.5]{./different-homotopy-classes-on-the-torus.svg}{homtop}{}
+Topologically, a torus is a closed surface defined as the product of two circles. The moving body ($B$) and the stationary one $A$ are not equal because they lie on different classes of paths (different homotopy classes). Proper time compares lengths of time-like curves
+Therefore the result $\Delta\tau_B < \Delta\tau_A$ is fully consistent with special relativity applied locally; the asymmetry arises from the global topology which selects a preferred frame for the identifications.
+
+\section*{Probllem 6}
+\subsection*{Problem Statement}
+Three events $A$,$B$,$C$ are seen by observer $\mathcal{O}$ to occur in the order $ABC$. Another observer $\bar{\mathcal{O}}$, sees the events to occur in the order $CBA$. Is it possible that a third observer sees the events in the order $ACB$? Support you conclusion by drawing a spacetime diagram.
+\subsection*{Solution}
+And
+\section*{Problem 7}
+\subsection*{Problem Statment}
+Particle physicists are so used to setting $c=1$ that they measure mass in units of energy. In particular, they tend to use electron-volts ($1\text{eV} = 1.6 \times10^{-12}\text{erg} = 1.8\times10^{-33}\text{gr}$), or, more commonly $\text{keV}$, $\text{MeV}$ and $\text{GeV}$ ($10^3 \text{eV}, 10^6\text{eV}, 10^9\text{eV}$, respectively).
+
+The muon has been measured to have a mass of $0.106\text{GeV}$ and a rest frame life-time of $2.19\times 10^{-6}$ seconds. Imagine that such a muon is moving in the circular storage ring of a particle accelerator, $1$ kilometer in diameter, such that the muon's total energy is $1 \text{TeV}$. How long would it appear to live from the experimenter's point of view? How many radians would it travel around the ring?
+
+\subsection*{Solution}
+We work in units with $c=1$. The relativistic gamma factor is:
+\begin{equation}
+    \gamma=\frac{E}{m} = \frac{1000\text{GeV}}{0.106\text{GeV}} \approx 9.4\times 10^3
+\end{equation}
+One can calculate the dilated lifetime seen by the experimenter as below:
+\begin{equation}
+    \tau_{\text{lab}} = \gamma \tau_0 = (9.4 \times 10^3)\times(2.19\times 10^{-6}\text{s})\approx 2\time 10^{-2}
+\end{equation}
+The muon speed folows from:
+\begin{equation}
+    \beta = \sqrt{1-\frac{1}{\gamma^2}}
+\end{equation}
+The storage ring has diameter $1$ kilometer, so radius $r=500$ meter and circumference:
+\begin{equation}
+    C = 2\pi r = 3141 m
+\end{equation}
+cal calculating the angle traveled:
+\begin{equation}
+    \theta = \frac{d}{r} = \frac{v \tau_{\text{lab}}} = 1.23\times 10^4\text{rad}
+\end{equation}
+\section*{Problem 8}
+\subsection*{Problem Statement}
+In Euclidean three-space, let $p$ be the point with coordinates $(x,y,z) = (1,0,-1)$. Consider the following curves that pass through $p$:
+
+\begin{align}
+x^i(\lambda) &= (\lambda, (\lambda - 1)^2, -\lambda) \\
+x^i (\mu) &= (\cos\mu,\sin\mu,\mu-1)\\
+x^i(\sigma)&=(\sigma^2,\sigma^3+\sigma^2,\sigma)\\
+\end{align}
+\begin{itemize}
+\item Calculate the components of the tangent vectors to these curves at $p$ in the coordinate basis $\{\partial_x,\partial_y,\partial_z\}$
+\item Let $f=x^2 + y^2 - yz$. Calculate $\frac{df}{d\lambda},\frac{df}{d\mu},\frac{df}{d\sigma}$
+\end{itemize}
+\subsection*{Solution}
+
+The tangent vector to a curve at parameter value $t$ is given by $\frac{dx^i}{dt}$ evaluated at that parameter.
+
+\subsubsection*{Tangent vector for curve 1 (at $\lambda = 1$):}
+
+\begin{align*}
+\frac{dx^i}{d\lambda} &= \left(\frac{d\lambda}{d\lambda}, \frac{d(\lambda-1)^2}{d\lambda}, \frac{d(-\lambda)}{d\lambda}\right) \\
+&= (1, 2(\lambda-1), -1)
+\end{align*}
+
+At $\lambda = 1$:
+\begin{equation*}
+\boxed{\left.\frac{dx^i}{d\lambda}\right|_{\lambda=1} = (1, 0, -1)}
+\end{equation*}
+
+\subsubsection*{Tangent vector for curve 2 (at $\mu = 0$):}
+
+\begin{align*}
+\frac{dx^i}{d\mu} &= \left(\frac{d(\cos\mu)}{d\mu}, \frac{d(\sin\mu)}{d\mu}, \frac{d(\mu-1)}{d\mu}\right) \\
+&= (-\sin\mu, \cos\mu, 1)
+\end{align*}
+
+At $\mu = 0$:
+\begin{equation*}
+\boxed{\left.\frac{dx^i}{d\mu}\right|_{\mu=0} = (0, 1, 1)}
+\end{equation*}
+
+\subsubsection*{Tangent vector for curve 3 (at $\sigma = -1$):}
+
+\begin{align*}
+\frac{dx^i}{d\sigma} &= \left(\frac{d(\sigma^2)}{d\sigma}, \frac{d(\sigma^3+\sigma^2)}{d\sigma}, \frac{d\sigma}{d\sigma}\right) \\
+&= (2\sigma, 3\sigma^2 + 2\sigma, 1)
+\end{align*}
+
+At $\sigma = -1$:
+\begin{equation*}
+\boxed{\left.\frac{dx^i}{d\sigma}\right|_{\sigma=-1} = (-2, 1, 1)}
+\end{equation*}
+
+\subsection*{Part 2: Derivatives of $f$ along the curves}
+
+Given $f = x^2 + y^2 - yz$, we use the chain rule:
+\begin{equation*}
+\frac{df}{dt} = \frac{\partial f}{\partial x}\frac{dx}{dt} + \frac{\partial f}{\partial y}\frac{dy}{dt} + \frac{\partial f}{\partial z}\frac{dz}{dt}
+\end{equation*}
+
+First, compute the gradient of $f$:
+\begin{equation*}
+\nabla f = (2x, 2y - z, -y)
+\end{equation*}
+
+At $p = (1, 0, -1)$:
+\begin{equation*}
+\nabla f|_p = (2, 1, 0)
+\end{equation*}
+
+\subsubsection*{For curve 1:}
+\begin{align*}
+\frac{df}{d\lambda} &= \nabla f \cdot \frac{dx^i}{d\lambda} \\
+&= (2, 1, 0) \cdot (1, 0, -1) \\
+&= 2 + 0 + 0
+\end{align*}
+\begin{equation*}
+\boxed{\frac{df}{d\lambda} = 2}
+\end{equation*}
+
+\subsubsection*{For curve 2:}
+\begin{align*}
+\frac{df}{d\mu} &= \nabla f \cdot \frac{dx^i}{d\mu} \\
+&= (2, 1, 0) \cdot (0, 1, 1) \\
+&= 0 + 1 + 0
+\end{align*}
+\begin{equation*}
+\boxed{\frac{df}{d\mu} = 1}
+\end{equation*}
+
+\subsubsection*{For curve 3:}
+\begin{align*}
+\frac{df}{d\sigma} &= \nabla f \cdot \frac{dx^i}{d\sigma} \\
+&= (2, 1, 0) \cdot (-2, 1, 1) \\
+&= -4 + 1 + 0
+\end{align*}
+\begin{equation*}
+\boxed{\frac{df}{d\sigma} = -3}
+\end{equation*}
+\end{document}

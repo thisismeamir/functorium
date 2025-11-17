@@ -1,0 +1,261 @@
+\documentclass[10pt,twocoloumn]{article}
+
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{kida}
+\usepackage{kidamath}
+\usepackage{float}
+\usepackage{svg}
+\usepackage{graphicx}
+\newcommand{\addsvg}[4][1.0]{
+    \begin{figure}[H]
+        \centering
+        \includesvg[width=#1\textwidth]{#2}
+        \caption{#4}
+        \label{fig:#3}
+    \end{figure}
+}
+
+\title{Advanced Quantum Mechanics Assignment 3}
+\author{Amir Hossein Ebrahimnezhad - 404416001}
+\date{due: \today}
+
+\begin{document}
+\maketitle
+\section*{Problem 1}
+This is manifestly a three-degree-of-freedom system, thus, we start by writing the dynamical laws using the Newton's second law of motion:
+
+\begin{align}
+    m \partial_t^2 x_1 &= -kx_1 + k(x_2 - x_1) \\
+    m \partial_t^2 x_2 &= -k(x_2-x_1) + k(x_3-x_2)\\
+    m\partial_t^2 x_3 &= -k(x_3 - x_2) - k(x_3)
+\end{align}
+
+Let us write this equations in terms ofn vectors and matrices, and also defining  ($\alpha = \frac k m$).
+\begin{equation}
+    \partial^2_t \begin{pmatrix} x_1 \\ x_2 \\ x_3 \end{pmatrix} = \begin{pmatrix} -2\alpha & \alpha & 0 \\ \alpha & -2 \alpha & \alpha \\ 0 & \alpha & -2\alpha \end{pmatrix} \begin{pmatrix} x_1  \\ x_2 \\ x_3 \end{pmatrix}
+\end{equation}
+Next, we start to find the basis, in which the matrix above is diagnoalized, to do so we must solve the matrix for its eigenvalues:
+\begin{equation}
+    \text{det}(\Omega - \lambda I) = 0
+\end{equation}
+This would result in the following polynomial equation:
+\begin{equation}
+    -4\alpha^3 - 10\alpha^2\lambda -6\alpha\lambda^2 - \lambda^3 = 0.
+\end{equation}
+Solving this for $\lambda$ we have:
+\begin{equation}
+    \begin{matrix}
+        \lambda_1 \rightarrow -2\alpha, & \lambda_2\rightarrow -\alpha (2 - \sqrt 2), &\lambda_3 \rightarrow -\alpha(2+\sqrt 2)
+    \end{matrix}
+\end{equation}
+What this means is that there's a basis in which $x'_1,x'_2,x'_3$ follow this dynamical law:
+\begin{equation}
+    \begin{cases}
+        \partial_t^2 x'_1 = -2\alpha x'_1 \\
+        \partial_t^2 x'_2 = -\alpha (2-\sqrt 2) x'_2\\
+        \partial_t^2 x'_3 = -\alpha (2 + \sqrt 2)x'_3
+    \end{cases}
+    .
+\end{equation}
+Defining
+\begin{equation}
+    \begin{matrix}
+        \omega_1 := 2\alpha, & \omega_2  := \alpha(2-\sqrt2), & \omega_3 :=\alpha(2 + \sqrt2).
+    \end{matrix}
+\end{equation}
+Thus we've got three de-coupled ordinary differential equations to solve:
+\begin{align}
+    \partial_t^2 x'_1 &= -\omega_1 x'_1 \\
+    \partial_t^2 x'_2 &= -\omega_2 x'_2\\
+    \partial_t^2 x'_3 &= -\omega_3 x'_3,
+\end{align}
+which have the solutions below:
+\begin{align}
+    x'_1 &= A_1\cos(\sqrt{\omega_1} t + \phi_1)\\
+    x'_2 &= A_2 \cos(\sqrt{\omega_2} t + \phi_2)\\
+    x'_3 &= A_3 \cos(\sqrt{\omega_3} t + \phi_3)
+\end{align}
+
+Now it's a good time to notice that $x'_1,x'_2$, and $x'3$ can be written in terms of our first variables $x_1,x_2,x_3$ since we know that they satisfy the relation:
+\begin{equation}
+    \Omega x'_i = \lambda_i x'_i
+\end{equation}
+And we have the matrix $\Omega$ in the original basis, we then have:
+\begin{equation}
+    \begin{pmatrix}
+        -2\alpha & \alpha & 0 \\
+        \alpha &-2\alpha & \alpha \\
+        0 &\alpha &-2\alpha
+    \end{pmatrix}x'_i = \lambda_i x'_i
+\end{equation}
+Solving for each $(\lambda_i,x'_i)$ we find each vector in the $x_1,x_2,x_3$ basis as:
+\begin{equation}
+    \begin{matrix}
+        x'_1 = \begin{pmatrix} -1 \\ 0 \\ 1 \end{pmatrix} & x'_2 = \begin{pmatrix} 1 \\ \sqrt 2 \\ 1 \end{pmatrix}
+        & x'_3 = \begin{pmatrix} 1 \\ -\sqrt 2 \\ 1 \end{pmatrix}
+    \end{matrix}
+\end{equation}
+This can be written more nicely in Dirac notation:
+\begin{align}
+    \ket{1'} &= -\ket1 +\ket3\\
+    \ket{2'} &= \ket1 +\sqrt2\ket2 + \ket3\\
+    \ket{3'} &= \ket1 -\sqrt2\ket2 + \ket3
+\end{align}
+Using this we solve for $\ket1,\ket2,\ket3$, leading to:
+\begin{align}
+    \ket1 &= \frac14\left(-2\ket{1'} + \ket{3'} + \ket{2'}\right)\\
+    \ket2 &= \frac14\left(-\sqrt2\ket{3'}+\sqrt2\ket{2'}\right)\\
+    \ket3 &= \frac14 \left(2\ket{1'}+\ket{3'}+\ket{2'}\right)
+\end{align}
+Substituting and we have the solutions:
+\begin{align}
+    \ket1 &= \frac14\left(
+    -2 A_1 \cos\left(\sqrt{\frac{2k}{m}} t + \phi_1\right) + A_3 \cos\left(\sqrt{\frac{\left(2+\sqrt2\right)k}{m}} t + \phi_3\right)
+    + A_2\cos\left(\sqrt{\frac{\left(2-\sqrt2\right)k}{m}}t +\phi_2\right)
+    \right)\\
+    \ket2 &=\frac14\left(
+        - \sqrt2 A_3 \cos\left(\sqrt{\frac{\left(2+\sqrt2\right)k}{m}} t + \phi_3\right)
+        + \sqrt2 A_2 \cos\left(\sqrt{\frac{\left(2-\sqrt2\right)k}{m}}t +\phi_2\right)
+    \right)\\
+    \ket3 &= \frac14\left(
+    2 A_1 \cos\left(\sqrt{\frac{2k}{m}} t + \phi_1\right) + A_3 \cos\left(\sqrt{\frac{\left(2+\sqrt2\right)k}{m}} t + \phi_2\right)
+    + A_2\cos\left(\sqrt{\frac{\left(2-\sqrt2\right)k}{m}}t +\phi_3\right)
+    \right)
+\end{align}
+Given the $6$ boundary conditions one can find the position of each mass at any given time. $\qed$
+\section*{Problem 2}
+We want to solve for the eigenvalues of the matrix below:
+\begin{equation}
+    \Omega = \begin{pmatrix} -\frac{2k}{m} &\frac km \\ \frac km & -\frac{2k}{m} \end{pmatrix}
+\end{equation}
+To do so we first calculate the following determinant:
+\begin{equation}
+    \text{det}\left(\Omega - \lambda I \right)
+\end{equation}
+which is:
+\begin{align}
+    &= (\frac{2k}{m} +\lambda)(\frac{2k}{m} + \lambda) - \frac{k^2}{m^2}\\
+    &= \lambda^2 + \frac{4k}{m}\lambda + \frac{4k^2}{m^2} - \frac{k^2}{m^2}\\
+    &= \lambda^2 + \frac{4k}{m}{\lambda} + \frac{3k^2}{m^2}
+\end{align}
+setting this to zero, and solving for lambda:
+\begin{align}
+ 0  &= \lambda^2 + \frac{4k}{m}{\lambda} + \frac{3k^2}{m^2} \\
+    \lambda &= \begin{cases}
+            -\frac{3k}{m} \\
+            -\frac{k}{m}
+    \end{cases}
+\end{align}
+Now solving:
+\begin{equation}
+    \Omega \ket I = \lambda_I \ket I
+\end{equation}
+leads to:
+\begin{align}
+    \Omega \begin{pmatrix} a \\ b \end{pmatrix} &= \begin{pmatrix} -2\frac{ak}{m} + \frac{bk}{m} \\ \frac{ak}{m} -\frac{2bk}{m}\end{pmatrix}\\
+    &\rightarrow \begin{pmatrix} -2\frac{ak}{m} + \frac{bk}{m} \\ \frac{ak}{m} -\frac{2bk}{m}\end{pmatrix} = -\frac{3k}{m} \begin{pmatrix} a \\ b \end{pmatrix}
+\end{align}
+and similarly for $\lambda_{II}$ and $\ket{II}$:
+\begin{align}
+    \Omega \begin{pmatrix} a \\ b \end{pmatrix} &= \begin{pmatrix} -2\frac{ak}{m} + \frac{bk}{m} \\ \frac{ak}{m} -\frac{2bk}{m}\end{pmatrix}\\
+    &\rightarrow \begin{pmatrix} -2\frac{ak}{m} + \frac{bk}{m} \\ \frac{ak}{m} -\frac{2bk}{m}\end{pmatrix} = -\frac{k}{m} \begin{pmatrix} a \\ b \end{pmatrix}
+\end{align}
+solving the first system of equations leads to:
+\begin{equation}
+    \ket{I} = \begin{pmatrix}-1\\ 1\end{pmatrix}
+\end{equation}
+and the second one:
+\begin{equation}
+    \ket{II} = \begin{pmatrix} 1 \\ 1 \end{pmatrix}
+\end{equation}
+Which if normalized would become:
+\begin{align}
+    \ket I &= \frac{1}{\sqrt2}\begin{pmatrix}-1 \\ 1 \end{pmatrix}\\
+    \ket{II} &= \frac{1}{\sqrt2}\begin{pmatrix}1 \\ 1 \end{pmatrix} \\ \qed
+\end{align}
+\section*{Problem 3}
+One can write the two eigenstates as:
+\begin{align}
+    \ket I &= \frac{1}{\sqrt2} \left(
+        -\ket 1 + \ket 2
+    \right)\label{nop}\\
+    \ket{II} &= \frac{1}{\sqrt2}\left(
+        \ket 1 + \ket 2
+    \right)\label{yep}
+\end{align}
+where:
+\begin{equation}
+    \begin{matrix}
+        \ket 1 = \begin{pmatrix} 1 \\ 0 \end{pmatrix} * \ket2 =\begin{pmatrix} 0 \\ 1 \end{pmatrix}
+    \end{matrix}
+\end{equation}
+Therefore, for the coupled spring problem since:
+\begin{align}
+    \ket I &= A_I\cos\left(\sqrt{\frac{3k}{m}} t\right)\\
+    \ket{II} &= A_{II}\cos\left(\sqrt{\frac{k}{m}} t\right)
+\end{align}
+We solve \ref{nop} and \ref{yep} for $\ket 1, \ket 2$ we get:
+\begin{align}
+    \ket 1 &= \frac12\left(
+    -A_I\cos\left(\sqrt{\frac{3k}{m}} t\right) + A_{II}\cos\left(\sqrt{\frac{k}{m}} t\right)
+    \right)\\
+    \ket 2 &= \frac12 \left(
+    A_I\cos\left(\sqrt{\frac{3k}{m}} t\right)+
+    A_{II}\cos\left(\sqrt{\frac{k}{m}} t\right)
+    \right)\\
+    \qed
+\end{align}
+
+\section*{Problem 4}
+I couldn't see any ``matrix'' above.
+\section*{Problem 5}
+We assume $\Omega$ is a Hermitian operator with $\|\Omega\|<1$.
+Consider the partial sums
+\begin{align}
+S_N = \sum_{n=0}^N \Omega^n .
+\end{align}
+Multiply by $(I-\Omega)$:
+\begin{align}
+(I-\Omega) S_N
+&= (I-\Omega)\left(I + \Omega + \Omega^2 + \cdots + \Omega^N\right) \\
+&= I - \Omega^{N+1}.
+\end{align}
+Since $\|\Omega\|<1$, we have
+\begin{align}
+\|\Omega^{N+1}\| \le \|\Omega\|^{N+1} \longrightarrow 0
+\qquad (N\to\infty).
+\end{align}
+Taking the limit of both sides,
+\begin{align}
+(I-\Omega)\left( \sum_{n=0}^{\infty} \Omega^n \right)
+&= I .
+\end{align}
+Hence the series converges and its sum is the inverse of $(I-\Omega)$:
+\begin{align}
+\sum_{n=0}^{\infty} \Omega^n = (I-\Omega)^{-1}.
+\end{align}
+Thus the geometric series formula holds for Hermitian operators whose norm is strictly less than 1.
+\section*{Problem 6}
+Recall that $H$ is Hermitian if $H^\dagger = H$, and $U$ is unitary if $U^\dagger U = I$.
+We need to show that $(e^{iH})^\dagger e^{iH} = I$.
+Therefore, first we calculate the adjoint of $e^{iH}$:
+\begin{align}
+(e^{iH})^\dagger &= \left(\sum_{n=0}^{\infty} \frac{(iH)^n}{n!}\right)^\dagger \\
+&= \sum_{n=0}^{\infty} \frac{(iH)^n)^\dagger}{n!} \\
+&= \sum_{n=0}^{\infty} \frac{(i^*)^n (H^\dagger)^n}{n!} \\
+&= \sum_{n=0}^{\infty} \frac{(-i)^n H^n}{n!} \\
+&= e^{-iH}
+\end{align}
+
+Now the product:
+\begin{align}
+(e^{iH})^\dagger e^{iH} &= e^{-iH} e^{iH} \\
+&= e^{-iH + iH} \\
+&= e^{0} \\
+&= I
+\end{align}
+Therefore, $e^{iH}$ is unitary. $\qed$
+\section*{Problem 7}
+
+\end{document}

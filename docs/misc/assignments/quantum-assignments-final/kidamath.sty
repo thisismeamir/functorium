@@ -1,0 +1,51 @@
+%% kidastyle.sty
+%% Unified base style for Kid-A-Print document system
+%% Author: Kid A
+%% License: MIT / LPPL
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{kidamath}[2025/11/02 v1.0 Kid-A-Print Base Style]
+
+
+% -------- Dirac notation --------
+\newcommand{\bra}[1]{\left\langle #1 \right|}
+\newcommand{\ket}[1]{\left| #1 \right\rangle}
+\newcommand{\braket}[2]{\left\langle #1 \middle| #2 \right\rangle}
+\newcommand{\ketbra}[2]{\left| #1 \right\rangle\!\left\langle #2 \right|}
+
+
+% Expectation value \expval{A}{psi} yields <psi|A|psi>
+\newcommand{\expval}[2]{\left\langle #2 \right| #1 \left| #2 \right\rangle}
+
+
+% Matrix elements <phi|A|psi>
+\newcommand{\matrixel}[3]{\left\langle #1 \right| #2 \left| #3 \right\rangle}
+
+
+% -------- Operators and linear algebra helpers --------
+\newcommand{\op}[1]{\hat{#1}}
+
+
+% Commutator and anticommutator
+\newcommand{\comm}[2]{\left[ #1 , #2 \right]}
+\newcommand{\acomm}[2]{\left\{ #1 , #2 \right\}}
+
+
+% -------- Blackboard symbols and common sets --------
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\HH}{\mathcal{H}}
+
+
+% -------- Derivatives and variations --------
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\pd}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\pdd}[2]{\frac{\partial^2 #1}{\partial #2^2}}
+
+
+% -------- Small utilities --------
+\newcommand{\avg}[1]{\left\langle #1 \right\rangle}
+\newcommand{\norm}[1]{\left\lVert #1 \right\rVert}
+
+
+% End of package

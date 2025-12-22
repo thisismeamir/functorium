@@ -1,0 +1,3093 @@
+\documentclass[9pt,twocoloumn]{article}
+
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{kida}
+\usepackage{physics}
+\usepackage{float}
+\usepackage{svg}
+\usepackage{graphicx}
+\newcommand{\addsvg}[4][1.0]{
+    \begin{figure}[H]
+        \centering
+        \includesvg[width=#1\textwidth]{#2}
+        \caption{#4}
+        \label{fig:#3}
+    \end{figure}
+}
+
+\title{Advanced Statistical Mechanics Mid-Term Cheat-Sheet}
+\author{Amir Hossein Ebrahimnezhad - 404416001}
+\date{due: \today}
+
+\begin{document}
+\maketitle
+\section{Introduction: The Phenomenological Framework of Thermodynamics}
+
+\subsection{What Thermodynamics Actually Is}
+Thermodynamics is a \textbf{phenomenological} theory: it describes macroscopic equilibrium properties without invoking microscopic details. This is both its power and its limitation. It cannot tell you \emph{why} entropy exists, but it can tell you \emph{how} entropy constrains what processes are possible.
+
+\subsection{The Three-Step Construction (Analogy to Classical Mechanics)}
+Kardar frames thermodynamics as parallel to classical mechanics. Understanding this analogy clarifies the logical structure:
+
+\begin{enumerate}
+    \item \textbf{Idealization of the System:} Just as mechanics starts with point particles and rigid bodies, thermodynamics starts with \emph{closed, adiabatically isolated} systems. This eliminates the complication of heat exchange initially, allowing us to focus on mechanical work alone. The adiabatic wall is the thermodynamic analogue of "no external forces"—it isolates the system so we can study its intrinsic properties first.
+
+    \textbf{Conceptual point:} Heat is \emph{not} avoided because it's unimportant, but because mixing heat and work from the start obscures the structure. We build intuition with pure mechanical changes, then introduce heat carefully.
+
+    \item \textbf{State Coordinates (State Functions):} Just as $(x, p)$ specify a particle's mechanical state, thermodynamic coordinates $(P, V, T, \ldots)$ specify a macroscopic system's state.
+
+    \textbf{Critical restriction:} State functions are \emph{only} defined in \textbf{equilibrium}. This is not a technical nuance—it's foundational. Non-equilibrium systems don't have well-defined temperature or pressure in general. Time scales matter: "equilibrium" means properties are constant over the observation time.
+
+    \textbf{Two types of state functions emerge:}
+    \begin{itemize}
+        \item \textbf{Mechanical coordinates:} $(P, V, E, B, M, \ldots)$ directly related to work: $dW = -P\,dV$ or $dW = \mathbf{E} \cdot d\mathbf{P}$, etc.
+        \item \textbf{Non-mechanical coordinates:} Temperature $T$, entropy $S$, chemical potential $\mu$, etc. These will be introduced carefully through the laws of thermodynamics.
+    \end{itemize}
+
+    \item \textbf{Laws of Thermodynamics:} These are \emph{axioms} based on empirical observation. They cannot be derived within thermodynamics itself. Statistical mechanics provides microscopic justification, but thermodynamics stands alone as a consistent logical structure.
+\end{enumerate}
+
+\subsection{The Phenomenological Philosophy}
+Thermodynamics is \textbf{top-down}: it extracts universal constraints on macroscopic behavior without requiring microscopic input. This makes it:
+\begin{itemize}
+    \item \textbf{Extremely robust:} Valid whether matter is made of atoms, fields, strings, or anything else.
+    \item \textbf{Limited in scope:} Cannot predict material-specific properties (e.g., heat capacity of copper) without additional input.
+    \item \textbf{Exact within its domain:} No approximations—the laws are exact statements about equilibrium systems.
+\end{itemize}
+
+\subsection{Connection to Statistical Mechanics}
+Statistical mechanics \emph{derives} thermodynamic laws from microscopic dynamics (classical or quantum). Key insight: thermodynamic quantities emerge as ensemble averages. For example:
+\begin{itemize}
+    \item Temperature $T$ relates to average kinetic energy.
+    \item Entropy $S$ measures the number of accessible microstates: $S = k_B \ln \Omega$.
+    \item Equilibrium corresponds to maximum entropy (or minimum free energy).
+\end{itemize}
+
+However, thermodynamics is \emph{logically independent} of statistical mechanics. This independence is pedagogically important: we can explore thermodynamic consequences without invoking probabilities or ensembles.
+
+\subsection{Exam Strategy for This Section}
+\textbf{Typical questions:}
+\begin{itemize}
+    \item \textbf{Conceptual:} "Why must state functions be defined only in equilibrium?" Answer: Non-equilibrium systems have spatial/temporal gradients; no single $P$, $T$ exists globally. State functions require uniformity.
+    \item \textbf{Identification:} "Which of the following is a state function: heat $Q$, work $W$, internal energy $U$?" Answer: Only $U$. Heat and work are \emph{process-dependent}, not state functions.
+    \item \textbf{Creative twist:} "Can a system in local equilibrium have well-defined state functions?" Answer: Yes, if gradients are small and relaxation is fast compared to external changes. This leads to \emph{local equilibrium thermodynamics}, used in hydrodynamics.
+\end{itemize}
+
+\textbf{Common traps:}
+\begin{itemize}
+    \item Confusing \emph{thermodynamic equilibrium} with \emph{mechanical equilibrium}. A gas can have uniform $P$, $T$ (thermodynamic equilibrium) while undergoing slow, reversible compression (quasi-static process).
+    \item Assuming thermodynamics applies to transient states. It doesn't—you need equilibrium or quasi-static processes.
+\end{itemize}
+
+\textbf{How to approach problems:}
+\begin{enumerate}
+    \item Always ask: "Is the system in equilibrium?" If not, standard thermodynamics doesn't directly apply.
+    \item Identify which state functions are relevant. Mechanical work $\Rightarrow$ use $P$, $V$. Heat exchange $\Rightarrow$ need $T$, $S$ later.
+    \item Remember the phenomenological nature: you don't need to know \emph{why} gas particles exert pressure to use $P$ and $V$ correctly.
+\end{enumerate}
+
+\subsection{Looking Ahead}
+This introduction sets the stage. Next sections will:
+\begin{itemize}
+    \item Define internal energy $U$ (Zeroth and First Laws).
+    \item Introduce entropy $S$ and temperature $T$ (Second Law).
+    \item Develop thermodynamic potentials (free energies) for different constraints.
+    \item Establish Maxwell relations connecting seemingly unrelated derivatives.
+\end{itemize}
+
+The key is recognizing that each new concept arises from \emph{necessity}—thermodynamics is a tightly woven logical structure, not a collection of isolated facts.
+\section{The Zeroth Law: Existence of Temperature}
+
+\subsection{Statement and Immediate Implication}
+\textbf{Zeroth Law:} If systems $A$ and $B$ are separately in thermal equilibrium with system $C$, then $A$ and $B$ are in thermal equilibrium with each other.
+
+This seemingly trivial statement has profound consequences: it guarantees the \textbf{existence of an empirical temperature function} $\Theta$. Without this law, thermal equilibrium could be non-transitive (like "friendship" among people), making thermometry impossible.
+
+\subsection{The Mathematical Argument (Understanding the Logic)}
+Let systems $A$, $B$, $C$ be described by coordinates $\{A_i\}$, $\{B_j\}$, $\{C_k\}$ respectively. Assume each system is already in \emph{mechanical} equilibrium internally, so we focus purely on \emph{thermal} contact.
+
+\textbf{Step 1: Equilibrium as a constraint}
+
+When $A$ and $C$ are in thermal equilibrium, their coordinates cannot vary independently. There exists a constraint:
+\begin{equation}
+f_{AC}(A_i; C_j) = 0
+\end{equation}
+This is \emph{one} equation relating multiple variables. Similarly for $B$ and $C$:
+\begin{equation}
+f_{BC}(B_i; C_j) = 0
+\end{equation}
+
+\textbf{Interpretation:} If you change $A_i$, the system adjusts $C_j$ (or vice versa) to maintain equilibrium. This is a constraint surface in the combined coordinate space.
+
+\textbf{Step 2: Isolating one coordinate of $C$}
+
+We can solve these constraints for a particular coordinate of $C$, say $C_k$:
+\begin{align}
+C_k &= g_{AC}(A_i; C_{j \neq k}) \\
+C_k &= g_{BC}(B_i; C_{j \neq k})
+\end{align}
+
+Equating these:
+\begin{equation}
+g_{AC}(A_i; C_{j \neq k}) = g_{BC}(B_i; C_{j \neq k})
+\end{equation}
+
+\textbf{Step 3: Invoking the Zeroth Law}
+
+The Zeroth Law states that if the above holds, then $A$ and $B$ must also satisfy:
+\begin{equation}
+f_{AB}(A_i; B_j) = 0
+\end{equation}
+
+\textbf{Key insight:} For \emph{any} choice of $A_i$ and $B_j$ satisfying $f_{AB} = 0$, the equality $g_{AC} = g_{BC}$ must hold \emph{for all possible values of} $C_{j \neq k}$. This is only possible if the $C$ coordinates drop out entirely, i.e., both sides must be equal to the same function that depends only on $A$ or $B$:
+
+\begin{equation}
+g_{AC}(A_i; C_{j \neq k}) = \Theta(A_i), \quad g_{BC}(B_i; C_{j \neq k}) = \Theta(B_i)
+\end{equation}
+
+Therefore, thermal equilibrium is characterized by:
+\begin{equation}
+\boxed{\Theta(A_i) = \Theta(B_j)}
+\end{equation}
+
+This function $\Theta$ is the \textbf{empirical temperature}. Systems in thermal equilibrium have the same $\Theta$.
+
+\subsection{Physical Interpretation}
+
+\textbf{What does $\Theta$ represent?}
+\begin{itemize}
+    \item $\Theta$ is a \emph{state function} that characterizes thermal equilibrium.
+    \item It's not yet the absolute temperature $T$ (that comes from the Second Law), but any monotonic function of $T$ works.
+    \item The condition $\Theta(A_i) = \text{const}$ defines an \textbf{isotherm} in the state space of system $A$.
+\end{itemize}
+
+\textbf{Equation of state:} For a system with coordinates $(X, Y)$, the relation $\Theta(X, Y) = \Theta_0$ gives the equation of state, e.g., for an ideal gas: $PV = nR\Theta$ (where $\Theta$ is linearly related to absolute $T$).
+
+\subsection{The Mechanical Analogy}
+Kardar's analogy to mechanics is illuminating:
+
+\begin{itemize}
+    \item \textbf{Mechanical equilibrium:} Two systems in mechanical contact (e.g., two springs connected) are in equilibrium when forces balance: $F_A = F_B$.
+    \item \textbf{Thermal equilibrium:} Two systems in thermal contact are in equilibrium when temperatures match: $\Theta_A = \Theta_B$.
+\end{itemize}
+
+Just as force $F$ is the "thermal-like" quantity for mechanical equilibrium, temperature $\Theta$ is the quantity for thermal equilibrium. However, there's a key difference:
+\begin{itemize}
+    \item Force is \emph{intensive} (doesn't scale with system size).
+    \item Temperature is also \emph{intensive}.
+    \item But force relates to \emph{work}, while temperature relates to \emph{heat} (introduced later).
+\end{itemize}
+
+\subsection{Why "Zeroth" and Not "First"?}
+Historically, the First and Second Laws were established before the need for this foundational statement was recognized. Since it's logically prior to the First Law (you need temperature to define heat), it was retroactively named the "Zeroth Law."
+
+\subsection{Conceptual Subtleties}
+
+\textbf{Choice of $\Theta$:}
+At this stage, $\Theta$ is \emph{not unique}. Any monotonic function $\Theta' = h(\Theta)$ would also characterize thermal equilibrium. Different choices correspond to different temperature scales (Celsius, Fahrenheit, Kelvin). The Second Law will eventually single out the \emph{absolute temperature} $T$ as the natural choice.
+
+\textbf{Why does transitivity matter?}
+Without transitivity, you couldn't build a universal thermometer. Suppose $A \sim C$ and $B \sim C$ didn't imply $A \sim B$. Then system $C$ (your thermometer) giving the same reading for $A$ and $B$ wouldn't guarantee $A$ and $B$ are in equilibrium. Thermometry would be meaningless.
+
+\textbf{Connection to microscopic physics:}
+From statistical mechanics, $\Theta \propto 1/T$, where $T$ relates to average kinetic energy. The Zeroth Law emerges because equilibrium maximizes total entropy, which happens when $1/T$ is uniform.
+
+\subsection{Exam Strategy for This Section}
+
+\textbf{Typical questions:}
+\begin{itemize}
+    \item \textbf{Proof-style:} "Prove that the Zeroth Law implies the existence of an empirical temperature function." Follow Kardar's argument: write constraints, invoke transitivity, show $C$ coordinates must drop out.
+    \item \textbf{Conceptual:} "Why is the Zeroth Law necessary for thermometry?" Answer: Without transitivity, a thermometer reading wouldn't reliably indicate thermal equilibrium between two systems.
+    \item \textbf{Equation of state:} "Given $\Theta(P, V) = PV$ for a gas, what are the isotherms?" Answer: Hyperbolas $PV = \text{const}$ in the $P$-$V$ plane.
+\end{itemize}
+
+\textbf{Creative/tricky questions:}
+\begin{itemize}
+    \item \textbf{"Is the Zeroth Law independent of the First and Second Laws?"} Yes! It's a separate axiom about the \emph{existence} of temperature, not about energy or entropy.
+    \item \textbf{"Can you have thermal equilibrium without mechanical equilibrium?"} Yes, if systems are separated by rigid walls (preventing mechanical work) but allowing heat flow. Then $\Theta_A = \Theta_B$ but $P_A \neq P_B$.
+    \item \textbf{"What if we had a system where transitivity failed?"} Then no universal temperature scale exists. Such systems might exhibit non-equilibrium behavior (e.g., driven systems, glassy systems with multiple metastable states).
+\end{itemize}
+
+\textbf{Common traps:}
+\begin{itemize}
+    \item Confusing $\Theta$ (empirical temperature, any monotonic scale) with $T$ (absolute temperature from Second Law). At this stage, we only have $\Theta$.
+    \item Forgetting that $\Theta$ is a \emph{state function}—it depends only on the current state, not on how the system reached that state.
+    \item Assuming the Zeroth Law is "obvious." It's an \emph{empirical fact} that needs to be stated as an axiom. Logically, equilibrium could have been non-transitive.
+\end{itemize}
+
+\textbf{How to approach problems:}
+\begin{enumerate}
+    \item If asked to prove existence of $\Theta$: write equilibrium constraints, use transitivity to eliminate the third system's coordinates, conclude that a function of each system's coordinates alone must be equal.
+    \item If given an equation of state: identify $\Theta$ and sketch isotherms.
+    \item If asked about thermometry: emphasize that transitivity allows one system (the thermometer) to compare temperatures of others.
+\end{enumerate}
+
+\subsection{Looking Ahead}
+The Zeroth Law gives us temperature, but doesn't tell us:
+\begin{itemize}
+    \item How temperature relates to energy (First Law).
+    \item What the "natural" scale of temperature is (Second Law $\Rightarrow$ absolute temperature $T$).
+    \item Why heat flows from hot to cold (Second Law $\Rightarrow$ entropy).
+\end{itemize}
+
+These will be addressed in subsequent sections. For now, recognize that $\Theta$ is the first non-mechanical state function we've introduced.
+\section{The First Law: Energy Conservation and the Concept of Heat}
+
+\subsection{Statement and Physical Content}
+\textbf{First Law (Operational Form):} The work required to change an adiabatically isolated system from state $X_i$ to state $X_f$ depends only on the initial and final states, not on the path taken or the means by which work is performed.
+
+This observation allows us to define a new state function: the \textbf{internal energy} $E(X)$. For adiabatic processes:
+\begin{equation}
+\Delta W_{\text{adiabatic}} = E(X_f) - E(X_i)
+\end{equation}
+
+\textbf{Key insight:} The path-independence of work in adiabatic processes is \emph{not obvious}. It's an empirical fact that justifies introducing $E$ as a state function, just as conservative forces in mechanics allow us to define potential energy.
+
+\subsection{Heat as the "Missing Energy"}
+When we remove the adiabatic constraint, work $\Delta W$ is no longer sufficient to account for energy changes. We define \textbf{heat} $\Delta Q$ as the difference:
+\begin{equation}
+\Delta Q \equiv \Delta E - \Delta W
+\end{equation}
+
+This is the full First Law:
+\begin{equation}
+\boxed{\Delta E = \Delta W + \Delta Q}
+\end{equation}
+
+\textbf{Critical distinction:} $E$ is a state function, but $Q$ and $W$ are \textbf{not}. They are \emph{process-dependent}. This is why we write:
+\begin{equation}
+dE = \bar{d}W + \bar{d}Q
+\end{equation}
+where $dE$ is an exact differential (integrable to give $\Delta E$), but $\bar{d}W$ and $\bar{d}Q$ are \emph{inexact differentials} (path-dependent).
+
+\textbf{Sign convention:} Both $\bar{d}W$ and $\bar{d}Q$ are positive when energy is \emph{added to} the system. (Some books use opposite conventions—always check!)
+
+\subsection{What the First Law Actually Says}
+\textbf{Colloquial form:} "You can change a system's energy by doing work on it or by heating it. The total energy change depends only on initial and final states, but the split between work and heat depends on the path."
+
+\textbf{Deeper meaning:}
+\begin{itemize}
+    \item Energy is conserved if we account for both mechanical and thermal forms.
+    \item Heat is not a "substance" (caloric theory was wrong)—it's a form of energy transfer.
+    \item The internal energy $E$ encodes all microscopic kinetic and potential energies, but we don't need to know microscopic details to use it.
+\end{itemize}
+
+\subsection{Quasi-Static Processes}
+A \textbf{quasi-static} process is performed slowly enough that the system passes through a sequence of equilibrium states. This is crucial because:
+\begin{itemize}
+    \item State functions $(P, V, T, E, \ldots)$ are only defined in equilibrium.
+    \item For quasi-static processes, we can write $\bar{d}W$ in terms of state variables.
+    \item Non-quasi-static processes (e.g., free expansion, rapid compression) cannot be described by paths in state space.
+\end{itemize}
+
+\textbf{Quasi-static $\neq$ reversible:} Quasi-static means slow enough for equilibrium at each instant. Reversible additionally requires no dissipation (friction, viscosity, etc.). All reversible processes are quasi-static, but not vice versa.
+
+\subsection{Work in Terms of Generalized Forces and Displacements}
+For quasi-static processes, work can be written as:
+\begin{equation}
+\bar{d}W = \sum_i J_i \, dx_i
+\end{equation}
+where $J_i$ are \textbf{generalized forces} (intensive) and $x_i$ are \textbf{generalized displacements} (extensive).
+
+\begin{center}
+\begin{tabular}{lcc}
+\hline
+System & Force $J$ & Displacement $x$ \\
+\hline
+Fluid & $-P$ (pressure) & $V$ (volume) \\
+Wire & $F$ (tension) & $L$ (length) \\
+Surface film & $S$ (surface tension) & $A$ (area) \\
+Magnet & $H$ (magnetic field) & $M$ (magnetization) \\
+Dielectric & $E$ (electric field) & $P$ (polarization) \\
+Chemical & $\mu$ (chemical potential) & $N$ (particle number) \\
+\hline
+\end{tabular}
+\end{center}
+
+\textbf{Pattern:} Intensive forces are \emph{field-like} (uniform across the system), while extensive displacements scale with system size. This mirrors mechanics: force $F$ is intensive, displacement $x$ is extensive (for a composite system).
+
+\textbf{Sign conventions:} For a fluid, $\bar{d}W = -P \, dV$ because positive work \emph{on} the system corresponds to compression ($dV < 0$). For other systems, check whether the force promotes increase or decrease of the displacement.
+
+\subsection{Temperature as a "Thermal Force"?}
+Kardar poses a key question: If $J_i$ are forces conjugate to displacements $x_i$, and temperature $T$ is the "force" for heat flow (heat flows from high $T$ to low $T$), what is the displacement conjugate to $T$?
+
+This question motivates the introduction of \textbf{entropy} $S$ in the Second Law. Spoiler: $\bar{d}Q = T \, dS$ (for reversible processes), making $S$ the displacement conjugate to $T$.
+
+\subsection{The Ideal Gas: Joule's Free Expansion}
+\textbf{Joule's experiment:} An ideal gas expands adiabatically into a vacuum (free expansion). No work is done ($\Delta W = 0$, no piston to push), and the system is isolated ($\Delta Q = 0$). Therefore:
+\begin{equation}
+\Delta E = 0 \quad \Rightarrow \quad E(V_i, T_i) = E(V_f, T_f)
+\end{equation}
+
+Empirically, $T_f = T_i$ for an ideal gas. Thus:
+\begin{equation}
+\boxed{E_{\text{ideal gas}} = E(T) \quad \text{(independent of } V \text{)}}
+\end{equation}
+
+\textbf{Why is this remarkable?} For a real gas, $E$ depends on both $T$ and $V$ because intermolecular interactions contribute to potential energy. For an ideal gas, molecules don't interact, so $E$ is purely kinetic, which depends only on $T$.
+
+\textbf{Connection to equation of state:} The fact that $E = E(T)$ is consistent with $PV = nRT$. These are not independent—statistical mechanics shows they both follow from non-interacting particles.
+
+\subsection{Response Functions: Probing System Behavior}
+Response functions characterize how systems react to external perturbations. They are \emph{experimentally measurable} and encode material properties.
+
+\subsubsection{Heat Capacities}
+Heat capacity measures the temperature change upon heat addition:
+\begin{equation}
+C = \frac{\bar{d}Q}{dT}
+\end{equation}
+
+Since $\bar{d}Q$ is path-dependent, we must specify the path. Two standard choices:
+
+\textbf{1. Constant volume ($C_V$):}
+\begin{align}
+C_V &= \left. \frac{\bar{d}Q}{dT} \right|_V = \left. \frac{dE - \bar{d}W}{dT} \right|_V \\
+&= \left. \frac{\partial E}{\partial T} \right|_V \quad \text{(since } \bar{d}W = -P \, dV = 0 \text{ at constant } V \text{)}
+\end{align}
+
+\textbf{Key point:} $C_V$ is a \emph{partial derivative of a state function}, hence well-defined despite $Q$ not being a state function.
+
+\textbf{2. Constant pressure ($C_P$):}
+\begin{equation}
+C_P = \left. \frac{\bar{d}Q}{dT} \right|_P
+\end{equation}
+
+For constant $P$, the system does work $\bar{d}W = -P \, dV$ as it expands/contracts. Thus:
+\begin{equation}
+C_P = \left. \frac{dE + P \, dV}{dT} \right|_P = \left. \frac{\partial E}{\partial T} \right|_P + P \left. \frac{\partial V}{\partial T} \right|_P
+\end{equation}
+
+Generally, $C_P > C_V$ because heating at constant $P$ allows expansion, which requires additional energy.
+
+\subsubsection{Other Response Functions}
+\begin{itemize}
+    \item \textbf{Compressibility:} $\kappa = -\frac{1}{V} \left. \frac{\partial V}{\partial P} \right|_T$ (isothermal) or $\left|_S\right.$ (adiabatic).
+    \item \textbf{Thermal expansion:} $\alpha = \frac{1}{V} \left. \frac{\partial V}{\partial T} \right|_P$.
+    \item \textbf{Force constants:} Generalized "spring constants" $\left. \frac{\partial J_i}{\partial x_i} \right|_{\text{other vars}}$.
+\end{itemize}
+
+These quantities are related by Maxwell relations (from the Second Law).
+
+\subsection{Conceptual Subtleties and Common Confusions}
+
+\textbf{Why is $Q$ not a state function?}
+Consider a cycle: $A \to B \to A$. If $Q$ were a state function, $\oint \bar{d}Q = 0$. But experimentally, you can extract net work from a heat engine running a cycle, so $\oint \bar{d}Q \neq 0$. Only $E$ is a state function: $\oint dE = 0$.
+
+\textbf{Adiabatic vs. isothermal processes:}
+\begin{itemize}
+    \item \textbf{Adiabatic:} $\bar{d}Q = 0 \Rightarrow dE = \bar{d}W$. Temperature changes unless $C = \infty$.
+    \item \textbf{Isothermal:} $dT = 0$. For ideal gas, $dE = 0 \Rightarrow \bar{d}Q = -\bar{d}W$.
+\end{itemize}
+
+\textbf{Free expansion vs. quasi-static expansion:}
+\begin{itemize}
+    \item \textbf{Free expansion:} Gas rushes into vacuum. No work done, $\Delta E = 0$ for ideal gas, but process is \emph{irreversible}.
+    \item \textbf{Quasi-static expansion:} Gas pushes a piston slowly. Work is done, $\Delta E = \Delta Q - P \Delta V$, process can be reversed.
+\end{itemize}
+
+\subsection{Exam Strategy for This Section}
+
+\textbf{Typical questions:}
+\begin{itemize}
+    \item \textbf{Cyclic processes:} "A gas undergoes a cycle. Is $\Delta E = 0$? Is $\Delta Q = 0$?" Answer: Always $\Delta E = 0$ (state function), but generally $\Delta Q \neq 0$.
+    \item \textbf{Path dependence:} "Two paths connect states $A$ and $B$. Are $\Delta E$, $\Delta Q$, $\Delta W$ the same?" Answer: $\Delta E$ is path-independent; $\Delta Q$ and $\Delta W$ are path-dependent.
+    \item \textbf{Heat capacity relations:} "Derive $C_V$ for an ideal gas." Answer: Use $E = \frac{f}{2} nRT$ (from stat mech) $\Rightarrow C_V = \frac{f}{2} nR$.
+\end{itemize}
+
+\textbf{Creative/tricky questions:}
+\begin{itemize}
+    \item \textbf{"Can you have $\Delta Q < 0$ and $\Delta T > 0$?"} Yes! If work is done \emph{on} the system: $\Delta E = \Delta W + \Delta Q$. Heat leaves, but work input raises temperature.
+    \item \textbf{"For an ideal gas, why does $C_P - C_V = nR$?"} Requires enthalpy (next section), but physically: at constant $P$, gas expands when heated, doing work $P \Delta V = nR \Delta T$.
+    \item \textbf{"Is Joule expansion reversible?"} No! Even though $\Delta S_{\text{system}} = 0$ for ideal gas (since $T$ and $E$ unchanged), the process is spontaneous and irreversible. Reversing it would require work.
+\end{itemize}
+
+\textbf{Common traps:}
+\begin{itemize}
+    \item Treating $Q$ and $W$ as state functions. Always ask: "Does this depend on the path?"
+    \item Confusing "adiabatic" with "isothermal." They're orthogonal concepts.
+    \item Forgetting sign conventions. $\bar{d}W = -P \, dV$ means compression ($dV < 0$) requires positive work.
+    \item Assuming $E = E(T)$ for all gases. Only true for ideal gas (no interactions).
+\end{itemize}
+
+\textbf{How to approach problems:}
+\begin{enumerate}
+    \item Identify the process type: adiabatic ($\bar{d}Q = 0$), isothermal ($dT = 0$), isobaric ($dP = 0$), isochoric ($dV = 0$), or cyclic.
+    \item Write $dE = \bar{d}Q + \bar{d}W$ and apply constraints.
+    \item For quasi-static processes, use $\bar{d}W = -P \, dV$ (or appropriate $J \, dx$).
+    \item For ideal gas, remember $E = E(T)$ and $PV = nRT$.
+    \item Check: Is the answer consistent with $\Delta E = 0$ for cycles?
+\end{enumerate}
+
+\subsection{Looking Ahead}
+The First Law introduces energy conservation but leaves questions unanswered:
+\begin{itemize}
+    \item What determines the direction of heat flow? (Second Law $\Rightarrow$ entropy)
+    \item What is the conjugate variable to temperature? (Entropy $S$, such that $\bar{d}Q = T \, dS$)
+    \item How do we handle systems at constant $T$ or $P$ more naturally? (Thermodynamic potentials: enthalpy, Helmholtz/Gibbs free energy)
+\end{itemize}
+
+For now, recognize that $E$ is the first "deep" state function—it encodes all internal degrees of freedom without requiring microscopic details.
+
+\section{The Second Law: Directionality and the Impossibility of Perfect Engines}
+
+\subsection{Historical Motivation: Heat Engines and Refrigerators}
+The Second Law emerged from practical 19th-century engineering: Can we build a perfectly efficient heat engine? The answer is no, and understanding \emph{why} leads to one of the deepest principles in physics.
+
+\subsubsection{The Idealized Heat Engine}
+A heat engine operates in a cycle:
+\begin{enumerate}
+    \item Absorbs heat $Q_H$ from a hot reservoir at temperature $T_H$.
+    \item Converts part of this heat into useful work $W$.
+    \item Dumps waste heat $Q_C$ into a cold reservoir at temperature $T_C$.
+\end{enumerate}
+
+By the First Law (applied to a complete cycle, so $\Delta E = 0$):
+\begin{equation}
+W = Q_H - Q_C
+\end{equation}
+
+The \textbf{efficiency} is:
+\begin{equation}
+\eta = \frac{W}{Q_H} = \frac{Q_H - Q_C}{Q_H} = 1 - \frac{Q_C}{Q_H}
+\end{equation}
+
+\textbf{Question:} Can we make $\eta = 1$ (perfect efficiency) by eliminating $Q_C$? The First Law doesn't forbid this—it would just mean $W = Q_H$, converting all heat to work. But the Second Law says: \textbf{No}.
+
+\subsubsection{The Idealized Refrigerator}
+A refrigerator is an engine running backward:
+\begin{enumerate}
+    \item Extracts heat $Q_C$ from a cold reservoir.
+    \item Uses work input $W$ to "pump" heat uphill.
+    \item Dumps total heat $Q_H = Q_C + W$ into a hot reservoir.
+\end{enumerate}
+
+The \textbf{coefficient of performance} is:
+\begin{equation}
+\omega = \frac{Q_C}{W} = \frac{Q_C}{Q_H - Q_C}
+\end{equation}
+
+\textbf{Question:} Can we make $\omega = \infty$ (perfect refrigerator, $W = 0$)? Again, the First Law permits this—heat would just flow spontaneously from cold to hot. But the Second Law says: \textbf{No}.
+
+\subsection{Perpetual Motion Machines: First vs. Second Kind}
+
+\textbf{Perpetual motion of the first kind:} Creates energy from nothing ($W > 0$ with no energy input). Violates the First Law. Clearly impossible.
+
+\textbf{Perpetual motion of the second kind:} Converts environmental heat entirely into work (e.g., freezing water and using the released heat to power a machine). Does \emph{not} violate the First Law (energy is conserved), but violates the Second Law. \textbf{This is the subtle point.}
+
+\textbf{Why the distinction matters:} The First Law says energy is conserved; the Second Law says not all energy transformations are possible, even if they conserve energy. There's an \emph{arrow of time}—heat flows spontaneously only from hot to cold.
+
+\subsection{Two Classical Statements of the Second Law}
+
+\textbf{Kelvin's Statement:}
+\begin{quote}
+\textit{No process is possible whose sole result is the complete conversion of heat into work.}
+\end{quote}
+
+\textbf{Translation:} You cannot build a heat engine that operates with 100\% efficiency using a \emph{single} heat reservoir. Some waste heat $Q_C$ must be dumped.
+
+\textbf{Clausius's Statement:}
+\begin{quote}
+\textit{No process is possible whose sole result is the transfer of heat from a colder to a hotter body.}
+\end{quote}
+
+\textbf{Translation:} Heat doesn't flow spontaneously uphill. Refrigerators require work input; they don't run for free.
+
+\subsection{Equivalence of Kelvin and Clausius Statements}
+Kardar asserts these statements are equivalent. Let's prove this by showing each implies the other.
+
+\subsubsection{Clausius to Kelvin (Violation of Kelvin implies violation of Clausius)}
+
+\textbf{Setup:} Assume we have a device violating Kelvin—a perfect engine $E$ that converts heat $Q$ from a hot reservoir at $T_H$ entirely into work $W = Q$, with no cold reservoir needed.
+
+\textbf{Construction:} Combine this perfect engine with an ordinary refrigerator $R$ that uses work $W$ to extract heat $Q_C$ from a cold reservoir at $T_C$ and dumps heat $Q_H = W + Q_C$ into the hot reservoir.
+
+\textbf{Net effect:}
+\begin{itemize}
+    \item Engine $E$ extracts $Q$ from hot reservoir and produces work $W = Q$.
+    \item Refrigerator $R$ uses this work $W$ to pump heat $Q_C$ from cold to hot.
+    \item Hot reservoir receives net heat: $Q_H - Q = (W + Q_C) - W = Q_C$.
+    \item Cold reservoir loses heat $Q_C$.
+\end{itemize}
+
+\textbf{Outcome:} Heat $Q_C$ has been transferred from cold to hot with \emph{no net work input or other changes}. This violates Clausius.
+
+\textbf{Conclusion:} If Kelvin is violated, so is Clausius. Therefore, Clausius $\Rightarrow$ Kelvin (by contrapositive).
+
+\subsubsection{Kelvin to Clausius (Violation of Clausius implies violation of Kelvin)}
+
+\textbf{Setup:} Assume we have a device violating Clausius—a perfect refrigerator $R$ that transfers heat $Q_C$ from cold reservoir at $T_C$ to hot reservoir at $T_H$ with \emph{no work input}.
+
+\textbf{Construction:} Combine this perfect refrigerator with an ordinary heat engine $E$ that extracts heat $Q_H$ from the hot reservoir, produces work $W$, and dumps heat $Q_C$ into the cold reservoir.
+
+\textbf{Net effect:}
+\begin{itemize}
+    \item Refrigerator $R$ moves heat $Q_C$ from cold to hot (no work).
+    \item Engine $E$ extracts $Q_H$ from hot, produces work $W = Q_H - Q_C$, dumps $Q_C$ back to cold.
+    \item Cold reservoir: receives $Q_C$ from $E$, loses $Q_C$ to $R$ $\Rightarrow$ net zero.
+    \item Hot reservoir: loses $Q_H$ to $E$, receives $Q_C$ from $R$ $\Rightarrow$ net loss $Q_H - Q_C = W$.
+\end{itemize}
+
+\textbf{Outcome:} The composite system extracts heat $W$ from a single reservoir (hot) and converts it entirely to work, with no other changes. This violates Kelvin.
+
+\textbf{Conclusion:} If Clausius is violated, so is Kelvin. Therefore, Kelvin $\Rightarrow$ Clausius (by contrapositive).
+
+\subsection{Physical Interpretation: The Arrow of Time}
+
+Both statements capture the \textbf{irreversibility} of natural processes:
+\begin{itemize}
+    \item Heat flows spontaneously from hot to cold, never the reverse (Clausius).
+    \item Organized energy (work) can be fully converted to disorganized energy (heat), but not vice versa (Kelvin).
+\end{itemize}
+
+This asymmetry is the \textbf{thermodynamic arrow of time}. Unlike mechanics (time-reversible), thermodynamics has a preferred direction.
+
+\textbf{Microscopic origin (preview):} From statistical mechanics, this arrow comes from probability. Disordered states are vastly more numerous than ordered ones. Heat spreading out is the overwhelmingly likely evolution, not a strict impossibility.
+
+\subsection{What the Second Law Does NOT Say}
+
+\textbf{Common misconceptions:}
+\begin{itemize}
+    \item \textbf{Wrong:} "You can't convert heat to work." \textbf{Right:} You can't convert heat to work with 100\% efficiency using a single reservoir. Heat engines do convert heat to work—just not perfectly.
+    \item \textbf{Wrong:} "Heat never flows from cold to hot." \textbf{Right:} Heat can flow from cold to hot if you do work (refrigerator). What's forbidden is spontaneous heat flow uphill.
+    \item \textbf{Wrong:} "The Second Law forbids all decreases in entropy." \textbf{Right:} Local entropy can decrease (e.g., freezing water), but total entropy (system + surroundings) increases. This nuance comes later with the entropy formulation.
+\end{itemize}
+
+\subsection{Why These Statements Are Useful}
+
+Kelvin and Clausius statements are \textbf{operational}—they refer to achievable processes, not abstract quantities like entropy (which hasn't been defined yet). This makes them:
+\begin{itemize}
+    \item Easy to test experimentally: build engines and refrigerators, measure efficiencies.
+    \item Intuitive: they codify everyday experience (hot coffee cools, never spontaneously heats).
+    \item Foundation for later developments: Carnot's theorem, entropy, free energies all follow from these statements.
+\end{itemize}
+
+\subsection{Conceptual Subtleties}
+
+\subsubsection{What Does "Sole Result" Mean?}
+The phrase "sole result" is critical. It means no other changes occur in the universe.
+
+\textbf{Example:} You can convert heat entirely to work in an \emph{isothermal expansion} of an ideal gas ($\Delta E = 0 \Rightarrow Q = W$). Does this violate Kelvin?
+
+\textbf{No!} The "sole result" is not just work production—the gas has also expanded (its state changed). Kelvin forbids work production with \emph{no other change}, i.e., after a complete cycle.
+
+\subsubsection{Why Two Reservoirs Are Essential for Engines}
+Kelvin's statement implies engines need a cold reservoir. Intuitively:
+\begin{itemize}
+    \item Heat is "disordered" energy (random molecular motion).
+    \item Work is "ordered" energy (coherent motion).
+    \item To extract order from disorder, you need a "sink" to absorb leftover disorder.
+\end{itemize}
+
+Mathematically, this will be quantified by entropy: $\Delta S_{\text{total}} \geq 0$ for any process.
+
+\subsection{Exam Strategy for This Section}
+
+\textbf{Typical questions:}
+\begin{itemize}
+    \item \textbf{Efficiency bounds:} "What is the maximum efficiency of an engine operating between $T_H$ and $T_C$?" Answer: Carnot efficiency $\eta_C = 1 - T_C/T_H$ (derived next section). Any real engine has $\eta < \eta_C$.
+    \item \textbf{Equivalence proof:} "Show that Kelvin and Clausius statements are equivalent." Follow the contrapositive arguments above—combine hypothetical perfect devices with ordinary devices to create contradictions.
+    \item \textbf{Conceptual:} "Does an isothermal expansion violate Kelvin's statement?" Answer: No, because the gas's state changes (it expands). Kelvin applies to cyclic processes.
+\end{itemize}
+
+\textbf{Creative/tricky questions:}
+\begin{itemize}
+    \item \textbf{"Can you have a process where heat flows from cold to hot without violating the Second Law?"} Yes! A refrigerator does this by inputting work. Clausius forbids this as the \emph{sole} result—work input is an "other change."
+    \item \textbf{"Why can't we use ocean thermal gradients for unlimited power?"} Small $\Delta T$ limits Carnot efficiency. Also, extracting heat lowers $T_H$ and raises $T_C$, erasing the gradient. Not a Second Law violation, just low efficiency.
+    \item \textbf{"Suppose you have a box of gas in space. Can you extract work from its thermal motion?"} Not without a cold reservoir. Maxwell's demon thought experiment explores this—sorting molecules by speed seems to create a temperature difference, but the demon's memory must be erased (costing energy), restoring the Second Law.
+\end{itemize}
+
+\textbf{Common traps:}
+\begin{itemize}
+    \item Forgetting "sole result"—many processes convert heat to work (isothermal expansion) or move heat uphill (refrigerator) without violating the Second Law because other changes occur.
+    \item Confusing efficiency $\eta$ with coefficient of performance $\omega$. For engines, $\eta < 1$; for refrigerators, $\omega$ can exceed 1 (you can extract more heat than the work you put in).
+    \item Thinking the Second Law is probabilistic ("usually true"). It's an absolute law within thermodynamics. Statistical mechanics explains \emph{why} via overwhelming probability, but that's a different layer.
+\end{itemize}
+
+\textbf{How to approach problems:}
+\begin{enumerate}
+    \item Identify if the problem involves an engine (converts heat to work) or refrigerator (uses work to pump heat).
+    \item Write energy conservation: $Q_H = W + Q_C$ (cycle, so $\Delta E = 0$).
+    \item Check if the process violates Kelvin or Clausius. Look for: (a) 100\% conversion of heat to work with no cold reservoir, or (b) heat flowing from cold to hot with no work input.
+    \item For efficiency questions, remember $\eta = 1 - Q_C/Q_H$. Carnot's theorem (next) gives the upper bound.
+    \item Always verify: Does the total entropy increase? (Once entropy is introduced, this becomes the definitive test.)
+\end{enumerate}
+
+\subsection{Looking Ahead: From Statements to Entropy}
+
+The Kelvin and Clausius statements are powerful but qualitative. To make the Second Law quantitative, we need:
+\begin{itemize}
+    \item \textbf{Carnot's theorem:} Derives the maximum efficiency $\eta_C = 1 - T_C/T_H$ for reversible engines.
+    \item \textbf{Entropy:} A state function $S$ such that $dS \geq \bar{d}Q/T$, with equality for reversible processes. Entropy quantifies "disorder" and gives a universal criterion for spontaneity: $\Delta S_{\text{total}} \geq 0$.
+    \item \textbf{Thermodynamic potentials:} Free energies (Helmholtz $F$, Gibbs $G$) that minimize in equilibrium under different constraints, making calculations tractable.
+\end{itemize}
+
+The next sections will build this machinery, but always remember: it all rests on the foundational observation that heat doesn't flow uphill spontaneously.
+
+\subsection{Connection to Previous Material}
+
+\begin{itemize}
+    \item \textbf{Zeroth Law:} Established temperature $\Theta$ as the variable characterizing thermal equilibrium. The Second Law will refine this to \emph{absolute temperature} $T$.
+    \item \textbf{First Law:} Introduced internal energy $E$ and heat $Q$. The Second Law constrains how $Q$ can be converted to work, adding structure beyond mere energy conservation.
+    \item \textbf{Together:} The laws form a hierarchy. Zeroth: temperature exists. First: energy is conserved. Second: not all energy transformations are possible. Third (not yet covered): absolute zero is unattainable.
+\end{itemize}
+
+These aren't isolated facts—they're layers of a coherent framework describing equilibrium and transformations.
+
+\section{Carnot Engines: Universal Efficiency and Absolute Temperature}
+
+\subsection{Definition of a Carnot Engine}
+A \textbf{Carnot engine} is characterized by three properties:
+\begin{enumerate}
+    \item \textbf{Reversible:} The process can be run backward by reversing inputs/outputs. No dissipation (friction, turbulence, etc.). This is the thermodynamic analog of frictionless motion in mechanics.
+    \item \textbf{Cyclic:} The working substance returns to its initial state after each cycle ($\Delta E = 0$ over the full cycle).
+    \item \textbf{Two-temperature operation:} All heat exchanges occur at exactly two temperatures: $T_H$ (hot reservoir) and $T_C$ (cold reservoir). No heat exchange at intermediate temperatures.
+\end{enumerate}
+
+\textbf{Key insight:} The third property is the defining characteristic. Real engines exchange heat continuously as temperature varies—Carnot engines are idealized to exchange heat only isothermally.
+
+\subsection{Structure of the Carnot Cycle}
+The Carnot cycle consists of four reversible steps:
+
+\begin{enumerate}
+    \item \textbf{Isothermal expansion at $T_H$:} System absorbs heat $Q_H$ from hot reservoir while expanding. Since isothermal and $E = E(T)$ for ideal gas, $\Delta E = 0 \Rightarrow Q_H = W_1$ (all absorbed heat converts to work in this step).
+
+    \item \textbf{Adiabatic expansion:} System expands further without heat exchange ($\bar{d}Q = 0$). Temperature drops from $T_H$ to $T_C$. Work $W_2$ is done by extracting internal energy: $\Delta E = W_2 < 0$.
+
+    \item \textbf{Isothermal compression at $T_C$:} System dumps heat $Q_C$ to cold reservoir while being compressed. Again, $\Delta E = 0 \Rightarrow Q_C = -W_3$ (work done on system equals heat expelled).
+
+    \item \textbf{Adiabatic compression:} System is compressed adiabatically back to initial state. Temperature rises from $T_C$ to $T_H$. Work $W_4$ increases internal energy.
+\end{enumerate}
+
+\textbf{Net result:} Over the full cycle, $\Delta E = 0$, so:
+\begin{equation}
+W_{\text{net}} = Q_H - Q_C
+\end{equation}
+
+The cycle forms a closed loop in the $(P, V)$ plane. The area enclosed equals the net work done.
+
+\subsection{Adiabats for an Ideal Gas}
+To construct the Carnot cycle explicitly, we need the adiabatic curves ("adiabats") in state space.
+
+\textbf{For a monatomic ideal gas:} $E = \frac{3}{2} NkT = \frac{3}{2} PV$.
+
+Along a quasi-static path:
+\begin{equation}
+\bar{d}Q = dE - \bar{d}W = d\left( \frac{3}{2} PV \right) + P \, dV = \frac{3}{2} (P \, dV + V \, dP) + P \, dV = \frac{5}{2} P \, dV + \frac{3}{2} V \, dP
+\end{equation}
+
+For adiabatic processes, $\bar{d}Q = 0$:
+\begin{equation}
+\frac{5}{2} P \, dV + \frac{3}{2} V \, dP = 0 \quad \Rightarrow \quad \frac{dP}{P} + \frac{5}{3} \frac{dV}{V} = 0
+\end{equation}
+
+Integrating:
+\begin{equation}
+\ln P + \frac{5}{3} \ln V = \text{const} \quad \Rightarrow \quad \boxed{PV^{\gamma} = \text{const}, \quad \gamma = \frac{5}{3}}
+\end{equation}
+
+\textbf{General result:} For any ideal gas with $f$ degrees of freedom, $\gamma = (f+2)/f$. For monatomic gas, $f = 3 \Rightarrow \gamma = 5/3$. For diatomic, $f = 5 \Rightarrow \gamma = 7/5$.
+
+\textbf{Geometric interpretation:}
+\begin{itemize}
+    \item \textbf{Isotherms:} $PV = \text{const}$ (hyperbolas in $P$-$V$ plane).
+    \item \textbf{Adiabats:} $PV^{\gamma} = \text{const}$ (steeper hyperbolas, since $\gamma > 1$).
+\end{itemize}
+
+The Carnot cycle is a rectangle in "thermodynamic space" bounded by two isotherms and two adiabats.
+
+\subsection{Carnot's Theorem: Supremacy of Reversible Engines}
+
+\textbf{Carnot's Theorem:} No engine operating between two reservoirs at $T_H$ and $T_C$ can be more efficient than a Carnot engine.
+
+\textbf{Proof (by contradiction):}
+
+\textbf{Setup:} Suppose a non-Carnot engine $E$ has efficiency $\eta > \eta_C$ (Carnot efficiency). Both engines produce the same work $W$ per cycle.
+
+\textbf{Strategy:} Use engine $E$ to drive a Carnot engine $C$ backward (as a refrigerator).
+
+\textbf{Heat flows:}
+\begin{itemize}
+    \item Engine $E$: absorbs $Q_H$ from hot reservoir, produces work $W$, dumps $Q_C = Q_H - W$ to cold reservoir.
+    \item Carnot refrigerator $C$: uses work $W$ to extract $Q_C'$ from cold reservoir and dump $Q_H' = Q_C' + W$ to hot reservoir.
+\end{itemize}
+
+\textbf{Net effect on reservoirs:}
+\begin{itemize}
+    \item Hot reservoir: loses $Q_H$ (from $E$), gains $Q_H'$ (from $C$) $\Rightarrow$ net change $Q_H' - Q_H$.
+    \item Cold reservoir: gains $Q_C$ (from $E$), loses $Q_C'$ (from $C$) $\Rightarrow$ net change $Q_C - Q_C'$.
+\end{itemize}
+
+By energy conservation (no net work extracted or input to the composite system):
+\begin{equation}
+Q_H' - Q_H = Q_C - Q_C'
+\end{equation}
+
+\textbf{Key step:} If $\eta > \eta_C$, then:
+\begin{equation}
+\eta = \frac{W}{Q_H} > \eta_C = \frac{W}{Q_H'} \quad \Rightarrow \quad Q_H < Q_H'
+\end{equation}
+
+This means $Q_H' - Q_H > 0$: net heat flows from cold to hot reservoir with no external work input (since $E$ and $C$ cancel each other's work).
+
+\textbf{Contradiction:} This violates Clausius's statement of the Second Law.
+
+\textbf{Conclusion:} Our assumption $\eta > \eta_C$ is false. Therefore:
+\begin{equation}
+\boxed{\eta \leq \eta_C}
+\end{equation}
+
+\subsection{Corollary: Universality of Carnot Efficiency}
+
+\textbf{Corollary:} All reversible engines operating between $T_H$ and $T_C$ have the same efficiency $\eta_C(T_H, T_C)$, regardless of their design or working substance.
+
+\textbf{Proof:} Take two Carnot engines $C_1$ and $C_2$ with efficiencies $\eta_1$ and $\eta_2$. By Carnot's theorem:
+\begin{itemize}
+    \item $\eta_1 \leq \eta_2$ (since $C_1$ cannot beat $C_2$, a Carnot engine).
+    \item $\eta_2 \leq \eta_1$ (since $C_2$ cannot beat $C_1$, also a Carnot engine).
+\end{itemize}
+Therefore, $\eta_1 = \eta_2$.
+
+\textbf{Profound implication:} Carnot efficiency depends \emph{only} on the temperatures, not on the engine's material properties, geometry, or design. This universality suggests that temperature itself must have a fundamental, material-independent definition.
+
+\subsection{The Thermodynamic Temperature Scale}
+
+Carnot's corollary allows us to define an \textbf{absolute temperature scale} based purely on engine efficiencies, without reference to any particular substance (like gas thermometers).
+
+\subsubsection{Deriving the Functional Form}
+
+Consider two Carnot engines in series:
+\begin{itemize}
+    \item Engine 1: operates between $T_1$ (hot) and $T_2$ (intermediate), absorbs $Q_1$, produces $W_{12}$, dumps $Q_2$.
+    \item Engine 2: operates between $T_2$ and $T_3$ (cold), absorbs $Q_2$, produces $W_{23}$, dumps $Q_3$.
+\end{itemize}
+
+Efficiencies:
+\begin{align}
+\eta(T_1, T_2) &= \frac{W_{12}}{Q_1} = 1 - \frac{Q_2}{Q_1} \\
+\eta(T_2, T_3) &= \frac{W_{23}}{Q_2} = 1 - \frac{Q_3}{Q_2}
+\end{align}
+
+Combining:
+\begin{equation}
+Q_3 = Q_2 [1 - \eta(T_2, T_3)] = Q_1 [1 - \eta(T_1, T_2)] [1 - \eta(T_2, T_3)]
+\end{equation}
+
+Now consider a single Carnot engine operating directly between $T_1$ and $T_3$, absorbing the same heat $Q_1$:
+\begin{equation}
+Q_3 = Q_1 [1 - \eta(T_1, T_3)]
+\end{equation}
+
+Equating:
+\begin{equation}
+\boxed{[1 - \eta(T_1, T_3)] = [1 - \eta(T_1, T_2)] [1 - \eta(T_2, T_3)]}
+\end{equation}
+
+\textbf{Mathematical consequence:} This functional equation has the solution:
+\begin{equation}
+1 - \eta(T_i, T_j) = \frac{f(T_j)}{f(T_i)}
+\end{equation}
+for some function $f(T)$.
+
+\textbf{Conventional choice:} We choose $f(T) = T$ (i.e., temperature itself), giving:
+\begin{equation}
+\boxed{\frac{Q_C}{Q_H} = \frac{T_C}{T_H}}
+\end{equation}
+
+and thus:
+\begin{equation}
+\boxed{\eta_C = 1 - \frac{T_C}{T_H} = \frac{T_H - T_C}{T_H}}
+\end{equation}
+
+\subsubsection{Fixing the Scale}
+The ratio $Q_C/Q_H$ defines temperature ratios, but we need a reference point to fix the absolute scale. Convention: the triple point of water is defined as $T_{\text{triple}} = 273.16 \, \text{K}$.
+
+This fully specifies the \textbf{Kelvin (absolute thermodynamic) temperature scale}.
+
+\subsection{Why All Temperatures Are Positive}
+
+From $Q_C/Q_H = T_C/T_H$, heat extracted from a reservoir is proportional to its temperature. If negative temperature $T < 0$ existed:
+
+\textbf{Scenario:} Run a Carnot engine between $T_{\text{negative}} < 0$ and $T_{\text{positive}} > 0$.
+
+\textbf{Problem:} Both $Q_H$ and $Q_C$ would be negative (heat flows \emph{into} the engine from both reservoirs), and $W = Q_H + |Q_C|$ would be the sum of their magnitudes—entirely converted to work.
+
+\textbf{Contradiction:} This violates Kelvin's statement (100\% conversion of heat to work from two reservoirs acting as sources, not sinks).
+
+\textbf{Conclusion:} Negative absolute temperatures are forbidden in conventional thermodynamics. (Note: In exotic systems with bounded energy spectra, "negative temperature" can be defined, but it's actually \emph{hotter} than positive temperature—a separate topic.)
+
+\subsection{Equivalence of Ideal Gas and Thermodynamic Temperatures}
+
+The empirical temperature $\Theta$ from the Zeroth Law was arbitrary (any monotonic function works). The ideal gas temperature scale uses $PV \propto \Theta_{\text{gas}}$. The thermodynamic scale uses Carnot engines: $Q_C/Q_H = T_C/T_H$.
+
+\textbf{Claim:} These scales coincide, i.e., $\Theta_{\text{gas}} = T$.
+
+\textbf{Proof (sketch):} Run a Carnot cycle using an ideal gas as the working substance. Calculate $Q_H$ and $Q_C$ explicitly along the isothermal legs using $PV = NkT$. Show that $Q_C/Q_H = T_C/T_H$. Therefore, the ideal gas scale is already the absolute thermodynamic scale.
+
+\textbf{Why this matters:} Gas thermometers provide a practical realization of absolute temperature. We don't need to build actual Carnot engines (which are idealized); we can measure $T$ with a gas.
+
+\subsection{Conceptual Subtleties}
+
+\subsubsection{Why Is Reversibility Essential?}
+Irreversible processes (friction, turbulence, rapid expansion) generate entropy, reducing efficiency. Carnot engines are idealized to be \emph{perfectly reversible}, achieving the theoretical maximum efficiency. Real engines are always less efficient.
+
+\subsubsection{Why Two Temperatures Exactly?}
+If heat were exchanged at intermediate temperatures, the engine wouldn't be reversible. Reversibility requires infinitesimally slow processes. Intermediate heat exchange would require infinite time to maintain equilibrium. The two-temperature constraint is part of the idealization.
+
+\subsubsection{Carnot Efficiency Depends Only on Temperature Ratio}
+\begin{equation}
+\eta_C = 1 - \frac{T_C}{T_H}
+\end{equation}
+
+\textbf{Implications:}
+\begin{itemize}
+    \item To maximize $\eta_C$: make $T_H$ as high as possible, $T_C$ as low as possible.
+    \item Even with $T_C \to 0$, $\eta_C \to 1$ but never equals 1 (Third Law: absolute zero is unattainable).
+    \item Small $T_H - T_C$ gives low efficiency: $\eta_C \approx (T_H - T_C)/T_H$.
+\end{itemize}
+
+\subsection{Exam Strategy for This Section}
+
+\textbf{Typical questions:}
+\begin{itemize}
+    \item \textbf{Carnot efficiency calculation:} "A Carnot engine operates between 600 K and 300 K. What is its efficiency?" Answer: $\eta_C = 1 - 300/600 = 0.5 = 50\%$.
+    \item \textbf{Proof of Carnot's theorem:} "Show that no engine can exceed Carnot efficiency." Follow the proof by contradiction: assume $\eta > \eta_C$, run a Carnot engine backward, derive a Clausius violation.
+    \item \textbf{Series engines:} "Two Carnot engines run in series between $T_1 = 600$ K, $T_2 = 400$ K, $T_3 = 300$ K. If the first absorbs $Q_1 = 100$ J, how much heat is dumped at $T_3$?" Answer: $Q_3 = Q_1 (T_3/T_1) = 100 \times (300/600) = 50$ J.
+\end{itemize}
+
+\textbf{Creative/tricky questions:}
+\begin{itemize}
+    \item \textbf{"Can you build an engine more efficient than Carnot by using a different working substance (e.g., photon gas, quantum system)?"} No. Carnot's theorem is universal—it follows from the Second Law, not material properties. Different substances may have different practical challenges, but the maximum efficiency is always $\eta_C(T_H, T_C)$.
+    \item \textbf{"An engine operates between two finite heat reservoirs (not infinite). Can it achieve Carnot efficiency?"} No. Extracting heat from a finite hot reservoir lowers $T_H$; dumping heat into a finite cold reservoir raises $T_C$. The efficiency degrades as the cycle runs. True Carnot efficiency requires infinite reservoirs.
+    \item \textbf{"Why can't we use the Earth's rotation as a heat engine?"} The Earth rotates at constant temperature (essentially), so there's no $T_H - T_C$ gradient to exploit. Carnot efficiency requires a temperature difference.
+    \item \textbf{"What's the efficiency of a Carnot engine at $T_C = 0$ K?"} Formally $\eta_C = 1$ (100\%), but the Third Law says absolute zero is unattainable, so this is a limit, not a realizable state.
+\end{itemize}
+
+\textbf{Common traps:}
+\begin{itemize}
+    \item Confusing reversible with quasi-static. Reversible implies quasi-static + no dissipation. Quasi-static processes can still have friction (irreversible).
+    \item Forgetting that $\eta_C$ is the \emph{maximum} efficiency. Real engines have $\eta < \eta_C$ due to irreversibilities.
+    \item Using Celsius or Fahrenheit in the efficiency formula. Must use absolute temperature (Kelvin): $\eta_C = 1 - T_C/T_H$ requires $T$ in Kelvin.
+    \item Assuming Carnot engines are practical. They're idealized (infinitely slow, perfectly reversible). Real engines optimize for power output, not maximum efficiency.
+\end{itemize}
+
+\textbf{How to approach problems:}
+\begin{enumerate}
+    \item Identify temperatures $T_H$ and $T_C$ in Kelvin.
+    \item For Carnot engines: use $\eta_C = 1 - T_C/T_H$ and $Q_C/Q_H = T_C/T_H$.
+    \item For non-Carnot engines: use $\eta = W/Q_H$ and check $\eta \leq \eta_C$.
+    \item For series/composite cycles: track heat flows between stages, use $Q_i/Q_j = T_i/T_j$ for each Carnot step.
+    \item Always verify energy conservation: $Q_H = W + Q_C$ for a complete cycle.
+\end{enumerate}
+
+\subsection{Looking Ahead: From Carnot to Entropy}
+
+Carnot's result $Q_C/Q_H = T_C/T_H$ can be rewritten:
+\begin{equation}
+\frac{Q_H}{T_H} - \frac{Q_C}{T_C} = 0
+\end{equation}
+
+This suggests that $Q/T$ is conserved around a reversible cycle. Generalizing:
+\begin{equation}
+\oint \frac{\bar{d}Q}{T} = 0 \quad \text{(reversible cycle)}
+\end{equation}
+
+This leads to the definition of entropy:
+\begin{equation}
+dS = \frac{\bar{d}Q_{\text{rev}}}{T}
+\end{equation}
+
+For irreversible processes:
+\begin{equation}
+dS > \frac{\bar{d}Q}{T}
+\end{equation}
+
+Entropy $S$ is the state function conjugate to temperature $T$, completing the analogy: just as $(J, x)$ are force-displacement pairs for work, $(T, S)$ are the pair for heat.
+
+\subsection{Connection to Previous Sections}
+
+\begin{itemize}
+    \item \textbf{Zeroth Law:} Introduced empirical temperature $\Theta$. Carnot's theorem refines this to \emph{absolute temperature} $T$ via $Q_C/Q_H = T_C/T_H$.
+    \item \textbf{First Law:} Energy conservation $\Delta E = Q - W$. Carnot engines obey this, but the Second Law additionally constrains efficiency: $\eta < 1$.
+    \item \textbf{Second Law (Kelvin/Clausius):} Carnot's theorem is the quantitative realization of the Second Law. It translates "heat doesn't flow uphill" into "maximum efficiency is $1 - T_C/T_H$."
+\end{itemize}
+
+Next: Entropy will unify these ideas, providing a universal criterion for spontaneity and equilibrium.
+
+\section{Entropy: The Arrow of Time and the Fundamental Equation}
+
+\subsection{Clausius's Theorem: The Foundation of Entropy}
+
+\textbf{Clausius's Theorem:} For any cyclic transformation (reversible or not),
+\begin{equation}
+\boxed{\oint \frac{\bar{d}Q}{T} \leq 0}
+\end{equation}
+where $\bar{d}Q$ is the heat supplied to the system at temperature $T$.
+
+This innocent-looking inequality is the gateway to entropy. Let's understand the proof carefully.
+
+\subsection{Proof of Clausius's Theorem}
+
+\textbf{Setup:} Consider a system undergoing a cyclic process (returns to initial state). At each infinitesimal step, the system exchanges heat $\bar{d}Q$ at local temperature $T$ (which may vary during the cycle).
+
+\textbf{Strategy:} Connect all heat exchanges to Carnot engines operating between the system and a single reference reservoir at temperature $T_0$.
+
+\textbf{Step-by-step construction:}
+
+\begin{enumerate}
+    \item \textbf{Subdivide the cycle:} Break the process into infinitesimal steps. At each step, the system receives heat $\bar{d}Q$ (positive or negative) and does work $\bar{d}W$.
+
+    \item \textbf{Carnot engine intermediary:} Instead of directly exchanging heat with surroundings at temperature $T$, route all heat through a Carnot engine. One port of the engine is at the system's local temperature $T$; the other is at the fixed reservoir temperature $T_0$.
+
+    \item \textbf{Bidirectional operation:} The sign of $\bar{d}Q$ varies during the cycle. When $\bar{d}Q > 0$ (system absorbs heat), the Carnot engine acts as a heat pump. When $\bar{d}Q < 0$ (system releases heat), it acts as an engine.
+
+    \item \textbf{Heat extraction from reservoir:} To deliver heat $\bar{d}Q$ to the system at temperature $T$, the Carnot engine must extract heat from the reservoir:
+    \begin{equation}
+    \bar{d}Q_R = \frac{T_0}{T} \bar{d}Q
+    \end{equation}
+    This follows from $Q_C/Q_H = T_C/T_H$ for Carnot engines.
+
+    \item \textbf{After the full cycle:} Both the system and all Carnot engines return to their initial states (since they operate in cycles). The \emph{only} net change is at the reservoir.
+
+    \item \textbf{Total heat extracted:}
+    \begin{equation}
+    Q_R = \oint \bar{d}Q_R = T_0 \oint \frac{\bar{d}Q}{T}
+    \end{equation}
+
+    \item \textbf{Work performed:} The net work done by the composite system (original system + Carnot engines) equals $W = Q_R$ (since no other heat source/sink exists and all components return to initial states).
+
+    \item \textbf{Invoke Kelvin's statement:} We've constructed a device that extracts heat $Q_R$ from a single reservoir and converts it entirely to work. By Kelvin's statement of the Second Law, this is impossible unless $Q_R \leq 0$.
+
+    \item \textbf{Conclusion:}
+    \begin{equation}
+    Q_R = T_0 \oint \frac{\bar{d}Q}{T} \leq 0 \quad \Rightarrow \quad \boxed{\oint \frac{\bar{d}Q}{T} \leq 0}
+    \end{equation}
+    (since $T_0 > 0$).
+\end{enumerate}
+
+\textbf{Key insight:} Clausius's theorem converts the qualitative Second Law (Kelvin/Clausius statements) into a quantitative mathematical inequality. The quantity $\bar{d}Q/T$ has special significance—it's the building block of entropy.
+
+\subsection{Consequences of Clausius's Theorem}
+
+\subsubsection{Consequence 1: Reversible Cycles Give Zero}
+
+For a \textbf{reversible} cycle:
+\begin{equation}
+\oint \frac{\bar{d}Q_{\text{rev}}}{T} = 0
+\end{equation}
+
+\textbf{Proof:} A reversible cycle can be run backward. If we reverse it, $\bar{d}Q_{\text{rev}} \to -\bar{d}Q_{\text{rev}}$, so:
+\begin{equation}
+\oint \frac{\bar{d}Q_{\text{rev}}}{T} \leq 0 \quad \text{and} \quad \oint \frac{-\bar{d}Q_{\text{rev}}}{T} \leq 0
+\end{equation}
+
+The only way both inequalities hold is if:
+\begin{equation}
+\oint \frac{\bar{d}Q_{\text{rev}}}{T} = 0
+\end{equation}
+
+\textbf{Implication:} The integral $\int_A^B \bar{d}Q_{\text{rev}}/T$ is \textbf{path-independent} for reversible processes.
+
+\textbf{Why path-independent?} Consider two reversible paths $\Gamma_1$ and $\Gamma_2$ connecting $A$ to $B$. Form a closed cycle: go from $A$ to $B$ along $\Gamma_1$, return from $B$ to $A$ along $\Gamma_2$ (reversed). Since the cycle is reversible:
+\begin{equation}
+\int_{\Gamma_1} \frac{\bar{d}Q_{\text{rev}}}{T} + \int_{\Gamma_2^{-1}} \frac{\bar{d}Q_{\text{rev}}}{T} = 0 \quad \Rightarrow \quad \int_{\Gamma_1} \frac{\bar{d}Q_{\text{rev}}}{T} = \int_{\Gamma_2} \frac{\bar{d}Q_{\text{rev}}}{T}
+\end{equation}
+
+The integral depends only on endpoints $A$ and $B$, not the path.
+
+\subsubsection{Consequence 2: Definition of Entropy}
+
+Since $\int_A^B \bar{d}Q_{\text{rev}}/T$ is path-independent, we can define a \textbf{state function} called \textbf{entropy}:
+\begin{equation}
+\boxed{S(B) - S(A) \equiv \int_A^B \frac{\bar{d}Q_{\text{rev}}}{T}}
+\end{equation}
+
+In differential form (for reversible processes):
+\begin{equation}
+\boxed{dS = \frac{\bar{d}Q_{\text{rev}}}{T}}
+\end{equation}
+
+\textbf{Critical points:}
+\begin{itemize}
+    \item Entropy $S$ is a \textbf{state function}—depends only on the current state, not history.
+    \item The definition uses reversible heat exchange, but once defined, $S$ applies to \emph{all} processes (reversible or not).
+    \item Like internal energy $E$, entropy is defined up to an additive constant. The Third Law (not covered yet) fixes this constant: $S \to 0$ as $T \to 0$.
+\end{itemize}
+
+\textbf{Physical meaning (preview):} From statistical mechanics, $S = k_B \ln \Omega$, where $\Omega$ is the number of accessible microstates. Entropy measures disorder or information content.
+
+\subsubsection{Consequence 3: The Fundamental Thermodynamic Relation}
+
+For a reversible process involving work and heat:
+\begin{align}
+\bar{d}Q_{\text{rev}} &= T \, dS \\
+\bar{d}W &= \sum_i J_i \, dx_i
+\end{align}
+
+The First Law gives:
+\begin{equation}
+\boxed{dE = T \, dS + \sum_i J_i \, dx_i}
+\end{equation}
+
+\textbf{Why this is the most important equation in thermodynamics:}
+
+\begin{enumerate}
+    \item \textbf{It relates only state functions:} $E$, $S$, $T$, $J_i$, $x_i$ are all state functions. Even though we derived it using reversible processes, the relation holds for \emph{any} change between equilibrium states.
+
+    \item \textbf{Complete thermodynamic information:} If you know $E(S, x_i)$, you can derive everything:
+    \begin{align}
+    T &= \left. \frac{\partial E}{\partial S} \right|_{x_i} \\
+    J_i &= \left. \frac{\partial E}{\partial x_i} \right|_{S, x_{j \neq i}}
+    \end{align}
+
+    \item \textbf{Natural variables:} $E$ is naturally a function of $S$ and the displacements $\{x_i\}$. This is the \textbf{energy representation}. Other representations (Helmholtz, Gibbs free energies) come from Legendre transforms.
+
+    \item \textbf{$(T, S)$ are conjugate variables:} Just as $(J_i, x_i)$ are force-displacement pairs for work, $(T, S)$ are the pair for heat. Temperature is the "thermal force," entropy is the "thermal displacement."
+\end{enumerate}
+
+\textbf{Subtlety:} Unlike mechanical forces (which can be positive or negative), temperature is \emph{always positive}. This asymmetry reflects the different nature of heat vs. work.
+
+\subsubsection{Consequence 4: Number of Independent Variables}
+
+From $dE = T \, dS + \sum_i J_i \, dx_i$, if there are $n$ pairs of conjugate variables $(J_i, x_i)$ for work, then the system requires $n+1$ independent coordinates: $S$ and $\{x_1, \ldots, x_n\}$.
+
+\textbf{Example:} A simple fluid has one work coordinate: $(J, x) = (-P, V)$. Thus:
+\begin{equation}
+dE = T \, dS - P \, dV
+\end{equation}
+The system is described by two independent variables, e.g., $(S, V)$ or $(T, P)$ (related by equations of state).
+
+\textbf{Gibbs phase rule:} For systems with multiple phases or components, this counting leads to the Gibbs phase rule: $F = C - P + 2$, where $F$ is degrees of freedom, $C$ is components, $P$ is phases.
+
+\subsubsection{Consequence 5: Entropy Increase in Irreversible Processes}
+
+Consider an \textbf{irreversible} process from $A$ to $B$. Form a cycle by returning from $B$ to $A$ along a \textbf{reversible} path:
+\begin{equation}
+\int_A^B \frac{\bar{d}Q_{\text{irrev}}}{T} + \int_B^A \frac{\bar{d}Q_{\text{rev}}}{T} \leq 0
+\end{equation}
+
+The second integral equals $-[S(B) - S(A)]$, so:
+\begin{equation}
+\int_A^B \frac{\bar{d}Q_{\text{irrev}}}{T} \leq S(B) - S(A)
+\end{equation}
+
+In differential form:
+\begin{equation}
+\boxed{dS \geq \frac{\bar{d}Q}{T}}
+\end{equation}
+with equality for reversible processes, strict inequality for irreversible.
+
+\textbf{Special case—Adiabatic processes:} If $\bar{d}Q = 0$ (adiabatic isolation):
+\begin{equation}
+\boxed{dS \geq 0 \quad \text{(adiabatic)}}
+\end{equation}
+
+\textbf{Principle of entropy increase:} In an adiabatically isolated system, entropy can only increase (or stay constant for reversible processes). Equilibrium corresponds to \textbf{maximum entropy}.
+
+\textbf{The arrow of time:} Spontaneous processes increase entropy. This defines a preferred direction in time—the past is the low-entropy direction, the future is the high-entropy direction. This is the thermodynamic origin of time's arrow.
+
+\subsection{Physical Interpretation and Examples}
+
+\subsubsection{Why Does Entropy Increase?}
+
+\textbf{Microscopic picture:} Entropy measures the number of microstates compatible with macroscopic constraints. Systems evolve toward states with more microstates (higher probability).
+
+\textbf{Example—Free expansion:} Gas rushes into a vacuum. Macroscopically, $T$ unchanged (ideal gas), but $V$ doubles. Microscopically, molecules now have twice the volume to occupy $\Rightarrow$ many more microstates $\Rightarrow$ $S$ increases.
+
+Calculate explicitly: For ideal gas, $dE = T \, dS - P \, dV$. At constant $T$ (and $E$ for ideal gas):
+\begin{equation}
+dS = \frac{P}{T} dV = \frac{NkT/V}{T} dV = Nk \frac{dV}{V}
+\end{equation}
+Integrating from $V_i$ to $V_f = 2V_i$:
+\begin{equation}
+\Delta S = Nk \ln 2 > 0
+\end{equation}
+
+\subsubsection{Adiabatic vs. Isentropic}
+
+\begin{itemize}
+    \item \textbf{Adiabatic:} $\bar{d}Q = 0$ (no heat exchange). Can be reversible or irreversible.
+    \item \textbf{Isentropic:} $dS = 0$ (constant entropy). Always reversible.
+\end{itemize}
+
+\textbf{Reversible adiabatic = isentropic:} If adiabatic and reversible, $dS = \bar{d}Q/T = 0/T = 0$.
+
+\textbf{Irreversible adiabatic:} $\bar{d}Q = 0$ but $dS > 0$ due to internal dissipation (friction, turbulence, etc.).
+
+\subsection{Constructing Adiabats for General Systems}
+
+Before defining entropy, we could only construct adiabats for specific systems (e.g., ideal gas: $PV^{\gamma} = \text{const}$). Now, for any system, adiabats are simply curves of \textbf{constant entropy}:
+\begin{equation}
+S = \text{const}
+\end{equation}
+
+This is a general prescription. Given $E(S, x_i)$, the condition $S = S_0$ defines adiabats in the space of variables $\{x_i\}$.
+
+\subsection{Conceptual Subtleties and Common Confusions}
+
+\subsubsection{Entropy Is Not Heat}
+
+\textbf{Wrong intuition:} "Entropy is heat divided by temperature."
+
+\textbf{Right intuition:} Entropy is a \emph{state function} measuring disorder. For reversible processes, $dS = \bar{d}Q/T$, but $S$ exists independently of any particular heat exchange.
+
+\textbf{Analogy:} Just as potential energy $U$ exists even if you haven't done work, entropy $S$ exists even if you haven't exchanged heat.
+
+\subsubsection{Why $T$ Must Be Absolute Temperature}
+
+If we used Celsius ($\theta = T - 273.15$), the relation $dS = \bar{d}Q/\theta$ would fail because:
+\begin{itemize}
+    \item Clausius's theorem requires $T > 0$ everywhere.
+    \item Carnot efficiency $\eta = 1 - T_C/T_H$ requires a scale where $T = 0$ is absolute zero, not an arbitrary offset.
+\end{itemize}
+
+\subsubsection{Entropy of Mixing}
+
+\textbf{Example:} Two identical gases at the same $T$ and $P$ are separated by a partition. Remove the partition.
+
+\textbf{Thermodynamics says:} Entropy increases due to mixing, even though $T$ and $P$ are uniform.
+
+\textbf{Microscopic reason:} Molecules now have access to the entire volume, not just their original half $\Rightarrow$ more microstates $\Rightarrow$ $\Delta S = 2Nk \ln 2 > 0$.
+
+\textbf{Gibbs paradox:} If the gases are truly identical, this violates extensivity (doubling the system doubles $S$, but mixing seems to add extra entropy). Resolution: quantum indistinguishability—identical particles don't actually increase microstates by mixing.
+
+\subsection{Exam Strategy for This Section}
+
+\textbf{Typical questions:}
+
+\begin{itemize}
+    \item \textbf{Proof of Clausius's theorem:} "Derive $\oint \bar{d}Q/T \leq 0$." Follow the Carnot engine construction: route all heat through engines to a reservoir, invoke Kelvin's statement.
+
+    \item \textbf{Entropy calculation:} "An ideal gas expands isothermally from $V_i$ to $V_f$. Find $\Delta S$." Answer: Use $dS = \bar{d}Q_{\text{rev}}/T$. For isothermal ideal gas, $\bar{d}Q = P \, dV = (NkT/V) dV$, so $\Delta S = Nk \ln(V_f/V_i)$.
+
+    \item \textbf{Fundamental relation:} "Given $E(S, V, N)$ for a system, derive expressions for $T$, $P$, $\mu$." Answer: $T = \partial E/\partial S$, $P = -\partial E/\partial V$, $\mu = \partial E/\partial N$.
+
+    \item \textbf{Irreversibility:} "Gas undergoes free expansion (adiabatic, into vacuum). Calculate $\Delta S$." Answer: $\bar{d}Q = 0$, but process is irreversible. Use $\Delta S = \int dS$ along a reversible path between the same endpoints (e.g., isothermal expansion). Result: $\Delta S = Nk \ln(V_f/V_i) > 0$.
+\end{itemize}
+
+\textbf{Creative/tricky questions:}
+
+\begin{itemize}
+    \item \textbf{"Can entropy decrease in a subsystem?"} Yes! Locally, $S$ can decrease (e.g., water freezing). But the \emph{total} entropy (system + surroundings) must increase: $\Delta S_{\text{total}} = \Delta S_{\text{sys}} + \Delta S_{\text{surr}} \geq 0$.
+
+    \item \textbf{"Two identical systems at different temperatures are brought into thermal contact. Find $\Delta S$."} Heat flows from hot to cold until temperatures equalize. Calculate $\Delta S$ for each subsystem using $dS = C \, dT/T$, sum them. Result: $\Delta S_{\text{total}} > 0$ (always, for irreversible process).
+
+    \item \textbf{"Why can't we violate $dS \geq 0$ in an isolated system?"} Because $dS \geq \bar{d}Q/T$ for any process, and $\bar{d}Q = 0$ for isolated systems. So $dS \geq 0$ is an absolute constraint, not probabilistic.
+
+    \item \textbf{"A gas undergoes a cycle. What is $\Delta S$?"} Zero, always. $S$ is a state function, so $\oint dS = 0$ for any cycle. But $\oint \bar{d}Q/T < 0$ if the cycle includes irreversible steps.
+
+    \item \textbf{"Does the fundamental relation $dE = T dS - P dV$ apply to irreversible processes?"} Yes! It's a relation between state functions, valid for \emph{any} change between equilibrium states. The path (reversible or not) doesn't matter—only the endpoints.
+\end{itemize}
+
+\textbf{Common traps:}
+
+\begin{itemize}
+    \item Confusing $dS$ with $\bar{d}Q/T$. Always: $dS \geq \bar{d}Q/T$. Equality only for reversible processes.
+    \item Forgetting that entropy can decrease locally (as long as total entropy increases).
+    \item Using non-absolute temperature in $dS = \bar{d}Q/T$. Must use Kelvin.
+    \item Thinking "adiabatic" means "isentropic." Only true if also reversible.
+    \item Calculating $\Delta S$ along an irreversible path using $\int \bar{d}Q/T$. This gives a lower bound, not $\Delta S$. To find $\Delta S$, integrate along a \emph{reversible} path between the same endpoints.
+\end{itemize}
+
+\textbf{How to approach problems:}
+
+\begin{enumerate}
+    \item \textbf{Identify the process:} Reversible or irreversible? Adiabatic, isothermal, etc.?
+
+    \item \textbf{For $\Delta S$ calculations:}
+    \begin{itemize}
+        \item If reversible: use $\Delta S = \int \bar{d}Q_{\text{rev}}/T$ along the actual path.
+        \item If irreversible: construct a reversible path between the same endpoints, calculate $\Delta S$ along that path. (Since $S$ is a state function, $\Delta S$ is path-independent.)
+    \end{itemize}
+
+    \item \textbf{For isolated systems:} Use $\Delta S \geq 0$. Equilibrium occurs when $S$ is maximized.
+
+    \item \textbf{For checking spontaneity:} Calculate $\Delta S_{\text{total}}$ (system + surroundings). Process is spontaneous if $\Delta S_{\text{total}} > 0$.
+
+    \item \textbf{Use fundamental relation:} $dE = T dS + \sum J_i dx_i$ to relate changes in $E$, $S$, and other coordinates.
+\end{enumerate}
+
+\subsection{Looking Ahead: Thermodynamic Potentials}
+
+Entropy gives us a complete description in the $(S, x_i)$ representation via $E(S, x_i)$. But experimentally, we often control $T$ (not $S$) or $P$ (not $V$). This motivates \textbf{Legendre transforms}:
+
+\begin{itemize}
+    \item \textbf{Helmholtz free energy:} $F = E - TS$, natural variables $(T, V)$. Minimized at equilibrium for constant $T$, $V$.
+    \item \textbf{Enthalpy:} $H = E + PV$, natural variables $(S, P)$. Useful for constant pressure processes.
+    \item \textbf{Gibbs free energy:} $G = E - TS + PV$, natural variables $(T, P)$. Minimized at equilibrium for constant $T$, $P$ (most common experimental condition).
+\end{itemize}
+
+These potentials don't add new physics—they're just convenient reformulations of the fundamental relation for different constraints.
+
+\subsection{Connection to Previous Sections}
+
+\begin{itemize}
+    \item \textbf{Zeroth Law:} Temperature $T$ is the equilibrium indicator. Now we see it's also the integrating factor that makes $\bar{d}Q$ into an exact differential $dS$.
+
+    \item \textbf{First Law:} Energy conservation $dE = \bar{d}Q + \bar{d}W$. Now refined: $dE = T dS + \sum J_i dx_i$ (using reversible heat and work).
+
+    \item \textbf{Second Law (Kelvin/Clausius):} Led to Carnot efficiency $\eta = 1 - T_C/T_H$, which gave us absolute temperature. Clausius's theorem completes the picture: $\oint \bar{d}Q/T \leq 0$, from which entropy emerges.
+
+    \item \textbf{Carnot engines:} The relation $Q_C/Q_H = T_C/T_H$ can now be written as $\Delta S = Q_H/T_H - Q_C/T_C = 0$ for a reversible cycle, consistent with $\oint dS = 0$.
+\end{itemize}
+
+Entropy is the capstone of classical thermodynamics. With $S$ defined, all major concepts are in place: state functions $(E, S, T, P, V, \ldots)$, laws (Zeroth through Third), and potentials ($F$, $H$, $G$). The remaining machinery (Maxwell relations, response functions, phase transitions) follows from these foundations.
+
+\section{Approach to Equilibrium and Thermodynamic Potentials}
+
+\subsection{Motivation: Why Do We Need Multiple Potentials?}
+
+The fundamental relation $dE = T \, dS + \sum_i J_i \, dx_i$ is complete—it contains all thermodynamic information. But it's expressed in terms of \emph{natural variables} $(S, \{x_i\})$.
+
+\textbf{Experimental reality:} We rarely control entropy $S$ directly. Instead, we typically fix:
+\begin{itemize}
+    \item \textbf{Temperature} $T$ (using a thermal bath)
+    \item \textbf{Pressure} $P$ (keeping the system open to atmosphere)
+    \item \textbf{Chemical potential} $\mu$ (allowing particle exchange with a reservoir)
+\end{itemize}
+
+\textbf{Solution:} Construct new thermodynamic potentials via \textbf{Legendre transforms}. Each potential:
+\begin{enumerate}
+    \item Has natural variables matching experimental constraints
+    \item Is \emph{minimized} at equilibrium (not maximized like $S$)
+    \item Encodes the same physics as $E(S, x_i)$, just reorganized
+\end{enumerate}
+
+\textbf{Key principle:} Systems evolve to extremize the appropriate potential. Which potential depends on what's held constant.
+
+\subsection{General Framework: Equilibrium Under Constraints}
+
+\textbf{Isolated system (adiabatic, rigid walls):} Maximizes entropy $S$.
+
+\textbf{Non-isolated systems:} Minimize an appropriate potential, depending on constraints:
+
+\begin{center}
+\begin{tabular}{ccc}
+\hline
+\textbf{Constraints} & \textbf{Potential} & \textbf{Natural Variables} \\
+\hline
+$(S, \{x_i\})$ constant & $E$ (internal energy) & $(S, \{x_i\})$ \\
+$(S, \{J_i\})$ constant & $H$ (enthalpy) & $(S, \{J_i\})$ \\
+$(T, \{x_i\})$ constant & $F$ (Helmholtz free energy) & $(T, \{x_i\})$ \\
+$(T, \{J_i\})$ constant & $G$ (Gibbs free energy) & $(T, \{J_i\})$ \\
+$(T, \{\mu_\alpha\})$ constant & $\Phi_G$ (grand potential) & $(T, \{J_i\}, \{\mu_\alpha\})$ \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection{Enthalpy $H$: Constant External Force, No Heat Exchange}
+
+\subsubsection{Physical Setup}
+System undergoes adiabatic process ($\bar{d}Q = 0$) while subject to constant external force $\mathbf{J}$ (e.g., constant pressure $P$). The system equilibrates mechanically—displacements $\mathbf{x}$ adjust to balance forces.
+
+\subsubsection{Derivation of Equilibrium Principle}
+
+For any displacement $\delta \mathbf{x}$ at constant external force $\mathbf{J}$:
+\begin{equation}
+\bar{d}W \leq \mathbf{J} \cdot \delta \mathbf{x}
+\end{equation}
+
+\textbf{Why inequality?} Equality holds for quasi-static (reversible) changes. Irreversible processes dissipate some work (friction, turbulence), so actual work input exceeds $\mathbf{J} \cdot \delta \mathbf{x}$.
+
+Since $\bar{d}Q = 0$ (adiabatic), the First Law gives:
+\begin{equation}
+\delta E = \bar{d}W \leq \mathbf{J} \cdot \delta \mathbf{x}
+\end{equation}
+
+Rearranging:
+\begin{equation}
+\delta E - \mathbf{J} \cdot \delta \mathbf{x} \leq 0
+\end{equation}
+
+Define the \textbf{enthalpy}:
+\begin{equation}
+\boxed{H \equiv E - \mathbf{J} \cdot \mathbf{x}}
+\end{equation}
+
+Then:
+\begin{equation}
+\boxed{\delta H \leq 0}
+\end{equation}
+
+\textbf{Equilibrium condition:} $H$ is minimized. Any spontaneous change (at constant $\mathbf{J}$, adiabatic) decreases $H$.
+
+\subsubsection{Differential Form and Natural Variables}
+
+\begin{align}
+dH &= dE - d(\mathbf{J} \cdot \mathbf{x}) \\
+&= T \, dS + \mathbf{J} \cdot d\mathbf{x} - \mathbf{x} \cdot d\mathbf{J} - \mathbf{J} \cdot d\mathbf{x} \\
+&= T \, dS - \mathbf{x} \cdot d\mathbf{J}
+\end{align}
+
+\textbf{Natural variables:} $(S, \mathbf{J})$, not $(S, \mathbf{x})$.
+
+\textbf{Conjugate relations:}
+\begin{align}
+T &= \left. \frac{\partial H}{\partial S} \right|_{\mathbf{J}} \\
+x_i &= -\left. \frac{\partial H}{\partial J_i} \right|_{S, J_{j \neq i}}
+\end{align}
+
+\subsubsection{Heat Capacity at Constant Force}
+
+For a simple fluid ($\mathbf{J} = -P$, $\mathbf{x} = V$):
+\begin{equation}
+H = E + PV
+\end{equation}
+
+At constant pressure:
+\begin{equation}
+C_P = \left. \frac{\bar{d}Q}{dT} \right|_P = \left. \frac{dH}{dT} \right|_P
+\end{equation}
+
+\textbf{Why?} At constant $P$, $\bar{d}Q = dH$ (from $dH = T dS + V dP = T dS$ when $dP = 0$). For reversible process, $\bar{d}Q = T dS$, so $dH = T dS = \bar{d}Q$.
+
+\textbf{Subtlety:} To compute $C_P$, we need $H(T, P)$, not $H(S, P)$. This requires a change of variables (typically using equations of state).
+
+\subsubsection{Physical Interpretation}
+
+Enthalpy represents the "total energy accounting" when external forces do work:
+\begin{equation}
+H = E + P V
+\end{equation}
+($+PV$ term accounts for the work needed to "make room" for the system against external pressure)
+
+\textbf{Example—Constant pressure heating:} Heat a gas at atmospheric pressure. As $T$ increases, gas expands, doing work $P \Delta V$ on the surroundings. The heat required is $\Delta H = \Delta E + P \Delta V$, not just $\Delta E$.
+
+\subsection{Helmholtz Free Energy $F$: Isothermal, No Mechanical Work}
+
+\subsubsection{Physical Setup}
+System is in thermal contact with a reservoir at temperature $T$ (isothermal), but mechanically isolated ($\bar{d}W = 0$). Example: chemical reaction in a sealed container immersed in a constant-temperature bath.
+
+\subsubsection{Derivation of Equilibrium Principle}
+
+From Clausius's theorem, at constant $T$:
+\begin{equation}
+\bar{d}Q \leq T \, \delta S
+\end{equation}
+
+Since $\bar{d}W = 0$, the First Law gives:
+\begin{equation}
+\delta E = \bar{d}Q \leq T \, \delta S
+\end{equation}
+
+Rearranging:
+\begin{equation}
+\delta E - T \, \delta S \leq 0
+\end{equation}
+
+Define the \textbf{Helmholtz free energy}:
+\begin{equation}
+\boxed{F \equiv E - TS}
+\end{equation}
+
+Then:
+\begin{equation}
+\boxed{\delta F \leq 0 \quad \text{(at constant } T \text{, } \bar{d}W = 0 \text{)}}
+\end{equation}
+
+\textbf{Equilibrium condition:} $F$ is minimized.
+
+\subsubsection{Differential Form and Natural Variables}
+
+\begin{align}
+dF &= dE - d(TS) \\
+&= T \, dS + \mathbf{J} \cdot d\mathbf{x} - S \, dT - T \, dS \\
+&= -S \, dT + \mathbf{J} \cdot d\mathbf{x}
+\end{align}
+
+\textbf{Natural variables:} $(T, \mathbf{x})$.
+
+\textbf{Conjugate relations:}
+\begin{align}
+S &= -\left. \frac{\partial F}{\partial T} \right|_{\mathbf{x}} \\
+J_i &= \left. \frac{\partial F}{\partial x_i} \right|_{T, x_{j \neq i}}
+\end{align}
+
+\subsubsection{Recovering Internal Energy from $F$}
+
+Since $E = F + TS = F - T(\partial F/\partial T)$:
+\begin{equation}
+\boxed{E = F - T \left. \frac{\partial F}{\partial T} \right|_{\mathbf{x}} = -T^2 \left. \frac{\partial (F/T)}{\partial T} \right|_{\mathbf{x}}}
+\end{equation}
+
+\textbf{Useful identity:} The second form (Gibbs-Helmholtz equation) is convenient for extracting $E$ from $F(T)$.
+
+\subsubsection{Physical Interpretation}
+
+$F$ represents the "available energy" to do work at constant temperature:
+\begin{equation}
+F = E - TS
+\end{equation}
+
+\textbf{Interpretation of terms:}
+\begin{itemize}
+    \item $E$: total internal energy
+    \item $TS$: "unavailable energy" (bound up in entropy, cannot be extracted as work)
+    \item $F$: "free energy" available for work
+\end{itemize}
+
+\textbf{Example—Isothermal expansion:} Ideal gas expands isothermally at temperature $T$. Work extracted: $W = -\Delta F = -\Delta(E - TS)$. Since $\Delta E = 0$ (ideal gas, isothermal), $W = T \Delta S > 0$. The system extracts energy from the heat bath and converts it to work, but entropy increases to compensate.
+
+\subsection{Gibbs Free Energy $G$: Isothermal, Constant External Force}
+
+\subsubsection{Physical Setup}
+System exchanges both heat (with reservoir at $T$) and mechanical work (under constant external force $\mathbf{J}$). This is the \emph{most common} experimental condition: constant temperature and pressure.
+
+\subsubsection{Derivation of Equilibrium Principle}
+
+Combining inequalities:
+\begin{align}
+\bar{d}Q &\leq T \, \delta S \\
+\bar{d}W &\leq \mathbf{J} \cdot \delta \mathbf{x}
+\end{align}
+
+First Law:
+\begin{equation}
+\delta E = \bar{d}Q + \bar{d}W \leq T \, \delta S + \mathbf{J} \cdot \delta \mathbf{x}
+\end{equation}
+
+Rearranging:
+\begin{equation}
+\delta E - T \, \delta S - \mathbf{J} \cdot \delta \mathbf{x} \leq 0
+\end{equation}
+
+Define the \textbf{Gibbs free energy}:
+\begin{equation}
+\boxed{G \equiv E - TS - \mathbf{J} \cdot \mathbf{x}}
+\end{equation}
+
+Then:
+\begin{equation}
+\boxed{\delta G \leq 0 \quad \text{(at constant } T, \mathbf{J} \text{)}}
+\end{equation}
+
+\textbf{Equilibrium condition:} $G$ is minimized.
+
+\subsubsection{Differential Form and Natural Variables}
+
+\begin{align}
+dG &= dE - d(TS) - d(\mathbf{J} \cdot \mathbf{x}) \\
+&= T \, dS + \mathbf{J} \cdot d\mathbf{x} - S \, dT - T \, dS - \mathbf{x} \cdot d\mathbf{J} - \mathbf{J} \cdot d\mathbf{x} \\
+&= -S \, dT - \mathbf{x} \cdot d\mathbf{J}
+\end{align}
+
+\textbf{Natural variables:} $(T, \mathbf{J})$.
+
+\textbf{Conjugate relations:}
+\begin{align}
+S &= -\left. \frac{\partial G}{\partial T} \right|_{\mathbf{J}} \\
+x_i &= -\left. \frac{\partial G}{\partial J_i} \right|_{T, J_{j \neq i}}
+\end{align}
+
+For a simple fluid ($\mathbf{J} = -P$, $\mathbf{x} = V$):
+\begin{equation}
+G = E - TS + PV = H - TS
+\end{equation}
+
+\begin{equation}
+dG = -S \, dT + V \, dP
+\end{equation}
+
+\subsubsection{Physical Interpretation}
+
+$G$ is the "free energy" available for non-$PV$ work (e.g., chemical, electrical) at constant $T$ and $P$:
+\begin{equation}
+G = H - TS = (E + PV) - TS
+\end{equation}
+
+\textbf{Why it matters:}
+\begin{itemize}
+    \item Most chemistry happens at constant $T$ and $P$ (room temperature, atmospheric pressure).
+    \item Spontaneous reactions decrease $G$: $\Delta G < 0$.
+    \item Equilibrium (e.g., phase coexistence, chemical equilibrium) corresponds to $dG = 0$.
+\end{itemize}
+
+\textbf{Example—Phase transitions:} Ice melts at $T = 273.15$ K, $P = 1$ atm because $G_{\text{ice}} = G_{\text{water}}$ at these conditions. Below this $T$, $G_{\text{ice}} < G_{\text{water}}$ (ice stable); above, $G_{\text{water}} < G_{\text{ice}}$ (water stable).
+
+\subsection{Grand Potential Phi g: Chemical Equilibrium}
+
+\subsubsection{Motivation: Particle Exchange}
+
+So far, we've assumed fixed particle number $N$. But many systems exchange particles with a reservoir:
+\begin{itemize}
+    \item Gas adsorption on a surface
+    \item Electrons in a semiconductor (exchanged with electrodes)
+    \item Chemical reactions (species interconvert)
+    \item Phase equilibrium (particles move between phases)
+\end{itemize}
+
+\textbf{Chemical work:} Changing particle number requires work:
+\begin{equation}
+\bar{d}W_{\text{chem}} = \boldsymbol{\mu} \cdot d\mathbf{N}
+\end{equation}
+where $\mathbf{N} = (N_1, N_2, \ldots)$ are particle numbers of each species, and $\boldsymbol{\mu} = (\mu_1, \mu_2, \ldots)$ are \textbf{chemical potentials}.
+
+\textbf{Extended First Law:}
+\begin{equation}
+dE = T \, dS + \mathbf{J} \cdot d\mathbf{x} + \boldsymbol{\mu} \cdot d\mathbf{N}
+\end{equation}
+
+\subsubsection{Derivation of Grand Potential}
+
+For isothermal process with no mechanical work, but allowing particle exchange:
+\begin{align}
+\bar{d}Q &\leq T \, \delta S \\
+\bar{d}W_{\text{chem}} &\leq \boldsymbol{\mu} \cdot \delta \mathbf{N}
+\end{align}
+
+First Law:
+\begin{equation}
+\delta E \leq T \, \delta S + \boldsymbol{\mu} \cdot \delta \mathbf{N}
+\end{equation}
+
+Rearranging:
+\begin{equation}
+\delta E - T \, \delta S - \boldsymbol{\mu} \cdot \delta \mathbf{N} \leq 0
+\end{equation}
+
+Define the \textbf{grand potential} (or grand canonical potential):
+\begin{equation}
+\boxed{\Phi_G \equiv E - TS - \boldsymbol{\mu} \cdot \mathbf{N}}
+\end{equation}
+
+Then:
+\begin{equation}
+\boxed{\delta \Phi_G \leq 0 \quad \text{(at constant } T, \boldsymbol{\mu} \text{)}}
+\end{equation}
+
+\subsubsection{Differential Form and Natural Variables}
+
+\begin{align}
+d\Phi_G &= dE - d(TS) - d(\boldsymbol{\mu} \cdot \mathbf{N}) \\
+&= T \, dS + \mathbf{J} \cdot d\mathbf{x} + \boldsymbol{\mu} \cdot d\mathbf{N} - S \, dT - T \, dS - \mathbf{N} \cdot d\boldsymbol{\mu} - \boldsymbol{\mu} \cdot d\mathbf{N} \\
+&= -S \, dT + \mathbf{J} \cdot d\mathbf{x} - \mathbf{N} \cdot d\boldsymbol{\mu}
+\end{align}
+
+\textbf{Natural variables:} $(T, \mathbf{x}, \boldsymbol{\mu})$ or $(T, \mathbf{J}, \boldsymbol{\mu})$ depending on whether you include mechanical work.
+
+\textbf{Conjugate relations:}
+\begin{align}
+S &= -\left. \frac{\partial \Phi_G}{\partial T} \right|_{\mathbf{x}, \boldsymbol{\mu}} \\
+J_i &= \left. \frac{\partial \Phi_G}{\partial x_i} \right|_{T, x_{j \neq i}, \boldsymbol{\mu}} \\
+N_\alpha &= -\left. \frac{\partial \Phi_G}{\partial \mu_\alpha} \right|_{T, \mathbf{x}, \mu_{\beta \neq \alpha}}
+\end{align}
+
+\subsubsection{Physical Interpretation}
+
+$\Phi_G$ is minimized when the system equilibrates with a particle reservoir at chemical potential $\boldsymbol{\mu}$.
+
+\textbf{Chemical equilibrium:} For a reaction $A + B \rightleftharpoons C$, equilibrium occurs when:
+\begin{equation}
+\mu_A + \mu_B = \mu_C
+\end{equation}
+(chemical potentials balance, just as mechanical forces balance at mechanical equilibrium)
+
+\textbf{Relation to other potentials:}
+\begin{itemize}
+    \item $\Phi_G = F - \boldsymbol{\mu} \cdot \mathbf{N}$ (grand potential from Helmholtz)
+    \item $\Phi_G = -PV$ for simple fluids (proved via Euler relation, discussed later)
+\end{itemize}
+
+\subsection{Summary Table of Thermodynamic Potentials}
+
+\begin{center}
+\begin{tabular}{ccccc}
+\hline
+\textbf{Potential} & \textbf{Definition} & \textbf{Natural Vars} & \textbf{Differential} & \textbf{Minimized When} \\
+\hline
+$E$ & --- & $(S, \mathbf{x}, \mathbf{N})$ & $T dS + \mathbf{J} \cdot d\mathbf{x} + \boldsymbol{\mu} \cdot d\mathbf{N}$ & $S, \mathbf{x}, \mathbf{N}$ fixed \\
+$H$ & $E - \mathbf{J} \cdot \mathbf{x}$ & $(S, \mathbf{J}, \mathbf{N})$ & $T dS - \mathbf{x} \cdot d\mathbf{J} + \boldsymbol{\mu} \cdot d\mathbf{N}$ & $S, \mathbf{J}, \mathbf{N}$ fixed \\
+$F$ & $E - TS$ & $(T, \mathbf{x}, \mathbf{N})$ & $-S dT + \mathbf{J} \cdot d\mathbf{x} + \boldsymbol{\mu} \cdot d\mathbf{N}$ & $T, \mathbf{x}, \mathbf{N}$ fixed \\
+$G$ & $E - TS - \mathbf{J} \cdot \mathbf{x}$ & $(T, \mathbf{J}, \mathbf{N})$ & $-S dT - \mathbf{x} \cdot d\mathbf{J} + \boldsymbol{\mu} \cdot d\mathbf{N}$ & $T, \mathbf{J}, \mathbf{N}$ fixed \\
+$\Phi_G$ & $E - TS - \boldsymbol{\mu} \cdot \mathbf{N}$ & $(T, \mathbf{x}, \boldsymbol{\mu})$ & $-S dT + \mathbf{J} \cdot d\mathbf{x} - \mathbf{N} \cdot d\boldsymbol{\mu}$ & $T, \mathbf{x}, \boldsymbol{\mu}$ fixed \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection{Conceptual Subtleties and Deep Insights}
+
+\subsubsection{Legendre Transforms: Changing Variables}
+
+All potentials are related by \textbf{Legendre transforms}. The recipe:
+\begin{enumerate}
+    \item Start with $E(S, \mathbf{x}, \mathbf{N})$.
+    \item To replace variable $Y$ with its conjugate $X$ (where $X = \partial E/\partial Y$), define:
+    \begin{equation}
+    \Psi = E - XY
+    \end{equation}
+    \item Then $\Psi$ has natural variables including $X$ (not $Y$).
+\end{enumerate}
+
+\textbf{Example:} Replace $S$ with $T$:
+\begin{equation}
+T = \left. \frac{\partial E}{\partial S} \right|_{\mathbf{x}, \mathbf{N}} \quad \Rightarrow \quad F = E - TS
+\end{equation}
+
+\subsubsection{Why Potentials Are Minimized (Not Maximized)}
+
+\textbf{Entropy perspective:} Isolated systems maximize $S$.
+
+\textbf{Energy perspective:} Systems in contact with reservoirs minimize potentials. Why?
+
+\textbf{Example—Helmholtz free energy:} System at temperature $T$ (in contact with heat bath). Total entropy of system + bath:
+\begin{equation}
+S_{\text{total}} = S_{\text{sys}} + S_{\text{bath}}
+\end{equation}
+
+Heat leaving system enters bath: $\Delta S_{\text{bath}} = -\Delta E_{\text{sys}}/T$. Maximizing $S_{\text{total}}$:
+\begin{equation}
+\Delta S_{\text{total}} = \Delta S_{\text{sys}} - \frac{\Delta E_{\text{sys}}}{T} = -\frac{\Delta(E_{\text{sys}} - TS_{\text{sys}})}{T} = -\frac{\Delta F}{T}
+\end{equation}
+
+Maximizing $S_{\text{total}}$ $\Leftrightarrow$ minimizing $F$.
+
+\subsubsection{Which Potential to Use?}
+
+\textbf{Decision tree:}
+\begin{itemize}
+    \item \textbf{Isolated system:} Maximize $S(E, V, N)$.
+    \item \textbf{Constant $T$, $V$, $N$:} Minimize $F(T, V, N)$. (Example: gas in sealed container at constant temperature)
+    \item \textbf{Constant $T$, $P$, $N$:} Minimize $G(T, P, N)$. (Most common: open air, constant temperature)
+    \item \textbf{Constant $T$, $V$, $\mu$:} Minimize $\Phi_G(T, V, \mu)$. (Example: gas adsorption equilibrium)
+\end{itemize}
+
+\textbf{Rule of thumb:} Use the potential whose natural variables match your experimental constraints.
+
+\subsubsection{Maxwell Relations: Hidden Symmetries}
+
+From the potentials' differentials, we get powerful identities. Example from $F$:
+\begin{equation}
+dF = -S \, dT + J \, dx
+\end{equation}
+
+Since $dF$ is exact (state function):
+\begin{equation}
+\frac{\partial^2 F}{\partial T \, \partial x} = \frac{\partial^2 F}{\partial x \, \partial T}
+\end{equation}
+
+This gives:
+\begin{equation}
+\boxed{\left. \frac{\partial S}{\partial x} \right|_T = -\left. \frac{\partial J}{\partial T} \right|_x}
+\end{equation}
+
+\textbf{Example—Simple fluid:} $dF = -S dT - P dV$:
+\begin{equation}
+\left. \frac{\partial S}{\partial V} \right|_T = \left. \frac{\partial P}{\partial T} \right|_V
+\end{equation}
+
+These Maxwell relations connect seemingly unrelated quantities (entropy change with volume vs. pressure change with temperature).
+
+\subsection{Exam Strategy for This Section}
+
+\textbf{Typical questions:}
+
+\begin{itemize}
+    \item \textbf{Derive equilibrium condition:} "Show that Helmholtz free energy is minimized at constant $T$, $V$." Follow the proof: $\bar{d}Q \leq T dS$, $\bar{d}W = 0$, so $dE \leq T dS \Rightarrow d(E - TS) \leq 0$.
+
+    \item \textbf{Natural variables:} "What are the natural variables of Gibbs free energy?" Answer: $(T, P, N)$ (or generally $(T, \mathbf{J}, \mathbf{N})$).
+
+    \item \textbf{Maxwell relations:} "Derive a Maxwell relation from enthalpy." Start with $dH = T dS + V dP$, equate mixed partials: $\partial T/\partial P |_S = \partial V/\partial S|_P$.
+
+    \item \textbf{Legendre transform:} "Express Gibbs free energy in terms of Helmholtz free energy." Answer: $G = F + PV$ (since $G = E - TS + PV$ and $F = E - TS$).
+
+    \item \textbf{Chemical potential:} "For a single-component system, show that $\mu = G/N$." Use $G = E - TS + PV$ and extensivity (Euler relation).
+\end{itemize}
+
+\textbf{Creative/tricky questions:}
+
+\begin{itemize}
+    \item \textbf{"Why does $C_P > C_V$ for most substances?"} At constant $P$, heating causes expansion, which requires extra energy ($P \Delta V$ work). At constant $V$, no expansion, so less heat needed. Quantitatively: $C_P - C_V = T (\partial P/\partial T)_V^2 / (\partial P/\partial V)_T$.
+
+    \item \textbf{"Can Gibbs free energy increase spontaneously?"} At constant $T$, $P$? No, it must decrease ($\delta G \leq 0$). But if $T$ or $P$ vary (not controlled), $G$ can increase. Always check: which variables are held constant?
+
+    \item \textbf{"Why is $\Phi_G = -PV$ for a simple fluid?"} Use Euler relation: $E = TS - PV + \mu N$. Then $\Phi_G = E - TS - \mu N = -PV$. This shows grand potential equals negative pressure times volume.
+
+    \item \textbf{"What happens to $G$ across a phase transition (e.g., ice to water)?"} At the transition temperature/pressure, $G_{\text{ice}} = G_{\text{water}}$ (phases coexist). Below transition, $G_{\text{ice}} < G_{\text{water}}$; above, vice versa. Phase diagram is the locus of $G$ equality.
+
+    \item \textbf{"In a reaction $A \rightleftharpoons B$ at constant $T$, $P$, what determines equilibrium?"} Minimize $G$. At equilibrium, $\mu_A = \mu_B$ (chemical potentials balance). If $\mu_A > \mu_B$, reaction proceeds $A \to B$ (lowers $G$).
+\end{itemize}
+
+\textbf{Common traps:}
+
+\begin{itemize}
+    \item Confusing natural variables. $F(T, V)$ means $F$ depends on $T$ and $V$, not $S$ and $V$. Using wrong variables gives nonsense.
+    \item Forgetting signs in Legendre transforms: $F = E - TS$ (minus), $H = E + PV$ (but $PV = -J \cdot x$ with $J = -P$).
+    \item Thinking potentials are "real" energy. They're mathematical constructs (Legendre transforms) encoding the same physics as $E(S, x)$ but reorganized for convenience.
+    \item Applying $\delta F \leq 0$ when $T$ isn't constant. Each potential has specific conditions for its minimization principle.
+    \item Forgetting that all potentials are related. If you know $F(T, V)$, you can compute $E$, $S$, $P$, $G$, etc. using derivatives and definitions.
+\end{itemize}
+
+\textbf{How to approach problems:}
+
+\begin{enumerate}
+    \item \textbf{Identify constraints:} What's held constant? Temperature? Pressure? Particle number?
+
+    \item \textbf{Choose the right potential:} Match natural variables to constraints. Constant $(T, P) \Rightarrow$ use $G$.
+
+    \item \textbf{For derivations:} Start from fundamental relation $dE = T dS + \sum J_i dx_i + \sum \mu_\alpha dN_\alpha$. Apply Legendre transform (subtract $d(XY)$ terms) to get the desired potential's differential.
+
+    \item \textbf{For Maxwell relations:} Write $d\Psi$ for the potential, identify pairs like $-S dT + J dx$. Equate mixed partials: $\partial^2 \Psi / \partial T \partial x = \partial^2 \Psi / \partial x \partial T$.
+
+    \item \textbf{For equilibrium:} Set $d\Psi = 0$ (extremum) at constant natural variables. Check second derivatives for stability (minima, not maxima or saddle points).
+\end{enumerate}
+
+\subsection{Connection to Previous Sections}
+
+\begin{itemize}
+    \item \textbf{Entropy maximization (adiabatic systems):} Leads to $dS \geq 0$. For non-isolated systems, we trade entropy maximization for potential minimization.
+
+    \item \textbf{Fundamental relation:} $dE = T dS + \mathbf{J} \cdot d\mathbf{x}$ is the starting point. All potentials are Legendre transforms of $E$.
+
+    \item \textbf{Response functions:} Heat capacities, compressibilities, etc. are second derivatives of potentials: $C_V = -T \partial^2 F/\partial T^2$.
+
+    \item \textbf{Phase equilibrium:} Coexistence occurs when potentials of different phases are equal (e.g., $G_{\text{solid}} = G_{\text{liquid}}$ at melting point).
+\end{itemize}
+
+\subsection{Looking Ahead}
+
+With thermodynamic potentials in hand, we can:
+\begin{itemize}
+    \item Derive equations of state systematically (from $E(S, V)$ or $F(T, V)$).
+    \item Analyze stability: second derivatives of potentials give compressibilities, susceptibilities.
+    \item Understand phase transitions: discontinuities in derivatives of $G$ (first-order) vs. continuous but singular (second-order).
+    \item Tackle multi-component systems, chemical reactions, and phase diagrams.
+\end{itemize}
+
+The machinery is now complete. The rest of thermodynamics is applying these tools to specific systems.
+
+\section{Gibbs Phase Rule, Stability Conditions, and the Third Law}
+
+\subsection{Gibbs Phase Rule: Counting Degrees of Freedom}
+
+\subsubsection{Intensive vs. Extensive Variables}
+
+\textbf{Extensive variables:} Scale with system size. Examples: $E$, $S$, $V$, $N$, total mass.
+\begin{equation}
+X(\lambda \text{system}) = \lambda X(\text{system})
+\end{equation}
+
+\textbf{Intensive variables:} Independent of system size. Examples: $T$, $P$, $\mu$, density, concentration.
+\begin{equation}
+Y(\lambda \text{system}) = Y(\text{system})
+\end{equation}
+
+\textbf{Why this matters:} Equilibrium is characterized by uniformity of \emph{intensive} variables (temperature, pressure, chemical potential), not extensive ones. Two systems at the same $T$ are in thermal equilibrium; two systems with the same $E$ are not necessarily.
+
+\textbf{Euler relation for extensive functions:} If $E(S, V, N)$ is extensive (first-order homogeneous):
+\begin{equation}
+E(\lambda S, \lambda V, \lambda N) = \lambda E(S, V, N)
+\end{equation}
+
+Differentiate with respect to $\lambda$ at $\lambda = 1$:
+\begin{equation}
+\boxed{E = TS - PV + \mu N}
+\end{equation}
+
+This is the \textbf{Euler relation}, expressing total energy in terms of intensive-extensive pairs.
+
+\textbf{Gibbs-Duhem relation:} Take the differential of Euler's relation:
+\begin{equation}
+dE = T dS + S dT - P dV - V dP + \mu dN + N d\mu
+\end{equation}
+
+But from the fundamental relation:
+\begin{equation}
+dE = T dS - P dV + \mu dN
+\end{equation}
+
+Equating these:
+\begin{equation}
+\boxed{S dT - V dP + N d\mu = 0}
+\end{equation}
+
+The Gibbs-Duhem relation shows that intensive variables $(T, P, \mu)$ are \emph{not independent}—there's a constraint among them. This is crucial for the phase rule.
+
+\subsubsection{Phase Coexistence Constraints}
+
+A \textbf{phase} is a macroscopically homogeneous region of matter (e.g., ice, liquid water, water vapor). When multiple phases coexist in equilibrium:
+
+\textbf{Condition 1—Thermal equilibrium:} All phases have the same temperature.
+\begin{equation}
+T^{(\alpha)} = T^{(\beta)} = \cdots \quad \text{for all phases } \alpha, \beta, \ldots
+\end{equation}
+
+\textbf{Condition 2—Mechanical equilibrium:} All phases have the same pressure (assuming no membranes or surface tension).
+\begin{equation}
+P^{(\alpha)} = P^{(\beta)} = \cdots
+\end{equation}
+
+\textbf{Condition 3—Chemical equilibrium:} For each component $i$, chemical potentials are equal across phases.
+\begin{equation}
+\mu_i^{(\alpha)} = \mu_i^{(\beta)} = \cdots \quad \text{for each component } i
+\end{equation}
+
+\textbf{Why chemical potential equality?} If $\mu_i^{(\alpha)} > \mu_i^{(\beta)}$, particles of species $i$ will flow from phase $\alpha$ to phase $\beta$ to lower the total Gibbs free energy. Equilibrium requires no net flow, i.e., $\mu_i^{(\alpha)} = \mu_i^{(\beta)}$.
+
+\subsubsection{Derivation of the Gibbs Phase Rule}
+
+Consider a system with:
+\begin{itemize}
+    \item $C$ components (independent chemical species)
+    \item $P$ phases in coexistence
+\end{itemize}
+
+\textbf{Total number of variables:} Each phase $\alpha$ is described by $C+2$ intensive variables: $(T^{(\alpha)}, P^{(\alpha)}, \mu_1^{(\alpha)}, \ldots, \mu_C^{(\alpha)})$.
+
+For $P$ phases:
+\begin{equation}
+\text{Total variables} = P(C + 2)
+\end{equation}
+
+\textbf{Constraints:}
+\begin{enumerate}
+    \item \textbf{Thermal equilibrium:} $T^{(1)} = T^{(2)} = \cdots = T^{(P)}$ gives $P-1$ constraints.
+    \item \textbf{Mechanical equilibrium:} $P^{(1)} = P^{(2)} = \cdots = P^{(P)}$ gives $P-1$ constraints.
+    \item \textbf{Chemical equilibrium:} For each component $i$, $\mu_i^{(1)} = \mu_i^{(2)} = \cdots = \mu_i^{(P)}$ gives $C(P-1)$ constraints (one set of $P-1$ equalities per component).
+    \item \textbf{Gibbs-Duhem:} Each phase satisfies $S^{(\alpha)} dT - V^{(\alpha)} dP + \sum_i N_i^{(\alpha)} d\mu_i^{(\alpha)} = 0$, giving $P$ additional constraints.
+\end{enumerate}
+
+\textbf{Total constraints:}
+\begin{equation}
+(P-1) + (P-1) + C(P-1) + P = (C+2)(P-1) + P = CP + 2P - C - 2 + P = P(C+2) - C - 2
+\end{equation}
+
+Wait, let's reconsider. The standard derivation is simpler:
+
+\textbf{Degrees of freedom (intensive):}
+\begin{equation}
+F = \underbrace{P(C+2)}_{\text{variables}} - \underbrace{P}_{\text{Gibbs-Duhem}} - \underbrace{(P-1)}_{\text{thermal}} - \underbrace{(P-1)}_{\text{mechanical}} - \underbrace{C(P-1)}_{\text{chemical}}
+\end{equation}
+
+Simplifying:
+\begin{align}
+F &= P(C+2) - P - (P-1) - (P-1) - C(P-1) \\
+&= PC + 2P - P - P + 1 - P + 1 - CP + C \\
+&= C - P + 2
+\end{align}
+
+\textbf{Gibbs Phase Rule:}
+\begin{equation}
+\boxed{F = C - P + 2}
+\end{equation}
+
+where $F$ is the number of \textbf{degrees of freedom}—independent intensive variables you can vary while maintaining phase coexistence.
+
+\subsubsection{Physical Interpretation and Examples}
+
+\textbf{Degrees of freedom $F$:} Number of intensive variables (typically chosen as $T$ and $P$, plus compositions) that can be independently varied without changing the number of phases.
+
+\textbf{Example 1—Single component ($C=1$), single phase ($P=1$):}
+\begin{equation}
+F = 1 - 1 + 2 = 2
+\end{equation}
+You can independently vary $T$ and $P$. This is the usual case: a gas at arbitrary $(T, P)$.
+
+\textbf{Example 2—Single component ($C=1$), two phases ($P=2$):}
+\begin{equation}
+F = 1 - 2 + 2 = 1
+\end{equation}
+\textbf{One degree of freedom:} Phase coexistence (e.g., liquid-vapor) occurs along a \emph{line} in the $(T, P)$ plane. You can choose $T$, and then $P$ is fixed by the phase boundary (or vice versa).
+
+\textbf{Example 3—Single component ($C=1$), three phases ($P=3$):}
+\begin{equation}
+F = 1 - 3 + 2 = 0
+\end{equation}
+\textbf{Triple point:} Three phases coexist at a unique $(T, P)$—a \emph{point} (zero-dimensional manifold) in the phase diagram. For water: $T \approx 273.16$ K, $P \approx 611.657$ Pa. You cannot vary $T$ or $P$ independently and maintain three-phase coexistence.
+
+\textbf{Example 4—Two components ($C=2$), single phase ($P=1$):}
+\begin{equation}
+F = 2 - 1 + 2 = 3
+\end{equation}
+You can vary $T$, $P$, and one composition variable (e.g., mole fraction of component 1).
+
+\textbf{Example 5—Two components ($C=2$), two phases ($P=2$):}
+\begin{equation}
+F = 2 - 2 + 2 = 2
+\end{equation}
+Coexistence occurs on a \emph{surface} in $(T, P, x)$ space (where $x$ is composition). At fixed $T$ and $P$, compositions of the two phases are determined (lever rule).
+
+\subsubsection{Dimensionality of Phase Space}
+
+The phase rule tells us the \textbf{dimension of the manifold} on which $P$ phases coexist:
+
+\begin{center}
+\begin{tabular}{ccc}
+\hline
+$F$ & Dimensionality & Example \\
+\hline
+0 & Point & Triple point ($C=1$, $P=3$) \\
+1 & Line/Curve & Liquid-vapor coexistence ($C=1$, $P=2$) \\
+2 & Surface & Two-component, two-phase ($C=2$, $P=2$) \\
+\hline
+\end{tabular}
+\end{center}
+
+\textbf{Important constraint:} $F \geq 0$ always. If $P > C + 2$, the phase rule gives $F < 0$, which is impossible—such a state cannot exist in equilibrium.
+
+\textbf{Maximum number of coexisting phases:}
+\begin{equation}
+P_{\max} = C + 2
+\end{equation}
+
+For a single component ($C=1$), at most 3 phases can coexist (triple point). Four phases cannot coexist in equilibrium.
+
+\subsubsection{Effect of Additional Components}
+
+Adding components increases $F$. Physically: more compositional degrees of freedom allow richer phase behavior.
+
+\textbf{Binary mixtures ($C=2$):} Phase diagrams become three-dimensional $(T, P, x)$. Common simplifications:
+\begin{itemize}
+    \item Fix $P$ (constant pressure): study $(T, x)$ diagrams (e.g., eutectic, peritectic systems).
+    \item Fix $T$ (isothermal): study $(P, x)$ diagrams (e.g., vapor-liquid equilibrium).
+\end{itemize}
+
+\textbf{Ternary systems ($C=3$):} Phase diagrams are four-dimensional, typically visualized as 3D surfaces at constant $T$ or $P$.
+
+\subsection{Stability Conditions: When Is Equilibrium Stable?}
+
+\subsubsection{Equilibrium vs. Stability}
+
+\textbf{Equilibrium:} A state where macroscopic variables don't change in time. Characterized by extremization of a thermodynamic potential (e.g., $\delta F = 0$ at constant $T$, $V$).
+
+\textbf{Stability:} Equilibrium is stable if small fluctuations decay back to equilibrium. Unstable equilibrium (saddle point) spontaneously evolves away.
+
+\textbf{Mathematical condition:} For a potential $\Psi$ to be minimized (stable equilibrium):
+\begin{enumerate}
+    \item \textbf{First-order:} $d\Psi = 0$ (equilibrium condition)
+    \item \textbf{Second-order:} $d^2\Psi > 0$ (stability condition—local minimum)
+\end{enumerate}
+
+\subsubsection{Convexity Conditions}
+
+A stable equilibrium corresponds to a \textbf{convex} potential. For $E(S, V, N)$:
+
+\textbf{Convexity in $S$:} $\partial^2 E / \partial S^2 > 0 \Rightarrow \partial T/\partial S > 0$.
+
+\textbf{Convexity in $V$:} $\partial^2 E / \partial V^2 > 0 \Rightarrow \partial(-P)/\partial V > 0$, i.e., $\partial P/\partial V < 0$.
+
+For free energies (which are minimized), convexity means:
+\begin{equation}
+\frac{\partial^2 F}{\partial X^2} > 0
+\end{equation}
+for all natural variables $X$.
+
+\textbf{Physical consequence:} Response functions (second derivatives) must have correct signs for stability.
+
+\subsubsection{Second Derivatives and Response Functions}
+
+Stability conditions translate directly to constraints on response functions:
+
+\textbf{From $F(T, V)$:}
+\begin{align}
+\frac{\partial^2 F}{\partial T^2} &= -\frac{\partial S}{\partial T} = -\frac{C_V}{T} > 0 \quad &\Rightarrow \quad \boxed{C_V > 0} \\
+\frac{\partial^2 F}{\partial V^2} &= \frac{\partial P}{\partial V} = -\frac{1}{V \kappa_T} > 0 \quad &\Rightarrow \quad \boxed{\kappa_T > 0}
+\end{align}
+
+where $C_V$ is heat capacity at constant volume, $\kappa_T = -(1/V)(\partial V/\partial P)_T$ is isothermal compressibility.
+
+\textbf{From $G(T, P)$:}
+\begin{align}
+\frac{\partial^2 G}{\partial T^2} &= -\frac{\partial S}{\partial T} = -\frac{C_P}{T} > 0 \quad &\Rightarrow \quad \boxed{C_P > 0} \\
+\frac{\partial^2 G}{\partial P^2} &= \frac{\partial V}{\partial P} = -V\kappa_T > 0 \quad &\Rightarrow \quad \boxed{\kappa_T > 0}
+\end{align}
+
+\textbf{General principle:} Stability requires:
+\begin{itemize}
+    \item \textbf{Positive heat capacities:} $C_V > 0$, $C_P > 0$
+    \item \textbf{Positive compressibilities:} $\kappa_T > 0$, $\kappa_S > 0$ (isothermal and adiabatic)
+    \item \textbf{Positive susceptibilities:} For magnetic/dielectric systems, $\chi > 0$
+\end{itemize}
+
+\subsubsection{Positive Heat Capacity}
+
+\textbf{Physical meaning:} $C_V > 0$ means adding heat increases temperature. If $C_V < 0$, adding heat would \emph{lower} temperature—an instability leading to runaway heating or cooling.
+
+\textbf{Violations:} Systems with long-range interactions (e.g., self-gravitating systems like stars) can have negative heat capacity in certain regimes. This is not a contradiction—such systems aren't in the thermodynamic limit with short-range forces.
+
+\textbf{Near phase transitions:} Heat capacity can diverge ($C \to \infty$) at critical points, but it doesn't go negative in stable phases.
+
+\subsubsection{Positive Definiteness of Susceptibility Matrices}
+
+For multi-component or multi-parameter systems, stability requires the \textbf{Hessian matrix} (matrix of second derivatives) to be \textbf{positive definite}.
+
+\textbf{Example—Two-component system:} Stability in composition space requires:
+\begin{equation}
+\det \begin{pmatrix}
+\frac{\partial^2 G}{\partial N_1^2} & \frac{\partial^2 G}{\partial N_1 \partial N_2} \\
+\frac{\partial^2 G}{\partial N_2 \partial N_1} & \frac{\partial^2 G}{\partial N_2^2}
+\end{pmatrix} > 0
+\end{equation}
+
+\textbf{Physical consequence:} If this condition is violated, the system phase-separates (spinodal decomposition).
+
+\subsubsection{Mechanical, Thermal, and Chemical Stability}
+
+\textbf{Mechanical stability:} $\kappa_T > 0$, i.e., $(\partial P/\partial V)_T < 0$. Compression increases pressure.
+
+\textbf{Violation:} On the "wrong side" of the van der Waals isotherm (the unphysical region with positive slope), $(\partial P/\partial V)_T > 0$. This region is mechanically unstable and replaced by a phase transition (Maxwell construction).
+
+\textbf{Thermal stability:} $C_V > 0$, $C_P > 0$. Heat input increases temperature.
+
+\textbf{Violation:} Negative heat capacity implies thermal runaway. Doesn't occur in ordinary matter under equilibrium.
+
+\textbf{Chemical stability:} $(\partial \mu_i / \partial N_i)_{T,P,N_{j \neq i}} > 0$. Adding particles of species $i$ increases its chemical potential.
+
+\textbf{Violation:} If $(\partial \mu / \partial N) < 0$, adding particles \emph{lowers} their chemical potential, favoring further addition—instability leading to phase separation or clustering.
+
+\subsubsection{Stability Near Critical Points}
+
+At a \textbf{critical point} (end of a phase boundary), second derivatives vanish:
+\begin{equation}
+\left. \frac{\partial P}{\partial V} \right|_{T_c} = 0, \quad \left. \frac{\partial^2 P}{\partial V^2} \right|_{T_c} = 0
+\end{equation}
+
+\textbf{Consequences:}
+\begin{itemize}
+    \item Compressibility diverges: $\kappa_T \to \infty$ (system becomes infinitely "soft").
+    \item Heat capacity diverges: $C_P \to \infty$ (large fluctuations).
+    \item Correlation length diverges: fluctuations are correlated over macroscopic distances.
+\end{itemize}
+
+\textbf{Why still stable?} Higher-order derivatives (fourth, sixth, etc.) control stability near the critical point. The system is marginally stable, poised between phases.
+
+\subsubsection{Breakdown of Taylor Expansion at Criticality}
+
+Normal thermodynamics relies on Taylor expansion:
+\begin{equation}
+F(T, V) \approx F(T_0, V_0) + \frac{\partial F}{\partial T} \Delta T + \frac{1}{2} \frac{\partial^2 F}{\partial T^2} (\Delta T)^2 + \cdots
+\end{equation}
+
+At a critical point, second derivatives vanish or diverge, so this expansion fails. Instead:
+\begin{itemize}
+    \item Free energy has non-analytic dependence on $(T - T_c)$: $F \sim |T - T_c|^{2-\alpha}$ (critical exponent $\alpha$).
+    \item Heat capacity diverges: $C \sim |T - T_c|^{-\alpha}$.
+    \item Correlation length: $\xi \sim |T - T_c|^{-\nu}$.
+\end{itemize}
+
+\textbf{Universal critical behavior:} Systems in the same universality class (same dimensionality, symmetry) have the same critical exponents, regardless of microscopic details.
+
+\textbf{Exam relevance:} Understand that classical thermodynamics (based on Taylor expansions) breaks down at critical points. Fluctuations become important—this is where statistical mechanics (e.g., renormalization group) is essential.
+
+\subsection{Third Law of Thermodynamics}
+
+\subsubsection{Nernst Postulate}
+
+\textbf{Third Law (Nernst):} As temperature approaches absolute zero, the entropy of a system in internal equilibrium approaches a constant (typically zero).
+
+\begin{equation}
+\boxed{\lim_{T \to 0} S(T, P, \ldots) = S_0}
+\end{equation}
+
+By convention (and quantum mechanics), $S_0 = 0$ for a non-degenerate ground state.
+
+\textbf{Alternative statement (Planck):} The entropy of a perfect crystal at $T = 0$ is zero.
+
+\textbf{Why "Third Law"?} Chronologically fourth (Zeroth came last), but logically completes the laws: Zeroth (temperature exists), First (energy conserved), Second (entropy increases), Third (entropy vanishes at $T = 0$).
+
+\subsubsection{Entropy Vanishing at $T \to 0$}
+
+\textbf{Microscopic justification:} From statistical mechanics, $S = k_B \ln \Omega$, where $\Omega$ is the number of accessible microstates. At $T = 0$, the system occupies its ground state. If the ground state is \emph{non-degenerate} ($\Omega = 1$), then:
+\begin{equation}
+S = k_B \ln 1 = 0
+\end{equation}
+
+\textbf{Degenerate ground states:} If the ground state has degeneracy $g$, then $S(T=0) = k_B \ln g > 0$. This is called \textbf{residual entropy}.
+
+\textbf{Examples of residual entropy:}
+\begin{itemize}
+    \item \textbf{Ice (Pauling):} Water molecules in ice have orientational disorder even at $T = 0$, giving $S \approx 3.4$ J/(mol·K).
+    \item \textbf{Glasses:} Frozen-in disorder from the liquid state persists at $T = 0$.
+    \item \textbf{Spin systems:} Frustrated magnets may have macroscopically degenerate ground states.
+\end{itemize}
+
+\textbf{Important caveat:} The Third Law applies to systems in \emph{internal equilibrium}. Non-equilibrium states (glasses, metastable states) can violate it.
+
+\subsubsection{Vanishing Heat Capacities}
+
+From $S \to S_0$ (constant) as $T \to 0$:
+\begin{equation}
+C_V = T \left. \frac{\partial S}{\partial T} \right|_V \to 0 \quad \text{as } T \to 0
+\end{equation}
+
+\textbf{Physical interpretation:} At low $T$, the system has fewer accessible excited states. Adding heat produces smaller entropy changes, so $C \to 0$.
+
+\textbf{Quantum vs. classical:}
+\begin{itemize}
+    \item \textbf{Quantum:} At low $T$, only the lowest energy levels are accessible. $C \sim T^3$ (Debye law for solids), $C \sim e^{-\Delta/k_B T}$ (gapped systems).
+    \item \textbf{Classical:} Equipartition gives $C = \text{const}$ (independent of $T$), violating the Third Law. This is a failure of classical mechanics at low $T$.
+\end{itemize}
+
+\textbf{Third Law as a quantum signature:} The vanishing of $C$ at $T \to 0$ is direct evidence that classical mechanics fails and quantum discreteness of energy levels becomes important.
+
+\subsubsection{Vanishing Thermal Expansivities}
+
+Thermal expansion coefficient:
+\begin{equation}
+\alpha = \frac{1}{V} \left. \frac{\partial V}{\partial T} \right|_P
+\end{equation}
+
+From a Maxwell relation (derived from $G(T, P)$):
+\begin{equation}
+\left. \frac{\partial S}{\partial P} \right|_T = -\left. \frac{\partial V}{\partial T} \right|_P = -V \alpha
+\end{equation}
+
+As $T \to 0$, $S \to S_0$ (constant), so $(\partial S/\partial P)_T \to 0$. Therefore:
+\begin{equation}
+\boxed{\alpha \to 0 \quad \text{as } T \to 0}
+\end{equation}
+
+\textbf{Physical interpretation:} At $T = 0$, the system is in its ground state. Changing pressure shifts energy levels, but if the ground state is unique, there's no thermal expansion (no entropy to drive volume change).
+
+\textbf{Experimental verification:} Thermal expansion coefficients of solids vanish as $T \to 0$, following power laws like $\alpha \sim T^3$.
+
+\subsubsection{Unattainability of Absolute Zero}
+
+\textbf{Statement:} It is impossible to reach $T = 0$ in a finite number of steps.
+
+\textbf{Heuristic argument:} Cooling a system to $T = 0$ would require removing all entropy ($S \to 0$). But each cooling step (e.g., adiabatic demagnetization) reduces $T$ by a finite factor, not to zero. Asymptotically, $T \to 0$ requires infinite steps.
+
+\textbf{Mathematical formulation:} Any isothermal process at $T = 0$ would have $\Delta S = 0$ (since $S$ is already at its minimum). But the Third Law says all processes at $T = 0$ have $\Delta S = 0$, so no process can change the system—absolute zero is inaccessible.
+
+\textbf{Practical consequence:} We can cool systems to millikelvin or microkelvin, but never exactly to zero. This is a fundamental limitation, not technological.
+
+\subsubsection{Ground-State Degeneracy Constraints}
+
+If the ground state has degeneracy $g$, then:
+\begin{equation}
+S(T=0) = k_B \ln g
+\end{equation}
+
+\textbf{Consequences:}
+\begin{itemize}
+    \item \textbf{Unique ground state ($g=1$):} $S(0) = 0$. Third Law satisfied in its strictest form.
+    \item \textbf{Degenerate ground state ($g > 1$):} $S(0) = k_B \ln g > 0$. Residual entropy.
+    \item \textbf{Continuous symmetry breaking:} If a system has a continuous symmetry (e.g., $SO(3)$ for a ferromagnet), the ground state is infinitely degenerate (choice of magnetization direction). Technically $g = \infty$, $S = \infty$—but in practice, any perturbation (external field, anisotropy) lifts the degeneracy.
+\end{itemize}
+
+\textbf{Quantum considerations:} Even if classically degenerate, quantum tunneling between degenerate states can lift degeneracy, restoring $S(0) = 0$. Example: ammonia molecule (tunneling splits the doublet).
+
+\subsubsection{Classical vs. Quantum Validity}
+
+\textbf{Classical thermodynamics:} Does \emph{not} predict the Third Law. Classical entropy (e.g., Sackur-Tetrode for ideal gas) diverges as $T \to 0$.
+
+\textbf{Quantum mechanics:} Energy levels are discrete. As $T \to 0$, only the ground state is occupied. If the ground state is unique, $\Omega = 1 \Rightarrow S = 0$.
+
+\textbf{Third Law as empirical:} Within classical thermodynamics, the Third Law is an \emph{axiom} (empirical observation). Quantum mechanics provides the microscopic explanation.
+
+\textbf{When classical fails:} At low $T$, quantum effects (zero-point energy, energy quantization, Bose/Fermi statistics) become essential. Classical predictions (e.g., Dulong-Petit law $C = 3Nk$) fail spectacularly.
+
+\subsubsection{Failure Modes: Glasses, Metastability}
+
+\textbf{Glasses:} Amorphous solids formed by rapid cooling. They have frozen-in disorder from the liquid state. At $T = 0$, glasses retain configurational entropy (many nearly-degenerate local minima in the energy landscape).
+
+\textbf{Why doesn't this violate the Third Law?} Glasses are \emph{not in equilibrium}. Given infinite time, they would crystallize (lower energy), reducing entropy. The Third Law applies only to equilibrium states.
+
+\textbf{Metastable states:} Systems trapped in local (not global) free energy minima. Examples: supercooled liquids, supersaturated solutions. These can persist for long times but eventually relax to equilibrium.
+
+\textbf{Practical thermodynamics:} For timescales much shorter than relaxation times, we treat metastable states as if they're equilibrium. But the Third Law strictly applies only to true equilibrium (global minimum of the appropriate potential).
+
+\textbf{Spin glasses:} Disordered magnetic systems with frustration. They have a complicated energy landscape with many local minima. At $T = 0$, they may retain entropy (ergodicity breaking). This is an active research area—whether spin glasses truly violate the Third Law (in the thermodynamic limit) is debated.
+
+\subsection{Conceptual Subtleties and Deep Insights}
+
+\subsubsection{Why the Phase Rule Is Not Obvious}
+
+It's tempting to think: "$C$ components, $P$ phases $\Rightarrow C \times P$ variables." But the Gibbs-Duhem relation reduces the dimensionality. Intensive variables are not all independent.
+
+\textbf{Key insight:} Gibbs-Duhem ($S dT - V dP + \sum N_i d\mu_i = 0$) is a consequence of extensivity. It constrains intensive variables, reducing degrees of freedom.
+
+\subsubsection{Stability and Metastability}
+
+\textbf{Stable equilibrium:} Global minimum of the potential. Fluctuations decay.
+
+\textbf{Metastable equilibrium:} Local minimum. Stable against small fluctuations but not globally optimal. Example: supercooled water at $-10°C$ (liquid water is metastable below $0°C$).
+
+\textbf{Unstable equilibrium:} Saddle point. Even infinitesimal fluctuations grow. Example: water at the spinodal curve (mechanical instability).
+
+\textbf{Exam tip:} Distinguish these carefully. Metastability is not instability—metastable states can persist for long times.
+
+\subsubsection{Third Law and the Impossibility of Perpetual Motion of the Third Kind}
+
+\textbf{Perpetual motion machines:}
+\begin{itemize}
+    \item \textbf{First kind:} Violates First Law (creates energy from nothing).
+    \item \textbf{Second kind:} Violates Second Law (100\% efficient heat engine).
+    \item \textbf{Third kind:} Violates Third Law (cools a system to $T = 0$ in finite steps).
+\end{itemize}
+
+The Third Law forbids reaching absolute zero, so no "perfect" refrigerator (cooling to $T = 0$) can exist.
+
+\subsection{Exam Strategy for This Section}
+
+\textbf{Typical questions:}
+
+\begin{itemize}
+    \item \textbf{Gibbs phase rule application:} "A ternary mixture has two phases in equilibrium at constant $P$. How many degrees of freedom?" Answer: $F = C - P + 2 = 3 - 2 + 2 = 3$. But at constant $P$, effective $F = 2$ (can vary $T$ and one composition).
+
+    \item \textbf{Stability conditions:} "Derive the condition for thermal stability from $F(T, V)$." Answer: $\partial^2 F/\partial T^2 > 0 \Rightarrow -\partial S/\partial T > 0 \Rightarrow C_V > 0$.
+
+    \item \textbf{Maxwell relations:} "Use a Maxwell relation to relate thermal expansion to entropy change." Answer: From $dG = -S dT + V dP$, $(\partial S/\partial P)_T = -(\partial V/\partial T)_P = -V\alpha$.
+
+    \item \textbf{Third Law:} "Why does heat capacity vanish as $T \to 0$?" Answer: $S \to S_0$ (constant), so $C = T(\partial S/\partial T) \to 0$.
+\end{itemize}
+
+\textbf{Creative/tricky questions:}
+
+\begin{itemize}
+    \item \textbf{"Can four phases of a pure substance coexist?"} No. Gibbs phase rule: $F = 1 - 4 + 2 = -1 < 0$, impossible.
+
+    \item \textbf{"A system has negative heat capacity. Is it unstable?"} Not necessarily. Systems with long-range interactions (e.g., stars) can have $C < 0$ in certain regimes without being unstable. The usual stability arguments assume short-range forces.
+
+    \item \textbf{"Does glass have zero entropy at $T = 0$?"} No. Glasses are not in equilibrium—they have residual entropy from frozen-in disorder. The Third Law applies only to equilibrium states.
+
+    \item \textbf{"Why can't we use the Third Law to define absolute entropy scale classically?"} Classical statistical mechanics gives divergent entropy as $T \to 0$ (Gibbs paradox, infinite phase space). Quantum mechanics (discrete states) is essential for $S \to 0$.
+
+    \item \textbf{"At a critical point, $\kappa_T \to \infty$. Is the system unstable?"} No. It's marginally stable. Higher-order derivatives control stability. The system is poised between phases, exhibiting large fluctuations but not runaway instability.
+
+    \item \textbf{"Can you violate the Third Law by rapid cooling?"} You can create non-equilibrium states (glasses) with $S(0) > 0$, but this doesn't violate the Third Law—it just means the system isn't in equilibrium. Given infinite time, it would relax to $S = 0$.
+\end{itemize}
+
+\textbf{Common traps:}
+
+\begin{itemize}
+    \item Forgetting the "+2" in the Gibbs phase rule. It's $F = C - P + 2$, not $C - P$.
+    \item Confusing stability (second derivative) with equilibrium (first derivative). Equilibrium requires $dF = 0$; stability additionally requires $d^2F > 0$.
+    \item Thinking negative heat capacity always means instability. It depends on the ensemble and interactions.
+    \item Assuming the Third Law gives $S = 0$ exactly. It's $S \to S_0$ (constant), which can be nonzero if the ground state is degenerate.
+    \item Applying the Third Law to non-equilibrium states. Glasses, metastable states don't obey it.
+\end{itemize}
+
+\textbf{How to approach problems:}
+
+\begin{enumerate}
+    \item \textbf{For phase rule:} Count components $C$, count phases $P$, apply $F = C - P + 2$. Interpret $F$ as dimensions of the coexistence manifold.
+
+    \item \textbf{For stability:} Identify the relevant potential (e.g., $F$ at constant $T$, $V$). Compute second derivatives. Check signs: must be positive for minima.
+
+    \item \textbf{For Third Law:} Remember $S \to 0$ (or constant) as $T \to 0$. Derive consequences: $C \to 0$, $\alpha \to 0$, etc. Check if the system is in equilibrium.
+
+    \item \textbf{Use Maxwell relations:} From $dG = -S dT + V dP$, etc., equate mixed partials to relate different derivatives.
+\end{enumerate}
+
+\subsection{Connection to Previous Sections}
+
+\begin{itemize}
+    \item \textbf{Thermodynamic potentials:} Stability conditions come from requiring potentials to be minimized (convex). This ties back to why we introduced $F$, $G$, etc.
+
+    \item \textbf{Entropy maximization:} For isolated systems, $S$ is maximized. For systems in contact with reservoirs, minimizing potentials is equivalent to maximizing total entropy (system + reservoir).
+
+    \item \textbf{Phase transitions:} Gibbs phase rule describes coexistence manifolds. Stability conditions explain why certain regions of phase diagrams are forbidden (spinodal curves).
+
+    \item \textbf{Second Law:} The Third Law complements the Second. Second Law: entropy increases. Third Law: entropy has a finite lower bound ($S \geq 0$).
+\end{itemize}
+
+\subsection{Looking Ahead to Statistical Mechanics}
+
+The Third Law, unlike the other laws, is not derivable within classical thermodynamics. It emerges naturally from quantum statistical mechanics:
+\begin{itemize}
+    \item Discrete energy levels $\Rightarrow$ ground state occupation at $T = 0$.
+    \item $\Omega = 1$ (non-degenerate ground state) $\Rightarrow S = k_B \ln 1 = 0$.
+\end{itemize}
+
+This transition—from phenomenological thermodynamics to microscopic statistical mechanics—is the bridge to Chapter 2 (Probability). Statistical mechanics will explain \emph{why} the laws of thermodynamics hold, not just \emph{that} they hold.
+
+\section{Basics of Probability: Foundation for Statistical Mechanics}
+
+\subsection{From Thermodynamics to Statistical Mechanics}
+
+\textbf{The conceptual leap:} Thermodynamics describes macroscopic equilibrium properties phenomenologically (laws based on observation). Statistical mechanics seeks to \emph{derive} these laws from the microscopic behavior of constituent particles.
+
+\textbf{Key insight:} We don't need complete information about every particle's position and momentum. Macroscopic properties emerge from \emph{statistical} averaging over many particles. A glass of water has $\sim 10^{24}$ molecules—tracking each one is impossible and unnecessary.
+
+\textbf{Why probability?} 
+\begin{itemize}
+    \item \textbf{Practical:} Can't measure/track $10^{24}$ particles.
+    \item \textbf{Fundamental:} Even if we could, quantum mechanics introduces inherent uncertainty.
+    \item \textbf{Sufficient:} Macroscopic observables (pressure, temperature, etc.) depend only on averages, not individual particle details.
+\end{itemize}
+
+\textbf{Statistical mechanics is inherently probabilistic:} Not because we're lazy, but because probability is the correct language for describing systems with many degrees of freedom.
+
+\subsection{Random Variables and Outcome Spaces}
+
+\textbf{Random variable $x$:} A quantity whose value is not deterministic—it takes values according to some probability distribution.
+
+\textbf{Outcome space (sample space) $\mathcal{S}$:} The set of all possible values $x$ can take.
+\begin{equation}
+\mathcal{S} \equiv \{x_1, x_2, x_3, \ldots\}
+\end{equation}
+
+\textbf{Classification of outcome spaces:}
+
+\subsubsection{Discrete Outcome Spaces}
+
+Countable set of outcomes (finite or countably infinite).
+
+\textbf{Examples:}
+\begin{itemize}
+    \item \textbf{Coin toss:} $\mathcal{S}_{\text{coin}} = \{\text{heads}, \text{tails}\}$
+    \item \textbf{Die roll:} $\mathcal{S}_{\text{die}} = \{1, 2, 3, 4, 5, 6\}$
+    \item \textbf{Number of particles in a box:} $\mathcal{S}_N = \{0, 1, 2, 3, \ldots\}$ (countably infinite)
+    \item \textbf{Spin projection:} $\mathcal{S}_{\text{spin}} = \{-\hbar/2, +\hbar/2\}$ (spin-1/2 particle)
+\end{itemize}
+
+For discrete spaces, we assign probabilities $p(x_i)$ to each outcome. The probability distribution is a list:
+\begin{equation}
+\{p(x_1), p(x_2), p(x_3), \ldots\}
+\end{equation}
+
+\subsubsection{Continuous Outcome Spaces}
+
+Uncountably infinite set of outcomes (real intervals or higher-dimensional continua).
+
+\textbf{Examples:}
+\begin{itemize}
+    \item \textbf{Velocity of a gas particle:} $\mathcal{S}_{\vec{v}} = \{-\infty < v_x, v_y, v_z < \infty\}$ (all of $\mathbb{R}^3$)
+    \item \textbf{Position of a particle in a box:} $\mathcal{S}_{\vec{r}} = \{0 < x < L, 0 < y < L, 0 < z < L\}$ (bounded region in $\mathbb{R}^3$)
+    \item \textbf{Energy of an electron in a metal (T=0):} $\mathcal{S}_\epsilon = \{0 \leq \epsilon \leq \epsilon_F\}$ (Fermi energy)
+\end{itemize}
+
+For continuous spaces, probability is described by a \textbf{probability density} $\rho(x)$. The probability of finding $x$ in an infinitesimal interval $[x, x+dx]$ is:
+\begin{equation}
+p(x \in [x, x+dx]) = \rho(x) \, dx
+\end{equation}
+
+\textbf{Key distinction:} For continuous variables, $p(x = x_0) = 0$ (probability of a single point is zero). Only intervals have nonzero probability.
+
+\subsection{Events and Probabilities}
+
+\textbf{Event $E$:} Any subset of the outcome space, $E \subseteq \mathcal{S}$.
+
+\textbf{Examples:}
+\begin{itemize}
+    \item \textbf{Die roll:} Event "even number" = $\{2, 4, 6\} \subset \mathcal{S}_{\text{die}}$
+    \item \textbf{Gas particle:} Event "speed between $v$ and $v+dv$" = $\{v < |\vec{v}| < v+dv\}$
+\end{itemize}
+
+\textbf{Probability of an event $p(E)$:} A number assigned to each event satisfying the axioms below.
+
+\subsection{Axioms of Probability (Kolmogorov)}
+
+All of probability theory rests on three axioms. These are \emph{not} derived—they're foundational principles.
+
+\subsubsection{Axiom 1: Positivity (Non-negativity)}
+\begin{equation}
+\boxed{p(E) \geq 0 \quad \text{for all events } E}
+\end{equation}
+
+Probabilities are real, non-negative numbers. Negative probabilities are meaningless (in standard probability theory).
+
+\textbf{Physical interpretation:} Frequency of occurrence cannot be negative.
+
+\subsubsection{Axiom 2: Additivity (for Disjoint Events)}
+\begin{equation}
+\boxed{p(A \cup B) = p(A) + p(B) \quad \text{if } A \cap B = \emptyset}
+\end{equation}
+
+If events $A$ and $B$ are \textbf{mutually exclusive} (disjoint, cannot occur simultaneously), the probability of "$A$ or $B$" is the sum of individual probabilities.
+
+\textbf{Notation:} $A \cup B$ means "$A$ or $B$" (union). $A \cap B = \emptyset$ means "$A$ and $B$ are disjoint" (no overlap).
+
+\textbf{Generalization (countable additivity):} For countably many disjoint events $\{E_1, E_2, \ldots\}$:
+\begin{equation}
+p\left( \bigcup_{i=1}^\infty E_i \right) = \sum_{i=1}^\infty p(E_i)
+\end{equation}
+
+\textbf{Example—Die roll:} Event "even number" = $\{2\} \cup \{4\} \cup \{6\}$. Since these are disjoint:
+\begin{equation}
+p(\text{even}) = p(\{2\}) + p(\{4\}) + p(\{6\}) = \frac{1}{6} + \frac{1}{6} + \frac{1}{6} = \frac{1}{2}
+\end{equation}
+
+\subsubsection{Axiom 3: Normalization}
+\begin{equation}
+\boxed{p(\mathcal{S}) = 1}
+\end{equation}
+
+The probability that \emph{some} outcome occurs is 1 (certainty). The random variable must take a value in $\mathcal{S}$.
+
+\textbf{Physical interpretation:} The system must be in \emph{some} state. Total probability is conserved.
+
+\textbf{For discrete spaces:}
+\begin{equation}
+\sum_{i} p(x_i) = 1
+\end{equation}
+
+\textbf{For continuous spaces:}
+\begin{equation}
+\int_{\mathcal{S}} \rho(x) \, dx = 1
+\end{equation}
+
+\subsection{Consequences of the Axioms}
+
+From these three axioms, all of probability theory follows. Some immediate consequences:
+
+\subsubsection{Probability of the Complement}
+If $E$ is an event, its complement $\bar{E} = \mathcal{S} \setminus E$ (everything \emph{not} in $E$) satisfies:
+\begin{equation}
+p(\bar{E}) = 1 - p(E)
+\end{equation}
+
+\textbf{Proof:} $E$ and $\bar{E}$ are disjoint, and $E \cup \bar{E} = \mathcal{S}$. By additivity and normalization:
+\begin{equation}
+p(E) + p(\bar{E}) = p(\mathcal{S}) = 1 \quad \Rightarrow \quad p(\bar{E}) = 1 - p(E)
+\end{equation}
+
+\subsubsection{Probability of the Empty Set}
+\begin{equation}
+p(\emptyset) = 0
+\end{equation}
+
+\textbf{Proof:} $\emptyset$ and $\mathcal{S}$ are disjoint, and $\emptyset \cup \mathcal{S} = \mathcal{S}$. By additivity:
+\begin{equation}
+p(\emptyset) + p(\mathcal{S}) = p(\mathcal{S}) = 1 \quad \Rightarrow \quad p(\emptyset) = 0
+\end{equation}
+
+\textbf{Physical meaning:} Impossible events have zero probability.
+
+\subsubsection{Probability Bounds}
+For any event $E$:
+\begin{equation}
+0 \leq p(E) \leq 1
+\end{equation}
+
+\textbf{Proof:} From positivity, $p(E) \geq 0$. Since $E \subseteq \mathcal{S}$ and $p(\mathcal{S}) = 1$, we have $p(E) \leq 1$ (can be shown rigorously using additivity for $E$ and its complement).
+
+\subsection{Objective Probabilities: Frequentist Interpretation}
+
+\textbf{Operational definition:} Probability is the \emph{relative frequency} of an outcome in the limit of infinitely many trials.
+
+If a random experiment is repeated $N$ times, and event $A$ occurs $N_A$ times:
+\begin{equation}
+\boxed{p(A) = \lim_{N \to \infty} \frac{N_A}{N}}
+\end{equation}
+
+\textbf{Key properties:}
+\begin{itemize}
+    \item \textbf{Empirical:} Probabilities are measured, not assumed.
+    \item \textbf{Objective:} Independent of the observer (in principle).
+    \item \textbf{Requires ergodicity:} The system must explore its state space uniformly over time.
+\end{itemize}
+
+\textbf{Example—Fair coin:} Flip a coin $N$ times. As $N \to \infty$, the fraction of heads approaches $1/2$.
+\begin{equation}
+p(\text{heads}) = \lim_{N \to \infty} \frac{N_{\text{heads}}}{N} = \frac{1}{2}
+\end{equation}
+
+\textbf{Connection to statistical mechanics:} In equilibrium, a system samples microstates with frequencies given by the Boltzmann distribution. Time averages (frequency of visits to states) equal ensemble averages (probabilities)—this is the \textbf{ergodic hypothesis}.
+
+\textbf{Limitations:}
+\begin{itemize}
+    \item Requires infinite trials (in practice, we use large but finite $N$ and accept statistical uncertainty).
+    \item Doesn't apply to one-off events (e.g., "probability that this particular glass of water freezes in the next second").
+    \item Assumes the process is repeatable and stationary (probabilities don't change over time).
+\end{itemize}
+
+\subsection{Subjective Probabilities: Bayesian Interpretation}
+
+\textbf{Conceptual definition:} Probability quantifies \emph{degree of belief} or \emph{uncertainty} about an outcome, given available information.
+
+\textbf{Key properties:}
+\begin{itemize}
+    \item \textbf{Information-dependent:} Probabilities change as we gain information (Bayesian updating).
+    \item \textbf{Applicable to unique events:} Can assign probabilities to "will it rain tomorrow?" or "what is the mass of the Higgs boson?" (before measurement).
+    \item \textbf{Subjective:} Different observers with different information may assign different probabilities (but both are "correct" given their knowledge).
+\end{itemize}
+
+\textbf{Example—Coin toss:} Before flipping, $p(\text{heads}) = 1/2$ reflects ignorance (no reason to favor either outcome). After seeing the result (but before you look), someone who peeked knows $p(\text{heads}) = 1$ or $0$—probabilities depend on information.
+
+\textbf{Connection to statistical mechanics:} The microcanonical ensemble assigns equal probabilities to all accessible microstates—this reflects our ignorance about the exact microstate, not any dynamical randomness. The system is in \emph{some} definite microstate; we just don't know which.
+
+\textbf{Principle of maximum entropy (MaxEnt):} Given constraints (e.g., fixed energy), choose the probability distribution that maximizes entropy (uncertainty). This yields the Boltzmann distribution. It's the "least biased" estimate given limited information.
+
+\textbf{Bayesian updating:} Start with a prior probability $p(A)$. After observing evidence $B$, update to posterior probability $p(A|B)$ using Bayes' theorem:
+\begin{equation}
+p(A|B) = \frac{p(B|A) p(A)}{p(B)}
+\end{equation}
+(We'll derive this later.)
+
+\subsection{Objective vs. Subjective: Philosophical Interlude}
+
+\textbf{Frequentist (objective):} Probabilities are properties of the physical world, measured by frequencies. Only repeatable experiments have meaningful probabilities.
+
+\textbf{Bayesian (subjective):} Probabilities are states of knowledge, updated by evidence. Any uncertain proposition can be assigned a probability.
+
+\textbf{In statistical mechanics:} Both views coexist.
+\begin{itemize}
+    \item \textbf{Frequentist:} Ensemble averages as frequencies of microstates in an infinitely large ensemble (or infinite time for ergodic systems).
+    \item \textbf{Bayesian:} Probability distributions (e.g., Boltzmann) encode our ignorance about the exact microstate, constrained by macroscopic observations (energy, volume, particle number).
+\end{itemize}
+
+\textbf{Pragmatic view:} The mathematical formalism (Kolmogorov axioms) is the same. Interpretation matters for conceptual understanding but not for calculations. For exams, you can use whichever interpretation helps intuition.
+
+\subsection{Discrete vs. Continuous: Technical Details}
+
+\subsubsection{Discrete Probability Distribution}
+
+For discrete $\mathcal{S} = \{x_1, x_2, \ldots\}$, the probability distribution is a set $\{p(x_i)\}$ satisfying:
+\begin{align}
+p(x_i) &\geq 0 \quad \text{(positivity)} \\
+\sum_i p(x_i) &= 1 \quad \text{(normalization)}
+\end{align}
+
+\textbf{Probability of an event:} For $E = \{x_{i_1}, x_{i_2}, \ldots\}$,
+\begin{equation}
+p(E) = \sum_{i: x_i \in E} p(x_i)
+\end{equation}
+
+\subsubsection{Continuous Probability Density}
+
+For continuous $\mathcal{S} \subseteq \mathbb{R}^n$, the probability density $\rho(x)$ satisfies:
+\begin{align}
+\rho(x) &\geq 0 \quad \text{(positivity)} \\
+\int_{\mathcal{S}} \rho(x) \, dx &= 1 \quad \text{(normalization)}
+\end{align}
+
+\textbf{Probability of an interval:}
+\begin{equation}
+p(x \in [a, b]) = \int_a^b \rho(x) \, dx
+\end{equation}
+
+\textbf{Infinitesimal probability:}
+\begin{equation}
+p(x \in [x_0, x_0 + dx]) = \rho(x_0) \, dx
+\end{equation}
+
+\textbf{Key subtlety:} $\rho(x)$ is a \emph{density}, not a probability. It can exceed 1 (e.g., for narrow distributions), but $\int \rho \, dx = 1$.
+
+\textbf{Delta function:} For a "certainty" distribution (outcome is exactly $x_0$ with probability 1):
+\begin{equation}
+\rho(x) = \delta(x - x_0)
+\end{equation}
+where $\delta(x)$ is the Dirac delta function: $\int_{-\infty}^\infty \delta(x) \, dx = 1$.
+
+\subsection{Conceptual Subtleties and Exam Traps}
+
+\subsubsection{Probability vs. Probability Density}
+
+\textbf{Wrong:} "For a continuous distribution, $p(x) = \rho(x)$."
+
+\textbf{Right:} $p(x) = 0$ for any single point. Only intervals have nonzero probability: $p(x \in [a, b]) = \int_a^b \rho(x) \, dx$.
+
+\textbf{Analogy:} Mass density $\sigma(x)$ vs. total mass. A point has zero mass, but a region $[a, b]$ has mass $\int_a^b \sigma(x) \, dx$.
+
+\subsubsection{Normalization Is Non-Negotiable}
+
+\textbf{Common mistake:} Forgetting to normalize probability distributions.
+
+\textbf{Always check:} Does $\sum p(x_i) = 1$ or $\int \rho(x) \, dx = 1$? If not, it's not a valid probability distribution.
+
+\textbf{Exam tip:} When given an unnormalized distribution, the first step is always to find the normalization constant.
+
+\textbf{Example:} Suppose $\rho(x) = A e^{-x^2}$ for $x \in (-\infty, \infty)$. Find $A$.
+\begin{equation}
+1 = \int_{-\infty}^\infty A e^{-x^2} \, dx = A \sqrt{\pi} \quad \Rightarrow \quad A = \frac{1}{\sqrt{\pi}}
+\end{equation}
+
+\subsubsection{Additivity Requires Disjoint Events}
+
+\textbf{Wrong:} $p(A \cup B) = p(A) + p(B)$ (always).
+
+\textbf{Right:} This holds only if $A \cap B = \emptyset$ (disjoint events).
+
+\textbf{General formula (inclusion-exclusion):}
+\begin{equation}
+p(A \cup B) = p(A) + p(B) - p(A \cap B)
+\end{equation}
+
+If $A$ and $B$ overlap, you must subtract the overlap to avoid double-counting.
+
+\subsubsection{Ergodicity Assumption in Statistical Mechanics}
+
+\textbf{Frequentist view requires ergodicity:} Time averages equal ensemble averages.
+\begin{equation}
+\langle f \rangle_{\text{time}} = \lim_{T \to \infty} \frac{1}{T} \int_0^T f(x(t)) \, dt = \langle f \rangle_{\text{ensemble}} = \int f(x) \rho(x) \, dx
+\end{equation}
+
+\textbf{When ergodicity fails:} Systems with broken ergodicity (e.g., glasses, spin glasses, some integrable systems) don't explore their full state space. Time averages depend on initial conditions, not just macroscopic constraints.
+
+\textbf{Exam relevance:} Understand that statistical mechanics assumes ergodicity. When asked about equilibrium ensembles, you're implicitly assuming the system samples microstates according to their probabilities.
+
+\subsection{Exam Strategy for This Section}
+
+\textbf{Typical questions:}
+
+\begin{itemize}
+    \item \textbf{Normalization:} "Given $\rho(x) = A x^2$ for $x \in [0, 1]$, find $A$." Answer: $1 = \int_0^1 A x^2 \, dx = A/3 \Rightarrow A = 3$.
+    
+    \item \textbf{Probability of events:} "A die is rolled. What is $p(\text{odd number})$?" Answer: $p(\{1, 3, 5\}) = 1/6 + 1/6 + 1/6 = 1/2$.
+    
+    \item \textbf{Complement:} "If $p(E) = 0.3$, what is $p(\bar{E})$?" Answer: $p(\bar{E}) = 1 - 0.3 = 0.7$.
+    
+    \item \textbf{Discrete vs. continuous:} "For a uniform distribution on $[0, L]$, what is $p(x = L/2)$?" Answer: Zero (single point in continuous space). But $p(x \in [L/2 - \epsilon, L/2 + \epsilon]) = 2\epsilon/L$.
+\end{itemize}
+
+\textbf{Creative/tricky questions:}
+
+\begin{itemize}
+    \item \textbf{"Can probabilities be negative in quantum mechanics?"} In standard formulations, no. But in phase space representations (Wigner functions), quasi-probability distributions can be negative. These aren't true probabilities—they're useful mathematical tools.
+    
+    \item \textbf{"Why do we assume equal probabilities in the microcanonical ensemble?"} Principle of insufficient reason (Bayesian): with no information to distinguish microstates at the same energy, we assign equal probabilities. This maximizes entropy given the constraint.
+    
+    \item \textbf{"Does the frequentist interpretation apply to a single molecule in a gas?"} Not directly—you can't repeat "the same molecule" infinitely. But you can interpret it as: "In an ensemble of identically prepared systems, what fraction has the molecule in a particular state?"
+    
+    \item \textbf{"What if $\int \rho(x) \, dx = \infty$?"} Not a valid probability density. Example: $\rho(x) = 1/x$ for $x > 0$ diverges. Such distributions don't represent physical probabilities (or they're improper priors in Bayesian inference, which must be regularized).
+\end{itemize}
+
+\textbf{Common traps:}
+
+\begin{itemize}
+    \item Confusing $p(x)$ (probability of discrete outcome) with $\rho(x)$ (probability density for continuous variable). Units differ: $p(x)$ is dimensionless, $\rho(x)$ has units of $1/[\text{dimension of } x]$.
+    \item Forgetting that $A \cap B = \emptyset$ is required for $p(A \cup B) = p(A) + p(B)$.
+    \item Thinking $p(x) = 0$ means "impossible" for continuous distributions. It just means the probability of \emph{exactly} $x$ is zero—neighborhoods of $x$ can have nonzero probability.
+    \item Assuming all events with $p(E) = 0$ are impossible. In measure theory, zero-probability events can occur (e.g., a randomly chosen real number is rational: $p = 0$, but rationals exist).
+\end{itemize}
+
+\textbf{How to approach problems:}
+
+\begin{enumerate}
+    \item \textbf{Identify the outcome space:} Discrete or continuous? What are the possible values?
+    
+    \item \textbf{Check normalization:} Always verify $\sum p(x_i) = 1$ or $\int \rho(x) \, dx = 1$. If not normalized, find the normalization constant first.
+    
+    \item \textbf{Use additivity carefully:} Check if events are disjoint before adding probabilities.
+    
+    \item \textbf{For continuous distributions:} Remember $p(\text{interval}) = \int \rho(x) \, dx$, not just $\rho(x)$.
+    
+    \item \textbf{Interpret probabilistically:} What does the answer mean physically? Does it make sense (e.g., $0 \leq p \leq 1$)?
+\end{enumerate}
+
+\subsection{Looking Ahead: From Probabilities to Ensembles}
+
+With the axioms of probability established, we can now build statistical mechanics:
+
+\begin{itemize}
+    \item \textbf{Microstates:} Random variable $x$ represents the microstate of a system (positions, momenta of all particles).
+    \item \textbf{Ensembles:} Probability distributions over microstates, given macroscopic constraints (energy, volume, etc.).
+    \item \textbf{Observables:} Functions of microstates. Macroscopic quantities are ensemble averages.
+    \item \textbf{Thermodynamic connection:} Entropy $S = -k_B \sum p_i \ln p_i$ (Gibbs entropy). Equilibrium corresponds to maximum entropy (given constraints).
+\end{itemize}
+
+The next sections will introduce expectation values, variance, joint probabilities, and conditional probabilities—the machinery needed to compute thermodynamic quantities from microscopic distributions.
+
+
+\section{One Random Variable}
+
+\subsection*{Conceptual role of a random variable}
+A single random variable $x$ formalizes uncertainty by mapping outcomes of an experiment to real numbers. The key point—often exploited in exams—is that \emph{probability lives on sets, not on points}. All subsequent constructions (CPF, PDF, moments) are ways of encoding the same underlying measure on $\mathbb{R}$, optimized for different types of questions.
+
+A recurring conceptual theme in Kardar (and in exams) is that probability theory is not about numbers assigned to outcomes, but about \emph{consistency conditions} imposed by normalization, positivity, and additivity.
+
+\subsection*{Cumulative probability function (CPF)}
+The cumulative probability function
+\[
+P(x) = \mathrm{Prob}(X \le x)
+\]
+is the most primitive object. It is:
+\begin{itemize}
+\item monotone non-decreasing,
+\item bounded between $0$ and $1$,
+\item right-continuous,
+\item insensitive to changes on sets of measure zero.
+\end{itemize}
+
+\textbf{Why introduce it?} Because it exists even when a PDF does not (e.g. discrete or singular distributions). Conceptually, it encodes the full probabilistic content without reference to coordinates or densities.
+
+\textbf{Exam traps:}
+\begin{itemize}
+\item Confusing $P(x)$ with a probability density.
+\item Forgetting that discontinuities in $P(x)$ correspond to discrete probability mass.
+\item Being asked to construct $P(x)$ from qualitative information (symmetry, bounds).
+\end{itemize}
+
+\textbf{Strategy:} When unsure about a distribution, reason in terms of $P(x)$ first; only differentiate if justified.
+
+\subsection*{Probability density function (PDF)}
+If $P(x)$ is differentiable, the PDF is defined as
+\[
+p(x) = \frac{dP(x)}{dx},
+\qquad
+\int_{-\infty}^{\infty} p(x)\,dx = 1.
+\]
+
+The PDF is \emph{not} a probability but a density. It carries units of $[x]^{-1}$ and transforms nontrivially under changes of variables.
+
+\textbf{Why this matters:}
+\begin{itemize}
+\item Divergences in $p(x)$ are allowed as long as they are integrable.
+\item $p(x)$ has no upper bound; only its integral is constrained.
+\end{itemize}
+
+\textbf{Creative exam questions:}
+\begin{itemize}
+\item Showing that a seemingly pathological $p(x)$ is still normalizable.
+\item Checking consistency under rescaling $x \to ax$.
+\end{itemize}
+
+\textbf{Strategy:} Always track dimensions and Jacobians when variables are changed.
+
+\subsection*{Expectation values and change of variables}
+The expectation of a function $F(x)$ is
+\[
+\langle F(x) \rangle = \int dx\, p(x) F(x).
+\]
+
+Crucially, $F(x)$ itself defines a new random variable. If $f=F(x)$ has multiple preimages $x_i$, then
+\[
+p_F(f) = \sum_i p(x_i)\left|\frac{dx}{dF}\right|_{x=x_i}.
+\]
+
+\textbf{Why this is emphasized:} Many physical observables are nonlinear functions of underlying variables (energy, radius, squared velocity).
+
+\textbf{Exam traps:}
+\begin{itemize}
+\item Forgetting multiple branches.
+\item Dropping absolute values in Jacobians.
+\item Confusing expectation values with function evaluation at the mean.
+\end{itemize}
+
+\textbf{Strategy:} Solve $F(x)=f$ explicitly and treat each branch independently.
+
+\subsection*{Moments}
+Moments
+\[
+m_n = \langle x^n \rangle
+\]
+encode global features of the distribution but are often redundant and poorly behaved (they may diverge even if the PDF is normalized).
+
+\textbf{Conceptual warning:} A distribution is \emph{not} uniquely determined by its moments unless additional conditions hold.
+
+\subsection*{Characteristic function}
+The characteristic function
+\[
+\tilde p(k) = \langle e^{-ikx} \rangle
+\]
+is the Fourier transform of the PDF.
+
+\textbf{Why it is central:}
+\begin{itemize}
+\item Always exists for normalized PDFs.
+\item Turns convolutions into products.
+\item Generates moments via derivatives at $k=0$.
+\end{itemize}
+
+Moments follow from
+\[
+\tilde p(k) = \sum_{n=0}^\infty \frac{(-ik)^n}{n!}\langle x^n\rangle,
+\]
+and centered moments from $e^{ikx_0}\tilde p(k)$.
+
+\textbf{Exam strategy:} For sums of independent variables, compute $\tilde p(k)$ first; moments later.
+
+\subsection*{Cumulant generating function}
+The cumulant generating function is
+\[
+\ln \tilde p(k) = \sum_{n=1}^\infty \frac{(-ik)^n}{n!}\langle x^n\rangle_c.
+\]
+
+Cumulants isolate \emph{connected} contributions:
+\begin{itemize}
+\item First: mean
+\item Second: variance
+\item Higher: deviations from Gaussianity
+\end{itemize}
+
+\textbf{Physical meaning:} Cumulants vanish for independent additive structure beyond second order in Gaussian systems.
+
+\textbf{Key exam insight:} Independence $\Rightarrow$ cumulants add. This mirrors free energies in thermodynamics.
+
+\subsection*{Graphical interpretation}
+Moments decompose into sums of products of cumulants, corresponding to all partitions of points into connected clusters. This is the probabilistic analogue of diagrammatic expansions in field theory.
+
+\textbf{Connection forward:} This logic directly anticipates linked-cluster expansions and thermodynamic potentials in later chapters.
+
+\subsection*{Important probability distributions}
+
+\paragraph{Gaussian (Normal)}
+\[
+p(x)=\frac{1}{\sqrt{2\pi\sigma^2}}e^{-(x-\mu)^2/2\sigma^2},
+\quad
+\tilde p(k)=e^{-ik\mu-\frac{1}{2}\sigma^2k^2}.
+\]
+\begin{itemize}
+\item All cumulants beyond second vanish.
+\item Central in the central limit theorem.
+\end{itemize}
+\textbf{Exam angle:} Any distribution with only first two cumulants nonzero is Gaussian.
+
+\paragraph{Binomial}
+\[
+p(n)=\binom{N}{n}p^n(1-p)^{N-n},
+\quad
+\tilde p(k)=[(1-p)+pe^{-ik}]^N.
+\]
+\begin{itemize}
+\item Mean $Np$, variance $Np(1-p)$.
+\item Approaches Gaussian for large $N$.
+\end{itemize}
+
+\paragraph{Poisson}
+\[
+p(n)=\frac{\lambda^n e^{-\lambda}}{n!},
+\quad
+\tilde p(k)=\exp[\lambda(e^{-ik}-1)].
+\]
+\begin{itemize}
+\item All cumulants equal $\lambda$.
+\item Models rare, independent events.
+\end{itemize}
+
+\textbf{Strategic comparison:}
+\begin{itemize}
+\item Binomial $\to$ Poisson in rare-event limit.
+\item Poisson $\to$ Gaussian for large $\lambda$.
+\end{itemize}
+
+\textbf{Creative exam questions:}
+\begin{itemize}
+\item Identifying distributions from cumulant patterns.
+\item Deriving limiting forms via characteristic functions.
+\item Interpreting physical processes probabilistically.
+\end{itemize}
+
+\section{Many Random Variables}
+
+\subsection*{Conceptual expansion from one variable}
+Moving from one to many random variables is not a technical complication but a conceptual one: probabilities now live on an $N$-dimensional space. This shift is essential for statistical mechanics, where macroscopic observables emerge from very large collections of microscopic degrees of freedom.
+
+The joint configuration
+\[
+\mathbf{x} = (x_1, x_2, \dots, x_N)
+\]
+defines a single outcome, and probability is assigned to regions in this space.
+
+\subsection*{Joint probability density}
+The joint PDF $p(\mathbf{x})$ satisfies
+\[
+\int d^N x \, p(\mathbf{x}) = 1.
+\]
+
+\textbf{Independence} is an extremely strong assumption:
+\[
+p(\mathbf{x}) = \prod_{i=1}^N p_i(x_i)
+\quad \text{if and only if the variables are independent.}
+\]
+
+\textbf{Exam warning:} Independence is often stated implicitly. Always check whether factorization is justified before simplifying expressions.
+
+\subsection*{Marginal (unconditional) distributions}
+If interest is restricted to a subset of variables, the others are integrated out:
+\[
+p(x_1,\dots,x_m) = \int \prod_{i=m+1}^N dx_i \, p(x_1,\dots,x_N).
+\]
+
+\textbf{Interpretation:} Marginalization corresponds physically to ignoring (or not measuring) certain degrees of freedom. This operation always \emph{loses information}.
+
+\subsection*{Conditional distributions and Bayes’ theorem}
+Conditional PDFs encode probabilistic dependence:
+\[
+p(x_1,\dots,x_m \mid x_{m+1},\dots,x_N)
+= \frac{p(x_1,\dots,x_N)}{p(x_{m+1},\dots,x_N)}.
+\]
+
+\textbf{Key insight:} Conditional and unconditional PDFs coincide only if the variables are independent. Many exam problems test this distinction implicitly.
+
+\subsection*{Expectations and correlations}
+Expectation values generalize directly:
+\[
+\langle F(\mathbf{x}) \rangle = \int d^N x \, p(\mathbf{x}) F(\mathbf{x}).
+\]
+
+Correlations quantify dependence. The connected correlator
+\[
+\langle x_i x_j \rangle_c
+\]
+vanishes if $x_i$ and $x_j$ are independent.
+
+\subsection*{Joint characteristic function and cumulants}
+The joint characteristic function
+\[
+\tilde p(\mathbf{k}) = \left\langle \exp\left(-i \sum_{j=1}^N k_j x_j\right) \right\rangle
+\]
+generates joint moments and cumulants via derivatives.
+
+\textbf{Structural insight:}
+\begin{itemize}
+\item Moments correspond to all partitions (connected + disconnected).
+\item Cumulants isolate genuinely collective effects.
+\end{itemize}
+
+This mirrors linked-cluster expansions later used for free energies.
+
+\subsection*{Joint Gaussian distribution}
+The multivariate Gaussian
+\[
+p(\mathbf{x}) \propto \exp\!\left[
+-\frac{1}{2}(x_m-\mu_m)(C^{-1})_{mn}(x_n-\mu_n)
+\right]
+\]
+is fully characterized by:
+\[
+\langle x_m \rangle = \mu_m,
+\qquad
+\langle x_m x_n \rangle_c = C_{mn}.
+\]
+
+All higher cumulants vanish.
+
+\textbf{Exam insight:} Wick’s theorem is nothing but the statement that all higher moments reduce to pairings when only second cumulants survive.
+
+---
+
+\section{Sums of Random Variables and the Central Limit Theorem}
+
+\subsection*{Why sums dominate statistical mechanics}
+Macroscopic observables (energy, magnetization, particle number) are sums of microscopic variables. Understanding their distributions is therefore foundational.
+
+Let
+\[
+X = \sum_{i=1}^N x_i.
+\]
+
+\subsection*{Characteristic function of a sum}
+The characteristic function satisfies
+\[
+\tilde p_X(k) = \tilde p(k_1=\cdots=k_N=k).
+\]
+
+Cumulants of $X$ follow from expanding $\ln \tilde p_X(k)$.
+
+\subsection*{Additivity of cumulants}
+If variables are independent,
+\[
+\langle X^n \rangle_c = \sum_{i=1}^N \langle x_i^n \rangle_c.
+\]
+
+\textbf{Critical scaling result:}
+\begin{itemize}
+\item Mean $\sim N$
+\item Variance $\sim N$
+\item Relative fluctuations $\sim N^{-1/2}$
+\end{itemize}
+
+This scaling underpins the emergence of thermodynamics.
+
+\subsection*{Central Limit Theorem (CLT)}
+Define the rescaled variable
+\[
+y = \frac{X - N\langle x\rangle}{\sqrt{N}}.
+\]
+
+As $N\to\infty$, all cumulants beyond the second vanish:
+\[
+p(y) \to \text{Gaussian}.
+\]
+
+\textbf{Conceptual core:} Gaussianity is not about microscopic details but about the dominance of the second cumulant.
+
+\subsection*{Beyond the CLT: Lévy distributions}
+If the variance diverges (heavy-tailed PDFs),
+\[
+p(x) \sim |x|^{-1-\alpha}, \quad 0<\alpha\le2,
+\]
+the CLT fails. The sum converges instead to a Lévy stable distribution.
+
+\textbf{Exam angle:}
+\begin{itemize}
+\item Identify when the variance does not exist.
+\item Use small-$k$ behavior of $\tilde p(k)$.
+\end{itemize}
+
+---
+
+\section{Rules for Large Numbers}
+
+\subsection*{Scaling with system size}
+In the thermodynamic limit $N\to\infty$:
+\begin{itemize}
+\item Intensive quantities $\sim N^0$
+\item Extensive quantities $\sim N$
+\item State counts $\sim e^{N}$
+\end{itemize}
+
+This classification guides all approximations.
+
+\subsection*{Dominance of exponential terms}
+For sums of exponentially large terms,
+\[
+\sum_i e^{N a_i} \approx e^{N a_{\max}}.
+\]
+
+\textbf{Key lesson:} Free energies depend only on the largest contribution.
+
+\subsection*{Saddle point approximation}
+Integrals of the form
+\[
+\int dx \, e^{N\phi(x)}
+\]
+are dominated by maxima of $\phi(x)$.
+
+The result
+\[
+\frac{1}{N}\ln \mathcal{Z} \to \phi(x_{\max})
+\]
+explains why thermodynamic potentials depend only on extrema.
+
+\subsection*{Stirling’s approximation}
+Using saddle point methods,
+\[
+\ln N! = N\ln N - N + \frac{1}{2}\ln(2\pi N) + O(1/N).
+\]
+
+\textbf{Exam insight:} Stirling’s formula is not combinatorics—it is large-deviation theory in disguise.
+
+---
+
+\section{Information, Entropy, and Estimation}
+
+\subsection*{Information content}
+For discrete outcomes with probabilities $p_i$, the number of typical sequences is
+\[
+g \sim e^{N S},
+\quad
+S = -\sum_i p_i \ln p_i.
+\]
+
+\textbf{Interpretation:} Entropy measures the logarithmic volume of typical outcomes, not uncertainty per se.
+
+\subsection*{Entropy}
+Entropy satisfies:
+\begin{itemize}
+\item $S=0$ for certainty,
+\item $S=\ln M$ for uniform distributions.
+\end{itemize}
+
+It depends only on probabilities, not on labels of states.
+
+\textbf{Conceptual link:} This is the same entropy that later becomes thermodynamic entropy.
+
+\subsection*{Maximum entropy principle}
+Given partial information (constraints),
+the least biased distribution maximizes entropy subject to those constraints:
+\[
+p_i \propto e^{-\lambda F(x_i)}.
+\]
+
+\textbf{Deep insight:} Canonical ensembles are not postulates—they are inference results.
+
+\subsection*{Continuous entropy and its subtleties}
+For continuous variables,
+\[
+S = -\int dx\, p(x)\ln p(x),
+\]
+but this is not invariant under coordinate changes.
+
+\textbf{Resolution:}
+\begin{itemize}
+\item Use canonical variables,
+\item Or discretize phase space (quantum mechanics).
+\end{itemize}
+
+\textbf{Forward connection:} This resolves ambiguities in classical statistical mechanics and motivates the role of $\hbar$.
+
+\end{document}
+

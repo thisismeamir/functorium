@@ -1,0 +1,319 @@
+\documentclass[9pt,twocoloumn]{article}
+
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{kida}
+\usepackage{physics}
+\usepackage{float}
+\usepackage{svg}
+\usepackage{graphicx}
+\newcommand{\addsvg}[4][1.0]{
+    \begin{figure}[H]
+        \centering
+        \includesvg[width=#1\textwidth]{#2}
+        \caption{#4}
+        \label{fig:#3}
+    \end{figure}
+}
+
+\title{Advanced Statistical Mechanics Mid-Term Cheat-Sheet Formulas}
+\author{Amir Hossein Ebrahimnezhad - 404461001}
+\date{due: \today}
+
+\begin{document}
+\maketitle
+
+\begin{itemize}
+
+% =========================
+% Zeroth Law
+% =========================
+\item \textbf{Thermal equilibrium}
+\[
+\Theta(A) = \Theta(B)
+\]
+
+\item \textbf{Equation of state (example)}
+\[
+\Theta(P,V) = \text{const}
+\]
+
+% =========================
+% First Law
+% =========================
+\item \textbf{First Law (finite)}
+\[
+\Delta E = Q + W
+\]
+
+\item \textbf{First Law (differential)}
+\[
+dE = \delta Q + \delta W
+\]
+
+\item \textbf{Adiabatic process}
+\[
+\delta Q = 0
+\]
+
+\item \textbf{Isothermal process}
+\[
+dT = 0
+\]
+
+\item \textbf{Cyclic process}
+\[
+\oint dE = 0
+\]
+
+\item \textbf{Exact vs inexact}
+\[
+dE \text{ exact}, \quad \delta Q, \delta W \text{ inexact}
+\]
+
+% =========================
+% Work
+% =========================
+\item \textbf{Generalized work}
+\[
+\delta W = \sum_i J_i \, dx_i
+\]
+
+\item \textbf{Pressure--volume work}
+\[
+\delta W = -P\,dV
+\]
+
+\item \textbf{Magnetic work}
+\[
+\delta W = H\,dM
+\]
+
+\item \textbf{Electrical work}
+\[
+\delta W = E\,dP
+\]
+
+\item \textbf{Chemical work}
+\[
+\delta W = \mu\,dN
+\]
+
+% =========================
+% Ideal Gas
+% =========================
+\item \textbf{Ideal gas law}
+\[
+PV = nRT
+\]
+
+\item \textbf{Internal energy (ideal gas)}
+\[
+E = E(T)
+\]
+
+\item \textbf{Monatomic ideal gas}
+\[
+E = \frac{3}{2}Nk_BT
+\]
+
+\item \textbf{General ideal gas}
+\[
+E = \frac{f}{2}Nk_BT
+\]
+
+\item \textbf{Joule free expansion}
+\[
+\Delta E = 0
+\]
+
+\item \textbf{Isothermal ideal gas}
+\[
+\Delta E = 0 \Rightarrow Q = W
+\]
+
+% =========================
+% Heat Capacities
+% =========================
+\item \textbf{Heat capacity}
+\[
+C = \frac{\delta Q}{dT}
+\]
+
+\item \textbf{Constant volume}
+\[
+C_V = \left(\frac{\partial E}{\partial T}\right)_V
+\]
+
+\item \textbf{Constant pressure}
+\[
+C_P = \left(\frac{\partial E}{\partial T}\right)_P
+      + P\left(\frac{\partial V}{\partial T}\right)_P
+\]
+
+\item \textbf{Ideal gas relation}
+\[
+C_P - C_V = nR
+\]
+
+% =========================
+% Response Functions
+% =========================
+\item \textbf{Thermal expansion}
+\[
+\alpha = \frac{1}{V}\left(\frac{\partial V}{\partial T}\right)_P
+\]
+
+\item \textbf{Isothermal compressibility}
+\[
+\kappa_T = -\frac{1}{V}\left(\frac{\partial V}{\partial P}\right)_T
+\]
+
+\item \textbf{Adiabatic compressibility}
+\[
+\kappa_S = -\frac{1}{V}\left(\frac{\partial V}{\partial P}\right)_S
+\]
+
+% =========================
+% Second Law
+% =========================
+\item \textbf{Kelvin statement}
+\[
+\eta < 1
+\]
+
+\item \textbf{Clausius statement}
+\[
+\delta Q_{C\to H} \neq 0 \text{ without work}
+\]
+
+% =========================
+% Heat Engines
+% =========================
+\item \textbf{Energy balance (cycle)}
+\[
+W = Q_H - Q_C
+\]
+
+\item \textbf{Efficiency}
+\[
+\eta = \frac{W}{Q_H}
+\]
+
+\item \textbf{Refrigerator coefficient}
+\[
+\omega = \frac{Q_C}{W}
+\]
+
+% =========================
+% Carnot Engine
+% =========================
+\item \textbf{Carnot efficiency}
+\[
+\eta_C = 1 - \frac{T_C}{T_H}
+\]
+
+\item \textbf{Carnot heat ratio}
+\[
+\frac{Q_C}{Q_H} = \frac{T_C}{T_H}
+\]
+
+\item \textbf{Carnot work}
+\[
+W = Q_H\left(1 - \frac{T_C}{T_H}\right)
+\]
+
+% =========================
+% Adiabatic Ideal Gas
+% =========================
+\item \textbf{Adiabatic condition}
+\[
+\delta Q = 0
+\]
+
+\item \textbf{Adiabatic equation}
+\[
+PV^\gamma = \text{const}
+\]
+
+\item \textbf{Exponent}
+\[
+\gamma = \frac{C_P}{C_V} = \frac{f+2}{f}
+\]
+
+\item \textbf{Temperature--volume relation}
+\[
+TV^{\gamma-1} = \text{const}
+\]
+
+\item \textbf{Temperature--pressure relation}
+\[
+T^\gamma P^{1-\gamma} = \text{const}
+\]
+
+% =========================
+% Clausius Theorem
+% =========================
+\item \textbf{Clausius inequality}
+\[
+\oint \frac{\delta Q}{T} \le 0
+\]
+
+\item \textbf{Reversible cycle}
+\[
+\oint \frac{\delta Q_{\text{rev}}}{T} = 0
+\]
+
+% =========================
+% Entropy
+% =========================
+\item \textbf{Entropy definition}
+\[
+dS = \frac{\delta Q_{\text{rev}}}{T}
+\]
+
+\item \textbf{Entropy change}
+\[
+\Delta S = \int \frac{\delta Q_{\text{rev}}}{T}
+\]
+
+\item \textbf{Irreversible process}
+\[
+\Delta S > \int \frac{\delta Q}{T}
+\]
+
+\item \textbf{Entropy of isolated system}
+\[
+\Delta S \ge 0
+\]
+
+% =========================
+% Fundamental Relation
+% =========================
+\item \textbf{Fundamental thermodynamic identity}
+\[
+dE = T\,dS + \sum_i J_i\,dx_i
+\]
+
+\item \textbf{Temperature definition}
+\[
+T = \left(\frac{\partial E}{\partial S}\right)_{x_i}
+\]
+
+\item \textbf{Generalized forces}
+\[
+J_i = \left(\frac{\partial E}{\partial x_i}\right)_S
+\]
+
+% =========================
+% Statistical Mechanics Link
+% =========================
+\item \textbf{Boltzmann entropy}
+\[
+S = k_B \ln \Omega
+\]
+
+\end{itemize}
+
+\end{document}
+

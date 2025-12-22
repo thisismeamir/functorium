@@ -255,7 +255,139 @@ Now the product:
 &= e^{0} \\
 &= I
 \end{align}
-Therefore, $e^{iH}$ is unitary. $\qed$
+a. Therefore, $e^{iH}$ is unitary. $\qed$
 \section*{Problem 7}
+
+\section*{Problem   8: Sakurai 7}
+Matrix elements of $\ket{\alpha} \bra{\beta}$ are:
+\begin{equation}
+    \ket\alpha\bra\beta_{ij} = \braket{a_i}{\alpha} \braket{\beta}{a_j}
+\end{equation}
+the latter braket can be written in terms of the conjugate:
+\begin{equation}
+    \braket{a_i}{\alpha}\braket{\beta}{a_j}\qed
+\end{equation}
+
+b. For the sping half in the $\ket{\pm}_z$ we've got:
+\begin{equation}
+    \begin{matrix}
+        \braket{+}{S_z} = 1 , & \braket{-}{S_z}=0, & \braket{\pm}{S_x} = \frac{1}{\sqrt{2}}
+    \end{matrix}
+\end{equation}
+therefore:
+\begin{equation}
+    \ket{S_z}\bra{S_x} = \frac{1}{\sqrt2}\begin{pmatrix}1 & 1 \\ 0 & 0
+    \end{pmatrix}
+\end{equation}
+$\qed$.
+\section*{Problem 9: Sakurai 8}
+Assuming:
+\begin{equation}
+    A \left(\ket i +\ket j\right) = \alpha_i \ket i + \alpha_j \ket j
+\end{equation}
+the latter ket:
+\begin{equation}
+    \ket{x} = \alpha_i \ket i + \alpha_j \ket j
+\end{equation}
+has a different direction with respect to $\ket i + \ket j$ therefore, it cannot be an eigenstate (eigenvector) for $A$ unless,
+\begin{equation}
+    \alpha_j = \alpha_i
+\end{equation}
+It also can't be a third eigenstate because otherwise the orthogonality of these eigenstates would be of question.
+\section*{Problem 10: Sakurai 9}
+a. For any state $\ket a$:
+\begin{equation}
+    \prod_{a'} (A - a')\ket a = \prod_{a'}(A - a') \sum_i \ket{a_i}\braket{a_i}{a}
+\end{equation}
+which can be written as:
+\begin{equation}
+    \sum_i\prod_{a'} (a_i - a')\ket{a_i}\braket{a_i}{a} = \sum_i 0 = 0
+\end{equation}
+If the product instead is over all $a_j -a'$ then the only surviving term in the sum is:
+\begin{equation}
+    \prod_{a'} (a_j - a')\ket{a_i}\braket{a_i}{a}
+\end{equation}
+and dividing by the factors $a_j - a'$ just gives the projection of $\ket a$ on the direction $\ket{a'}$. For the operator $A:= S_z$ and $\{\ket{a'}\}$, we have:
+\begin{equation}
+    \prod_{a'}(A-a')=\left(S_z - \frac{\hbar}{2}\right)\left(S_z + \frac{\hbar}{2}\right)
+\end{equation}
+Thus:
+\begin{equation}
+    \prod_{a'\not = a''}\frac{A- a'}{a'' - a'} \begin{cases} = \frac{S_z + \frac{\hbar}{2}}{\hbar} \ \text{for} \  a'' = + \frac{\hbar}{2}
+        \\
+        = \frac{S_z -\frac{\hbar}{2}}{-\hbar}  \ \text{for}  \ a'' =-\frac{\hbar}{2}
+    \end{cases}
+\end{equation}
+\section*{Problem 10: Sakurai 10}
+Using the orthonormality $\braket{\pm}{\pm}=1,\ \braket{+}{-}=0$we compute one representative commutator, e.g. $[S_x,S_y]$.
+
+First form the product $S_xS_y$:
+
+\begin{align}
+S_xS_y\\
+&=\frac{\hbar}{2}\frac{i\hbar}{2}\big(\ket{+}\bra{-}+\ket{-}\bra{+}\big)\big(-\ket{+}\bra{-}+\ket{-}\bra{+}\big)
+\\
+&=\frac{i\hbar^2}{4}\big(
+-\ket{+}\braket{-}{+}\bra{-}+\ket{+}\braket{-}{-}\bra{+}
+-\ket{-}\braket{+}{+}\bra{-}+\ket{-}\braket{+}{-}\bra{+}
+\big).
+\end{align}
+
+By orthonormality all cross terms $\braket{\pm}{\mp}$ vanish and $\braket{\pm}{\pm}=1$, so
+\begin{equation}
+S_xS_y=\frac{i\hbar^2}{4}\big( -\ket{-}\bra{+}-\ket{+}\bra{-}\big)
+=-\frac{i\hbar^2}{4}\big(\ket{+}\bra{-}+\ket{-}\bra{+}\big).
+\end{equation}
+
+Similarly
+\begin{align}
+S_yS_x\\
+\\ &=\frac{i\hbar}{2}\frac{\hbar}{2}\big(-\ket{+}\bra{-}+\ket{-}\bra{+}\big)\big(\ket{+}\bra{-}+\ket{-}\bra{+}\big)
+\\ &=\frac{i\hbar^2}{4}\Big(
+-\ket{+}\braket{-}{+}\bra{-}-\ket{+}\braket{-}{-}\bra{+}
++\ket{-}\braket{+}{+}\bra{-}+\ket{-}\braket{+}{-}\bra{+}
+\Big)[4pt]
+\\ &=\frac{i\hbar^2}{4}\big(\ket{-}\bra{+}+\ket{+}\bra{-}\big).
+\end{align}
+
+Now the commutator
+\begin{align}
+[S_x,S_y]&=S_xS_y-S_yS_x\\
+&=-\frac{i\hbar^2}{4}\big(\ket{+}\bra{-}+\ket{-}\bra{+}\big)
+-\frac{i\hbar^2}{4}\big(\ket{+}\bra{-}+\ket{-}\bra{+}\big)
+\\ &=-\frac{i\hbar^2}{2}\big(\ket{+}\bra{-}+\ket{-}\bra{+}\big).
+\end{align}
+
+Recognize $\ket{+}\bra{-}+\ket{-}\bra{+}=\tfrac{2}{\hbar}S_x$ and compare with $S_z=\dfrac{\hbar}{2}(\ket{+}\bra{+}-\ket{-}\bra{-})$. A more convenient route is to use the Pauli algebra identity (which follows from the same projector manipulations)
+\begin{equation}
+\sigma_i\sigma_j=\delta_{ij},\mathbb{I}+i\varepsilon_{ijk}\sigma_k,
+\end{equation}
+together with $S_i=\dfrac{\hbar}{2}\sigma_i$. From this we get
+\begin{equation}
+[S_i,S_j]=\frac{\hbar^2}{4}[\sigma_i,\sigma_j]
+=\frac{\hbar^2}{4}\big(2i\varepsilon_{ijk}\sigma_k\big)
+=i\varepsilon_{ijk}\hbar\Big(\frac{\hbar}{2}\sigma_k\Big)
+= i\varepsilon_{ijk}\hbar,S_k,
+\end{equation}
+which is the desired commutation relation.
+
+For the anticommutator use the same identity:
+\begin{equation}
+\{\sigma_i,\sigma_j\}=2\delta_{ij},\mathbb{I},
+\end{equation}
+hence
+\begin{equation}
+\{S_i,S_j\}=\frac{\hbar^2}{4}{\sigma_i,\sigma_j}
+=\frac{\hbar^2}{4}\big(2\delta_{ij}\mathbb{I}\big)
+=\frac{\hbar^2}{2},\delta_{ij},\mathbb{I}.
+\end{equation}
+(If one views the right-hand side as an operator on the two-dimensional spin space, it is exactly $\dfrac{\hbar^2}{2}\delta_{ij}$ times the identity.)
+
+Thus we have proven
+\begin{equation}
+[S_i,S_j]=i\varepsilon_{ijk}\hbar,S_k,\qquad
+\{S_i,S_j\}=\frac{\hbar^2}{2},\delta_{ij},\mathbb{I},
+\end{equation}
+as required.
 
 \end{document}

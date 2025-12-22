@@ -1,0 +1,224 @@
+%% kidafonts.sty
+%% Typography system for Kid-A-Print documents
+%% Requires XeLaTeX or LuaLaTeX
+%% Author: Kid A
+%% License: Apache 2.0
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{kidafonts}[2025/11/02 v1.0 Kid-A-Print Typography]
+
+% ============================================================================
+% PACKAGE OPTIONS
+% ============================================================================
+\newif\if@mainfontserif
+\newif\if@mainfontsans
+\newif\if@mainfontmono
+
+% Set defaults
+\@mainfontseriftrue
+\@mainfontsansfalse
+\@mainfontmonofalse
+
+% Define options
+\DeclareOption{serif}{%
+    \@mainfontseriftrue
+    \@mainfontsansfalse
+    \@mainfontmonofalse
+}
+
+\DeclareOption{sans}{%
+    \@mainfontseriffalse
+    \@mainfontsanstrue
+    \@mainfontmonofalse
+}
+
+\DeclareOption{mono}{%
+    \@mainfontseriffalse
+    \@mainfontsansfalse
+    \@mainfontmonotrue
+}
+
+% Fallback for unknown options
+\DeclareOption*{%
+    \PackageWarning{kidafonts}{Unknown option '\CurrentOption'}%
+}
+
+% Process options
+\ProcessOptions\relax
+
+% ============================================================================
+% FONT LOADING (XeLaTeX/LuaLaTeX required)
+% ============================================================================
+\RequirePackage{fontspec}
+\RequirePackage{unicode-math}
+
+% ============================================================================
+% DEFINE ALL FONT FAMILIES
+% ============================================================================
+
+% Serif font: IBM Plex Serif
+\newfontfamily\seriffonts{IBMPlexSerif}[
+    Extension      = .ttf,
+    UprightFont    = *-Light,
+    BoldFont       = *-Regular,
+    ItalicFont     = *-Italic,
+    BoldItalicFont = *-SemiBoldItalic,
+    Ligatures      = TeX,
+    Scale          = 0.95,
+]
+
+% Sans-serif font: IBM Plex Sans
+\newfontfamily\sansfonts{IBMPlexSans}[
+    Extension      = .ttf,
+    UprightFont    = *-Regular,
+    BoldFont       = *-SemiBold,
+    ItalicFont     = *-Italic,
+    BoldItalicFont = *-SemiBoldItalic,
+    Ligatures      = TeX,
+    Scale          = 0.95,
+]
+
+% Monospace font: IBM Plex Mono
+\newfontfamily\monofonts{IBMPlexMono}[
+    Extension      = .ttf,
+    UprightFont    = *-Light,
+    BoldFont       = *-SemiBold,
+    ItalicFont     = *-Italic,
+    BoldItalicFont = *-SemiBoldItalic,
+    Scale          = 0.95,
+]
+
+% ============================================================================
+% SET MAIN FONT BASED ON OPTION
+% ============================================================================
+
+\if@mainfontserif
+    % Main text font: IBM Plex Serif
+    \setmainfont{IBMPlexSerif}[
+        Extension      = .ttf,
+        UprightFont    = *-Light,
+        BoldFont       = *-Regular,
+        ItalicFont     = *-Italic,
+        BoldItalicFont = *-SemiBoldItalic,
+        Ligatures      = TeX,
+        Scale          = 0.95,
+    ]
+    \setsansfont{IBMPlexSans}[
+        Extension      = .ttf,
+        UprightFont    = *-Light,
+        BoldFont       = *-SemiBold,
+        ItalicFont     = *-Italic,
+        BoldItalicFont = *-SemiBoldItalic,
+        Ligatures      = TeX,
+        Scale          = 0.95,
+    ]
+    \setmonofont{IBMPlexMono}[
+        Extension      = .ttf,
+        UprightFont    = *-Light,
+        BoldFont       = *-SemiBold,
+        ItalicFont     = *-Italic,
+        BoldItalicFont = *-SemiBoldItalic,
+        Scale          = 0.95,
+    ]
+\fi
+
+\if@mainfontsans
+    % Main text font: IBM Plex Sans
+    \setmainfont{IBMPlexSans}[
+        Extension      = .ttf,
+        UprightFont    = *-Light,
+        BoldFont       = *-SemiBold,
+        ItalicFont     = *-Italic,
+        BoldItalicFont = *-SemiBoldItalic,
+        Ligatures      = TeX,
+        Scale          = 0.95,
+    ]
+    \setsansfont{IBMPlexSans}[
+        Extension      = .ttf,
+        UprightFont    = *-Light,
+        BoldFont       = *-SemiBold,
+        ItalicFont     = *-Italic,
+        BoldItalicFont = *-SemiBoldItalic,
+        Ligatures      = TeX,
+        Scale          = 0.95,
+    ]
+    \setmonofont{IBMPlexMono}[
+        Extension      = .ttf,
+        UprightFont    = *-Light,
+        BoldFont       = *-SemiBold,
+        ItalicFont     = *-Italic,
+        BoldItalicFont = *-SemiBoldItalic,
+        Scale          = 0.95,
+    ]
+\fi
+
+\if@mainfontmono
+    % Main text font: IBM Plex Mono
+    \setmainfont{IBMPlexMono}[
+        Extension      = .ttf,
+        UprightFont    = *-Light,
+        BoldFont       = *-SemiBold,
+        ItalicFont     = *-Italic,
+        BoldItalicFont = *-SemiBoldItalic,
+        Scale          = 0.95,
+    ]
+    \setsansfont{IBMPlexSans}[
+        Extension      = .ttf,
+        UprightFont    = *-Light,
+        BoldFont       = *-SemiBold,
+        ItalicFont     = *-Italic,
+        BoldItalicFont = *-SemiBoldItalic,
+        Ligatures      = TeX,
+        Scale          = 0.95,
+    ]
+    \setmonofont{IBMPlexMono}[
+        Extension      = .ttf,
+        UprightFont    = *-Light,
+        BoldFont       = *-SemiBold,
+        ItalicFont     = *-Italic,
+        BoldItalicFont = *-SemiBoldItalic,
+        Scale          = 0.95,
+    ]
+\fi
+
+% Math font: IBM Plex Math
+\setmathfont{IBMPlexMath-Regular.otf}[
+    Scale = 0.9
+]
+
+% ============================================================================
+% TYPOGRAPHY SCALE
+% ============================================================================
+% Define relative font sizes
+\newcommand{\ktiny}{0.6}
+\newcommand{\ksmall}{0.7}
+\newcommand{\knormal}{0.8}
+\newcommand{\klarge}{1.0}
+\newcommand{\khuge}{1.2}
+\newcommand{\kgiant}{2.0}
+
+% ============================================================================
+% FONT SWITCHING COMMANDS
+% ============================================================================
+% Quick access to font families
+\newcommand{\serif}[1]{{\rmfamily #1}}      % Serif text
+\newcommand{\sans}[1]{{\sffamily #1}}       % Sans-serif text
+\newcommand{\mono}[1]{{\ttfamily #1}}       % Monospace text
+
+% Explicit font family commands
+\newcommand{\textserif}[1]{{\seriffonts #1}}
+\newcommand{\textsans}[1]{{\sansfonts #1}}
+\newcommand{\textmono}[1]{{\monofonts #1}}
+
+% Inline code styling
+\newcommand{\code}[1]{\texttt{#1}}
+
+% ============================================================================
+% MICROTYOGRAPHY
+% ============================================================================
+% \RequirePackage{microtype}  % Improved typography (kerning, spacing)
+% \microtypesetup{
+%     protrusion = true,
+%     expansion  = true,
+% }
+
+\endinput

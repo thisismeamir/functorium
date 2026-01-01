@@ -537,3 +537,4 @@ With the environment properly configured and validated, subsequent development a
 |dd4hep|Latest|3.8+|Geant4, ROOT|~20 min|
 
 *Approximate times on 8-core system with parallel compilation
+

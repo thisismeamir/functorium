@@ -1,9 +1,6 @@
----
-sticker: lucide//align-left
----
 # Introduction
 
-## Brief History
+## Past
 
 In 1915, Einstein presented the theory of general relativity. Incorporating his special relativistic view of the spacetime with the principle of equivalence (his happiest thought), he gave a geometrical description of spacetime, and gravitation as a curvature (in opposed to viewing it as a force between massive bodies), in which a freely falling body is not being pushed, but moves in the path of geodesics. Perhaps 
 
@@ -32,44 +29,40 @@ The idea lies behind the fact that given a passing gravitational radiation, spac
 Four decades of thought, development, went on so in by the end of summer of 2015 the LIGO detectors were finally sensitive enough to detect plausible astrophysical sources. And on 14 September 2015 timing favored physicists again. Almost as soon as the detectors were turned on, they gave a signal that was strong enough to be an unmistakable source.
 ## Future
 
-### Ground-Based Experiements
+### Ground-Based Experiments
 
-The LIGO and Virgo era is far from finished. Plans for upgrades to the LIGO instruments are already being made. Among other advanced $A+$ (The planned advanced LIGO upgrade) will improve LIGO's broadband sensitivity by using the technique of quantum light squeezing to reduce phase noise at high frequencies and radiation pressure noise at low frequencies[^10].
+The era of ground-based gravitational-wave detection with LIGO and Virgo is ongoing, with further instrumental improvements already planned. One such upgrade is Advanced LIGO Plus $A+$, which aims to improve broadband sensitivity through the use of quantum light squeezing. This technique reduces phase noise at high frequencies and radiation-pressure noise at low frequencies, thereby enhancing the overall detector performance.
 
----Copied from the paper---
-The United States with LIGO and Europe with Virgo are not the only players in gravitational-wave astronomy. Japan has built a 3-km underground interferometer, KAGRA, inside the Kamioka mines. This instrument will have the first implementation of cryogenic detection, and it is planned to join the LIGO and Virgo network in 2019. LIGOIndia is hoped to be operational by the mid-2020s. When this occurs, the gravitational-wave network will be enhanced, with detectors spread all over the globe and able to detect gravitational waves from all directions at close-to-optimal sensitivities[^4].
+Gravitational-wave astronomy is not limited to the LIGO and Virgo observatories. Japan has constructed a $3$-km underground interferometer, KAGRA, located in the Kamioka mine. This detector represents the first implementation of cryogenic interferometric detection. KAGRA is intended to operate as part of the global gravitational-wave detector network alongside LIGO and Virgo. In addition, the LIGO-India detector is expected to become operational in the mid-2020s. With detectors distributed globally, the network will achieve improved sensitivity to gravitational waves arriving from different directions and will operate closer to optimal performance.
 
-Predictions beyond 2025 are challenging, but plans for advanced ground-based instruments are already being made. Two possibilities are being discussed: the Einstein Telescope59, which is a project of several  years’ standing, and the concept of the Cosmic Explorer60. Both will require new facilities, with the former planned as a triangular facility built underground to reduce seismic noise and the latter a 40-km-long detector using the quantum squeezing technology of A+ and the cryogenic cooling of KAGRA and Voyager. Funding has not yet been secured for these future facilities, although phase-A-type studies have begun, so one should not expect to see them deployed until the 2030s at the earliest.
+Although predictions beyond 2025 are uncertain, plans for more advanced ground-based detectors are already under discussion. Two major proposals are the Einstein Telescope and the Cosmic Explorer. Both concepts require new facilities. The Einstein Telescope is planned as an underground triangular interferometer to mitigate seismic noise, while the Cosmic Explorer envisions a detector with arm lengths of approximately $40$ km, incorporating quantum squeezing techniques similar to those of $A+$ and cryogenic cooling technologies developed for KAGRA and Voyager. At present, funding for these projects has not been secured, and only early-phase studies have begun. Consequently, deployment is not expected before the 2030s.
 
-The greater sensitivity of these improved detectors will lead to the precision era of gravitational-wave detection. Lower noise means essentially two things: many more events (in the thousands, depending on the unknown astrophysical event rate) at moderate signal-to-noise ratios from sources at distances of up to thousands of megaparsecs, and a few discoveries at very high signal-to-noise ratios (in the hundreds or more) from sources at distances of tens to hundreds of megaparsecs.
+The increased sensitivity of these future detectors is expected to mark a transition to a precision era of gravitational-wave astronomy. Lower noise levels will result in significantly higher event detection rates, potentially reaching thousands of events depending on astrophysical source populations. These detections will include moderate signal-to-noise ratio events from sources at distances of thousands of megaparsecs, as well as a smaller number of nearby events with very high signal-to-noise ratios, potentially in the hundreds.
 
-Fundamentally, it is hoped that the improved sensitivity of the next detectors will provide surprises and yield unprecedented measurement precision.
+It is anticipated that the improved sensitivity of next-generation ground-based detectors will both enhance measurement precision and lead to unexpected discoveries.
 
-### Cosmic Gravitational-Wave Detector
-“In addition to the roughly 10–2,000 Hz frequency range probed by current and planned ground-based gravitational-wave detectors, it is possible to use cosmic phenomena to infer the presence of lower-frequency gravitational waves.” (Miller and Yunes, 2019, p. 473)
+### Cosmic Gravitational-Wave Detection
 
-### Space
-“Ultimately, if we wish to detect gravitational waves emitted by a different type of strong-gravity source, we will have to go to space.” (Miller and Yunes, 2019, p. 474)
+In addition to the frequency range of approximately $10–2,000 \text{Hz}$ probed by current and planned ground-based detectors, lower-frequency gravitational waves can be studied indirectly through cosmic phenomena. These approaches provide access to gravitational-wave signals outside the reach of terrestrial interferometers.
 
-“A mission that is expected to accomplish this is the Laser Interferometer Space Antenna (LISA)77 (see Fig. 6). LISA is an European Space Agency mission, with a junior partnership contribution by NASA (and based on ideas related to drag-free satellites dating back to the 1970s; for example, ref. 78), which will consist of an arrangement of three satellites in orbit around the Sun and trailing Earth, maintaining a triangular arrangement that precesses as it moves around the Sun.” (Miller and Yunes, 2019, p. 474)
+### Space-Based Observations
 
-“Once LISA is operational, it will detect entire new classes of gravitational waves. One of the most anticipated classes is the waves generated in the merger of black holes with masses of about 104M–107M at the centres of galaxies.” (Miller and Yunes, 2019, p. 474)
+To detect gravitational waves emitted by different classes of strong-gravity sources, space-based detectors are required. One such mission is the Laser Interferometer Space Antenna (LISA), a mission led by the European Space Agency with participation from NASA. LISA will consist of three spacecraft arranged in a triangular formation, orbiting the Sun while trailing the Earth and maintaining a precessing configuration.
 
-“These gravitational waves encode a trove of information about the properties of black holes hosted at the centre of galaxies before the galaxies collide, feeding again into astrophysical population modelling.” (Miller and Yunes, 2019, p. 474)
+LISA is expected to detect new classes of gravitational-wave sources, including mergers of black holes with masses in the range $10^4 M_\odot$ to $10^7 M_\odot$ located at galactic centers. The gravitational waves emitted by these systems contain information about the properties of black holes prior to and during galaxy mergers, contributing to astrophysical population studies.
 
-“Space-based gravitational-wave observations are crucial because of the unique science that they enable. On the astrophysical front, the properties of supermassive black holes when galaxies merge can only be determined through these waves.” (Miller and Yunes, 2019, p. 474)
+Space-based gravitational-wave observations are particularly important due to the unique science they enable. Information about supermassive black holes during galaxy mergers can only be obtained through these observations. From a theoretical perspective, gravitational waves emitted in extreme-mass-ratio inspirals encode detailed information about the spacetime geometry of supermassive black holes.
 
-“On the theoretical physics front, the spacetime of supermassive black holes, as traced by a small compact object, is encoded in vast detail by gravitational waves emitted in extreme-mass-ratio inspirals86,87.” (Miller and Yunes, 2019, p. 474)
+Such measurements allow for tests of whether astrophysical black holes are described by the Kerr solution of the Einstein equations. Previous experience suggests that these observations are likely to confirm many predictions of general relativity, rule out certain modified gravity models, and constrain models of black hole formation. However, the possibility of unexpected results remains.
 
-“Such observations will allow us to test the hypothesis that black holes in the Universe are described by the solution to the Einstein equations found in the 1960s by Roy Kerr88.” (Miller and Yunes, 2019, p. 474)
+Historically, opening new observational windows has led to unforeseen discoveries. Gravitational-wave observations may provide insights into unresolved questions in gravitational physics, including the late-time acceleration of the Universe, galactic rotation curves, and the unification of quantum mechanics with gravity.
 
-“If the past is a good predictor for the future, these tests will once more verify that Einstein was right all along, that many models of modified gravity must be discarded and that some particular model (or models) of black hole formation are applicable in nature. However, there can beand probably will be—surprises.” (Miller and Yunes, 2019, p. 474)
 
-“Every time humankind has opened a new window into the Universe, unexpected discoveries have emerged.” (Miller and Yunes, 2019, p. 474)
+## Motivation
 
-“These discoveries are coveted because they will provide a hint of how to answer some fundamental questions in gravitational physics that remain unanswered. What is causing the late time acceleration of the Universe? What is causing the rotation curves of galaxies? How do we unify quantum mechanics with gravity? Gravitational waves have the potential to provide expected and unexpected clues to these questions that we can use to put together the jigsaw puzzle of our mysterious Universe.” (Miller and Yunes, 2019, p. 474)
+The direct detection of gravitational waves by LIGO and Virgo collaboration in 2015 marked as watershed moment in physics, opening an entirely new window onto to universe. What Einstein predicted a century ago as minute ripples in the fabric of spacetime has become a powerful observational tool, fundamentally transforming our understanding of compact objects, extreme gravity, and the cosmos itself. In less than a decade since that first detection, gravitational wave astronomy has evolved from a bold experimental venture into a mature observational science.
 
----end---
+Gravitational wave physics sits at a unique intersection of theoretical physics, computational science, and experimental observation. Understanding the signals requires solving Einstein's field equations in their full nonlinear glory—a task only achievable through large-scale numerical simulations. Extracting astrophysical information from detector data demands sophisticated data analysis techniques, increasingly augmented by machine learning. Planning for the next generation of more sensitive detectors requires anticipating computational challenges that scale with improved sensitivity. This computational intensity is not merely a practical consideration; it defines many of the field's open questions and opportunities for contribution.
 ## References
 
 #### **Bibtex:** 

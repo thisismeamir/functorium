@@ -74,6 +74,7 @@ Therefore, the metric is invariant under any infinitesimal coordinate transforma
 
 
 \section{Derivations and Properties}\label{sec:derivations-and-properties}
+
 \subsection{Iverse Metric}\label{subsec:iverse-metric}
 To find the inverse metric $g^{\mu\nu}$, we start from the definition:
 \begin{equation}
@@ -91,21 +92,41 @@ we calculate the defined condition~\ref{eq:inverse-metric-definition},
     &\Rightarrow k^{\alpha\gamma} = - \eta^{\gamma\beta}\eta^{\alpha\mu} h_{\mu\beta} \eqqcolon -h^{\alpha\gamma}.\label{eq:inverse-metric-calculation-step}
 \end{align}
 
-In a similar way, we can derive all the other related quantities such as the Christoffel symbols, Riemann tensor, Ricci tensor, and Ricci scalar in terms of the perturbation $h_{\mu\nu}$.
-We thus have:
+\subsection{Other Quantities in Weak-field Approximation}\label{subsec:other-quantities-in-weak-field-approximation}
+
+In the weak-field approximation, other important quantities can be expressed in terms of the perturbation $h_{\mu\nu}$.
+We give a few final results are here, and the detailed derivations can be found in standard textbooks on general relativity.
 \begin{equation}
-    \Gamma^{\mu}_{\nu\rho} = \frac{1}{2} \eta^{\mu\sigma} (\partial_{\rho} h_{\sigma\nu} + \partial_{\nu} h_{\sigma\rho} - \partial_{\sigma} h_{\nu\rho})\label{eq:christoffel-symbols-weak-field}
+    g^{\mu\nu} = \eta^{\mu\nu} + h^{\mu\nu}\mathcal{O}(h^2) \label{eq:inverse-metric-weak-field}
 \end{equation}
+And the christoffel symbols are:
 \begin{equation}
-    R_{\mu\nu\rho\sigma} = \frac{1}{2} \left(
-    \partial_{\rho}\partial_{\nu} h_{\mu\sigma} + \partial_{\sigma}\partial_{\mu} h_{\nu\rho} - \partial_{\sigma}\partial_{\nu} h_{\mu\rho} - \partial_{\rho}\partial_{\mu} h_{\nu\sigma}
-    \right)
-\label{eq:riemann-tensor-weak-field}
+    \Gamma^{\mu}_{\alpha\beta} = \frac12 \eta^{\mu\lambda} \left(
+                                                               \partial_{\alpha} h_{\lambda\beta} + \partial_{\beta}h_{\lambda\alpha} - \partial_{\lambda}h_{\alpha\beta}
+    \right) + \mathcal{O}(h^2)\label{eq:christoffel-symbols-weak-field}
 \end{equation}
+and for the Riemann tensor:
 \begin{equation}
-    R_{\mu\nu} = \partial^{\rho}\partial_{(\mu}h_{\nu)\rho} - \frac{1}{2} \partial^\rho\partial_\rho h_{\mu\nu} - \partial_{\mu}\partial_{\nu} h\label{eq:ricci-tensor-weak-field}
+    R_{\mu\nu\alpha\beta} = \frac12 \left(
+                                        \partial_{\alpha}\partial_{\nu} h_{\mu\beta} + \partial_{\beta}\partial_{\mu} h_{\nu\alpha} - \partial_{\alpha}\partial_{\mu}h_{\nu\beta} - \partial_{\beta}\partial_{\nu} h_{\mu\alpha}
+    \right)\label{eq:riemman-tensor-weak-field}
 \end{equation}
+then for the Ricci tensor we have:
 \begin{equation}
-    G_{\mu\nu} = \partial^{\rho}\partial_{(\mu}h_{\nu)\rho} - \frac{1}{2} \partial^\rho\partial_\rho h_{\mu\nu} - \partial_{\mu}\partial_{\nu} h + \frac{1}{2} \eta_{\mu\nu} (\partial^\rho\partial_\rho h - \partial^{\rho}\partial^{\sigma} h_{\rho\sigma})\label{eq:einstein-tensor-weak-field}
+    R_{\mu\nu} = \partial^{\rho}\partial_{(\mu}h_{\nu)\rho} -\frac12 \partial^{\rho}\partial_{\rho}h_{\mu\nu} - \partial_{\mu}\partial_{\nu}h\label{eq:ricci-tensor-weak-field}
 \end{equation}
+where $h \coloneqq h^\mu_\mu$, and $\partial^\mu \coloneq \eta^{\mu\rho}\partial_\rho$.
+And for the Einstein tensor:
+\begin{equation}
+    G_{\mu\nu} = \partial^{\rho}\partial_{(\mu} h_{\nu)\rho} -\frac12 \partial^{\rho}\partial_{\rho}h_{\mu\nu} - \partial_{\mu}\partial_{\nu}h - \frac12 \eta_{\mu\nu}\left(\partial^{\rho}\partial^{\sigma}h_{\rho\sigma} - \partial^{\rho}\partial_{\rho}h\right)\label{eq:einstein-tensor-weak-field}
+\end{equation}
+
+These equations may not look too informative, but we can already derive two important properties that will be important later on.
+First, note that the second term on the right-hand side of equation~\ref{eq:ricci-tensor-weak-field} is just a wave operator (d'Alembertian) acting on the perturbation $h_{\mu\nu}$.
+This indicates that gravitational perturbations propagate as waves in the weak-field limit.
+
+Wave operators are nice in the sense that they lead to manifestly hyperbolic equations, which have well-posed initial value problems.
+
+
 \section{Weak-field Solutions}\label{sec:weak-field-solutions}
+

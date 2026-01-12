@@ -1,0 +1,80 @@
+---
+sticker: lucide//atom
+---
+# Caching
+![[Pasted image 20250816113932.png]]
+Gradle uses two main features to reduce build time, caching and incremental build.
+
+## Incremental Build
+An **incremental build** is a build that avoids running tasks whose inputs have not changed since the previous build. Re-executing such tasks is unnecessary if they would only re-produce the same output.
+
+For incremental builds to work, tasks must define their inputs and outputs. Gradle will determine whether those input or outputs have changed at build time. If they have changed, Gradle will execute the task. Otherwise, it will skip execution.
+
+Incremental builds are always enabled, and the best way to see them in action is to turn on _verbose mode_. With verbose mode, each task state is labeled during a build:
+
+```bash
+./gradlew compileJava --console=verbose
+
+> Task :buildSrc:generateExternalPluginSpecBuilders UP-TO-DATE
+> Task :buildSrc:extractPrecompiledScriptPluginPlugins UP-TO-DATE
+> Task :buildSrc:compilePluginsBlocks UP-TO-DATE
+> Task :buildSrc:generatePrecompiledScriptPluginAccessors UP-TO-DATE
+> Task :buildSrc:generateScriptPluginAdapters UP-TO-DATE
+> Task :buildSrc:compileKotlin UP-TO-DATE
+> Task :buildSrc:compileJava NO-SOURCE
+> Task :buildSrc:compileGroovy NO-SOURCE
+> Task :buildSrc:pluginDescriptors UP-TO-DATE
+> Task :buildSrc:processResources UP-TO-DATE
+> Task :buildSrc:classes UP-TO-DATE
+> Task :buildSrc:jar UP-TO-DATE
+> Task :list:compileJava UP-TO-DATE
+> Task :utilities:compileJava UP-TO-DATE
+> Task :app:compileJava UP-TO-DATE
+
+BUILD SUCCESSFUL in 374ms
+12 actionable tasks: 12 up-to-date
+```
+
+> [!IMPORTANT]  When you run a task that has been previously executed and hasn’t changed, then `UP-TO-DATE` is printed next to the task.
+
+
+## Build caching
+Incremental Builds are a great optimization that helps avoid work already done. If a developer continuously changes a single file, there is likely no need to rebuild all the other files in the project.
+
+However, what happens when the same developer switches to a new branch created last week? The files are rebuilt, even though the developer is building something that has been built before.
+
+This is where a **build cache** is helpful.
+
+The build cache stores previous build results and restores them when needed. It prevents the redundant work and cost of executing time-consuming and expensive processes.
+
+When the build cache has been used to repopulate the local directory, the tasks are marked as `FROM-CACHE`:
+
+```
+$ ./gradlew compileJava --build-cache
+
+> Task :buildSrc:generateExternalPluginSpecBuilders UP-TO-DATE
+> Task :buildSrc:extractPrecompiledScriptPluginPlugins UP-TO-DATE
+> Task :buildSrc:compilePluginsBlocks UP-TO-DATE
+> Task :buildSrc:generatePrecompiledScriptPluginAccessors UP-TO-DATE
+> Task :buildSrc:generateScriptPluginAdapters UP-TO-DATE
+> Task :buildSrc:compileKotlin UP-TO-DATE
+> Task :buildSrc:compileJava NO-SOURCE
+> Task :buildSrc:compileGroovy NO-SOURCE
+> Task :buildSrc:pluginDescriptors UP-TO-DATE
+> Task :buildSrc:processResources UP-TO-DATE
+> Task :buildSrc:classes UP-TO-DATE
+> Task :buildSrc:jar UP-TO-DATE
+> Task :list:compileJava FROM-CACHE
+> Task :utilities:compileJava FROM-CACHE
+> Task :app:compileJava FROM-CACHE
+
+BUILD SUCCESSFUL in 364ms
+12 actionable tasks: 3 from cache, 9 up-to-date
+```
+
+Once the local directory has been repopulated, the next execution will mark tasks as `UP-TO-DATE` and not `FROM-CACHE`.
+
+The build cache allows you to share and reuse unchanged build and test outputs across teams. This speeds up local and CI builds since cycles are not wasted re-building binaries unaffected by new code changes.
+
+## Tags
+#atom #theory 

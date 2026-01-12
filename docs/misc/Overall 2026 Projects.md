@@ -11,7 +11,6 @@
 
 - Gravitational Waves
 - Numerical Relativity
-- Spin Gravity Coupling
 
 ## Cyclic Studies
 

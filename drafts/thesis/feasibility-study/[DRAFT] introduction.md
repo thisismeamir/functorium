@@ -176,10 +176,6 @@ This study aims to serve multiple purposes: as a comprehensive introduction to g
 The gravitational wave frontier is vast, diverse, and rapidly evolving. This study maps that frontier, identifying both established landmarks and unexplored territories where meaningful contributions can still be made. Let us begin.
 
 
-#### **Bibtex:** 
-
-
-
 #### Footnotes
 
 [^1]: C. W. Misner, K. S. Thorne, J. A. Wheeler, and D. I. Kaiser, _Gravitation_, First Princeton University Press edition. Princeton Oxford: Princeton University Press, 2017.

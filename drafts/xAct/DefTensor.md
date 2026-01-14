@@ -19,5 +19,3 @@ DefTensor[F[-a,-b],M]; (* Tensor field of rank 2 *)
 ```
 
 
-## Tags
-#atom #theory 

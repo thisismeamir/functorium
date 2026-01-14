@@ -17,5 +17,3 @@ $$
 F_a^{\ \ c}
 $$
 
-## Tags
-#atom #theory 

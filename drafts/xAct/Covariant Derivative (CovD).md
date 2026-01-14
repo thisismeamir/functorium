@@ -17,5 +17,3 @@ another example
 ```mathematica
 u[a] CD[-a] @ v[b];
 ```
-## Tags
-#atom #theory 

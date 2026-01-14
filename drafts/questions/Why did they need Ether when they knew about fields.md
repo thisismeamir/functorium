@@ -5,7 +5,7 @@ aliases:
 ---
 # Why did they need Ether when they knew about fields
 ## Context
-While reading about [[Luminiferous Ether]] and [[Michelson-Morley Experiment]].
+While reading about [[../Special Relativity/[Draft] Luminiferous Ether]] and [[Michelson-Morley Experiment]].
 
 ## Description
 

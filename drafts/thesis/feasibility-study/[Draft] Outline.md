@@ -1,0 +1,30 @@
+- [[[DRAFT] introduction]]: Giving an overview of the document, and gravitational waves physics.
+- Investigation of Topics
+	- Gravitational Waves Theory
+		- Developments Before 21st Century 
+		- Current Investigations and New Understandings
+		- Interesting Trends and Topics
+	- Experimental Gravitational Waves (Astronomy)
+		- Technological Developments
+		- New Data, Better Data
+		- Current Catalogs and Data
+	- Need for Simulations and Numerical Relativity
+		- Why Simulation Matters in GWs Physics
+		- Currently Developed Codes and Catalogs
+		- What's Missing?
+		- Future Simulations
+	- Data Analysis of GWs Data
+		- What Does the Data Contain?
+		- What's There to be Known?
+		- Data for Better Simulations
+		- Analysis Methods for GWs Data
+	- Machine Learning: A New Path for Investigation
+		- What's Hidden in the Data?
+		- Machine Learning and Gravitational Waves
+		- Physics Inferred Machine Learning
+		- What has been done?
+		- What can be done?
+- Research Opportunities
+	- What Challenges can be Done in 2 Years?
+	- Proposals
+- Conclusion

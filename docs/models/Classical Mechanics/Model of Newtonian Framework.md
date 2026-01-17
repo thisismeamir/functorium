@@ -14,3 +14,5 @@ sticker: lucide//hash
 - [[Finding an Inertial Frame]]
 - [[Standard Configuration]]
 - [[Galilean Transformation]]
+
+#model

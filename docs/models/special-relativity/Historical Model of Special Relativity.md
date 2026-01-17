@@ -176,3 +176,6 @@ $$
 which would just compensate for the ether drift in the Michelson-Morley apparatus. Three years later Lorentz made the same hypothesis and incorporate it into his even more comprehensive ether theory.
 
 
+
+
+#model

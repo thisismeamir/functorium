@@ -24,3 +24,4 @@ We should also note for some mathematical formulation and theories (such as line
 - [[Mathematical Methods for Quantum Mechanics]]
 - [[Computational Model of Quantum Mechanics]]
 
+#model 

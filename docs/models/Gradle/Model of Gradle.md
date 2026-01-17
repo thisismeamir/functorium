@@ -15,3 +15,6 @@ Gradle is the mainstream build system for Kotlin, and JVM projects, an alternati
 - [[atoms/Project Structure|Project Structure]]
 - [[atoms/Command Line Interface|Command Line Interface]]
 - [[atoms/Gradle Application Plugin|Gradle Application Plugin]]
+
+
+#model

@@ -24,3 +24,4 @@ One can also start reading about special relativity from the historical point of
 - [[atoms/Isotropy of Spacetime|Isotropy of Spacetime]]
 - [[atoms/Homogeneity of Spacetime|Homogeneity of Spacetime]]
 
+#model

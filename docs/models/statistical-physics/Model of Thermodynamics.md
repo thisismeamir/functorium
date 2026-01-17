@@ -20,3 +20,5 @@ Analogical to how success was gained by classical mechanics, if one were to desc
 - [[atoms/Carnot Engines|Carnot Engines]]
 - [[atoms/Entropy|Entropy]]
 - [[atoms/Approach to Equilibrium and Thermodynamic Potentials|Approach to Equilibrium and Thermodynamic Potentials]]
+
+#model

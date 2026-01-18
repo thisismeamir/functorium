@@ -12,16 +12,33 @@ sticker: lucide//calendar-days
 	- [ ] Reading Homotopy Type Theory Chapter
 
 ---
-
-## Jan 17th
-
+- [ ] Programming Language Design and Implementation
+	- [x] Chapter 1: A Brief History of Programming Languages
+	- [ ] Chapter 2: Implementation Strategies
+	- [ ] Chapter 3: Syntax
+	- [ ] Chapter 4: Memory Management
+	- [ ] Chapter 5: Scopes, Functions, and Parameter Passing
+	- [ ] Chapter 6: Control Sequences
+	- [ ] Chapter 7: Types
+	- [ ] Chapter 8: Modularization
+	- [ ] Chapter 9: Language Paradigms
+	- [ ] Chapter 10: Domain Specific Programming Languages
+	- [ ] Chapter 11: Specifying the Semantics of a Programming Languages
+	- [ ] Chapter 12: Exploring the Limits
+- [ ] Studying Topology for Manifolds
+	- [x] Topologies
+	- [x] Convergence and Continuity
+	- [ ] Connectedness
+	- [ ] Compactness
+	- [ ] Homeomorphism
+	- [ ] Hausdorff Spaces
+	- [ ] Bases and Countability
+	- [ ] Manifolds
 - [ ] Model of Linear Algebra
-	- [ ] Properties of Vector Spaces
+	- [x] Properties of Vector Spaces
 	- [ ] Linear Transformations
 	- [ ] Eigenvalues and Eigenvectors
 	- [ ] Normed spaces and inner products
-## Jan 16th
-
 - [x] Starting the Quantum Mechanics Letters
 	- [x] Writing the Preface to what we're going to talk about in these letters
 	- [x] Writing the outline of the letters 

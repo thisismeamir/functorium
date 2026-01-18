@@ -34,7 +34,7 @@ If $B$ emits two signals with a time lapse of $T$ according to $B$'s clock, then
 
 ### **Events in Spacetime**
 
-For an observer $A$ using the radar method, coordinates of an [[Event]] $(t,x)$ would be found by sending light to bounce off of it and returning. For example assume an event $P$. Observer $A$ would send a signal at $t=t_1$ and the signal would return at $t=t_2$. Now since we agreed that the spacetime is homogeneous and isotropic. the time of event $P$ is exactly the middle of $t_1$ and $t_2$. 
+For an observer $A$ using the radar method, coordinates of an [[../../classical-mechanics/atoms/Event]] $(t,x)$ would be found by sending light to bounce off of it and returning. For example assume an event $P$. Observer $A$ would send a signal at $t=t_1$ and the signal would return at $t=t_2$. Now since we agreed that the spacetime is homogeneous and isotropic. the time of event $P$ is exactly the middle of $t_1$ and $t_2$. 
 
 $$ t_p = \frac12 (t_1+t_2) $$
 On the other hand it's position is half the time light spent going the trip (to $P$ and back to $A$).

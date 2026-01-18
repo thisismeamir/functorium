@@ -3,7 +3,7 @@ sticker: lucide//atom
 ---
 # Causality
 
-In the context of [[../Model of Special Relativity|Special Relativity]] we assume that the causal structure of the universe is preserved (as was previously thought so in [[../../Classical Mechanics/Model of Newtonian Framework]]).
+In the context of [[../Model of Special Relativity|Special Relativity]] we assume that the causal structure of the universe is preserved (as was previously thought so in [[../../classical-mechanics/Model of Newtonian Framework]]).
 
 Causality in special relativity is more of a possibility than an actuality. When we speak of causation in the context of special relativity we imply the following:
 

@@ -23,7 +23,7 @@ At the beginning of the 20th century physicists knew the [[Maxwell Wave Equation
 $$
 c = \frac{1}{\sqrt{\epsilon_0 \mu_0}}
 $$
-But isn't speed a relative quantity? depending on the observer frame of reference? Surely this was a accepted fact in the physics community. It was simply the [[Galilean Transformation]]. This obviously wasn't a reason to put all the previous physics at risk, or at that time, it wasn't considered to be therefore we've got theories like [[[Draft] Luminiferous Ether]] to provide an explanation which is mainly:
+But isn't speed a relative quantity? depending on the observer frame of reference? Surely this was a accepted fact in the physics community. It was simply the [[../../classical-mechanics/atoms/Galilean Transformation]]. This obviously wasn't a reason to put all the previous physics at risk, or at that time, it wasn't considered to be therefore we've got theories like [[[Draft] Luminiferous Ether]] to provide an explanation which is mainly:
 
 
 > [!IMPORTANT] How to solve the speed of light problem using an ad-hoc?

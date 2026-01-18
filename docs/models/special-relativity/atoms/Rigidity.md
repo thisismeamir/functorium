@@ -3,7 +3,7 @@ sticker: lucide//atom
 ---
 # Rigidity
 
-In the context of [[../../Classical Mechanics/Model of Newtonian Framework]], an [[Classical Observers | observer]] is characterized by their ability to measure time and distance. This enables them to chart the events of the universe. While the notion of a "rigid ruler" is often used to represent this concept of measurement, it is not without its challenges. In fact, the idea of a ruler that remains rigid and unaffected by external influences is a simplification that does not accurately reflect the complexities of the measurement process.
+In the context of [[../../classical-mechanics/Model of Newtonian Framework]], an [[../../classical-mechanics/atoms/Classical Observers| observer]] is characterized by their ability to measure time and distance. This enables them to chart the events of the universe. While the notion of a "rigid ruler" is often used to represent this concept of measurement, it is not without its challenges. In fact, the idea of a ruler that remains rigid and unaffected by external influences is a simplification that does not accurately reflect the complexities of the measurement process.
 
 One of the primary difficulties with the concept of a rigid ruler is that it assumes a fixed and unchanging standard of measurement. However, as Bondi (1966) noted, the advent of quantum mechanics has provided a practical means of creating an ideal clock, which has further highlighted the limitations of the rigid ruler. The concept of a ruler that can accurately measure distance and remain unaffected by the observer's motion or the effects of gravity is particularly problematic.
 

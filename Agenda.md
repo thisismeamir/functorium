@@ -36,6 +36,9 @@ sticker: lucide//calendar-days
 	- [ ] Manifolds
 - [ ] Model of Linear Algebra
 	- [x] Properties of Vector Spaces
+	- [x] Systems of linear equations
+	- [x] Linear dependence and independence
+	- [x] Basis and Dimension
 	- [ ] Linear Transformations
 	- [ ] Eigenvalues and Eigenvectors
 	- [ ] Normed spaces and inner products

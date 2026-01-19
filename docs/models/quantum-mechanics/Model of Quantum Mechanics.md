@@ -5,7 +5,7 @@ Quantum Mechanics is the revolutionary product of modern physics in 20th century
 
 In order to start learning quantum mechanics, it is important to understand why there was a need for a new theory. Why didn't we use ad-hoc principles, and tricks to make the paradoxes disappear? Could we?
 
-- [[Why Quantum Mechanics was Necessary]]
+- [[atoms/Why Quantum Mechanics was Necessary]]
 - [[Early Form of Quantum Mechanics]]
 - [[Standard Approach to Quantum Mechanics]]
 - [[Information Theoretic Approach to Quantum Mechanics]]

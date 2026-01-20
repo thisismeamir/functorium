@@ -7,8 +7,15 @@ A compiler works by translating a program from one language (typically a high-le
 
 This allows compiled programs to, at least in theory, run at the same speed as programs hand-coded in the target language, and it is even in some cases possible to exceed the performance of programs hand-coded by all but the cleverest programmers, simply because a compiler can keep track of more information than a typical programmer can.
 
-An alternative way to implement a programming language is [[Interpretation]]. 
+An alternative way to implement a programming language is [[atoms/Interpretation]]. 
 
-Compilers are divided into two main modules (This is not a theoretical restriction but rather because of [[]])
+Compilers are divided into two main modules (This is not a theoretical restriction but just to have better compilation for different machines).
+
+For starters its worth to get familiar with these subjects:
+
+- [[atoms/Bartman Diagrams]]
+- [[atoms/Compiling Compilers]]
+
+
 
 #model 

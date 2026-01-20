@@ -7,8 +7,8 @@ Designing programming languages is theory, exercise and aesthetic. In this model
 
 - **Implementation Strategies**
 	- [[Model of Compilers]]
-	- [[Interpretation]]
-	- [[Intermediate Code]]
+	- [[atoms/Interpretation]]
+	- [[atoms/Intermediate Code]]
 	- [[Virtual Machines]]
 	- [[Hybrid Methods]]
 	- [[Cross Compilation]]
@@ -17,6 +17,9 @@ Designing programming languages is theory, exercise and aesthetic. In this model
 	- [[Bootstrapping]]
 	- [[How Implementation Techniques can Influence Language Design]]
 - **Syntax**
+  *Syntax*, in a broad sense, concerns what programs *look like* without considering their semantics (what they mean). This is closely related to grammars of natural languages.
+  
+  These mandate or describe how to correctly construct texts in a language, but do not describe what these texts mean. 
 	- Lexical Elements
 	- Grammatical Elements
 	- Concerns that Span Both Lexing and Grammar

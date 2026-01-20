@@ -91,7 +91,7 @@ or
 \begin{equation}
     g = -\left(1 + \frac{2\phi}{c^2}\right)d(ct)^2 + \left(
                                                          1-\frac{2\phi}{c^2}
-    \right)\delta_{ij}dx^i dx^j \approx -(1+\frac{2\phi}{c^2})dt^2 +\delta_{ij}dx^i dx^j\label{eq:static-source-solution}
+    \right)\delta_{ij}dx^i dx^j \approx -\left(1+\frac{2\phi}{c^2}\right)dt^2 +\delta_{ij}dx^i dx^j\label{eq:static-source-solution}
 \end{equation}
 
 \subsection{No-Stresses Source}\label{subsec:no-stresses-source}
@@ -153,8 +153,8 @@ The linearized EFE in vacuum are homogeneous wave equations for each component o
 Solutions to this equation can be constructed by superposition of plane waves with (constant) wave vector $k^\mu = (\omega, \vec k)$ and amplitudes $A_{\mu\nu}$:
 
 \begin{align}
-    \bar h_{\mu\nu} &= A_{\mu\nu} \exp\left( i k_\mu x^\mu \right)\\
-    \partial_{\mu} \bar h_{\alpha\beta} = A_{\alpha\beta}\partial_{\mu}(\exp\left( ik_\rho x^\rho\right))
+    \bar h_{\mu\nu} &= A_{\mu\nu} \exp\left( i k_\rho x^\rho \right)\\
+    \partial_{\mu} \bar h_{\alpha\beta} &= A_{\alpha\beta}\partial_{\mu}(\exp\left( ik_\rho x^\rho\right))
 \end{align}
 
 Substituting the plane wave ansatz into the equation one soon finds that the wave vector is null.

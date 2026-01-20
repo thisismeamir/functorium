@@ -1,3 +1,6 @@
+---
+sticker: lucide//atom
+---
 z# Intermediate Codes
 
 Early compilers generated machine-specific code directly from a high-level program. This eases machine-specific optimizations, but it makes it more difficult to port the compiler to a different machine. So the basic idea of intermediate codes is to get the user code, transform it into an intermediate code, which then uses the compilers backend to transform it into machine specific binary.

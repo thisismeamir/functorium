@@ -1,3 +1,6 @@
+---
+sticker: lucide//atom
+---
 As we've discussed in [[atoms/Basis and Dimension|Basis and Dimension]], one can find a set of vectors in a vector space $V$ that are:
 
 1. Linearly independent

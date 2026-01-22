@@ -1,3 +1,6 @@
+---
+sticker: lucide//atom
+---
 
 In some contexts, particularly in physics and tensor analysis, a more compact notation is used involving upper and lower indices. This notation often relies on the Einstein summation convention, which states that repeated indices are implicitly summed over.
 

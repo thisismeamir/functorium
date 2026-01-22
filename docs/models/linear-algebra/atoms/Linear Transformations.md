@@ -1,3 +1,6 @@
+---
+sticker: lucide//atom
+---
 
 It is important to look in specific to functions on vector spaces that preserve the structure. An important class of such functions called linear transformations. We can say that a linear transformation is a function between two vector spaces that preserve algebraic operations.
 

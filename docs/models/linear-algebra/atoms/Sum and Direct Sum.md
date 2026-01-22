@@ -1,3 +1,6 @@
+---
+sticker: lucide//atom
+---
 # Sum
 
 The union of two subspaces, need not to be a subspace itself. Therefore, analogous to union of subsets in set theory, we define a new concept called the sum of subspaces and analogous to disjoint union of subsets we introduce direct sums.

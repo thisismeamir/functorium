@@ -1,3 +1,6 @@
+---
+sticker: lucide//atom
+---
 # Range Space and Null Space
 
 Considering a linear transformation from $V$ to $W$ is a function that preserves structure, a linear transformation has two significant sets associated with it: the null space and the range set. In fact, they are subspaces of $V$ and $W$ respectively. The range space of a linear transformation consists of all possible output vectors that can be obtained by applying the transformation to input vectors. It represents the span of the transformed vectors in the co-domain. On the other hand, the null space of a linear transformation comprises all input vectors that are mapped to the zero vector in the co-domain, forming a subspace of the domain. Together, these spaces provide valuable insights into the behavior and properties of the linear transformation. In this section, we will discuss in detail these subspaces and some of the important results associated.

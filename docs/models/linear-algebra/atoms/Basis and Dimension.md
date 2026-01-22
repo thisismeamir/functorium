@@ -32,3 +32,29 @@ Let $V$ be a finite-dimensional vector space over a field $\mathbb{K}$ and $S = 
 Every finite-dimensional vector space $V$ has a basis.
 
 **Proof:** Let $V$ be a finite-dimensional vector space. Then there exists a finite subset $S$ of $V$ with span$ (S) = V$. Then $S$ can be reduced to a basis.
+
+**Theorem**
+Let $V$ be a vector space over a field $\mathbb{K}$. If $B = \{v_1, v_2, ..., v_n\}$ is a basis for $V$, then any $v \in V$ can be uniquely expressed as a linear combination of vectors in $B$.
+
+**Proof:**
+
+Let $B$ be a basis of $V$ and $v \in V$. Suppose that $v$ can be expressed as a linear combination of vectors in $B$ as:
+
+$$ v = \lambda_1 v_1 + \lambda_2 v_2 + ... + \lambda_n v_n $$
+
+and as
+
+$$ v = \mu_1 v_1 + \mu_2 v_2 + ... + \mu_n v_n $$
+
+where $\lambda_i, \mu_i \in \mathbb{K}$ for all $i = 1, 2, ..., n$. Subtracting the second expression from first, we get:
+
+$$ 0 = (\lambda_1 - \mu_1)v_1 + (\lambda_2 - \mu_2)v_2 + ... + (\lambda_n - \mu_n) v_n $$
+
+Since $B$ is linearly independent, this implies that $\lambda_i - \mu_i = 0$ for all $i = 1, 2, ..., n$. That is, $\lambda_i = \mu_i$ for all $i = 1, 2, ..., n$.
+
+**Theorem**
+Let $V$ be a finite-dimensional vector space over a field $\mathbb{K}$ and $B$ be a basis of $V$. Then basis is a minimal spanning set in $V$. That is, if $B$ is a basis of $V$, there does not exist a proper subset of $B$ that spans $V$.
+
+**Proof:**
+
+Let $V$ be a finite-dimensional vector space over a field $\mathbb{K}$ and $B = \{v_1, v_2, ..., v_n\}$ be a basis of $V$. Let $S$ be a proper subset of $B$ that spans $V$. Since $S \subset B$ and $S \neq B$, there exists at least one element $v$ such that $v \in B$ and $v \notin S$. Rearrange the elements of $B$ so that the first $k$ elements are also elements of $S$ and the remaining $n-k$ elements belong to only $B$. Now take any element $v_{k+i} \in B$ where $i \in \{1, 2, ..., n-k\}$. Since $\text{span}(S) = V$ and $v_{k+i} \in V$, there exists $\lambda_1, \lambda_2, ..., \lambda_k \in \mathbb{K}$ such that $v_{k+i} = \lambda_1 v_1 + \lambda_2 v_2 + ... + \lambda_k v_k$. This can also be written as $v_{k+i} = \lambda_1 v_1 + \lambda_2 v_2 + ... + \lambda_k v_k + 0 v_{k+1} + ... + 0 v_n$. Also, as $v_{k+i} \in B$, $v_{k+i}$ can be represented as a linear combination of elements of $B$ by taking 1 as the coefficient for $v_{k+i}$ and 0 as the coefficient for all elements in $B$ other than $v_{k+i}$. This is a contradiction to the fact that representation for any element with respect to a basis must be unique.

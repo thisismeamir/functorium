@@ -353,3 +353,5 @@ unipac enter data-science-project
 ```
 
 or embedded in scripts, shells, CI pipelines, and distributed workflows without contaminating the system or requiring heavyweight containerization.
+
+#project #unipac #spec

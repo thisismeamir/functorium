@@ -14,7 +14,7 @@ sticker: lucide//calendar-days
 ---
 - [ ] Programming Language Design and Implementation
 	- [x] Chapter 1: A Brief History of Programming Languages
-	- [ ] Chapter 2: Implementation Strategies
+	- [x] Chapter 2: Implementation Strategies
 	- [ ] Chapter 3: Syntax
 	- [ ] Chapter 4: Memory Management
 	- [ ] Chapter 5: Scopes, Functions, and Parameter Passing
@@ -34,6 +34,8 @@ sticker: lucide//calendar-days
 	- [ ] Hausdorff Spaces
 	- [ ] Bases and Countability
 	- [ ] Manifolds
+- [ ] Independent Society of Knowledge
+	- [ ] Design Language Initiation
 - [ ] Model of Linear Algebra
 	- [x] Properties of Vector Spaces
 	- [x] Systems of linear equations

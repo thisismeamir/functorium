@@ -13,6 +13,8 @@ In this model we cover the theoretical aspects and intuitions/philosophical cons
 - [[Model of Thermodynamics]]
 - [[Introduction to Kinetic Theory of Gases]]
 - [[Liouville's Theorem]]
+- [[The Bogoliubov-Born-Green-Kirkwood-Yvon Hierarchy]]
+- [[Boltzmann Equation]]
 - [[Model of Classical Statistical Mechanics]]
 - [[Model of Quantum Statistical Mechanics]]
 

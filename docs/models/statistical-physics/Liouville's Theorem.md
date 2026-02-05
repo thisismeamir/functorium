@@ -72,4 +72,55 @@ $$
 
 # Consequences of Liouville's Theorem:
 
-- Under the action of time reversal, $(\mathbf p, \mathbf q, t)\rightarrow (-\mathbf p, \mathbf q, -t)$, the Poisson bracket $\{\rho, \mathcal H\}$ changes sign, The equation we derived implies that the density reverses its evolution. That is: $\rho(\mathbf p, \mathbf q, t)= \rho(-\mathbf p , \mathbf q, -t)$.
+Under the action of time reversal, $(\mathbf p, \mathbf q, t)\rightarrow (-\mathbf p, \mathbf q, -t)$, the Poisson bracket $\{\rho, \mathcal H\}$ changes sign, The equation we derived implies that the density reverses its evolution. That is: $\rho(\mathbf p, \mathbf q, t)= \rho(-\mathbf p , \mathbf q, -t)$.
+
+---
+
+The time evolution of the ensemble average is given by:
+$$
+\begin{align}
+\frac{\mathrm{d}\left\langle \mathcal{O} \right\rangle}{\mathrm{d}t} &=\int \mathrm{d}\Gamma \frac{\partial \rho(\mathbf{p},\mathbf{q},t)}{\partial t}\mathcal{O}\left( \mathbf{p},\mathbf{q} \right) \\ &= \sum_{\alpha=1}^{3N} \mathrm{d} \Gamma \mathcal{O}(\mathbf{p},\mathbf{q})\left( \frac{\partial \rho}{\partial p_{\alpha}}\cdot \frac{\partial \mathcal{H}}{\partial q_{\alpha}}- \frac{\partial \rho}{\partial q_{\alpha}}\cdot \frac{\partial \mathcal{H}}{\partial p_{\alpha}} \right)  
+\end{align}
+$$
+The partial derivatives of $\rho$ in the above equation can be removed by using the method of integration by parts, that is, $\int f \rho' = -\int \rho f'$ since $\rho$ vanishes on the boundaries of the integrations, leading to:
+
+$$
+\begin{align}
+\frac{\mathrm{d} \left\langle O \right\rangle}{\mathrm{d}t}&=-\sum_{\alpha=1}^{3N}\int \mathrm{d}\Gamma \rho \left[ \left( 
+\frac{\partial \mathcal{O}}{\partial p_{\alpha}}\cdot \frac{\partial \mathcal{H}}{\partial q_{\alpha}} - \frac{\partial \mathcal{O}}{\partial q_{\alpha}}\cdot \frac{\partial \mathcal{H}}{\partial p_{\alpha}}
+\right) + \mathcal{O}\left( \frac{\partial^{2}\mathcal{H}}{\partial p_{\alpha}\partial q_{\alpha}}- \frac{\partial^{2}\mathcal{H}}{\partial q_{\alpha}\partial p_{\alpha}} \right)  \right] \\
+&= -\int \mathrm{d}\Gamma \rho \{\mathcal{H},\mathcal{O}\}= \left\langle \left\{ \mathcal{O},\mathcal{H} \right\}  \right\rangle
+\end{align}
+$$
+Note that the total time derivative cannot be taken inside the integral sign, that is:
+$$
+\frac{\mathrm{d}\left\langle \mathcal{O} \right\rangle}{\mathrm{d}t} \neq \int \mathrm{d}\Gamma \frac{\mathrm{d}\rho(\mathbf{p},\mathbf{q},t)}{\mathrm{d}t}\mathcal{O}(\mathbf{p},\mathbf{q})
+$$
+
+This common mistake yields $\mathrm{d}\left\langle O \right\rangle / \mathrm{d}t = 0$.
+
+--- 
+
+If the members of the ensemble correspond to an equilibrium macroscopic state, the ensemble averages must be independent of time. This can be achieved by a stationary density $\partial \rho_{\text{eq}} / \partial t=0$, that is by requiring:
+
+$$
+\left\{ \rho_{\text{eq}},\mathcal{H} \right\} 
+$$
+A possible solution to the above equation is for $\rho_{\text{eq}}$ to be a function of $\mathcal{H}$, that is, $\rho_{\text{eq}}(\mathbf{p},\mathbf{q})=\rho(\mathcal{H}(\mathbf{p},\mathbf{q}))$. It is then easy to verify that $\left\{ \rho(\mathcal{H}),\mathcal{H} \right\}=\rho'(\mathcal{H})\left\{ \mathcal{H},\mathcal{H} \right\}=0$. This solution implies that the value of $\rho$ is constant on surfaces of constant energy $\mathcal{H}$, in phase space. *This is indeed the basic assumption of statistical mechanics*.
+
+There may be additional conserved quantities associated with the Hamiltonian that satisfy $\left\{ L_{n},\mathcal{H} \right\}=0$. In the presence of such quantities, a stationary density exists for any function of the form $\rho_{\text{bfp},\mathbf{q}}=\rho(\mathcal{H}(\mathbf{p},\mathbf{q}),L_{1}(\mathbf{p},\mathbf{q}),\dots)$. Clearly the value is not changed during the evolution of the system since:
+
+$$
+\begin{align}
+\frac{\mathrm{d}L_{n}(\mathbf{q},\mathbf{p})}{\mathrm{d}t}&\equiv \frac{L_{n}(\mathbf{p}(t+\mathrm{d}t),\mathbf{q}(t+\mathrm{d}t))-L_{n}(\mathbf{p}(t),\mathbf{q}(t))}{\mathrm{d}t} \\
+ &=\sum_{\alpha=1}^{3N}\left( \frac{\partial L_{n}}{\partial p_{\alpha}}\cdot \frac{\partial p_{\alpha}}{\partial t}+\frac{\partial L_{n}}{\partial q_{\alpha}}\cdot \frac{\partial q_{\alpha}}{\partial t} \right)  \\
+ &=-\sum_{\alpha=1}^{3N}\left( \frac{\partial L_{n}}{\partial p_{\alpha}}\cdot \frac{\partial \mathcal{H}}{\partial q_{\alpha}}- \frac{\partial L_{n}}{\partial q_{\alpha}}\cdot \frac{\partial \mathcal{H}}{\partial p_{\alpha}} \right) =\left\{ L_{n},\mathcal{H} \right\}=0 
+\end{align}
+$$
+Hence, the functional dependence of $\rho_{{\text{eq}}}$ on these quantities merely indicates that all accessible states, that is, those that can be connected without violating any conservation law, are equally likely.
+
+---
+
+The above postulate for $\rho_{\text{eq}}$ answers the first question posed at [[Introduction to Kinetic Theory of Gases]], however, in order to answer the second question, and to justify the basic assumption of statistical mechanics, we need to show that non-stationary densities converge into the stationary solution $\rho_{\text{eq}}$.
+
+This contradicts the time reversal symmetry noted in the first point about Liouville's theorem. The best that can be hope for is to show that the solutions $\rho(t)$ are in the neighbourhood of $\rho_{\text{eq}}$ the majority of the time, so that time averages are dominated by the stationary solution. This brings us to [[The Problem of Ergodicity]],

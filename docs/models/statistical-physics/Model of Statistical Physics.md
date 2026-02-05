@@ -11,7 +11,8 @@ In this model we cover the theoretical aspects and intuitions/philosophical cons
 - [[../statistics/Philosophy of Probability|Philosophy of Probability]]
 - [[Model of Probability]]
 - [[Model of Thermodynamics]]
-- [[Kinetic Theory of Gases]]
+- [[Introduction to Kinetic Theory of Gases]]
+- [[Liouville's Theorem]]
 - [[Model of Classical Statistical Mechanics]]
 - [[Model of Quantum Statistical Mechanics]]
 

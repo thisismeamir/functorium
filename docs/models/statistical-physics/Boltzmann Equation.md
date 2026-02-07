@@ -94,20 +94,3 @@ $$
  & \approx \int \mathrm{d}^3\vec{p}_{2} \mathrm{d}^3\vec{q} \left( \frac{\vec{p}_{2}-\vec{p}_{1}}{m} \right) \cdot \frac{\partial}{\partial \vec{q}}f_{2}(\vec{p}_{1},\vec{q}_{1},\vec{p}_{2},\vec{q}_{2};t)
 \end{align}
 $$
-
-# Kinematics of Collision and Scattering
-
-The integrand of this equation is a derivative of $f_{2}$ with respect to $\vec{q}$ along the direction of relative motion $\vec{p} = \vec{p}_{2}-\vec{p}_{1}$ of the colliding particles.
-
-$$
-\int \mathrm{d}^3\vec{p}_{2} \mathrm{d}^3\vec{q} \left( \frac{\vec{p}_{2}-\vec{p}_{1}}{m} \right) \cdot \frac{\partial}{\partial \vec{q}}f_{2}(\vec{p}_{1},\vec{q}_{1},\vec{p}_{2},\vec{q}_{2};t)
-$$
-
-![[../../../attachments/Pasted image 20260206193342.png]]
-
-To perform this integration we introduce a convenient coordinate system for $\vec{q}$, guided by the formalism used to describe the scattering particles. Naturally, we choose one axis to be parallel to $\vec{p}_{2}-\vec{p}_{1}$, with the corresponding coordinate $a$ that is negative before a collision, and positive afterwards. The other two coordinates of $\vec{q}$ are represented by an impact factor $\vec{b}$ that is $\vec{0}$ for a head on collision $([\vec{p}_{1}-\vec{p}_{2}]|| [\vec{q}_{1}-\vec{q}_{2}])$. We can now integrate over $a$ to get
-
-$$
-\left. \frac{\mathrm{d}f_{1}}{\mathrm{d}t} \right\vert_{\text{coll.}} = \int \mathrm{d}^{3}\vec{p}_{2} \mathrm{d}^{2}\vec{b}\left| \vec{v}_{1}-\vec{v}_{2} \right| \left[ f_{2}(\vec{p}_{1},\vec{q}_{1},\vec{p}_{2},\vec{b},+;t) - f_{2}(\vec{p}_{1},\vec{q}_{1},\vec{p}_{2},\vec{b},-;t) \right]   
-$$
-

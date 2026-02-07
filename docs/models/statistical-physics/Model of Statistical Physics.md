@@ -15,6 +15,8 @@ In this model we cover the theoretical aspects and intuitions/philosophical cons
 - [[Liouville's Theorem]]
 - [[The Bogoliubov-Born-Green-Kirkwood-Yvon Hierarchy]]
 - [[Boltzmann Equation]]
+- [[Kinematics of Collision and Scattering]]
+- [[The H-Theorem and Irreversibility]]
 - [[Model of Classical Statistical Mechanics]]
 - [[Model of Quantum Statistical Mechanics]]
 

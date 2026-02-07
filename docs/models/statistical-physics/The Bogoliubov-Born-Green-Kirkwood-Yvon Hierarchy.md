@@ -162,6 +162,4 @@ The BBGKY hierarchy formalizes the following principle:
 
 Rather than providing a closed dynamical law, the hierarchy exposes the exact structure of this leakage and thereby defines the precise boundary between microscopic dynamics and macroscopic kinetic theory.
 
-$$
-  
-$$
+#hello

@@ -1,3 +1,6 @@
+---
+sticker: lucide//atom
+---
 The full phase space density contains much more information than necessary for description of equilibrium properties. For example, knowledge of the one-particle distribution is sufficient for computing the pressure of a gas. A one-particle density refers to the expectation value of finding any of the $N$ particles at location $\vec{q}$, with momentum $\vec{p}$, at time $t$, which is computed from the full density as:
 
 $$

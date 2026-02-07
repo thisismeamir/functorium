@@ -11,14 +11,15 @@ In this model we cover the theoretical aspects and intuitions/philosophical cons
 - [[../statistics/Philosophy of Probability|Philosophy of Probability]]
 - [[Model of Probability]]
 - [[Model of Thermodynamics]]
-- [[Introduction to Kinetic Theory of Gases]]
-- [[Liouville's Theorem]]
-- [[The Bogoliubov-Born-Green-Kirkwood-Yvon Hierarchy]]
-- [[Boltzmann Equation]]
-- [[Kinematics of Collision and Scattering]]
-- [[The H-Theorem and Irreversibility]]
-- [[Model of Classical Statistical Mechanics]]
-- [[Model of Quantum Statistical Mechanics]]
+- [[atoms/Introduction to Kinetic Theory of Gases]]
+- [[atoms/Liouville's Theorem]]
+- [[atoms/The Bogoliubov-Born-Green-Kirkwood-Yvon Hierarchy]]
+- [[atoms/Boltzmann Equation]]
+- [[atoms/Kinematics of Collision and Scattering]]
+- [[atoms/The H-Theorem and Irreversibility]]
+- [[atoms/Equilibrium Properties]]
+- [[atoms/Model of Classical Statistical Mechanics]]
+- [[atoms/Model of Quantum Statistical Mechanics]]
 
 ## References
 

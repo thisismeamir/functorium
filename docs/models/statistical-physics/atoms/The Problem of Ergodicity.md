@@ -1,3 +1,6 @@
+---
+sticker: lucide//atom
+---
 # The Ergodicity Problem
 
 ## Time and Ensemble Averages

@@ -1,3 +1,6 @@
+---
+sticker: lucide//atom
+---
 # H-Theorem
 
 While it is possible to obtain steady state solutions for the full phase space density $\rho_{N}$, because of time reversal symmetry these solutions are not attractors of generic non-equilibrium densities.  The question is *whether a collection of particles naturally evolve toward an equilibrium state*. Does the unconditional one-particle PDF $\rho_{1}$ suffer the same problem as $\rho_{N}$?

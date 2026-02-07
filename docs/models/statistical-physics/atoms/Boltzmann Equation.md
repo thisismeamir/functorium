@@ -1,3 +1,6 @@
+---
+sticker: lucide//atom
+---
 As we've derived [[The Bogoliubov-Born-Green-Kirkwood-Yvon Hierarchy]], to estimate the relative importance of the different terms appearing in it let us examine the first two equations in the hierarchy,
 
 $$
@@ -50,7 +53,7 @@ $$
 which is the typical distance a particle travels between collisions. For short-range interactions, $\tau_{\times}\approx 10^{-8}$ is much longer than $\tau_{c}$, and the collision terms on the right-hand side are smaller by a factor of $nd^3\approx 10^{-4}$.
 
 
-![[../../../attachments/Pasted image 20260206165337.png]]
+![[../../../../attachments/Pasted image 20260206165337.png]]
 
 >The mean free time between collisions is estimated by requiring that there is only one other particle in the volume swept in time $\tau_{\times}$.
 

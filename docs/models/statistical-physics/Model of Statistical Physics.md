@@ -19,6 +19,8 @@ In this model we cover the theoretical aspects and intuitions/philosophical cons
 - [[atoms/The H-Theorem and Irreversibility]]
 - [[atoms/Equilibrium Properties]]
 - [[Conservation Laws]]
+- [[Hydrodynamics - AI Generated]]
+- [[Statistical Mechanics Foundations]]
 - [[atoms/Model of Classical Statistical Mechanics]]
 - [[atoms/Model of Quantum Statistical Mechanics]]
 

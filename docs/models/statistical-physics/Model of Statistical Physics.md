@@ -20,9 +20,7 @@ In this model we cover the theoretical aspects and intuitions/philosophical cons
 - [[atoms/Equilibrium Properties]]
 - [[Conservation Laws]]
 - [[Hydrodynamics - AI Generated]]
-- [[Statistical Mechanics Foundations]]
-- [[atoms/Model of Classical Statistical Mechanics]]
-- [[atoms/Model of Quantum Statistical Mechanics]]
+- [[atoms/Statistical Mechanics Foundations - AI Gen|Statistical Mechanics Foundations - AI Gen]]
 
 ## References
 

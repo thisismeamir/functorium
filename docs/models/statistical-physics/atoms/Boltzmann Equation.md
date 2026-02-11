@@ -15,6 +15,7 @@ $$
 = \int \mathrm{d}V_{3}\left[ \frac{\partial \mathcal{V}(\vec{q}_{1}-\vec{q}_{3})}{\partial \vec{q}_{1}} \cdot \frac{\partial}{\partial \vec{p}_{1}}+ \frac{\partial \mathcal{V}(\vec{q}_{2}-\vec{q}_{3})}{\partial \vec{q}_{2}}\cdot \frac{\partial}{\partial \vec{p}_{2}} \right] f_{3} 
 \end{align}
 $$
+
 Note that two of the streaming terms in this equation $\partial \mathcal{V}(\vec{q}_{1}-\vec{q}_{2})/\partial \vec{q}_{1}$ and $\partial \mathcal{V}(\vec{q}_{2}-\vec{q}_{1})/\partial \vec{q}_{2}$ are combined since:
 
 $$

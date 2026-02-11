@@ -118,9 +118,9 @@ The first quarter has some projects that needs to be done before spring. These p
 
 First we've got to make sure that we pass our course in the first semester, expected to be done by the end of February.
 
-- [ ] Writing the complete lecture notes on statistical physics.
-- [ ] Writing the complete lecture notes on Gravitation 1.
-- [ ] Writing the complete lecture notes on Quantum Mechanics.
+- [x] Writing the complete lecture notes on statistical physics.
+- [x] Writing the complete lecture notes on Gravitation 1.
+- [x] Writing the complete lecture notes on Quantum Mechanics.
 
 Secondly, projects like Seemake and HepSW are our basis of work in GENIE-Generator, Koly, and Kompute.
 
@@ -130,7 +130,7 @@ Secondly, projects like Seemake and HepSW are our basis of work in GENIE-Generat
 
 It is also expected that we have our proposal by the end of winter. We should then proceed with our research after wards.
 
-- [ ] Completion of Feasibility Study
+- [x] Completion of Feasibility Study
 - [ ] Completion of Proposal
 
 Projects CCG Website, and ISK Website are dependent on the ISK Design Language

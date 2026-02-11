@@ -1,3 +1,6 @@
+---
+sticker: lucide//atom
+---
 # Classical Statistical Mechanics: Foundations
 
 ## Chapter 4, Sections 4.1-4.2

@@ -1,18 +1,11 @@
 ---
 sticker: lucide//calendar-days
 ---
-# Overview
-
-## Self-Studies from Jan 16th, to Jan 23rd
-
-- [ ] Weekly Computer Science Topics: **Programming Languages: Design and Implementation**
-- [ ] Weekly CERN topic: ROOT, Reading the Guide and writing notes and testing it.
+- [ ] Weekly CERN topic: ROOT, Reading the Guide and writing notes and testing it. [due:: 2026-02-17] 
 - [ ] Monthly Mathematics Topic: **Homotopy Type Theory: Univalent Foundations**
-	- [ ] Reading Type Theory Chapter
-	- [ ] Reading Homotopy Type Theory Chapter
-
----
-- [ ] Programming Language Design and Implementation
+	- [ ] Reading Type Theory Chapter [due:: 2026-02-17] 
+	- [ ] Reading Homotopy Type Theory Chapter [due:: 2026-03-10] 
+- [ ] Programming Language Design and Implementation [due:: 2026-03-10] 
 	- [x] Chapter 1: A Brief History of Programming Languages
 	- [x] Chapter 2: Implementation Strategies
 	- [ ] Chapter 3: Syntax
@@ -35,7 +28,26 @@ sticker: lucide//calendar-days
 	- [ ] Bases and Countability
 	- [ ] Manifolds
 - [ ] Independent Society of Knowledge
-	- [ ] Design Language Initiation
+	- [x] Design Language Initiation
+		- [x] Foundations Documentation  [completion:: 2026-02-10]
+		- [ ] Typography Completion 
+		- [ ] Color Palette
+		- [ ] Logo and Brand Identity
+		- [ ] Examples of Design
+		- [ ] Nukleus Design System (ISK Identity)
+			- [ ] Nukleus for Digital Presence
+				- [ ] Social Media Kit
+					- [ ] Illustrations
+					- [ ] Post Templates
+					- [ ] Video and Animation
+				- [ ] UI Components
+					- [ ] Web
+						- [ ] Vue
+						- [ ] React
+					- [ ] Kotlin (Android and Desktop)
+			- [ ] Nukleus for Print
+				- [ ] Nukleus Latex Family
+	- [ ] Website Design and Development
 - [ ] Model of Linear Algebra
 	- [x] Properties of Vector Spaces
 	- [x] Systems of linear equations
@@ -48,3 +60,34 @@ sticker: lucide//calendar-days
 	- [x] Writing the Preface to what we're going to talk about in these letters
 	- [x] Writing the outline of the letters 
 	- [x] Proceeding with the Mathematical Foundations of Quantum Mechanics.
+- [ ] Talk to Prof. Movahed About a Meeting with Aghapour perhaps. [due:: 2026-02-10] 
+- [ ] HepSW
+	- [ ] Complete Manifest.
+		- [ ] Validator
+		- [ ] Walker
+		- [ ] Loader
+		- [ ] Fetching 
+		- [ ] Analysis
+		- [ ] Dependency Fetching
+		- [ ] Sandboxing
+	- [ ] Complete Recipe Execution
+		- [ ] Simple command execution
+		- [ ] Monitoring and Access Control
+	- [ ] Genie Manifest and it's dependencies manifests development
+- [ ] SeeMake
+	- [ ] Complete Test cases and analysis of them
+	- [ ] Refactor the code to be more efficient and applicable
+	- [ ] Edge case development and Genie Coverage
+- [ ] Genie Python
+	- [ ] Genie Installation Through HepSW
+	- [ ] PyBind11 integration with the code
+	- [ ] Tests and case studies.
+- [ ] EEWW Analysis Report
+	- [ ] Reading Dr. Rostami Report [due:: 2026-02-13] 
+	- [ ] Reading Claude Analysis of My code [due:: 2026-02-13]
+	- [ ] Fixing issues presented by Claude [due:: 2026-02-13]
+	- [ ] Writing Complete Analysis Report [due:: 2026-02-13]
+	- [ ] Setting up a meeting with David [due:: 2026-02-13]
+- [ ] Quantum Mechanics Projects
+	- [ ] Project 1 [due:: 2026-02-12] 
+	- [ ] Project 2 [due:: 2026-02-12] 

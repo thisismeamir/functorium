@@ -1,9 +1,9 @@
-# FCC-ee Angular Resolution Analysis: Complete Code Review & Documentation
+# FCC-$ee$ Angular Resolution Analysis: Complete Code Review & Documentation
 
 **Analysis Pipeline**: Angular Resolution → Crystal Ball Fitting  
 **Author Review Date**: February 8, 2026  
 **Framework**: FCCAnalyses (ROOT/RDataFrame)  
-**Physics Process**: e⁺e⁻ → WW → 4 quarks at multiple center-of-mass energies
+**Physics Process**: $e^+e^- → WW → 4q$ quarks at multiple center-of-mass energies
 
 ---
 # Executive Summary

@@ -1,0 +1,1 @@
+ROOT is a data analysis framework mainly used in particle physics data analysis and CERN projects. It is the primary tool and the base software for many of CERN and other projects in particle physics. In this model we would investigate it and analyze its aspects.

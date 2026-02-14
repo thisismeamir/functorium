@@ -1,6 +1,7 @@
 ---
 sticker: lucide//calendar-days
 ---
+# Misc
 
 - [x] Starting the Quantum Mechanics Letters
 	- [x] Writing the Preface to what we're going to talk about in these letters
@@ -140,7 +141,14 @@ sticker: lucide//calendar-days
 	- [x] Fixing issues presented by Claude  [due:: 2026-02-13]  [completion:: 2026-02-13]
 	- [x] Writing Complete Analysis Report  [due:: 2026-02-13]  [completion:: 2026-02-13]
 	- [ ] Setting up a meeting with David  [due:: 2026-02-13]
-- [ ] FCC Particle Events Database  
+- [ ] FCC Physics Events Database  
+	- [ ] Get familiar with [code base](https://fcc-physics-events.web.cern.ch/)
+	- [ ] Get familiar with [DIRAC](https://dirac.diracgrid.org/en/latest/AdministratorGuide/Resources/supercomputers.html)
+	- [ ] Get familiar with [Rucio](https://rucio.cern.ch/)
+	- [ ] Get familiar with UMB Template
+	- [ ] Get the resources from CERN, https://auth-resources.web.cern.ch/
+	- `/eos/experiment/fcc/prod/fcc/ee/fcc_ee_transf_info.tar.gz` investigation.
+
 # General Readings and Studies
 - [ ] Monthly Mathematics Topic: **Homotopy Type Theory: Univalent Foundations**
 	- [ ] Reading Type Theory Chapter [due:: 2026-02-17] 

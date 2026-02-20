@@ -148,6 +148,11 @@ sticker: lucide//calendar-days
 	- [ ] Get familiar with UMB Template
 	- [ ] Get the resources from CERN, https://auth-resources.web.cern.ch/
 	- `/eos/experiment/fcc/prod/fcc/ee/fcc_ee_transf_info.tar.gz` investigation.
+-  FCC Analyses
+	- [ ] Refactorization and Modularization of `do_plot.py`.
+	- [ ] Refactorization and Modularization of python module in FCCAnalyses
+	- [ ] issue:420
+	- [ ] issue:131
 
 # General Readings and Studies
 - [ ] Monthly Mathematics Topic: **Homotopy Type Theory: Univalent Foundations**
@@ -186,8 +191,9 @@ sticker: lucide//calendar-days
 	- [ ] Normed spaces and inner products
 
 # Software Development Tasks
+
 - [ ] HepSW
-	- [ ] Complete Manifest.
+	- [ ] Complete Manifest. [due:: 2026-02-20] 
 		- [ ] Validator
 		- [ ] Walker
 		- [ ] Loader
@@ -199,6 +205,13 @@ sticker: lucide//calendar-days
 		- [ ] Simple command execution
 		- [ ] Monitoring and Access Control
 	- [ ] Genie Manifest and it's dependencies manifests development
+	- [ ] Completion of index and search features
+		- [x] index database connection and use  [completion:: 2026-02-19]
+		- [x] searching  [completion:: 2026-02-19]
+			- [ ] More modular searching, dependency searching, version searching
+		- [ ] Generate report.
+		- [ ] different modes of searching
+		- [x] syncing local database with remote database  [completion:: 2026-02-19]
 - [ ] SeeMake
 	- [ ] Complete Test cases and analysis of them
 	- [ ] Refactor the code to be more efficient and applicable
@@ -231,3 +244,12 @@ sticker: lucide//calendar-days
 		- [ ] Nukleus for Print
 			- [ ] Nukleus Latex Family
 - [ ] Website Design and Development
+
+# Travel
+
+- [x] Application form  [completion:: 2026-02-19]
+- [ ] Passport Photographs
+- [ ] Insurance 
+- [x] Passport  [completion:: 2026-02-19]
+- [x] Invitation Letter  [completion:: 2026-02-19]
+- [ ] Flight Ticket

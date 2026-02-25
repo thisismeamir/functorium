@@ -212,6 +212,31 @@ sticker: lucide//calendar-days
 		- [x] Generate report.  [completion:: 2026-02-20]
 		- [x] syncing local database with remote database  [completion:: 2026-02-19]
 	- [ ] [priority:: highest]  DOCUMENTATION WRITING!
+		- [x] Basics  [completion:: 2026-02-25]
+			- [x] How to initialize  [completion:: 2026-02-25]
+			- [ ] Searching [due:: 2026-02-27] 
+			- [ ] Fetching [due:: 2026-02-27] 
+			- [ ] Building [due:: 2026-02-27] 
+		- [ ] Manifests
+			- [ ] Introduction to Manifests
+			- [ ] Sections of a Manifest
+			- [ ] Configuration
+			- [ ] Recipe
+			- [ ] Advanced Commands for Manifests
+		- [ ] Building
+			- [ ] Recipes 
+			- [ ] Pre-build Considerations
+			- [ ] Dependency Management
+		- [ ] Advanced Topics
+			- [ ] Architecture of HepSW
+			- [ ] Architecture of Build System
+			- [ ] Analysis and Software Packaging
+			- [ ] Add New Manifests
+			- [ ] API Documentation
+			- [ ] Contribution Guidelines
+		- [ ] Troubleshooting
+			- [ ] Third-party manifest development
+			- [ ] Evaluations and Walking of Manifests
 - [ ] SeeMake
 	- [ ] Complete Test cases and analysis of them
 	- [ ] Refactor the code to be more efficient and applicable
@@ -226,7 +251,7 @@ sticker: lucide//calendar-days
 # Independent Society of Knowledge
 - [x] Design Language Initiation
 	- [x] Foundations Documentation  [completion:: 2026-02-10]
-	- [ ] Typography Completion 
+	- [x] Typography Completion  [completion:: 2026-02-25]
 	- [ ] Color Palette
 	- [ ] Logo and Brand Identity
 	- [ ] Examples of Design
@@ -248,8 +273,11 @@ sticker: lucide//calendar-days
 # Travel
 
 - [x] Application form  [completion:: 2026-02-19]
-- [ ] Passport Photographs
+- [x] Passport Photographs  [completion:: 2026-02-25]
 - [x] Insurance  [completion:: 2026-02-21]
 - [x] Passport  [completion:: 2026-02-19]
 - [x] Invitation Letter  [completion:: 2026-02-19]
+- [x] Visa Applying  [completion:: 2026-02-25]
+- [ ] Visa is given to me
+- [ ] Packing up
 - [ ] Flight Ticket

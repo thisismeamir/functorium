@@ -1,0 +1,28 @@
+\section{Abstract}\label{sec:4-abstract}
+The gravitational wave background detected by pulsar timing arrays is almost certainly a superposition of multiple sources: at minimum, an astrophysical background from supermassive black hole binaries (SMBHBs)~\cite{sesana_insights_2013}, and potentially one or more cosmological backgrounds from phase transitions~\cite{caprini_detecting_2020}, cosmic strings~\cite{ellis_cosmic_2023}, or primordial inflation.
+Disentangling these overlapping signals is one of the central challenges in PTA data analysis~\cite{afzal_nanograv_2023}.
+Traditional approaches either fix the astrophysical background and search for a cosmological excess, or perform joint MCMC sampling over the combined parameter space~\cite{mitridate_ptarcade_2023a,ellis_enterprise_2020} — the latter becoming computationally intractable as the number of source classes grows.
+
+Simulation-Based Inference offers a principled solution~\cite{cranmer_frontier_2020}: by simulating overlapping signal realizations from the joint prior over all source parameters and training a neural ratio estimator~\cite{miller_truncated_2021} to learn the marginal posteriors, one can achieve implicit marginalization over the contaminating source without any explicit likelihood assumption.
+This proposal applies this strategy to the specific problem of cosmic string signal recovery in the presence of SMBHB contamination in NANOGrav data, extending the proof-of-concept demonstrated for LISA transients in Alvey et al.~(2024)~\cite{alvey_simulationbased_2024} to the PTA band and to a physically motivated cosmological source.
+
+This is the most directly scientifically impactful of the proposed theses, as it addresses a real open problem in PTA data analysis and produces constraints on $G\mu$ that are robust to SMBHB model uncertainty.
+
+\section{Objectives}\label{sec:4-objectives}
+\begin{itemize}
+    \item Model the joint SGWB from cosmic strings~\cite{martins_extending_2002,blanco-pillado_number_2014} and SMBHBs~\cite{sesana_insights_2013} in the PTA frequency band, parametrizing both source classes;
+    \item Demonstrate that TMNRE~\cite{miller_truncated_2021} with implicit marginalization can recover the marginal posterior on cosmic string parameters while treating SMBHB parameters as nuisance variables~\cite{cranmer_frontier_2020};
+    \item Apply the pipeline to mock NANOGrav 15yr data~\cite{afzal_nanograv_2023,johnson_nanograv_2024} and compare constraints on $G\mu$ with and without explicit SMBHB marginalization;
+    \item Quantify the bias introduced in cosmic string parameter estimates when the SMBHB background is incorrectly modeled or ignored~\cite{aggarwal_nanograv_2020};
+    \item Optionally apply to the real NANOGrav 15yr free-spectrum chains as a data compression/re-analysis step~\cite{afzal_nanograv_2023}.
+\end{itemize}
+
+\section{Methods}\label{sec:4-methods}
+\begin{itemize}
+    \item The forward simulator generates joint SGWB realizations by drawing simultaneously from the cosmic string prior ($\log G\mu$, loop model)~\cite{martins_extending_2002,blanco-pillado_number_2014,lorenz_cosmic_2010} and the SMBHB prior (amplitude $A$, spectral index $\gamma$)~\cite{sesana_insights_2013} and summing the two spectral contributions before injecting into PTA noise~\cite{johnson_nanograv_2024}.
+    \item The TMNRE algorithm in \texttt{swyft}~\cite{miller_truncated_2021,miller_swyft_2022} is used with the SMBHB parameters treated as implicit nuisance dimensions — the neural ratio estimator learns the marginal likelihood ratio $p(x|\theta_\mathrm{CS})/p(x)$ where $x$ is the data and $\theta_\mathrm{CS}$ are only the cosmic string parameters.
+    \item This is validated against an explicit joint posterior (obtained by sampling over all parameters) to verify that the marginals agree, and the number of required simulations is compared~\cite{alvey_simulationbased_2024}.
+    \item A second experiment injects only a cosmic string signal but fits with a model that assumes SMBHB contamination, to quantify the bias from incorrect noise modeling~\cite{aggarwal_nanograv_2020} — a practically important diagnostic.
+    \item Fisher forecasts are computed for the joint model to understand which parameter combinations are fundamentally degenerate~\cite{sesana_insights_2013}.
+    \item The cluster enables the large simulation campaigns required (${\sim}10^5$ samples from the joint prior)~\cite{cranmer_frontier_2020}.
+\end{itemize}

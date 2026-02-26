@@ -248,14 +248,29 @@ sticker: lucide//calendar-days
 
 # University Tasks
 
+## Topology
+## Stochastic Processes
+
+## Cosmology 1
+
+## Gravitation 2
+
+- [ ] Assignment [due:: 2026-03-03] 
+- [ ] Inverno topic covering
+
+## Thesis
+
+- [ ] Send the suggestions to Movahed [due:: 2026-02-27] 
+- [ ] Review the papers Movahed sent me [due:: 2026-02-27] 
+
 # Independent Society of Knowledge
 - [x] Design Language Initiation
 	- [x] Foundations Documentation  [completion:: 2026-02-10]
 	- [x] Typography Completion  [completion:: 2026-02-25]
-	- [ ] Color Palette
-	- [ ] Logo and Brand Identity
-	- [ ] Examples of Design
-	- [ ] Nukleus Design System (ISK Identity)
+	- [ ] Color Palette [due:: 2026-02-27] 
+	- [ ] Logo and Brand Identity [due:: 2026-02-27] 
+	- [ ] Examples of Design [due:: 2026-03-26] 
+	- [ ] Nukleus Design System (ISK Identity) [due:: 2026-05-01] 
 		- [ ] Nukleus for Digital Presence
 			- [ ] Social Media Kit
 				- [ ] Illustrations

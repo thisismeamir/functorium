@@ -1,0 +1,32 @@
+\section{Abstract}\label{sec:5-abstract}
+Modern machine learning toolchains built on differentiable programming — PyTorch, JAX~\cite{bradbury_jax_2018} — have transformed computational physics by enabling gradient-based optimization over physical simulators.
+In gravitational wave cosmology, the forward model mapping source parameters to the observed SGWB spectral density is a smooth, differentiable function of those parameters.
+Yet existing PTA analysis frameworks (ENTERPRISE~\cite{ellis_enterprise_2020}, PTArcade~\cite{mitridate_ptarcade_2023a}) treat this model as a black box, using gradient-free samplers (MCMC) and discarding the information in the Jacobian of the forward model.
+Simulation-Based Inference methods~\cite{cranmer_frontier_2020}, while powerful, also do not exploit the differentiability of the simulator.
+
+This proposal develops a JAX-based~\cite{bradbury_jax_2018} differentiable forward simulator for SGWB signals in the PTA band, and investigates three inference strategies that exploit gradients: (1) gradient-based MCMC (NUTS/HMC~\cite{hoffman_nuts_2014}) via NumPyro~\cite{phan_composable_2019}; (2) variational inference (VI) using normalizing flows~\cite{papamakarios_normalizing_2021} with gradient-optimized parameters; and (3) Neural Posterior Estimation (NPE) with gradient-informed sequential simulation (active learning)~\cite{cranmer_frontier_2020}.
+The result is both a software contribution (a publicly available differentiable SGWB simulator) and a methodological comparison — identifying which inference strategy is most simulation-efficient for cosmic string parameter estimation under realistic PTA noise~\cite{afzal_nanograv_2023}.
+
+This proposal is the most technically ambitious and software-forward of the five.
+It is appropriate if the student's primary interest is in the architecture of inference systems and differentiable scientific computing, with the GW physics as the application domain.
+
+
+\section{Objectives}\label{sec:5-objectives}
+\begin{itemize}
+    \item Implement a fully differentiable SGWB forward model for cosmic strings~\cite{martins_extending_2002,blanco-pillado_number_2014} and a power-law SGWB in JAX~\cite{bradbury_jax_2018}, supporting \texttt{jit}, \texttt{grad}, \texttt{vmap}, and \texttt{pmap} transformations;
+    \item Deploy gradient-based MCMC (HMC/NUTS~\cite{hoffman_nuts_2014} via NumPyro~\cite{phan_composable_2019}) on the differentiable model and benchmark convergence against gradient-free MCMC (PTMCMCSampler~\cite{ellis_enterprise_2020});
+    \item Implement a normalizing flow posterior~\cite{papamakarios_normalizing_2021} (using \texttt{nflows} or \texttt{flowjax}) trained via maximum likelihood on simulated $(\theta, x)$ pairs, and compare to TMNRE~\cite{miller_truncated_2021};
+    \item Implement a gradient-informed active learning loop for sequential simulation~\cite{cranmer_frontier_2020}, reducing the number of simulator calls needed to achieve target posterior accuracy;
+    \item Release the differentiable simulator as a standalone JAX~\cite{bradbury_jax_2018} library compatible with the broader NumPyro~\cite{phan_composable_2019}/BlackJAX~\cite{cabezas_blackjax_2024} inference ecosystem.
+\end{itemize}
+
+
+\section{Methods}\label{sec:5-methods}
+\begin{itemize}
+    \item The VOS network evolution equations~\cite{martins_extending_2002} and the $\Omega_{\rm gw}(f)$ integral are implemented in JAX~\cite{bradbury_jax_2018} as pure functions, verified to be differentiable through \texttt{jax.grad} by comparison with finite-difference derivatives.
+    \item Automatic differentiation through the ODE solver is achieved via the \texttt{diffrax} library~\cite{kidger_neural_2022} (Kidger 2021), which provides differentiable Dormand-Prince and Kvaerno solvers in JAX.
+    \item For gradient-based MCMC, the PTA likelihood (Gaussian approximation to the free-spectrum posterior~\cite{johnson_nanograv_2024}) is implemented in NumPyro~\cite{phan_composable_2019} and NUTS~\cite{hoffman_nuts_2014} is run using BlackJAX~\cite{cabezas_blackjax_2024}, with wall-clock time and effective sample size compared to PTMCMCSampler.
+    \item For normalizing flows~\cite{papamakarios_normalizing_2021}, a masked autoregressive flow is trained offline on $(\theta, \text{summary}(x))$ pairs, then used as an amortized posterior. Posterior quality is assessed via simulation-based calibration~\cite{talts_validating_2018}.
+    \item The gradient-informed active learning loop selects new simulation points from regions of high posterior uncertainty (estimated via an ensemble of normalizing flows~\cite{papamakarios_normalizing_2021}), reducing simulation budget by targeted prior refinement~\cite{cranmer_frontier_2020}.
+    \item All experiments are run on the group's GPU cluster nodes; the JAX~\cite{bradbury_jax_2018} implementation enables transparent multi-GPU distribution via \texttt{pmap}.
+\end{itemize}

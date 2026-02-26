@@ -1,0 +1,38 @@
+\section{Abstract}\label{sec:1-abstract}
+The nano-hertz gravitational wave background recently reported by NANOGrav~\cite{afzal_nanograv_2023} and other pulsar timing arrays (PTAs) collaborations stands as one of the most exciting signals in contemporary physics.
+Among the cosmological interpretations, a stochastic gravitational wave background (SGWB) produced by a network of cosmic strings (one-dimensional topological defects formed during symmetry-breaking phase transitions in the early universe~\cite{kibble_topology_1976}) is a well-motivated and observationally relevant candidate.
+The microphysics of such a network, encoded in the string tension $G_{\mu}$, the reconnection probability $p$ and the loop distribution model, leaves a characteristic imprint on the spectral energy density $\Omega_{\text{gw}(f)}$.
+
+Traditional Bayesian parameter estimation using ENTERPRICE/PTArcade relies on MCM sampling with an explicit likelihood~\cite{ellis_enterprise_2020,mitridate_ptarcade_2023}, which scales poorly as the model complexity grows and struggles to marginalize efficiently over nuisance parameters such as the competing supermassive black hole binary (SMBHB) background.
+
+In this proposal, we develop a fully open-source, modular \textbf{Simulation-Based Inference (SBI)} pipeline~\cite{cranmer_frontier_2020} targeting the PTA frequency band.
+The forward simulator encodes the Velocity-dependent One-Scale (VOS) network evolution equations~\cite{martins_extending_2002} in an expanding FLRW background, computes the resulting SGWB spectral density analytically (via the BOS~\cite{blanco-pillado_number_2014} and LRS~\cite{lorenz_cosmic_2010} loop distribution models), and injects the signal into mock NANOGrav-15ye noise~\cite{johnson_nanograv_2024}.
+The inference backend employs Truncated Marginal Neural Ratio Estimation (TMNRE)~\cite{miller_truncated_2021}, implemented via the \texttt{swyft} library~\cite{miller_swyft_2022}, to learn the marginal posteriors over the string microphysics parameters.
+
+This approach is explicitly complementary to the existing \texttt{saqqara} library~\cite{alvey_simulationbased_2024}, which targets LISA and generic signal templates; our contribution is a dedicated PTA-band forward model and a cosmic-string-specific signal module that could ultimately be contributed upstream.
+
+The cluster resources available to the group are utilized for the large-scale parallel simulation campaigns needed to train the neural estimator.
+
+
+\section{Objectives}\label{sec:1-objectives}
+\begin{itemize}
+    \item Implement a vectorized, physically complete forward simulator for the SGWB from cosmic string networks in the PTA frequency band, based on the VOS model~\cite{martins_quantitative_1996,martins_extending_2002} and Nambu-Goto loop dynamics;
+    \item Develop a modular SBI pipeline (forward simulator + noise model + TMNRE inference) as a reusable open-source software package, designed to be architecturally compatible with the \texttt{saqqara} library~\cite{alvey_simulationbased_2024} for future integration;
+    \item Constrain cosmic string microphysics parameters ($G_{\mu}$,~$p$, loop distribution model) using the latest NANOGrav-15yr dataset~\cite{afzal_nanograv_2023};
+    \item Benchmark the SBI pipeline against traditional MCMC-based ENTERPRISE/PTArcade results~\cite{ellis_enterprise_2020,mitridate_ptarcade_2023} to validate and quantify the improvement in inference efficiency;
+    \item Explore the implicit marginalization capability of TMNRE~\cite{miller_truncated_2021} over the SMBHB contamination as a nuisance source.
+\end{itemize}
+
+\section{Methods}\label{sec:1-methods}
+\begin{itemize}
+    \item The VOS model~\cite{martins_extending_2002} (a pair of coupled ODEs describing the correlation length $L$ and RMS velocity $v$ of the string network in an FLRW background) is solved numerically using a stiff ODE integrator.
+    This constitutes the physically relativistic core of the forward mode;
+    \item The SGWB spectral energy density $\Omega_{\text{gw}}(f; G_\mu, p)$ is computed for integrating the loop number density (BOS~\cite{blanco-pillado_number_2014}, LRS~\cite{lorenz_cosmic_2010}, or Lorenz-Wands-Martins~\cite{ringeval_cosmological_2007} models) weighted by the GW emission power from cusps and kinks.
+    \item The resulting signal is injected into noise model based on the NANOGrav 15-year free-spectrum posterior~\cite{johnson_nanograv_2024}, using the \texttt{enterprise}~\cite{ellis_enterprise_2020} + \texttt{enterprise\_extensions} PTA likelihood frameworks as a reference.
+    \item A compression network (1D CNN or UNet architecture, following the \texttt{saqqara} design~\cite{alvey_simulationbased_2024}) is trained to map frequency-domain PTA data to a low-dimensional summary embedding.
+    A neural ratio estimator is then trained using \texttt{swyft}~\cite{miller_swyft_2022} to produce marginal posteriors on the parameter vector $\theta = \{\log G_\mu, \log p, \text{loop model index} \}$.
+    \item Simulation campaigns are distributed across the group's compute cluster for embarrassingly parallel prior sampling.
+    \item Posterior predictive checks and simulation-based calibration (SBC)~\cite{talts_validating_2018} are applied to validate inference quality.
+    \item Results are compared to the existing PTArcade/ENTERPRISE analyses of the same dataset~\cite{afzal_nanograv_2023,mitridate_ptarcade_2023} for quantitative benchmarking.
+
+\end{itemize}

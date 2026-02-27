@@ -126,7 +126,7 @@ Secondly, projects like Seemake and HepSW are our basis of work in GENIE-Generat
 
 - [ ] Completion of Seemake Testing and Edge case handling and release of version 2.0.0
 - [ ] Completion of HepSW manifest execution, fetching and release of version 1.0.0
-- [ ] GENIE-Generator Binder completion
+- [ ] GENIE-Generator Binder completion [priority:: lowest] 
 
 It is also expected that we have our proposal by the end of winter. We should then proceed with our research after wards.
 

@@ -17,10 +17,15 @@ Linear algebra is one of the most important theories of mathematics that is bein
  - [[Linear Transformations]]
  - [[Range Space and Null Space]]
 - [[Changing Basis]]
-- [[Dual Vector Spaces (Forms)]]
+- [[atoms/Dual Vector Spaces]]
 - [[Eigenvalues and Eigenvectors]]
 - [[Normed Spaces and Inner Product]]
 - [[Model of Tensor Algebra]]
+## Misc
+
+There are topics that I'm not sure if they constitute linear algebra or are a model of their own (or perhaps they are from another theory). Yet since I'm reading them currently in this subject, I'll mention them as atoms of this model. Later on perhaps we can separate them:
+
+- [[atoms/Differential Forms|Differential Forms]]
 
 It's good to have a list of examples and exercises of this topic as well therefore.
 

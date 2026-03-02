@@ -4,7 +4,7 @@
 #### Solution:
 
 [[../models/linear-algebra/atoms/Linear Dependence and Independence|Linear Dependence and Independence]]
-[[../models/linear-algebra/atoms/Dual Vector Spaces (Forms)|Dual Vector Spaces (Forms)]]
+[[../models/linear-algebra/atoms/Dual Vector Spaces|Dual Vector Spaces]]
 [[../models/linear-algebra/atoms/Pullback of Differential Forms|Pullback of Differential Forms]]
 
 ### Problem 2:

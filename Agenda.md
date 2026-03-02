@@ -3,13 +3,13 @@ sticker: lucide//calendar-days
 ---
 # Misc
 
-- [x] Starting the Quantum Mechanics Letters
+- [x] Starting the Quantum Mechanics Letters  [completion:: 2026-03-02]
 	- [x] Writing the Preface to what we're going to talk about in these letters
 	- [x] Writing the outline of the letters 
 	- [x] Proceeding with the Mathematical Foundations of Quantum Mechanics.
 - [x] Talk to Prof. Movahed About a Meeting with Aghapour perhaps.  [due:: 2026-02-10]  [completion:: 2026-02-13]
 
-- [x] Quantum Mechanics Projects  [completion:: 2026-02-13]
+- [x] Quantum Mechanics Projects  [completion:: 2026-03-02]
 	- [x] Project 1  [due:: 2026-02-12]  [completion:: 2026-02-13]
 	- [x] Project 2  [due:: 2026-02-12]  [completion:: 2026-02-13]
 
@@ -249,25 +249,33 @@ sticker: lucide//calendar-days
 # University Tasks
 
 ## Topology
+
+**This project is being handled as a self-study as well. They have similar tasks therefore I do not mention them here as well.**
 ## Stochastic Processes
 
+- [ ] Study plan
+
 ## Cosmology 1
+
+- [ ] Study plan
 
 ## Gravitation 2
 
 - [ ] Assignment [due:: 2026-03-03] 
-- [ ] Inverno topic covering
+- [ ] D'Inverno topic covering
+- [ ] Nakahara Differential Forms 
 
 ## Thesis
 
-- [ ] Send the suggestions to Movahed [due:: 2026-02-27] 
+- [x] Send the suggestions to Movahed  [due:: 2026-02-27]  [completion:: 2026-03-02]
 - [ ] Review the papers Movahed sent me [due:: 2026-02-27] 
+- [ ] Study Planning for Gravitational Waves, and the first phase
 
 # Independent Society of Knowledge
-- [x] Design Language Initiation
+- [ ] Design Language Initiation
 	- [x] Foundations Documentation  [completion:: 2026-02-10]
 	- [x] Typography Completion  [completion:: 2026-02-25]
-	- [ ] Color Palette [due:: 2026-02-27] 
+	- [ ] Color Palette  [due:: 2026-02-27]
 	- [ ] Logo and Brand Identity [due:: 2026-02-27] 
 	- [ ] Examples of Design [due:: 2026-03-26] 
 	- [ ] Nukleus Design System (ISK Identity) [due:: 2026-05-01] 

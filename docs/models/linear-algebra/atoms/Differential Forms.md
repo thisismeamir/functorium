@@ -19,6 +19,7 @@ Differential forms utility mostly comes from exterior calculus, the calculus of 
 
 Exterior calculus can be thought of as a generalization of vector calculus in $\mathbb{R}^{3}$. But in contrast to it, exterior calculus is defined on arbitrary dimensional, possibly curved manifolds, and even in $\mathbb{R}^{3}$ it elucidates much of the structure that is obfuscated in classical vector calculus.
 
+- [[Model of Exterior Algebra]]
 - [[Model of Exterior Calculus]]
 
 Differential forms are not only useful in mathematical descriptions of mechanics in continuum but also there have been found use for them in numerical computation as well. For example you can check out [Finite element exterior calculus: from Hodge theory to numerical stability](https://www.ams.org/journals/bull/2010-47-02/S0273-0979-10-01278-4/home.html)
@@ -26,6 +27,9 @@ and [Discrete Differential Forms for Computational Modeling](http://portal.acm.o
 
 ## Differential Forms in $\mathbb{R}^{3}$ 
 
+Differential forms are naturally defined on manifolds, and this provides on of the most important advantages of the concept compared to the classical formalism of vector calculus. 
+
+**1-Forms**: A 1-form $\alpha \in \Omega^{1}(\mathbb{R}^{3})$ can be thought of as a vector-valued object that is naturally integrated along
 
 
 [^1]: C. Lessig, ‘A Primer on Differential Forms’, May 20, 2012, _arXiv_: arXiv:1206.3323. doi: [10.48550/arXiv.1206.3323](https://doi.org/10.48550/arXiv.1206.3323).

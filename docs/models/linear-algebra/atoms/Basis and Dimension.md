@@ -56,5 +56,27 @@ Since $B$ is linearly independent, this implies that $\lambda_i - \mu_i = 0$ for
 Let $V$ be a finite-dimensional vector space over a field $\mathbb{K}$ and $B$ be a basis of $V$. Then basis is a minimal spanning set in $V$. That is, if $B$ is a basis of $V$, there does not exist a proper subset of $B$ that spans $V$.
 
 **Proof:**
-
 Let $V$ be a finite-dimensional vector space over a field $\mathbb{K}$ and $B = \{v_1, v_2, ..., v_n\}$ be a basis of $V$. Let $S$ be a proper subset of $B$ that spans $V$. Since $S \subset B$ and $S \neq B$, there exists at least one element $v$ such that $v \in B$ and $v \notin S$. Rearrange the elements of $B$ so that the first $k$ elements are also elements of $S$ and the remaining $n-k$ elements belong to only $B$. Now take any element $v_{k+i} \in B$ where $i \in \{1, 2, ..., n-k\}$. Since $\text{span}(S) = V$ and $v_{k+i} \in V$, there exists $\lambda_1, \lambda_2, ..., \lambda_k \in \mathbb{K}$ such that $v_{k+i} = \lambda_1 v_1 + \lambda_2 v_2 + ... + \lambda_k v_k$. This can also be written as $v_{k+i} = \lambda_1 v_1 + \lambda_2 v_2 + ... + \lambda_k v_k + 0 v_{k+1} + ... + 0 v_n$. Also, as $v_{k+i} \in B$, $v_{k+i}$ can be represented as a linear combination of elements of $B$ by taking 1 as the coefficient for $v_{k+i}$ and 0 as the coefficient for all elements in $B$ other than $v_{k+i}$. This is a contradiction to the fact that representation for any element with respect to a basis must be unique.
+
+
+**Theorem:**
+Let $V$ be a finite-dimensional vector space and $S$ be a minimal spanning set of $V$, then $S$ is a basis.
+
+**Proof:**
+Let $S= \{v_{1},v_{2},\dots,v_{n}\}$ be a minimal spanning set of $V$. To prove that $S$ is a basis, it is enough to show that $S$ is linearly independent. Suppose that it is linearly dependent, then at least one element $v_{i} \in S$ can be written as a linear combination of the remaining vectors. Then $S \setminus \{ v_{i} \}$ is a spanning set for $V$. This is a contradiction of the fact that $S$ is a minimal spanning set. 
+
+**Theorem:**
+Let $V$ be a vector space over a field $\mathbb{K}$ and $B = \{ v_{1},v_{2},\dots, v_{n} \}$ be a basis of $V$. Let $W = \{  w_{1},w_{2},\dots,w_{n} \}$ be a linearly independent set in $V$ then $m \leq n$.
+
+**Proof:**
+Since $B = \{ v_{1},v_{2},\dots ,v_{n} \}$ is a basis of $V$, $B$ spans $V$ and $B$ is linearly independent. since $w_{1}\in V$, by the previous theorem $w_{1}$ has a unique representation using the vectors in $B$:
+
+$$
+w_{1}=\lambda_{1}v_{1}+\lambda_{2}v_{2}+\dots+\lambda_{n}v_{n}  
+$$
+Now we can express one of the $v_{i}$ in terms of $w_{1}$ as well. That is:
+
+$$
+v_{k} = \mu w_{1} + \mu_{1}v_{1}+\mu_{2}v_{2}+\dots+\mu_{k-1}v_{k-1}+\mu_{k+1}v_{k+1}+\dots \mu_{n}v_{n}
+$$
+Where $\mu = -\frac{1}{\lambda_{k}}$, and $\mu_{j}= -\frac{\lambda_{j}}{\lambda_{k}}, j\neq k$. Now we will show that the set $B_{1}=\{ w_{1},v_{1},\dots,v_{k-1}, v_{k+1},\dots, v_{n} \}$ obtained by replacing $v_{k}$ with $w_{1}$ is a basis for $V$. That is, we will prove that $B_{1}$ is linearly independent and spans $V$. Suppose that they are linearly dependent, then at least one element of the set can be represented using other elements. This is in contradiction with the fact that our representation of $w_{1}$ above was unique. (With a little bit more explanation and systematic approach) Therefore, $B_{1}$ is linearly independent.

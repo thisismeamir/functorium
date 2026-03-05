@@ -1,5 +1,8 @@
+---
+sticker: lucide//atom
+---
 
-A geodesic is the curved-space generalization of the notion of a straight line in Euclidean space. A straight line is a path that [[Parallel Transportation|parallel transports]] its own tangent vector. The tangent vector to a path $x^\mu(\lambda)$ is $dx^\mu/d\lambda$. The condition that it be parallel transported is thus:
+A geodesic is the curved-space generalization of the notion of a straight line in Euclidean space. A straight line is a path that [[atoms/Parallel Transportation|parallel transports]] its own tangent vector. The tangent vector to a path $x^\mu(\lambda)$ is $dx^\mu/d\lambda$. The condition that it be parallel transported is thus:
 
 $$
 \frac{\mathrm D}{\mathrm\lambda}\frac{\mathrm d x^\mu}{\mathrm d\lambda} = 0

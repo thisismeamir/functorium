@@ -1,3 +1,6 @@
+---
+sticker: lucide//atom
+---
 # Informally
 
 Curvature informally can be thought of as deviation from flatness. But what is flatness, and is anything crooked, curved is to be answered here. Clearly curvature depends somehow on the metric, which defines the geometry of our manifold; but it is not immediately clear how we should attribute curvature to any given metric.

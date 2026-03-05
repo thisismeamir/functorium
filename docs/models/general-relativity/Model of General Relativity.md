@@ -26,9 +26,9 @@ This model can be read on its own, but it is suggested that we have a look at ot
 		- [[atoms/Tensor Densities]]
 		- [[atoms/Tensor Densities - Weight and Transformation to Tensors]]
 		- [[../linear-algebra/atoms/Differential Forms]]
-	- [[Curvature]]
-		- [[Covariant Derivative]]
-		- [[Parallel Transportation]]
-		- [[Geodesics]]
+	- [[atoms/Curvature]]
+		- [[atoms/Covariant Derivative]]
+		- [[atoms/Parallel Transportation]]
+		- [[atoms/Geodesics]]
 
 #model 

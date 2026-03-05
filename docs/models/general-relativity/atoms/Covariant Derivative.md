@@ -1,3 +1,6 @@
+---
+sticker: lucide//atom
+---
 # Introduction
 
 In curved manifolds, there exists a problem. Partial derivatives are not good tensor operators. And we would like to have a generalization of them (called the covariant derivative), that is an operator that reduces to the partial derivative in flat space with inertial coordinates, but transforms as a tensor on an arbitrary manifold. 

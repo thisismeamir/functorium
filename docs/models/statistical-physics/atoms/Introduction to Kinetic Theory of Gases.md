@@ -35,7 +35,7 @@ $$
 \rho(\mathbf p ,\mathbf q, t)\mathrm d \Gamma = \lim_{\mathcal N\rightarrow \infty}\frac{\mathrm d \mathcal N(\mathbf p , \mathbf q , t)}{\mathcal N}
 $$
 
-This quantity can be compared with [[../../statistics/Objective Probability|Objective Probability]].
+This quantity can be compared with [[../../statistics/atoms/Objective Probability|Objective Probability]].
 Clearly, $\int \mathrm d \Gamma\rho = 1$ and $\rho$ is a properly normalized probability density function in phase space. To compute macroscopic values for various functions $\mathcal O(\mathbf p, \mathbf q)$, we shall use the ensemble averages:
 
 $$

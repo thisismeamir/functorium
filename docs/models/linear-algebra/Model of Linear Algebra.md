@@ -17,6 +17,7 @@ Linear algebra is one of the most important theories of mathematics that is bein
  - [[Linear Transformations]]
  - [[Range Space and Null Space]]
 - [[Changing Basis]]
+- [[atoms/Basis and Dimension|Basis and Dimension]]
 - [[atoms/Dual Vector Spaces]]
 - [[Eigenvalues and Eigenvectors]]
 - [[Normed Spaces and Inner Product]]

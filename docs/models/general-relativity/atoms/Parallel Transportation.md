@@ -1,3 +1,6 @@
+---
+sticker: lucide//atom
+---
 
 After we've defined [[Covariant Derivative]], we must think of the use of it as well. Since we've constructed it based off our desire to make it a tensor, we should make sure that it inherits features we want. We think of derivative as a way of qualifying how fast something is changing. In the case of tensors, the crucial issue is *"changing with respect to what?"*.
 

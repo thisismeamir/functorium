@@ -3,6 +3,7 @@ Manifolds are a special types of topological spaces (namely differential topolog
 - [[../topology/Model of Topology|Model of Topology]]
 - [[../linear-algebra/atoms/Vector Spaces|Vector Spaces]]
 - [[../linear-algebra/Model of Linear Algebra|Model of Linear Algebra]]
+- [[Model of Exterior Algebra]]
 
 The latter two are there because is manifolds are to be used in physics then the notion of Tangent Spaces, and other topics heavily rely on them. Topology on the other hand is only necessary up until the basics.
 

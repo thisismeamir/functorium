@@ -11,4 +11,4 @@ In this model we examine the philosophical arguments, analysis and development o
 - [[The Indifference Principle]]
 - [[Cox Theorem]]
 - [[Subjective Probability]]
-- [[Objective Probability]]
+- [[atoms/Objective Probability]]

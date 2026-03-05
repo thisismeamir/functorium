@@ -27,7 +27,7 @@
 	{trigger: "xii", replacement: "x_{i}", options: "mA", priority: 1},
 	{trigger: "xjj", replacement: "x_{j}", options: "mA"},
 	{trigger: "xp1", replacement: "x_{n+1}", options: "mA"},
-	
+
     // Tensor indices
     {trigger: /T(\d)(\d)/, replacement: "T^{[[0]]}_{[[1]]}", options: "rmA"},
 
@@ -324,7 +324,7 @@
 	{trigger: "Inter", replacement: "\\bigcap", options: "mA"},
 	{trigger: "UU", replacement: "\\bigcup", options: "mA"},
 	{trigger: "NN", replacement: "\\bigcap", options: "mA"},
-    {trigger: "\\\\\\", replacement: "\\setminus", options: "mA"},
+    {trigger: "-se", replacement: "\\setminus", options: "mA"},
 	{trigger: "\\\\", replacement: "\\setminus", options: "mA"},
     {trigger: "sub", replacement: "\\subset", options: "mA"},
 	{trigger: "sup", replacement: "\\supset", options: "mA"},
@@ -421,7 +421,7 @@
 	{trigger: "ctx", replacement: "\\Gamma", options: "mA"},
 	{trigger: "defeq", replacement: "\\equiv", options: "mA"},
 	{trigger: "jdeq", replacement: ":\\equiv", options: "mA"},
-	{trigger: "lam", replacement: "\\lambda $0. $1", options: "mA"},
+	{trigger: "lamfunc", replacement: "\\lambda $0. $1", options: "mA"},
 	{trigger: "nott", replacement: "\\neg", options: "mA"},
 	{trigger: "neg", replacement: "\\neg", options: "mA"},
 	{trigger: "!!", replacement: "\\neg", options: "mA"},
@@ -463,7 +463,7 @@
 	{trigger: "Wedge", replacement: "\\bigwedge", options: "mA"},
 	{trigger: "vee", replacement: "\\vee", options: "mA"},
 	{trigger: "Vee", replacement: "\\bigvee", options: "mA"},
-	
+
 	// Differential forms
 	{trigger: /([^\\])d\.([a-zA-Z])/, replacement: "[[0]]\\mathrm{d}[[1]]", options: "rmA"},
     {trigger: /([^\\])d\.([0-9])\.([a-zA-Z])/, replacement: "[[0]]\\mathrm{d}^{[[1]]}[[2]]", options:"rmA"},
@@ -475,7 +475,7 @@
 	{trigger: "nab", replacement: "\\nabla", options: "mA"},
 	{trigger: "nabla", replacement: "\\nabla_{$0}$1", options: "mA"},
 	{trigger: "cov", replacement: "\\nabla_{$0}$1", options: "mA"},
-	
+
 	// Metric and curvature
 	{trigger: "metric", replacement: "g_{$0}$1", options: "mA"},
 	{trigger: "Christ", replacement: "\\Gamma^{$0}_{$1}$2", options: "mA"},

@@ -7,7 +7,7 @@ banner: attachments/Pasted image 20260118124226.png
 Roughly speaking, topology is the branch of mathematics that is concerned with properties of sets that are unchanged by "continuous deformations". Somewhat more accurately, a *topological property is one that is preserved by homeomorphisms*.
 
 - **Foundations of Topology:** 
-    - **Sets and Logic Review:**
+    - **Sets and Logic Review**
     - [[Definition of a Topological Space]]
     - [[atoms/Closed Set Topology]]
     - [[atoms/Closure, Interior, Exterior and Boundary]]
@@ -19,7 +19,8 @@ Roughly speaking, topology is the branch of mathematics that is concerned with p
 	- [[Continuity]]
 	- [[Connectedness]]
 	- [[Compactness]]
-	- [[Homeomorphism]]
+	- [[Homeomorphism]](not written)
+	- [[atoms/Embedding|Embedding]] (not written)
 
 - **Basic Topological Spaces:** 
     - [[Discrete Topology]]

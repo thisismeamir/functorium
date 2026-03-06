@@ -79,4 +79,15 @@ Now we can express one of the $v_{i}$ in terms of $w_{1}$ as well. That is:
 $$
 v_{k} = \mu w_{1} + \mu_{1}v_{1}+\mu_{2}v_{2}+\dots+\mu_{k-1}v_{k-1}+\mu_{k+1}v_{k+1}+\dots \mu_{n}v_{n}
 $$
-Where $\mu = -\frac{1}{\lambda_{k}}$, and $\mu_{j}= -\frac{\lambda_{j}}{\lambda_{k}}, j\neq k$. Now we will show that the set $B_{1}=\{ w_{1},v_{1},\dots,v_{k-1}, v_{k+1},\dots, v_{n} \}$ obtained by replacing $v_{k}$ with $w_{1}$ is a basis for $V$. That is, we will prove that $B_{1}$ is linearly independent and spans $V$. Suppose that they are linearly dependent, then at least one element of the set can be represented using other elements. This is in contradiction with the fact that our representation of $w_{1}$ above was unique. (With a little bit more explanation and systematic approach) Therefore, $B_{1}$ is linearly independent.
+Where $\mu = -\frac{1}{\lambda_{k}}$, and $\mu_{j}= -\frac{\lambda_{j}}{\lambda_{k}}, j\neq k$. 
+Now we will show that the set $B_{1} = \{ w_{1},v_{1},v_{2},\dots,v_{k-1}, v_{k+1}, \dots, v_{n} \}$ obtained by replacing $v_{k}$ by $w_{1}$ is a basis for $V$. That is, we will prove that $B_{1}$ is linearly independent and $B_{1}$ spans $V$.
+
+Suppose that they are linearly dependent. Then at least one of the vectors in $B_{1}$ can be written as a linear combination of the remaining vectors. Since we've got a unique representation for $w_{1}$, we cannot express $w_{1}$ in terms of $v_{1},v_{2},\dots, v_{k-1},v_{k+1},\dots ,v_{n}$ Therefore, some $v_{l} \in B_{1}$ can be written as a linear combination of the remaining vectors in $B_{1}$. That is, there exist scalars $\alpha, \alpha_{1},\dots, \alpha_{l-1},\alpha_{l+1},\dots,\alpha_{k-1},\alpha_{k+1}, \dots,\alpha_{n}\in \mathbb{K}$ such that:
+
+$$
+v_{l} = \alpha w_{1} + \alpha_{1}v_{1} + \dots + \alpha_{l-1}v_{l-1} +\alpha_{l+1}v_{l+1} + \dots+ \alpha_{k-1}v_{k-1} + \alpha_{k+1}v_{k+1}+ \dots \alpha_{n} v_{n}
+$$Now substituting our in the above equation we get that $v_{l}$ can be expressed as a linear combination of vectors in $B$, which is a contradiction as $B$ is linearly independent. Therefore, $B_{1}$ is linearly independent. 
+
+Since $v_{k}$ can be expressed as in above, $\mathrm{span}(B_{1}) = \mathrm{span}(B) = V$. Therefore $B_{1}$ is basis of $V$. We repeat this process replacing some $v_{j}\in B_{1}$, by $w_{2}$ and so on.
+
+Now if $m\leq n$, $B_{m}=\{ w_{1},w_{2},\dots,w_{m},v_{i_{1}},v_{i_{2}},\dots,v_{i_{m-n}} \}$ is a basis for $V$. If $m>n$, $B_{n}=\{ w_{1},w_{2},\dots,w_{n} \}$ is a basis for $V$. Then $w_{n+1}\in W$ can be written as a linear combination of vectors in $B_{n}$, which is a contradiction to the fact that $W$ is linearly independent. Therefore $m\leq n$.

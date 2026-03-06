@@ -140,7 +140,7 @@ sticker: lucide//calendar-days
 	- [x] Reading Claude Analysis of My code  [due:: 2026-02-13]  [completion:: 2026-02-13]
 	- [x] Fixing issues presented by Claude  [due:: 2026-02-13]  [completion:: 2026-02-13]
 	- [x] Writing Complete Analysis Report  [due:: 2026-02-13]  [completion:: 2026-02-13]
-	- [ ] Setting up a meeting with David  [due:: 2026-02-13]
+	- [x] Setting up a meeting with David  [due:: 2026-02-13]  [completion:: 2026-03-05]
 - [ ] FCC Physics Events Database  
 	- [ ] Get familiar with [code base](https://fcc-physics-events.web.cern.ch/)
 	- [ ] Get familiar with [DIRAC](https://dirac.diracgrid.org/en/latest/AdministratorGuide/Resources/supercomputers.html)
@@ -153,6 +153,8 @@ sticker: lucide//calendar-days
 	- [ ] Refactorization and Modularization of python module in FCCAnalyses
 	- [ ] issue:420
 	- [ ] issue:131
+- FCC Particle Flow
+	- [ ] Getting Started with Particle Flow basics
 
 # General Readings and Studies
 - [ ] Monthly Mathematics Topic: **Homotopy Type Theory: Univalent Foundations**
@@ -253,13 +255,246 @@ sticker: lucide//calendar-days
 **This project is being handled as a self-study as well. They have similar tasks therefore I do not mention them here as well.**
 ## Stochastic Processes
 
-- [ ] Study plan
+- **Stochastic Processes and Modeling in Physics** *SPMP*
+- **An Introduction to Stochastic Partial Differential Equations** *ISPDE*
+- **Lecture Notes on Stochastic Processes** *LNSP*
+- **Statistical Mechanics A Concise Advanced Textbook** *SMCAT*
+- **Second Chance: Unorthodox but Personally Effective Explanations in Probability and Physics** *UPEEPP*'
+- **Making Sense of Statistical Mechanics** *MSSM*
+- Notes Outline
+	- [ ] Probability Theory: Writing the Letter on Probability Theory Explaining the Topic in Depth but not too much irrelavant stuff.
+	- [ ] Information Theory: Writing the Letter on Information Theory Explaining the Topic in Depth but not too much irrelevant stuff
+	- [ ] Statistical Mechanics Development
+	- [ ] Thermodynamic Overview and Letter Completion
+	- [ ] Stochastic Processes Development
+	- [ ] Computational Stochastic Processes Letter and Development
+- Resources
+	- [ ] LNSP
+		- [ ] Diffusion and Random Walk
+		- [ ] Probability Theory
+		- [ ] Langevin Equation and Fokker-Planck Equation
+		- [ ] Dynkin Equation
+		- [ ] Synchronization
+		- [ ] Ito Versus Stratonovich Calculus
+		- [ ] Fluctuation-Dissipation Theorem
+		- [ ] Equilibrium and Non-Equilibrium
+	- [ ] SPMP
+		- [ ] Random Variable. Moments. Characteristic Function
+		- [ ] Properties of Gaussian Distribution. Law of Large Numbers
+		- [ ] The Bernoulli and Poisson Processes
+		- [ ] Finite Markov Chains Efficient Mixing
+			- [ ] Convergence of Markov Processes *Optional Reading*
+		- [ ] The Ising Model and Markov Chain Monte Carlo
+		- [ ] Queueing Systems
+		- [ ] Brownian Motion
+	- [ ] ISPDE
+		- [ ] Introduction
+		- [ ] Some Motivating Examples
+		- [ ] Probability Measures on Polish Spaces
+		- [ ] Gaussian Measure Theory
+		- [ ] A Primer on Semigroup Theory
+		- [ ] Linear SPDEs/ Stochastic Convolutions
+		- [ ] Semilinear SPDEs
+	- SMCAT
+		- [ ] Thermodynamical Formalism
+		- [ ] Equilibrium Ensembles
+		- [ ] Non-interacting Quantum Systems
+		- [ ] Phase Transitions and Lattice Systems
+		- [ ] Approximate Methods and Landau Theory
+		- [ ] Linear Response Theory *Brownian Motion*
+		- [ ] Frustrated and Quenched Systems
+	- [ ] Optional Reading:
+		- [ ] Monte Carlo Methods
+	- UPEEPP
+		- [ ] Tools for Probability
+		- [ ] Diffusive Processes
+		- [ ] Renormalization
+		- [ ] Laws of Thermodynamics
+		- [ ] Thermodynamics and Multivariable Calculus
+		- [ ] Kinetic Theory I: Fundamentals
+		- [ ] Kinetic Theory II: Hamiltonian Dynamics
+		- [ ] Proto-Quantum Mechanics
+		- [ ] Basic Quantum Mechanics
+		- [ ] Quantum Mechanics on a Line
+		- [ ] Perturbation Theory and Scattering
+		- [ ] Semiclassical Methods
+		- [ ] Canonical Distributions
+		- [ ] Nonequilibrium Processes
+		- [ ] Identical Quantum Particles
+	- [ ] MSSM
+		- [ ] Probability
+			- [ ] Sibjective Versus Objective Probabilities
+				- [ ] The Indifference Principle 
+				- [ ] Cox' Axioms and Theorem
+				- [ ] Bayesian Updating
+				- [ ] Objections to the Subjective Approach
+				- [ ] Bertrand's Paradox
+			- [ ] The Law of Large Numbers
+				- [ ] A Simple Example
+				- [ ] A More General Result
+				- [ ] Corrections of the Law of Large Numbers
+			- [ ] The Law of Large Numbers and the Frequentist Interpretation
+			- [ ] Explanation and Probabilistic Explanations
+			- [ ] Measure Theore
+				- [ ] Definition of a Measure
+				- [ ] Constructions of Measures
+				- [ ] Integration
+				- [ ] Approximation of Integrals
+				- [ ] Invariant Measures
+				- [ ] Probability Densities, Marginal and Conditional Probabilities
+				- [ ] Cantor Sets and Measures
+		- [ ] Classical Mechanics
+			- [ ] Newton's Laws
+			- [ ] Hamilton's Equations
+				- [ ] The Hamiltonian Flow
+				- [ ] Conservation of Energy
+			- [ ] Liouville's Theorem and Measure
+			- [ ] Time Reversibility
+		- [ ] Dynamical Systems
+			- [ ] Poincare's Recurrence Theorem or the Eternal Return
+				- [ ] Proof of Poincare's Recurrence Theorem
+			- [ ] Ergodic Theorems
+				- [ ] Examples and Applications
+				- [ ] Ergodicity and the Law of Large Numbers
+			- [ ] Mixing
+			- [ ] Sensitive Dependence on Initial Conditions
+			- [ ] Statistical Theory of Dynamical Systems
+				- [ ] Itineraries and Coding
+				- [ ] Strange Attractors
+			- [ ] Dynamical Entropies
+			- [ ] Determinism and Predictability
+		- [ ] Thermodynamics
+			- [ ] The Zeroth Law
+			- [ ] The First Law
+				- [ ] Work
+				- [ ] Heat
+			- [ ] The Second Law
+				- [ ] Carnot Cycle
+				- [ ] Proof of the Equivalence Between Kelvin's Version and Clausius Version of the Second Law
+			- [ ] The Thermodynamic Entropy
+			- [ ] Other Thermodynamic Functions
+				- [ ] The Particle Number
+				- [ ] Fundamental Relations
+				- [ ] The Helmholtz Free Energy
+				- [ ] The Grand Potential
+				- [ ] The Principle of Maximum Entropy and Equilibrium Conditions
+			- [ ] The Ideal Gas
+				- [ ] Mathematical Identities and the Gibbs-Duhem Relations
+				- [ ] Derivation of the Fundamental Relation for an Ideal Gas
+				- [ ] The Fundamental Relation in Other Variables for an Ideal Gas
+				- [ ] Adiabatic Transformations
+				- [ ] Be Careful with Derivatives!
+		- [ ] Equilibrium Statistical Mechanics
+			- [ ] Microstates and Macrostates
+			- [ ] Dominance of the Equilibrium Macrostate
+			- [ ] Typicality
+			- [ ] Entropy in Equilibrium
+			- [ ] Other Equilibrium Potentials
+			- [ ] The Equilibrium Ensembles
+				- [ ] Definition of the Ensembles
+				- [ ] The Gibbs Entropy
+				- [ ] Equivalence of Ensembles
+				- [ ] The Meaning of Ensembles
+			- [ ] Justification of Entropy Formula
+			- [ ] What Justifies the Microcanonical Distribution 
+		- [ ] Information Theoretic And Predictive Statistical Mechanics
+			- [ ] The Shannon Entropy
+			- [ ] The Maximum Entropy Principle
+			- [ ] The Ensembles
+			- [ ] Continuous Distributions and Relative Entropy
+			- [ ] Derivation of the Second Law
+			- [ ] Shannon's Entropy and Communication
+				- [ ] Information Content of a Message
+				- [ ] Encoding Messages
+			- [ ] Evaluation of the Information Theoretic Approach
+				- [ ] What Do Probabilities Mean Here?
+				- [ ] Jaynes' Approach
+		- [ ] Approach to Equilibrium
+			- [ ] Boltzman's Scheme
+				- [ ] Microstates and Macrostates
+				- [ ] Derivation of Macroscopic Laws from Microscopic Ones
+				- [ ] Solution of the Reversibility Paradox
+				- [ ] Irreversibility and Probabilistic Explanations
+				- [ ] Time Dependent Boltzmann Entropy and the Second Law
+			- [ ] Answers to the Classical Objections
+				- [ ] Objections from Loschmidt and Zemelo
+				- [ ] An Objection from Poincare
+				- [ ] Objections to Typicality Arguments
+			- [ ] Ergodicity, Mixing and Other Wrong Turns
+				- [ ] Ergodicity
+				- [ ] Mixing
+				- [ ] The Brussels-Austin School
+				- [ ] Real Systems Are Never Isolated
+			- [ ] Maxwell's Demon
+			- [ ] The Origins of the Low Entropy States
+			- [ ] The Boltzmann Equation
+				- [ ] The Relation Between Boltzmann EQuation and the Full Evolutions Measure
+			- [ ] Simple Models
+				- [ ] Ehrenfest's Urns
+				- [ ] Kac Ring Model
+				- [ ] Uncoupled Bake's Maps
+				- [ ] Ideal Gas in a box
+				- [ ] The abiabatic Piston
+			- [ ] Boltzmann Versus Gibbs Entropies
+				- [ ] Another Time Evolution of measures
+		- [ ] Phase Transition
+			- [ ] Phenomenology
+			- [ ] Lattice Models and Gibbs States
+			- [ ] Mean Field Theory
+			- [ ] One Dimension
+			- [ ] High Temperature Expansions
+			- [ ] Low Temperatures and the Peierls Argument
+			- [ ] Other Models
+				- [ ] Trivial Extensions
+				- [ ] Long Range Interactions
+				- [ ] Many Body Interactions
+				- [ ] Continuous Spins
+				- [ ] Models with Continuous Symmetry
+				- [ ] Non Translation Invariant Gibbs States
+			- [ ] The Pirogov-Sinai Theory
+			- [ ] Critical Points
+## Cosmology and Gravitation and Topology Courses
 
-## Cosmology 1
-
-- [ ] Study plan
-
-## Gravitation 2
+- **Part I: Mathematical Methods for General Relativity**
+	- [ ] Linear Algebra (Following the Model of Linear Algebra Path)
+	- [ ] Topology and Manifolds (Following the Model of Topology Path)
+		- [ ] Topology
+		- [ ] Topological Manifolds
+		- [ ] Riemannian Manifolds
+		- [ ] Structures on Manifolds
+	- [ ] Differential Geometry
+		- [ ] Tensor Algebra
+		- [ ] Tensor Calculus
+		- [ ] Integration, Forms
+	- [ ] Advanced Topics 
+		- [ ] Algebraic Topology
+		- [ ] Category Theory
+		- [ ] Advanced Differential Geometry
+- **Part II: What is Relativity All about?**
+	- [ ] Physics in Flat Space Time
+		- [ ] Assumptions and The Idea
+		- [ ] Formalism of Special Relativity
+		- [ ] What Just happened?
+	- [ ] General Relativity
+		- [ ] Assumptions, and The Idea
+		- [ ] Finding a Theory of Gravitation
+		- [ ] Building the Formalism
+- **Part III: Expectations, and Results**
+	- [ ] Black Hole Physics
+	- [ ] Solutions
+		- [ ] Schwarzshield 
+		- [ ] Kerr
+		- [ ] Kerr-Newman
+	- [ ] Gravitational Waves
+- **Part IV: Cosmology**
+	- [ ] Principles
+	- [ ] Cosmology basics
+	- [ ] Expectations, Results
+- **Part V: Numerical Relativity**
+	- [ ] Numerical Relativity
+	- [ ] Numerical Cosmology
+	- [ ] Solutions, Results
+	- [ ] Data Science in Gravitational Physics and Cosmology
 
 - [ ] Assignment [due:: 2026-03-03] 
 - [ ] D'Inverno topic covering
@@ -289,8 +524,13 @@ sticker: lucide//calendar-days
 					- [ ] Vue
 					- [ ] React
 				- [ ] Kotlin (Android and Desktop)
+			- [ ] Interactive Presentations
 		- [ ] Nukleus for Print
 			- [ ] Nukleus Latex Family
+				- [ ] Letter
+				- [ ] Article
+				- [ ] Book
+				- [ ] Presentation
 - [ ] Website Design and Development
 
 # Travel
@@ -302,5 +542,6 @@ sticker: lucide//calendar-days
 - [x] Invitation Letter  [completion:: 2026-02-19]
 - [x] Visa Applying  [completion:: 2026-02-25]
 - [ ] Visa is given to me
+- [ ] Hostel Reservation
 - [ ] Packing up
 - [ ] Flight Ticket

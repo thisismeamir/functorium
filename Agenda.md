@@ -250,9 +250,6 @@ sticker: lucide//calendar-days
 
 # University Tasks
 
-## Topology
-
-**This project is being handled as a self-study as well. They have similar tasks therefore I do not mention them here as well.**
 ## Stochastic Processes
 
 - **Stochastic Processes and Modeling in Physics** *SPMP*

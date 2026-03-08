@@ -7,3 +7,5 @@ Linux is an open-source operating system kernel. In this model I'll gather docum
 ## Sound System
 
 - [[Model of Linux Sound System]]
+
+#model

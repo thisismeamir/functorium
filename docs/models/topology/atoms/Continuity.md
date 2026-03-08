@@ -19,7 +19,7 @@ Let $X$, $Y$, and $Z$ be topological spaces.
 > TODO: Proving these above
 ## Local Criterion for Continuity
 
-![[../../../attachments/Pasted image 20260118160821.png]]
+![[attachments/Pasted image 20260118160821.png]]
 
 Let $f: X \rightarrow Y$ be a map between topological spaces.
 

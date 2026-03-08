@@ -11,3 +11,6 @@ Any Linux sound system consists of several layers:
 In this model we investigate sound in Linux based operating systems, specially for advanced cases such as music production and DAWs as well.
 
 - [[Advanced Linux Sound Architecture (ALSA)]]
+
+
+#model 

@@ -538,7 +538,8 @@ sticker: lucide//calendar-days
 - [x] Passport  [completion:: 2026-02-19]
 - [x] Invitation Letter  [completion:: 2026-02-19]
 - [x] Visa Applying  [completion:: 2026-02-25]
-- [ ] Visa is given to me
+- [x] Visa is given to me  [completion:: 2026-03-08]
+- [ ] The Was has ended.
 - [ ] Hostel Reservation
 - [ ] Packing up
 - [ ] Flight Ticket

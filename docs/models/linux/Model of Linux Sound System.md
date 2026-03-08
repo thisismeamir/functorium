@@ -1,3 +1,6 @@
+---
+sticker: lucide//hash
+---
 Any Linux sound system consists of several layers:
 
 - Drivers and low-level interfaces — hardware support and control.

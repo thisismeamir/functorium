@@ -122,6 +122,18 @@ First we've got to make sure that we pass our course in the first semester, expe
 - [x] Writing the complete lecture notes on Gravitation 1.
 - [x] Writing the complete lecture notes on Quantum Mechanics.
 
+- [ ] Stochastic Processes
+- [ ] Gravitation II
+- [ ] Cosmology I
+- [ ] Topology and Geometry
+
+With the following it is expected to provide the following:
+
+- [ ] Mathematical Methods for General Relativity Lecture Notes
+- [ ] Cosmology Lecture Notes
+- [ ] Gravitation Lecture Notes
+- [ ] Stochastic Processes Lecture Notes
+
 Secondly, projects like Seemake and HepSW are our basis of work in GENIE-Generator, Koly, and Kompute.
 
 - [ ] Completion of Seemake Testing and Edge case handling and release of version 2.0.0

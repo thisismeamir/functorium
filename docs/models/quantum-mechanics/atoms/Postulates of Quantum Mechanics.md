@@ -1,3 +1,6 @@
+---
+sticker: lucide//atom
+---
 # Postulates of Quantum Mechanics 
 
 The following are postulates of non-relativistic quantum mechanics. We consider first a system with one degree of freedom, namely, a single particle in one space dimension. 

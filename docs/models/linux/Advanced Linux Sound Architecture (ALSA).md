@@ -1,3 +1,6 @@
+---
+sticker: lucide//hash
+---
 # Advanced Linux Sound Architecture
 
 ## Installation 

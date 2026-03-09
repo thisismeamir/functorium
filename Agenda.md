@@ -135,12 +135,13 @@ sticker: lucide//calendar-days
         - [ ] [Statistical Methods Lecture Notes (Glen Cowan PDF)](https://people.sc.fsu.edu/~sshanbhag/Cowan_Statistics.pdf) - Advanced statistical concepts
 ## Research
 
-- [ ] EEWW Analysis Report
+- [ ] W Mass Analysis Report
 	- [x] Reading Dr. Rostami Report  [due:: 2026-02-13]  [completion:: 2026-02-13]
 	- [x] Reading Claude Analysis of My code  [due:: 2026-02-13]  [completion:: 2026-02-13]
 	- [x] Fixing issues presented by Claude  [due:: 2026-02-13]  [completion:: 2026-02-13]
 	- [x] Writing Complete Analysis Report  [due:: 2026-02-13]  [completion:: 2026-02-13]
 	- [x] Setting up a meeting with David  [due:: 2026-02-13]  [completion:: 2026-03-05]
+	- [ ] Awaiting Response and possible 
 - [ ] FCC Physics Events Database  
 	- [ ] Get familiar with [code base](https://fcc-physics-events.web.cern.ch/)
 	- [ ] Get familiar with [DIRAC](https://dirac.diracgrid.org/en/latest/AdministratorGuide/Resources/supercomputers.html)

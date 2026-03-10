@@ -4,7 +4,7 @@ sticker: lucide//atom
 > [!IMPORTANT]
     > Liouville's Theorem states that the phase space density $\rho(\Gamma, t)$ behaves like an incompresible fluid.
 
-![[../../../../attachments/Pasted image 20260204163840.png]]
+![[../../../attachments/Pasted image 20260204163840.png]]
 
 Assume the evolution of $d\mathcal N$ pure states in an infinitesimal volume $\mathrm d \Gamma = \prod_{i=1}^N\mathrm d^3\vec p_i\mathrm d^3\vec q_i$ around the point $(\mathbf p, \mathbf q)$. After an interval $\delta t$ these states have moved to the vicinity of another point $(\mathbf p', \mathbf q')$. Which in terms of components can be written as:
 

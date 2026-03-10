@@ -3,7 +3,7 @@ sticker: lucide//atom
 ---
 # Tasks
 
-![[Pasted image 20250815193747.png]]
+![[../../../attachments/Pasted image 20250815193747.png]]
 A task represents some **independent unit of work** that a build performs, such as compiling classes, creating a JAR, generating Javadoc, or publishing archives to a repository.
 
 Tasks are the building blocks of every Gradle build.

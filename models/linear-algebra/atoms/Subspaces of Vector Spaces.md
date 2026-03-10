@@ -59,7 +59,7 @@ Therefore, $W_1 \cap W_2$ is a subspace of $V$.
 
 The above result can be extended to any number of subspaces. As we have shown that the intersection of subspaces is again a subspace, it is natural to ask whether the union of subspaces is again a subspace. It is clear that the union of two subspaces need not be a subspace of $V$ (Fig. 2.2).
 
-![[../../../../attachments/Pasted image 20260119100355.png]]
+![[../../../attachments/Pasted image 20260119100355.png]]
 
 ## Union of Subspaces Can Become a Subspace as Well
 

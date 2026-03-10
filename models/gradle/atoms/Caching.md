@@ -2,7 +2,7 @@
 sticker: lucide//atom
 ---
 # Caching
-![[Pasted image 20250816113932.png]]
+![[../../../attachments/Pasted image 20250816113932.png]]
 Gradle uses two main features to reduce build time, caching and incremental build.
 
 ## Incremental Build

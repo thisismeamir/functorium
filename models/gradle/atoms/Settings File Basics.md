@@ -4,7 +4,7 @@ sticker: lucide//atom
 # Settings File Basics
 ## Overview
 The settings file is the entry point of every Gradle project.
-![[Pasted image 20250813185057.png]]
+![[../../../attachments/Pasted image 20250813185057.png]]
 ## Development
 The primary purpose of the settings file is to define the project structure, usually by naming the root project, and adding the subprojects. 
 

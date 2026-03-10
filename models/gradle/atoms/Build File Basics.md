@@ -4,7 +4,7 @@ sticker: lucide//atom
 # Build File Basics
 ## Overview
 Generally a build script, details tasks and plugins to build a sub-project.
-![[Pasted image 20250813190659.png]]
+![[../../../attachments/Pasted image 20250813190659.png]]
 
 > [!DANGER] Every Gradle project should at least have one `build.gradle` file. Usually to be found in the root folder.
 

@@ -18,11 +18,11 @@ One way of obtaining the desired compiler would be to do binary translation, to 
 
 A better solution is to write an $ML$-to-$x86$ compiler in $ML$. We can compile this using the $ML$ compiler on the $ARM$ machine.
 
-![[../../../../attachments/Pasted image 20260120125149.png]]
+![[../../../attachments/Pasted image 20260120125149.png]]
 
 Now, we can run the $ML$-to-$x86$ compiler on the $ARM$ and let it compile itself.
 
-![[../../../../attachments/Pasted image 20260120125257.png]]
+![[../../../attachments/Pasted image 20260120125257.png]]
 
 We have now obtained the desired compiler. Note that the compiler can now be used to compile itself directory on the $x86$ platform. This can be useful if the compiler is later extended or, simply, as a partial test of correctness: If the compiler, when compiling itself, yields a different object code than the one obtained with abode process it must contain an error. The converse is not true, even if the same target is obtained, there may still be errors in the compiler.
 
@@ -36,19 +36,19 @@ A common method is to write a QAD ("quick and dirty") compiler using an existing
 
 Let us assume we design a new language "$M+$". We, initially, write a compiler for $M+$ to $ML$ in $ML$. The first step is to compile this so it can run on some machine.
 
-![[../../../../attachments/Pasted image 20260120134935.png]]
+![[../../../attachments/Pasted image 20260120134935.png]]
 
 The QAD compiler can now be used to compiler the "real" compiler:
 
-![[../../../../attachments/Pasted image 20260120140128.png]]
+![[../../../attachments/Pasted image 20260120140128.png]]
 
 The result is an $ML$ program, which we need to compile:
 
-![[../../../../attachments/Pasted image 20260120140233.png]]
+![[../../../attachments/Pasted image 20260120140233.png]]
 
 The result of this is a compiler with the desired functionality, but it will probably run slowly. The reason is that it has been compiled by using the QAD compiler (in combination with the $ML$ compiler). A better result can be obtained by letting the generated compiler compile itself:
 
-![[../../../../attachments/Pasted image 20260120140740.png]]
+![[../../../attachments/Pasted image 20260120140740.png]]
 
 This yields a compiler with the same functionality as the above it will generate the same code, but, since the "real" compiler has been used to compile it, it will probably run fast.
 
@@ -57,11 +57,11 @@ This yields a compiler with the same functionality as the above it will generate
 
 Instead of writing a QAD compiler, we can write a QAD interpreter. In our example, we could write an $M+$ interpreter in $ML$. We would first need to compiler this:
 
-![[../../../../attachments/Pasted image 20260120145057.png]]
+![[../../../attachments/Pasted image 20260120145057.png]]
 
 We can then use this to run the $M+$ compiler directly:
 
-![[../../../../attachments/Pasted image 20260120145130.png]]
+![[../../../attachments/Pasted image 20260120145130.png]]
 
 Since the "real" compiler has been used to do the compilation, nothing new will be gained by using the generated compiler to compile itself, though this step can still be used as a test.
 

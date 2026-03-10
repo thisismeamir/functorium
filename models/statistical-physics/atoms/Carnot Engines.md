@@ -5,7 +5,7 @@ sticker: lucide//atom
 
 *A Carnot Engine is any engine that is reversible, runs in a cycle, with all of its heat exchanges taking place at a source temperature $T_H$ and a sink temperature $T_C$*.
 
-![[Pasted image 20251122114236.png]]
+![[../../../attachments/Pasted image 20251122114236.png]]
 
 A reversible process is one that can be run backward in time by simply reversing its inputs and outputs. It is the thermodynamics equivalent of frictionless motion in mechanics. An engine that runs in cycle returns to its original internal state at the end of the process. 
 
@@ -33,7 +33,7 @@ $$
 with $\gamma = 5/3$.
 
 
-![[Pasted image 20251122121713.png]]
+![[../../../attachments/Pasted image 20251122121713.png]]
 
 The adiabatic curves are clearly distinct from the isotherms, and we can select two such curves to intersect out isotherms, thereby completing a Carnot cycle. The assumption of $E\propto T$ is not necessary. In fact, a similar construction is possible for any two-parameter system with $E(J, x)$ 
 
@@ -46,7 +46,7 @@ According to Calusius's statement, the quantity of transferred heat cannot be ne
 $$
 \frac{W}{Q_H} \leq \frac{W}{Q_H'} \Longrightarrow \eta_{\text{Carnot}} \geq\eta_{\text{non-Carnot}}.
 $$
-![[Pasted image 20251217081032.png]]
+![[../../../attachments/Pasted image 20251217081032.png]]
 
 **Corollary** All reversible engines have the same universal efficiency $\eta(T_H, T_C)$, since each can be used to run any other one backward.
 

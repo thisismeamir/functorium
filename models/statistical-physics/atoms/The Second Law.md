@@ -14,7 +14,7 @@ $$
 \omega = \frac{Q_C}{W} = \frac{Q_C}{Q_H-Q_C}
 $$
 
-![[Pasted image 20251122113446.png]]
+![[../../../attachments/Pasted image 20251122113446.png]]
 
 The first law rules out so-called "*perpetual motion machines of the first kind*", that is, engines that produce work without consuming any energy. However, the conservation of energy is not violated by and engine that produces work by converting water to ice. Such a "*perpetual motion machine of the second kind*" would certainly solve the world's energy problems, but is ruled out by the second law of thermodynamics. 
 

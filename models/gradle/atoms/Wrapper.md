@@ -4,10 +4,10 @@ sticker: lucide//atom
 	# Wrapper
 ## Overview
 Gradle wrapper is the means of invoking Gradle.
-![[Pasted image 20250813181023.png]]
+![[../../../attachments/Pasted image 20250813181023.png]]
 ## Development
 The script invokes a declared version of Gradle, downloading it before hand if necessary..
-![[Pasted image 20250813181127.png]]
+![[../../../attachments/Pasted image 20250813181127.png]]
 In every Gradle project two files (one for Unix machines and one for Windows) is available. those are `gradle` and `gradle.bat`. If a project doesn't have these files, it's possible that the project is not a Gradle project at all (although it might be that Gradle wrapper is not set up on the project. 
 
 

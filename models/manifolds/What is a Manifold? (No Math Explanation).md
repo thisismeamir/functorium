@@ -12,7 +12,7 @@ An $n$-dimensional manifold is an object modeled locally in $\mathbb R^n$; Meani
 
 **One Dimensional Manifolds** are curves and lines. The easiest example would be the real line. Other examples can be a curve [[Embedding|embedded]]in $n$ dimensional space by a single parameter.
 
-![[../../../attachments/Pasted image 20260118122210.png]]
+![[../../attachments/Pasted image 20260118122210.png]]
 
 In each of these examples, a point can be unambiguously specified by a single real number. For example, a point on the real line *is* a real number. We might identify a point on the circle by its angle, a point on a graph by its $x$-coordinate, and a point on a parameterized curve by its parameter $\lambda$.
 

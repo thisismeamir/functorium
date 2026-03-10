@@ -7,7 +7,7 @@ In dealing with simple mechanical systems, conservation of energy is an importan
 
 ***The amount of work required to change the state of an otherwise adiabatically isolated system depends only on the initial and final states, and not on the means by which the work is performed, or on the intermediate stages through which the system passes***
 
-![[Pasted image 20251121191234.png]]
+![[../../../attachments/Pasted image 20251121191234.png]]
 
 This as we all know holds for a particle in a potential. Similarly, for the thermodynamic system we can construct another state function, the internal energy $E(X)$. Up to a constant, $E(X)$ can be obtained from the amount of work $\Delta W$ needed for an adiabatic transformation from an initial state to a final state:
 

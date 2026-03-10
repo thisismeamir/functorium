@@ -9,7 +9,7 @@ The zeroth law of thermodynamics describes the transitive nature of thermal equi
 
 This law looks very simple, but it has a great implication. It implies the existence of an important state function, the empirical temperature $\Theta$, such that systems in equilibrium are are the same temperature.
 
-![[Pasted image 20251121191250.png]]
+![[../../../attachments/Pasted image 20251121191250.png]]
 
 What this means? Let the equilibrium state of systems $A$, $B$, and $C$ be described by the coordinates $\{A_i\}$, $\{B_i\}$ and $\{C_i\}, respectively. The assumption that $A$ and $B$ are in equilibrium states implies a **constraint*** between $A$ and $C$ coordinates. This means if $A_j$ were to change, it would do so to hold the equilibrium with $C_j$ coordinates. 
 

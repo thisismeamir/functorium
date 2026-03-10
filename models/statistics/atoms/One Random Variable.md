@@ -65,6 +65,6 @@ $$
 The cumulants provide a useful and compact way of describing a PDF.
 “An important theorem allows easy computation of moments in terms of the cumulants: represent the nth cumulant graphically as a connected cluster of n points. The mth moment is then obtained by summing all possible subdivisions of m points into groupings of smaller (connected or disconnected) clusters. The contribution of each subdivision to the sum is the product of the connected cumulants that it represents. Using this result, the first four moments are computed graphically.” (Kardar, p. 39)
 
-![[Pasted image 20251217143231.png]]
+![[../../../attachments/Pasted image 20251217143231.png]]
 
 [[Poisson Distribution]]

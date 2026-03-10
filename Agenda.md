@@ -192,7 +192,8 @@ sticker: lucide//calendar-days
 	- [ ] Linear Transformations
 	- [ ] Eigenvalues and Eigenvectors
 	- [ ] Normed spaces and inner products
-
+	- [ ] Bounded Maps
+	- [ ] Version 1.0 of Model of Linear Algebra Gets published
 # Software Development Tasks
 
 - [ ] HepSW
@@ -494,15 +495,17 @@ sticker: lucide//calendar-days
 	- [ ] Solutions, Results
 	- [ ] Data Science in Gravitational Physics and Cosmology
 
-- [ ] Assignment [due:: 2026-03-03] 
-- [ ] D'Inverno topic covering
-- [ ] Nakahara Differential Forms 
+- [x] Assignment  [due:: 2026-03-03]  [completion:: 2026-03-09]
+- [x] D'Inverno topic covering  [completion:: 2026-03-09]
+- [x] Nakahara Differential Forms  [completion:: 2026-03-09]
 
 ## Thesis
 
 - [x] Send the suggestions to Movahed  [due:: 2026-02-27]  [completion:: 2026-03-02]
 - [ ] Review the papers Movahed sent me [due:: 2026-02-27] 
 - [ ] Study Planning for Gravitational Waves, and the first phase
+- [ ] Get in touch about the progress that we're going to make.
+
 
 # Independent Society of Knowledge
 - [ ] Design Language Initiation

@@ -9,7 +9,7 @@ $$
 \int \mathrm{d}^3\vec{p}_{2} \mathrm{d}^3\vec{q} \left( \frac{\vec{p}_{2}-\vec{p}_{1}}{m} \right) \cdot \frac{\partial}{\partial \vec{q}}f_{2}(\vec{p}_{1},\vec{q}_{1},\vec{p}_{2},\vec{q}_{2};t)
 $$
 
-![[../../../../attachments/Pasted image 20260206193342.png]]
+![[../../../attachments/Pasted image 20260206193342.png]]
 
 To perform this integration we introduce a convenient coordinate system for $\vec{q}$, guided by the formalism used to describe the scattering particles. Naturally, we choose one axis to be parallel to $\vec{p}_{2}-\vec{p}_{1}$, with the corresponding coordinate $a$ that is negative before a collision, and positive afterwards. The other two coordinates of $\vec{q}$ are represented by an impact factor $\vec{b}$ that is $\vec{0}$ for a head on collision $([\vec{p}_{1}-\vec{p}_{2}]|| [\vec{q}_{1}-\vec{q}_{2}])$. We can now integrate over $a$ to get
 

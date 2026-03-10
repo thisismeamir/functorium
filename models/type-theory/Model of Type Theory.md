@@ -1,1 +1,3 @@
 Type theory was originally invented by Bertrand Russell, as a device for blocking the paradoxes in the logical foundations of mathematics that were under investigation at the time. It was later developed as a rigorous formal system in its own right by Alonzo. Although it is not generally regarded as the foundation for classical mathematics, set theory being more customary, type theory still has numerous applications, especially in computer science and the theory of programming languages.
+
+- [[Introduction to Type Theory]]

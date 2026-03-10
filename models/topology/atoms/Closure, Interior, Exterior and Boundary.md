@@ -3,7 +3,7 @@ sticker: lucide//atom
 ---
 # Closure, Interior, Exterior, and Boundary
 
-![[../../../../attachments/Pasted image 20260118153024.png]]
+![[../../../attachments/Pasted image 20260118153024.png]]
 
 Let $X$ be a topological space and $A \subseteq X$.
 

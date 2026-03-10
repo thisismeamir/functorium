@@ -13,7 +13,7 @@ Let $(X, d)$ be a metric space, where $d: X \times X \to [0, \infty)$ is a dista
 
 **(a) Topological Definition implies Metric Space Definition:**
 
-Assume the topological definition holds.  We want to show that the metric space definition also holds. Let $\epsilon > 0$ be given. Consider the neighborhood $U = \{x \in X : d(x, x) < \epsilon\}$. This is an open ball centered at $x$ with radius $\epsilon$, and thus a neighborhood of $x$.
+Assume the topological definition holds.  We want to show that the metric space definition also holds. Let $\epsilon > 0$ be given. Consider the neighborhood $U = \{y \in X : d(y, x) < \epsilon\}$. This is an open ball centered at $x$ with radius $\epsilon$, and thus a neighborhood of $x$.
 
 By the topological definition, there exists an integer $N \in \mathbb{N}$ such that $x_i \in U$ for all $i \geq N$.  Since $U = \{y \in X : d(y, x) < \epsilon\}$, this implies that $d(x_i, x) < \epsilon$ for all $i \geq N$. Therefore, the metric space definition holds.
 

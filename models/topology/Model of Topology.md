@@ -2,16 +2,16 @@
 sticker: lucide//hash
 banner: attachments/Pasted image 20260118124226.png
 ---
-![[../../../attachments/Pasted image 20260118124226.png]]
+![[../../attachments/Pasted image 20260118124226.png]]
 
 Roughly speaking, topology is the branch of mathematics that is concerned with properties of sets that are unchanged by "continuous deformations". Somewhat more accurately, a *topological property is one that is preserved by homeomorphisms*.
 
 - **Foundations of Topology:** 
     - **Sets and Logic Review**
     - [[Definition of a Topological Space]]
-    - [[atoms/Closed Set Topology]]
-    - [[atoms/Closure, Interior, Exterior and Boundary]]
-    - [[atoms/Limit Point and Isolated Point]]
+    - [[Closed Set Topology]]
+    - [[Closure, Interior, Exterior and Boundary]]
+    - [[Limit Point and Isolated Point]]
     - [[Convergence]]
 	    - [[Equivalence of Convergence Definitions in Topology and Metric Spaces]]
 	    - [[Convergence in Discrete Topological Spaces]]
@@ -19,14 +19,19 @@ Roughly speaking, topology is the branch of mathematics that is concerned with p
 	- [[Continuity]]
 	- [[Connectedness]]
 	- [[Compactness]]
-	- [[Homeomorphism]](not written)
+	- [[Homeomorphism]]
+		- [[atoms/Examples of Homeomorphism|Examples of Homeomorphism]]
+		- [[atoms/Open Map|Open Map]]
+		- [[Local Homeomorphism]]
+	- [[Finer and Courser Topologies]]
 	- [[atoms/Embedding|Embedding]] (not written)
+	- [[Hausdorff Spaces]]
 
 - **Basic Topological Spaces:** 
     - [[Discrete Topology]]
-    - [[atoms/Trivial Topology]]
-    - [[atoms/Topology on Open Unit Ball]]
-    - [[atoms/Euclidean Topology]]
+    - [[Trivial Topology]]
+    - [[Topology on Open Unit Ball]]
+    - [[Euclidean Topology]]
     - [[Examples of Topologies]]
 
 - **Continuity and Homeomorphisms:** Explains continuity of functions and the concept of homeomorphism as a structural equivalence.

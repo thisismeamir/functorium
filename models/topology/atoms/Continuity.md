@@ -16,10 +16,10 @@ Let $X$, $Y$, and $Z$ be topological spaces.
 - If $f:X\rightarrow Y$ is continuous, so is the restriction of $f$ to any open subset of $X$.
 - If $f: X\rightarrow Y$ and $g: Y\rightarrow Z$ are both continuous, then so is their composition $g \circ f:X\rightarrow Z$.
 
-> TODO: Proving these above
+- [ ] TODO: Proving these above
 ## Local Criterion for Continuity
 
-![[attachments/Pasted image 20260118160821.png]]
+![[../../../attachments/Pasted image 20260118160821.png]]
 
 Let $f: X \rightarrow Y$ be a map between topological spaces.
 

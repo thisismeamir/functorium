@@ -2,7 +2,7 @@
 sticker: lucide//calendar-days
 ---
 # Misc
-
+- [ ] ***Find a good way to sort mathematical wikis topics, covering one another, having a good way to sort and list theorems and proofs. And a nice way to reference things.***
 - [x] Starting the Quantum Mechanics Letters  [completion:: 2026-03-02]
 	- [x] Writing the Preface to what we're going to talk about in these letters
 	- [x] Writing the outline of the letters 

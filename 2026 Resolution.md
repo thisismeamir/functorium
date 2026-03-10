@@ -16,7 +16,10 @@ In 2026 we have the first and second semester of Master's degree studies, those 
 	- Advanced Quantum Mechanics
 	- Gravitation 1
 - Second Semester
-	- To be found later on
+	- Stochastic Processes
+	- Cosmology 1
+	- Gravitation 2
+	- Topology and Geometry
 
 For these courses I have to write lecture notes, from different references. And we do exercises and problems of some of them if we find the problem interesting or worthy.
 
@@ -123,9 +126,13 @@ First we've got to make sure that we pass our course in the first semester, expe
 - [x] Writing the complete lecture notes on Quantum Mechanics.
 
 - [ ] Stochastic Processes
+	- **The path is written in Agenda**
 - [ ] Gravitation II
+	- **The path is written in Agenda**
 - [ ] Cosmology I
+	- **The path is written in Agenda**
 - [ ] Topology and Geometry
+	- **The path is written in Agenda**
 
 With the following it is expected to provide the following:
 

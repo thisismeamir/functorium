@@ -36,7 +36,7 @@ Notion of open subsets gives us a qualitative measure of *nearness*, as opposed 
 
 If $X$ is a topological space (omitting the $\mathcal T$ for simpler terminology, nothing has changed) and $p\in X$, a **neighborhood of $p$** is just any open subset of $X$ containing $p$. More generally, if $K\subseteq X$, a *neighborhood of the subset $K$* is an open subset containing $K$.
 
-[[Examples of Topologies]]
+[[../List of Topologies]]
 
 # Properties
 

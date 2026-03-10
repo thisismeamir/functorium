@@ -1,0 +1,17 @@
+Let $X$ be a topological space and let $A\subseteq X$ be any subset:
+- A point is in $\mathrm{Int}A$ if and only if it has a neighborhood contained in $A$.
+- A point is in $\mathrm{Ext}A$ if and only if it has a neighborhood contained in $X \setminus A$. 
+- A point is in $\partial A$ if and only if every neighborhood of it contains both a point of $A$ and a point of $X\setminus A$.
+- A point is in $\bar{A}$ if and only if every neighborhood of it contains a point of $A$.
+- $\bar{A}=A\cup \partial A= \mathrm{Int}A\cup \partial A$.
+- $\mathrm{Int} A$ and $\mathrm{Ext}A$ are open in $X$, while $\bar{A}$ and $\partial A$ are closed in $X$.
+- The following are equivalent:
+	- $A$ is open in $X$
+	- $A = \mathrm{Int}A$
+	- $A$ contains non of its boundary points.
+	- Every point of $A$ has a neighborhood contained in $A$.
+- The following are equivalent:
+	- $A$ is closed in $X$
+	- $A = \bar{A}$.
+	- $A$ contains all of its boundary points.
+	- Every point of $X\setminus A$ has a neighborhood contained in $X\setminus A$.

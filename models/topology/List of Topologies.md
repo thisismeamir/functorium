@@ -1,5 +1,5 @@
 ---
-sticker: lucide//hash
+sticker: lucide//list-tree
 ---
 
 # Simple Examples
@@ -11,4 +11,4 @@ sticker: lucide//hash
 - [[Topology on Open Unit Ball]]
 - [[Topology on Closed Unit Ball]]
 
-#model
+#list

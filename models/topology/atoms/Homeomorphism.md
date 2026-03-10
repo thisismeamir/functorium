@@ -35,7 +35,7 @@ Let $\mathcal{T}_{1}$ and $\mathcal{T}_{2}$ be topologies on the same set $X$. T
 **Proof:**
 - [ ] Left for later
 
-- [[Examples of Homeomorphism]]
+- [[../List of Homeomorphism]]
 
 > [!IMPORTANT]
     > In the definition of homeomorphism, it is important to note that although the assumption that $\varphi$ is bijective guarantees that the inverse map $\varphi^{-1}$ exists for set theoretic reasons, continuity of $\varphi^{-1}$ is not automatic

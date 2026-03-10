@@ -20,19 +20,15 @@ Roughly speaking, topology is the branch of mathematics that is concerned with p
 	- [[Connectedness]]
 	- [[Compactness]]
 	- [[Homeomorphism]]
-		- [[atoms/Examples of Homeomorphism|Examples of Homeomorphism]]
+		- [[List of Homeomorphism|Examples of Homeomorphism]]
 		- [[atoms/Open Map|Open Map]]
 		- [[Local Homeomorphism]]
 	- [[Finer and Courser Topologies]]
 	- [[atoms/Embedding|Embedding]] (not written)
-	- [[Hausdorff Spaces]]
-
-- **Basic Topological Spaces:** 
-    - [[Discrete Topology]]
-    - [[Trivial Topology]]
-    - [[Topology on Open Unit Ball]]
-    - [[Euclidean Topology]]
-    - [[Examples of Topologies]]
+	- [[atoms/Hausdorff Spaces]]
+	- [[atoms/Non-Hausdorff Spaces]]
+- [[List of Theorems in Topology]]
+- [[List of Topologies]]
 
 - **Continuity and Homeomorphisms:** Explains continuity of functions and the concept of homeomorphism as a structural equivalence.
     - **Definition of Continuity:** Defines continuous functions in terms of open sets or epsilon-delta definitions.

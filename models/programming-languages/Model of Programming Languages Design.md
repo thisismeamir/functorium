@@ -20,7 +20,7 @@ Designing programming languages is theory, exercise and aesthetic. In this model
   *Syntax*, in a broad sense, concerns what programs *look like* without considering their semantics (what they mean). This is closely related to grammars of natural languages.
   
   These mandate or describe how to correctly construct texts in a language, but do not describe what these texts mean. 
-	- Lexical Elements
+	- [[Lexical Elements]]
 	- Grammatical Elements
 	- Concerns that Span Both Lexing and Grammar
 	- Considerations When Designing Syntax

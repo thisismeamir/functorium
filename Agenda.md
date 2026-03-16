@@ -177,11 +177,12 @@ sticker: lucide//calendar-days
 - [ ] Studying Topology for Manifolds
 	- [x] Topologies
 	- [x] Convergence and Continuity
-	- [ ] Connectedness
-	- [ ] Compactness
-	- [ ] Homeomorphism
-	- [ ] Hausdorff Spaces
-	- [ ] Bases and Countability
+	- [ ] Connectedness [due:: 2026-03-16] 
+	- [ ] Compactness [due:: 2026-03-16]  
+	- [ ] Homeomorphism [due:: 2026-03-16] 
+	- [ ] Hausdorff Spaces [due:: 2026-03-16] 
+	- [ ] Bases and Countability [due:: 2026-03-16] 
+	- [ ] Version 1.0 of Model of Topology gets published
 	- [ ] Manifolds
 
 - [ ] Model of Linear Algebra
@@ -189,11 +190,11 @@ sticker: lucide//calendar-days
 	- [x] Systems of linear equations
 	- [x] Linear dependence and independence
 	- [x] Basis and Dimension
-	- [ ] Linear Transformations
-	- [ ] Eigenvalues and Eigenvectors
-	- [ ] Normed spaces and inner products
-	- [ ] Bounded Maps
-	- [ ] Version 1.0 of Model of Linear Algebra Gets published
+	- [ ] Linear Transformations [due:: 2026-03-16] 
+	- [ ] Eigenvalues and Eigenvectors [due:: 2026-03-16] 
+	- [ ] Normed spaces and inner products [due:: 2026-03-16] 
+	- [ ] Bounded Maps [due:: 2026-03-16] 
+	- [ ] Version 1.0 of Model of Linear Algebra Gets published [due:: 2026-03-16] 
 # Software Development Tasks
 
 - [ ] HepSW
@@ -205,9 +206,9 @@ sticker: lucide//calendar-days
 		- [x] Analysis  [completion:: 2026-02-20]
 		- [ ] Dependency Fetching
 		- [ ] Sandboxing
-	- [ ] Complete Recipe Execution
-		- [ ] Simple command execution
-		- [ ] Monitoring and Access Control
+	- [ ] Complete Recipe Execution [due:: 2026-04-15] 
+		- [ ] Simple command execution [due:: 2026-04-15] 
+		- [ ] Monitoring and Access Control [due:: 2026-04-15] 
 	- [ ] Genie Manifest and it's dependencies manifests development
 	- [ ] Completion of index and search features
 		- [x] index database connection and use  [completion:: 2026-02-19]
@@ -261,7 +262,7 @@ sticker: lucide//calendar-days
 - **Second Chance: Unorthodox but Personally Effective Explanations in Probability and Physics** *UPEEPP*'
 - **Making Sense of Statistical Mechanics** *MSSM*
 - Notes Outline
-	- [ ] Probability Theory: Writing the Letter on Probability Theory Explaining the Topic in Depth but not too much irrelavant stuff.
+	- [ ] Probability Theory: Writing the Letter on Probability Theory Explaining the Topic in Depth but not too much irrelevant stuff.
 	- [ ] Information Theory: Writing the Letter on Information Theory Explaining the Topic in Depth but not too much irrelevant stuff
 	- [ ] Statistical Mechanics Development
 	- [ ] Thermodynamic Overview and Letter Completion

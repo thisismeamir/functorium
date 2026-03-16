@@ -34,7 +34,7 @@ physicists often confound group elements with the matrices that represent them.
 ## Introduction to Representation Theory
 Now that we know what a representation is, we can naturally think of many questions. Does every group G have a representation? How many representations does it have? An infinite number, perhaps? What are some general properties of representations? How do we characterize these representations and distinguish among them?
 
-Recall the notion of equivalence classes [[Chapter 1.2 - Finite Groups]]. 
+Recall the notion of equivalence classes [[Finite Groups]]. 
 
 We have a partial answer to the question that Does every group has a representation. We learned in chapter I.2 that every finite group is isomorphic to a subgroup of $S_n$, and since $S_n$ has a matrix representation, every finite group can be represented by matrices. 
 

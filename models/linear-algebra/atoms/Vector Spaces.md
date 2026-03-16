@@ -33,6 +33,6 @@ The numbers (scalars) are called the field over which the vector space is define
 - $- \mathbf v = -1\cdot \mathbf v$.
 - [[atoms/Uniqueness of Additive Inverse for Each Element]].
 
-One can find many examples that are vector spaces for this we have some mentions in [[Model of Examples of Linear Algebra]]
+One can find many examples that are vector spaces for this we have some mentions in [[../List of Examples of Linear Algebra]]
 
 [[Subspaces of Vector Spaces]]

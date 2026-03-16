@@ -1,5 +1,7 @@
 ---
 sticker: lucide//hash
+tags:
+  - model
 ---
 > [!DANGER]
     > This model needs refinements in terms of completion of the text, model atom developments and further analysis and refactorization. It should be considered a starting point for a better historical model based on different history books.

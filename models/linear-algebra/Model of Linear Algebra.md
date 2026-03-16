@@ -13,11 +13,13 @@ Linear algebra is one of the most important theories of mathematics that is bein
 - [[Basis and Dimension]]
 - [[Sum and Direct Sum]]
 - [[Linear Transformations]]
-- [[Matrix Representation]]
 -  [[Indices Representation]]
- - [[Algebra of Linear Transformations]]
- - [[Examples of Linear Transformations]]
- - [[Range Space and Null Space]]
+	 - [[atoms/Algebra of Linear Transformations]]
+	 - [[Inverse of Linear Transformations]]
+	 - [[Isomorphism of Vector Spaces]]
+	 - [[Examples of Linear Transformations]]
+	- [[Matrix Representation]]
+	 - [[Range Space and Null Space]]
 - [[Changing Basis]]
 - [[Dual Vector Spaces]]
 - [[Eigenvalues and Eigenvectors]]
@@ -31,7 +33,7 @@ There are topics that I'm not sure if they constitute linear algebra or are a mo
 
 It's good to have a list of examples and exercises of this topic as well therefore.
 
-- [[Model of Examples of Linear Algebra]]
+- [[List of Examples of Linear Algebra]]
 # Outline for the Model Publication 
 
 1. Overview

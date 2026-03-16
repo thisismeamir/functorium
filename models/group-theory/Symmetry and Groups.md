@@ -1,15 +1,7 @@
 # Symmetry and Groups
----
-**Table of Content**
-```toc
-    style: number
-    min_depth: 1
-    max_depth: 6
-```
----
+
 ## Symmetry and Transformation
 
----
 ## Symmetry in Physics
 In physics we are interested in the symmetries enjoyed by a given physical system. On a more abstract level, we are interested in the symmetries of the fundamental laws of physics. One of the most revolutionary and astonishing discoveries in the history of physics is that objects do not fall down, but toward the center of the earth. Newton’s law of gravitation does not pick out a special direction: it is left invariant by rotations. The history of theoretical physics has witnessed the discoveries of one unexpected symmetry after another. Physics in the late twentieth century consists of the astonishing discovery that as we study Nature at ever deeper levels, Nature displays more and more symmetries.
 

@@ -1,4 +1,4 @@
-# Chapter 3.3 - Symmetry in Laws of Physics - Lagrangian and Hamiltonian
+Symmetry in Laws of Physics - Lagrangian and Hamiltonian
 ---
 **Table of Content**
 ```toc

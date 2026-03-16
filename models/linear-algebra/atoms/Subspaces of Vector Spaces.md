@@ -1,3 +1,6 @@
+---
+sticker: lucide//atom
+---
 # Subspaces of Vector Spaces
 
 A *subset* $W$ of a vector space $V$ over a field $\mathbb K$ is called a subspace of $V$ if $W$ is a vector space over $\mathbb K$ with the operations of addition and scalar multiplication defined on $V$.

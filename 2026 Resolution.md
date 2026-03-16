@@ -145,25 +145,25 @@ Secondly, projects like Seemake and HepSW are our basis of work in GENIE-Generat
 
 - [ ] Completion of Seemake Testing and Edge case handling and release of version 2.0.0
 - [ ] Completion of HepSW manifest execution, fetching and release of version 1.0.0
-- [ ] GENIE-Generator Binder completion [priority:: lowest] 
+- [-] GENIE-Generator Binder completion  [priority:: lowest]  
 
 It is also expected that we have our proposal by the end of winter. We should then proceed with our research after wards.
 
 - [x] Completion of Feasibility Study
-- [ ] Completion of Proposal
+- [ ] Completion of Proposal [due:: 2026-04-16] 
 
 Projects CCG Website, and ISK Website are dependent on the ISK Design Language
 
-- [ ] Complete the Foundations of Design Language for ISK and CCG.
+- [ ] Complete the Foundations of Design Language for ISK and CCG. [due:: 2026-04-01] 
 
 We need to have the foundational documents of ISK ready by the end of winter as well.
 
-- [ ] Foundational Documents of ISK.
+- [ ] Foundational Documents of ISK. [due:: 2026-04-01] 
 
 If we've got time we would start writing the lecture notes of Git/GitHub workshop. If our monthly mathematical studies went good we'd also be having the New Structures for Physics workshop as well.
 
-- [ ] Git/GitHub Workshop lecture notes
-- [ ] New Structures for Physics lecture notes
+- [ ] Git/GitHub Workshop lecture notes [due:: 2026-04-01] 
+- [ ] New Structures for Physics lecture notes [due:: 2026-07-01] 
 ## Second Quarter
 
 In second quarter we assume that we've achieved more than 80% of the first quarter expectations. Therefore, we can go on with some of the depended projects.

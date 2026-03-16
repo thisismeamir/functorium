@@ -1,5 +1,5 @@
 ---
-sticker: lucide//hash
+sticker: lucide//list-tree
 ---
 # Vector Spaces Examples 
 
@@ -7,4 +7,4 @@ sticker: lucide//hash
 - [[atoms/Vector Space of Polynomials]]
 - [[atoms/Continuous Functions as Vector Spaces]]
 
-#model
+#list 

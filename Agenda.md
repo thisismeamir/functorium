@@ -148,7 +148,7 @@ sticker: lucide//calendar-days
 	- [ ] Get familiar with [Rucio](https://rucio.cern.ch/)
 	- [ ] Get familiar with UMB Template
 	- [ ] Get the resources from CERN, https://auth-resources.web.cern.ch/
-	- `/eos/experiment/fcc/prod/fcc/ee/fcc_ee_transf_info.tar.gz` investigation.
+- `/eos/experiment/fcc/prod/fcc/ee/fcc_ee_transf_info.tar.gz investigation`.
 -  FCC Analyses
 	- [ ] Refactorization and Modularization of `do_plot.py`.
 	- [ ] Refactorization and Modularization of python module in FCCAnalyses
@@ -164,7 +164,7 @@ sticker: lucide//calendar-days
 - [ ] Programming Language Design and Implementation [due:: 2026-03-10] 
 	- [x] Chapter 1: A Brief History of Programming Languages
 	- [x] Chapter 2: Implementation Strategies
-	- [ ] Chapter 3: Syntax
+	- [ ] Chapter 3: Syntax 
 	- [ ] Chapter 4: Memory Management
 	- [ ] Chapter 5: Scopes, Functions, and Parameter Passing
 	- [ ] Chapter 6: Control Sequences
@@ -177,11 +177,11 @@ sticker: lucide//calendar-days
 - [ ] Studying Topology for Manifolds
 	- [x] Topologies
 	- [x] Convergence and Continuity
-	- [ ] Connectedness [due:: 2026-03-16] 
-	- [ ] Compactness [due:: 2026-03-16]  
-	- [ ] Homeomorphism [due:: 2026-03-16] 
-	- [ ] Hausdorff Spaces [due:: 2026-03-16] 
-	- [ ] Bases and Countability [due:: 2026-03-16] 
+	- [ ] Connectedness [due:: 2026-03-20] 
+	- [ ] Compactness [due:: 2026-03-21]  
+	- [ ] Homeomorphism [due:: 2026-03-21] 
+	- [ ] Hausdorff Spaces [due:: 2026-03-22] 
+	- [ ] Bases and Countability [due:: 2026-03-22] 
 	- [ ] Version 1.0 of Model of Topology gets published
 	- [ ] Manifolds
 
@@ -190,11 +190,11 @@ sticker: lucide//calendar-days
 	- [x] Systems of linear equations
 	- [x] Linear dependence and independence
 	- [x] Basis and Dimension
-	- [ ] Linear Transformations [due:: 2026-03-16] 
-	- [ ] Eigenvalues and Eigenvectors [due:: 2026-03-16] 
-	- [ ] Normed spaces and inner products [due:: 2026-03-16] 
-	- [ ] Bounded Maps [due:: 2026-03-16] 
-	- [ ] Version 1.0 of Model of Linear Algebra Gets published [due:: 2026-03-16] 
+	- [x] Linear Transformations  [due:: 2026-03-16]  [completion:: 2026-03-16]
+	- [ ] Eigenvalues and Eigenvectors [due:: 2026-03-17] 
+	- [ ] Normed spaces and inner products [due:: 2026-03-18] 
+	- [ ] Bounded Maps [due:: 2026-03-19] 
+	- [ ] Version 1.0 of Model of Linear Algebra Gets published [due:: 2026-03-20] 
 # Software Development Tasks
 
 - [ ] HepSW

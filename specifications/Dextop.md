@@ -22,3 +22,5 @@ Things to consider
 - A Black Tile should have a set of pinned icons and stuff like that.
 **Basic Applications**
 - Plugin based and modular so that the user can configure what things in the settings should be addressed and how to configure things overall.
+**Tablet and Phone Models**
+- Can we make this a thing for phones and tablets as well?

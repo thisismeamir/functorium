@@ -1,6 +1,7 @@
 ---
 sticker: lucide//calendar-days
 ---
+- [ ] Refactorization of the first quarter and the other ones based on the fact that we're currently in a war!
 # Misc
 - [ ] ***Find a good way to sort mathematical wikis topics, covering one another, having a good way to sort and list theorems and proofs. And a nice way to reference things.***
 - [x] Starting the Quantum Mechanics Letters  [completion:: 2026-03-02]
@@ -12,6 +13,8 @@ sticker: lucide//calendar-days
 - [x] Quantum Mechanics Projects  [completion:: 2026-03-02]
 	- [x] Project 1  [due:: 2026-02-12]  [completion:: 2026-02-13]
 	- [x] Project 2  [due:: 2026-02-12]  [completion:: 2026-02-13]
+
+- [ ] **Buy a notebook for proofs**
 
 # CERN Specific Tasks
 
@@ -191,10 +194,10 @@ sticker: lucide//calendar-days
 	- [x] Linear dependence and independence
 	- [x] Basis and Dimension
 	- [x] Linear Transformations  [due:: 2026-03-16]  [completion:: 2026-03-16]
-	- [ ] Eigenvalues and Eigenvectors [due:: 2026-03-17] 
-	- [ ] Normed spaces and inner products [due:: 2026-03-18] 
-	- [ ] Bounded Maps [due:: 2026-03-19] 
-	- [ ] Version 1.0 of Model of Linear Algebra Gets published [due:: 2026-03-20] 
+	- [ ] **Postponed** Eigenvalues and Eigenvectors [due:: 2026-03-17] 
+	- [ ] **Postponed** Normed spaces and inner products [due:: 2026-03-18] 
+	- [ ] **Postponed** Bounded Maps [due:: 2026-03-19] 
+	- [ ] **Postponed** Version 1.0 of Model of Linear Algebra Gets published [due:: 2026-03-20] 
 # Software Development Tasks
 
 - [ ] HepSW
@@ -505,16 +508,17 @@ sticker: lucide//calendar-days
 - [x] Send the suggestions to Movahed  [due:: 2026-02-27]  [completion:: 2026-03-02]
 - [ ] Review the papers Movahed sent me [due:: 2026-02-27] 
 - [ ] Study Planning for Gravitational Waves, and the first phase
-- [ ] Get in touch about the progress that we're going to make.
+- [x] Get in touch about the progress that we're going to make.  [completion:: 2026-03-24]
 
 
 # Independent Society of Knowledge
-- [ ] Design Language Initiation
+- [x] Design Language Initiation  [completion:: 2026-03-24]
 	- [x] Foundations Documentation  [completion:: 2026-02-10]
 	- [x] Typography Completion  [completion:: 2026-02-25]
-	- [ ] Color Palette  [due:: 2026-02-27]
-	- [ ] Logo and Brand Identity [due:: 2026-02-27] 
-	- [ ] Examples of Design [due:: 2026-03-26] 
+	- [x] Color Palette  [due:: 2026-02-27]  [completion:: 2026-03-24]
+	- [x] Logo and Brand Identity  [due:: 2026-02-27]  [completion:: 2026-03-24]
+	- [ ] ***Postponed to the time that we have actual designs*** 
+	      Examples of Design [due:: 2026-03-26] 
 	- [ ] Nukleus Design System (ISK Identity) [due:: 2026-05-01] 
 		- [ ] Nukleus for Digital Presence
 			- [ ] Social Media Kit
@@ -533,7 +537,12 @@ sticker: lucide//calendar-days
 				- [ ] Article
 				- [ ] Book
 				- [ ] Presentation
+		- [ ] Nukleus Motion Graphics
+			- [ ] Motion graphic principles
+			- [ ] Available Footages
 - [ ] Website Design and Development
+	- [ ] Sitemap
+	- [ ] CMS development
 
 # Travel
 
@@ -544,7 +553,7 @@ sticker: lucide//calendar-days
 - [x] Invitation Letter  [completion:: 2026-02-19]
 - [x] Visa Applying  [completion:: 2026-02-25]
 - [x] Visa is given to me  [completion:: 2026-03-08]
-- [ ] The Was has ended.
+- [ ] The War has ended.
 - [ ] Hostel Reservation
 - [ ] Packing up
 - [ ] Flight Ticket

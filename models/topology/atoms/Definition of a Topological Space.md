@@ -1,7 +1,15 @@
 ---
 sticker: lucide//atom
 ---
+# Definition
 
+A topological space is a set endowed with a structure, called a topology,  which allows defining continuous deformation of subspaces, and, more generally, all kinds of continuity.
+
+[[../../linear-algebra/atoms/Euclidean Space|Euclidean Space]], and, more generally, [[../../linear-algebra/atoms/Metric Spaces|Metric Spaces]] are examples of topological spaces, as any distance or metric defines a topology. 
+
+The deformations that are considered in topology are [[Homeomorphism]] and [[Homotopy]]. A property that is invariant under such deformations is a [topological property](zim://6112eb33-9137-7530-79f2-04ea02fbb402.zim/Topological_property "Topological property"). The following are basic examples of topological properties: the [dimension](zim://6112eb33-9137-7530-79f2-04ea02fbb402.zim/Lebesgue_covering_dimension "Lebesgue covering dimension"), which allows distinguishing between a [line](zim://6112eb33-9137-7530-79f2-04ea02fbb402.zim/Line_\(geometry\) "Line (geometry)") and a [surface](zim://6112eb33-9137-7530-79f2-04ea02fbb402.zim/Surface_\(mathematics\) "Surface (mathematics)"); [compactness](zim://6112eb33-9137-7530-79f2-04ea02fbb402.zim/Compact_space "Compact space"), which allows distinguishing between a line and a circle; [connectedness](zim://6112eb33-9137-7530-79f2-04ea02fbb402.zim/Connectedness "Connectedness"), which allows distinguishing a circle from two non-intersecting circles.
+
+The ideas underlying topology go back to [Gottfried Wilhelm Leibniz](zim://6112eb33-9137-7530-79f2-04ea02fbb402.zim/Gottfried_Wilhelm_Leibniz "Gottfried Wilhelm Leibniz"), who in the 17th century envisioned the _geometria situs_ and _analysis situs_. [Leonhard Euler](zim://6112eb33-9137-7530-79f2-04ea02fbb402.zim/Leonhard_Euler "Leonhard Euler")'s [Seven Bridges of Königsberg](zim://6112eb33-9137-7530-79f2-04ea02fbb402.zim/Seven_Bridges_of_K%C3%B6nigsberg "Seven Bridges of Königsberg") problem and [polyhedron formula](zim://6112eb33-9137-7530-79f2-04ea02fbb402.zim/Polyhedron_formula "Polyhedron formula") are arguably the field's first theorems. The term _topology_ was introduced by Johann Benedict Listing in the 19th century, although, it was not until the first decades of the 20th century that the idea of a topological space was developed.
 # Open Set
 
 A set $O$ within a topological space $(X,\tau)$ is considered open if it is a subset of $X$ and contains its every point in a neighborhood contained entirely within $X$. Formally:

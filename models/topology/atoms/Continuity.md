@@ -38,3 +38,5 @@ $$
 Therefore, $(f|_{V_x})^{-1}(U)$ is a neighborhood of $x$ contained in $f^{-1}(U)$.  This implies that $f^{-1}(U)$ is open in $X$.
 
 The continuity of a map can be characterized by its local behavior; it suffices to check continuity on neighborhoods around each point.
+
+- [ ] **This note needs refinement***

@@ -459,7 +459,7 @@ sticker: lucide//calendar-days
 ## Cosmology and Gravitation and Topology Courses
 
 - **Part I: Mathematical Methods for General Relativity**
-	- [ ] Linear Algebra (Following the Model of Linear Algebra Path)
+	- [x] Linear Algebra (Following the Model of Linear Algebra Path)  [completion:: 2026-03-29]
 	- [ ] Topology and Manifolds (Following the Model of Topology Path)
 		- [ ] Topology
 		- [ ] Topological Manifolds

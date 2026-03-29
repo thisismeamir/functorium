@@ -28,8 +28,18 @@ Topology is the branch of mathematics concerned with the properties of geometric
 		- [[Local Homeomorphism]]
 	- [[Finer and Courser Topologies]]
 	- [[atoms/Embedding|Embedding]] (not written)
-	- [[atoms/Hausdorff Spaces]]
-	- [[atoms/Non-Hausdorff Spaces]]
+	- Separation Axioms in Topological Spaces
+		- [[Kolmogorov]]
+		- [[Frechet]]
+		- [[atoms/Hausdorff]]
+		- [[Urysohn]]
+		- [[Completely Hausdorff]]
+		- [[Regular Hausdorff]]
+		- [[Tychonoff]]
+		- [[Normal Hausdorff]]
+		- [[Completely Normal Hausdorff]]
+		- [[Perfectly Normal Hausdorff]]
+		- [[atoms/Non-Hausdorff Spaces]]
 - [[List of Theorems in Topology]]
 - [[List of Topologies]]
 
@@ -59,7 +69,7 @@ Topology is the branch of mathematics concerned with the properties of geometric
 
 
 - **Letters**
-	- [[letter-on-topology]]
+	
 
 
 #model 

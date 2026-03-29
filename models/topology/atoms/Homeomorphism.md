@@ -47,3 +47,23 @@ Let $X$ be the half-open interval $[0,1)\subseteq \mathbb{R}$, and let $\mathbb{
 
 - [[Open Map]]
 - [[Local Homeomorphism]]
+
+---
+
+Suppose $X$ and $Y$ are topological spaces, and $f:X\to Y$ is any map:
+- $f$ is continuous if and only if $f(\bar{A}) \subseteq \bar{f(A)}$ for all $A \subseteq X$.
+- $f$ is closed if and only if $f(\bar{A})\supseteq  \bar{f(A)}$ for all $A\subseteq X$.
+- $f$ is continuous if and only if $f^{-1}(\text{Int}B)\subseteq \text{Int}f^{-1}(B)$ for all $B \subseteq Y$.
+- $f$ is open if and only if $f^{-1}(\text{Int B})\supseteq \text{Int}f^{-1}(B)$ for all $B\subseteq Y$.
+
+- [ ] Prove these
+
+There is a generalization of homeomorphisms that is often useful. We say that a map $f:X\to Y$ between topological spaces is a local homeomorphism if every point $x \in X$ has a neighborhood $U \subseteq X$ such that $f(U)$ is an open subset of $Y$ and $f|_{U}: U\to f(U)$ is a homeomorphism.
+
+# Properties of Local Homeomorphisms
+
+- **Every homeomorphism is a local homeomorphism***.
+- ***Every local homeomorphism is continuous and open***
+- ***Every bijective local homeomorphism is a homeomorphism***
+
+- [ ] Prove these

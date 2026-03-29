@@ -24,3 +24,5 @@ Because every metric space is Hausdorff, it follows that these spaces are not me
 Let $X$ be a Hausdorff space.
 - Every finite subset of $X$ is closed.
 - If a sequence $(p_{i})$ in $X$ converges to a limit $p \in X$, the limit is unique.
+
+

@@ -12,6 +12,7 @@ Kid A eXperience is an ambitious idea about a great number of ideas that would g
 - [[Kid A Lab]]: A software that would let me run my wild ideas fast and integrate things quickly, the backend it Kage
 	- Audio Laboratory
 	- Ai Laboratory
+	- Programming Laboratory
 - DAW Developments
 
 This is a long vision. And currently I don't have the time to focus on it even a little. Maybe 2027 would be the year to begin with such heavy workload. But some of them would be in the agenda of ISK as well as some personal projects that would basically mean that they wouldn't go without notice.

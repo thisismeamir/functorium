@@ -11,3 +11,8 @@
 One tag for the subject, up to three tags for each subtitle (topology -> connectedness -> ...)
 
 Other tags also may apply.
+
+
+# How to store them?
+
+We Have them the same place we have atoms of a subject. But since theorems are being used inside other atoms, they can also be lost, so we make a list object of all the theorems, lemmas, etc that we have in a model as well.

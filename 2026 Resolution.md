@@ -125,14 +125,7 @@ First we've got to make sure that we pass our course in the first semester, expe
 - [x] Writing the complete lecture notes on Gravitation 1.
 - [x] Writing the complete lecture notes on Quantum Mechanics.
 
-- [ ] Stochastic Processes
-	- **The path is written in Agenda**
-- [ ] Gravitation II
-	- **The path is written in Agenda**
-- [ ] Cosmology I
-	- **The path is written in Agenda**
-- [ ] Topology and Geometry
-	- **The path is written in Agenda**
+
 
 With the following it is expected to provide the following:
 
@@ -172,7 +165,14 @@ First for our thesis, we expect to start on the first phase of our studies, here
 
 - [ ] Phase 1: Foundations studies.
 - [ ] Phase 2: Simple Testing, Implementation and Modification
-
+- [ ] Stochastic Processes
+	- **The path is written in Agenda**
+- [ ] Gravitation II
+	- **The path is written in Agenda**
+- [ ] Cosmology I
+	- **The path is written in Agenda**
+- [ ] Topology and Geometry
+	- **The path is written in Agenda**
 
 > [!NOTE]
     > Only Phase 1 and at best 1 and 2 can be done in this quarter. We did plan the proposal by the end of winter so we have a lot of time to work on the research itself.

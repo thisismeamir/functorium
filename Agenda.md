@@ -14,7 +14,7 @@ sticker: lucide//calendar-days
 	- [x] Project 1  [due:: 2026-02-12]  [completion:: 2026-02-13]
 	- [x] Project 2  [due:: 2026-02-12]  [completion:: 2026-02-13]
 
-- [ ] **Buy a notebook for proofs**
+- [x] **Buy a notebook for proofs**  [completion:: 2026-03-30]
 
 # CERN Specific Tasks
 

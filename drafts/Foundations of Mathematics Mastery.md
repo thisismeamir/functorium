@@ -31,7 +31,6 @@ Each **quarter (3 months)** focuses on a **foundational pillar**, and each **mon
     - _Herbert Enderton – Elements of Set Theory_
     - _Halmos – Naïve Set Theory_ (for intuition)
 - **Implementation:**
-    
     - Formalize ZFC axioms in Lean or Coq.
 
 ---

@@ -1,4 +1,4 @@
-Kid A eXperience is an ambitious idea about a great number of ideas that would give me a good, controlled and productive experience of my computers, digital experience, and identity. They are basically software, design, and improvements I seek in the current tools that I'm using.
+Kid A eXperience is an ambitious great number of ideas that would give me a good, controlled and productive experience of my computers, digital experience, and identity. They are basically software, design, and improvements I seek in the current tools that I'm using.
 
 **current ideas:**
 - **Kid A Arch**: A modified version of Arch linux for me with the whole tools and modules that I like at one place.

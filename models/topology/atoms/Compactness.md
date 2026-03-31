@@ -1,3 +1,6 @@
+---
+sticker: lucide//atom
+---
 - [ ] Needs refactorization.
 
 In [mathematics](zim://6112eb33-9137-7530-79f2-04ea02fbb402.zim/Mathematics "Mathematics"), specifically [general topology](zim://6112eb33-9137-7530-79f2-04ea02fbb402.zim/General_topology "General topology"), **compactness** is a property that seeks to generalize the notion of a [closed](zim://6112eb33-9137-7530-79f2-04ea02fbb402.zim/Closed_set "Closed set") and [bounded](zim://6112eb33-9137-7530-79f2-04ea02fbb402.zim/Bounded_set "Bounded set") subset of [Euclidean space](zim://6112eb33-9137-7530-79f2-04ea02fbb402.zim/Euclidean_space "Euclidean space").

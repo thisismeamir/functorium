@@ -1,3 +1,6 @@
+---
+sticker: lucide//atom
+---
 # Definition
 
 A topological space is said to be connected if it is not the union of two disjoint nonempty open sets. A set is open if it contains no point lying on its boundary; thus, in an informal, intuitive sense, the fact that a space can be partitioned into disjoint open sets suggests that the boundary between the two sets is not part of the space, and thus splits it into separate pieces.
@@ -25,7 +28,7 @@ For a topological space $X$ the following are equivalent:
 
 # Theorems 
 
-- [[Main Theorem of Connectedness]]
+- [[atoms/Main Theorem of Connectedness]]
 - Every path-connected space is connected.
 - In a locally path-connected space, every open connected set is path-connected.
 - Every locally path-connected space is locally connected.

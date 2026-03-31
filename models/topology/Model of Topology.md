@@ -9,8 +9,10 @@ Roughly speaking, topology is the branch of mathematics that is concerned with p
 Topology is the branch of mathematics concerned with the properties of geometric object that are preserved under continuous deformations, such as stretching, twisting, crumpling, and bending; that is, without closing holes, opening holes, tearing, gluing, or passing through itself.
 
 - [[Motivation to Study Topology]]
+- **Preliminaries**
+	- [[../set-theory/Model of Set Theory|Model of Set Theory]]
+	- [[../set-theory/Maps]]
 - **Foundations of Topology:** 
-    - **Sets and Logic Review**
     - [[Definition of a Topological Space]]
     - [[Closed Set Topology]]
     - [[Closure, Interior, Exterior and Boundary]]
@@ -40,7 +42,7 @@ Topology is the branch of mathematics concerned with the properties of geometric
 		- [[Completely Normal Hausdorff]]
 		- [[Perfectly Normal Hausdorff]]
 		- [[atoms/Non-Hausdorff Spaces]]
-- [[List of Theorems in Topology]]
+- [[Topology Provables]]
 - [[List of Topologies]]
 
 - **Continuity and Homeomorphisms:** Explains continuity of functions and the concept of homeomorphism as a structural equivalence.

@@ -1,0 +1,17 @@
+---
+sticker: lucide//list-tree
+---
+- [[Axioms of Set Theory]]
+- [[Why Axiomatic Set Theory]]
+- [[Naive Set Theory]]
+- [[Axiom of Choice]]
+- [[Language of Set Theory]]
+- [[Formulas]]
+- [[Classes]]
+- [[Extensionality]]
+- [[Pairing]]
+- [[Separation Schema]]
+- [[Union]]
+- [[Power Set]]
+- [[Infinity]]
+- [[Replacement Schema]]

@@ -1,3 +1,6 @@
+---
+sticker: lucide//atom
+---
 Let $X$ be a topological space and let $A\subseteq X$ be any subset:
 - A point is in $\mathrm{Int}A$ if and only if it has a neighborhood contained in $A$.
 - A point is in $\mathrm{Ext}A$ if and only if it has a neighborhood contained in $X \setminus A$. 

@@ -1,3 +1,6 @@
+---
+sticker: lucide//atom
+---
 The motivating insight behind topology is that some geometric problems depend not on the exact shape of the objects involved, but rather on the way they are put together. For example, the square and the circle have many properties in common: they are both one-dimensional objects (from a topological point of view) and both separate the plane into two parts, the part inside and the part outside.
 
 In one of the first papers in topology, Leonhard Euler demonstrated that it was impossible to find a route through the town of Königsberg (now Kaliningrad) that would cross each of its seven bridges exactly once. This result did not depend on the lengths of the bridges or on their distance from one another, but only on connectivity properties: which bridges connect to which islands or riverbanks. This Seven Bridges of Königsberg problem led to the branch of mathematics known as graph theory.

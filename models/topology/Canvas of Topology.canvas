@@ -1,0 +1,11 @@
+{
+	"nodes":[
+		{"id":"9bcc6185c635617a","x":-320,"y":-260,"width":200,"height":60,"color":"1","type":"text","text":"# Topology"},
+		{"id":"4254f15d047800b5","x":0,"y":-321,"width":523,"height":183,"color":"1","type":"text","text":"**Topology** (from the Greek words [τόπος](https://en.wiktionary.org/wiki/%CF%84%CF%8C%CF%80%CE%BF%CF%82 \"wikt:τόπος\"), 'place, location', and λόγος, 'study') is the branch of [mathematics](zim://6112eb33-9137-7530-79f2-04ea02fbb402.zim/Mathematics \"Mathematics\") concerned with the properties of a [geometric object](zim://6112eb33-9137-7530-79f2-04ea02fbb402.zim/Mathematical_object \"Mathematical object\") that are preserved under [continuous](zim://6112eb33-9137-7530-79f2-04ea02fbb402.zim/Continuous_function \"Continuous function\") [deformations](zim://6112eb33-9137-7530-79f2-04ea02fbb402.zim/Deformation_theory \"Deformation theory\"), such as stretching, twisting, crumpling, and bending; that is, without closing holes, opening holes, tearing, gluing, or passing through itself."},
+		{"id":"42563169ca2cb604","x":-420,"y":-60,"width":400,"height":400,"type":"file","file":"models/set-theory/Model of Set Theory.md"}
+	],
+	"edges":[
+		{"id":"61c88725b5808e78","fromNode":"9bcc6185c635617a","fromSide":"right","toNode":"4254f15d047800b5","toSide":"left"},
+		{"id":"d6662610a1141b50","fromNode":"9bcc6185c635617a","fromSide":"bottom","toNode":"42563169ca2cb604","toSide":"top","label":"Preliminaries"}
+	]
+}

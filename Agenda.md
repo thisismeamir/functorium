@@ -180,10 +180,10 @@ sticker: lucide//calendar-days
 - [ ] Studying Topology for Manifolds
 	- [x] Topologies
 	- [x] Convergence and Continuity
-	- [ ] Connectedness [due:: 2026-03-20] 
-	- [ ] Compactness [due:: 2026-03-21]  
-	- [ ] Homeomorphism [due:: 2026-03-21] 
-	- [ ] Hausdorff Spaces [due:: 2026-03-22] 
+	- [x] Connectedness  [due:: 2026-03-20]  [completion:: 2026-03-31]
+	- [x] Compactness  [due:: 2026-03-21]  [completion:: 2026-03-31]
+	- [x] Homeomorphism  [due:: 2026-03-21]  [completion:: 2026-03-31]
+	- [x] Hausdorff Spaces  [due:: 2026-03-22]  [completion:: 2026-03-31]
 	- [ ] Bases and Countability [due:: 2026-03-22] 
 	- [ ] Version 1.0 of Model of Topology gets published
 	- [ ] Manifolds
@@ -195,7 +195,7 @@ sticker: lucide//calendar-days
 	- [x] Basis and Dimension
 	- [x] Linear Transformations  [due:: 2026-03-16]  [completion:: 2026-03-16]
 	- [ ] **Postponed** Eigenvalues and Eigenvectors [due:: 2026-03-17] 
-	- [ ] **Postponed** Normed spaces and inner products [due:: 2026-03-18] 
+	- [ ] Normed spaces and inner products [due:: 2026-03-18] 
 	- [ ] **Postponed** Bounded Maps [due:: 2026-03-19] 
 	- [ ] **Postponed** Version 1.0 of Model of Linear Algebra Gets published [due:: 2026-03-20] 
 # Software Development Tasks
@@ -506,8 +506,8 @@ sticker: lucide//calendar-days
 ## Thesis
 
 - [x] Send the suggestions to Movahed  [due:: 2026-02-27]  [completion:: 2026-03-02]
-- [ ] Review the papers Movahed sent me [due:: 2026-02-27] 
-- [ ] Study Planning for Gravitational Waves, and the first phase
+- [x] Review the papers Movahed sent me  [due:: 2026-02-27]  [completion:: 2026-03-31]
+- [x] Study Planning for Gravitational Waves, and the first phase  [completion:: 2026-03-31]
 - [x] Get in touch about the progress that we're going to make.  [completion:: 2026-03-24]
 
 
@@ -553,7 +553,12 @@ sticker: lucide//calendar-days
 - [x] Invitation Letter  [completion:: 2026-02-19]
 - [x] Visa Applying  [completion:: 2026-02-25]
 - [x] Visa is given to me  [completion:: 2026-03-08]
-- [ ] The War has ended.
+- [ ] Embassy has opened to get my visa from them.
+- [ ] Getting ready to go there by ground.
 - [ ] Hostel Reservation
 - [ ] Packing up
 - [ ] Flight Ticket
+
+
+
+

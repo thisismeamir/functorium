@@ -1,7 +1,6 @@
 ---
 sticker: lucide//list-tree
 ---
-
 # Simple Examples
 
 - [[Discrete Topology]]

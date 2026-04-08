@@ -43,3 +43,7 @@ For a topological space $X$ the following are equivalent:
 - Every [manifold](zim://6112eb33-9137-7530-79f2-04ea02fbb402.zim/Manifold "Manifold") is locally path-connected.
 - Arc-wise connected space is path connected, but path-wise connected space may not be arc-wise connected
 - Continuous image of arc-wise connected set is arc-wise connected.
+
+# Simply Connected
+
+A **loop** in a topological space $X$ is a continuous map $f:[0,1]\to X$ such that $f(0)=f(1)$. If any loop in $X$ can be continuously shrunk to a point then $X$ is called simply connected.

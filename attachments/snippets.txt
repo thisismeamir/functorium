@@ -491,15 +491,15 @@
     // ====================
     // ALGEBRA
     // ====================
-	{trigger: "inn", replacement: "\\mathrm{Inn}", options: "mA"},
-	{trigger: "out", replacement: "\\mathrm{Out}", options: "mA"},
-	{trigger: "GL", replacement: "\\mathrm{GL}", options: "mA"},
-	{trigger: "SL", replacement: "\\mathrm{SL}", options: "mA"},
-	{trigger: "SO", replacement: "\\mathrm{SO}", options: "mA"},
-	{trigger: "SU", replacement: "\\mathrm{SU}", options: "mA"},
-	{trigger: "U", replacement: "\\mathrm{U}", options: "mA"},
-	{trigger: "O", replacement: "\\mathrm{O}", options: "mA"},
-	{trigger: "Sp", replacement: "\\mathrm{Sp}", options: "mA"},
+	{trigger: "ingroup", replacement: "\\mathrm{Inn}", options: "mA"},
+	{trigger: "ougroup", replacement: "\\mathrm{Out}", options: "mA"},
+	{trigger: "GLgroup", replacement: "\\mathrm{GL}", options: "mA"},
+	{trigger: "SLgroup", replacement: "\\mathrm{SL}", options: "mA"},
+	{trigger: "SOgroup", replacement: "\\mathrm{SO}", options: "mA"},
+	{trigger: "SUgroup", replacement: "\\mathrm{SU}", options: "mA"},
+	{trigger: "Ugroup", replacement: "\\mathrm{U}", options: "mA"},
+	{trigger: "Ogroup", replacement: "\\mathrm{O}", options: "mA"},
+	{trigger: "Spgroup", replacement: "\\mathrm{Sp}", options: "mA"},
 	{trigger: "normal", replacement: "\\triangleleft", options: "mA"},
 	{trigger: "normaleq", replacement: "\\trianglelefteq", options: "mA"},
 	{trigger: "quot", replacement: "/ \\!", options: "mA"},
@@ -644,12 +644,12 @@
     // ====================
     // VISUAL OPERATIONS
     // ====================
-	{trigger: "U", replacement: "\\underbrace{ ${VISUAL} }_{ $0 }", options: "mA"},
-	{trigger: "O", replacement: "\\overbrace{ ${VISUAL} }^{ $0 }", options: "mA"},
-	{trigger: "B", replacement: "\\underset{ $0 }{ ${VISUAL} }", options: "mA"},
-	{trigger: "C", replacement: "\\cancel{ ${VISUAL} }", options: "mA"},
-	{trigger: "K", replacement: "\\cancelto{ $0 }{ ${VISUAL} }", options: "mA"},
-	{trigger: "S", replacement: "\\sqrt{ ${VISUAL} }", options: "mA"},
+	//{trigger: "U", replacement: "\\underbrace{ ${VISUAL} }_{ $0 }", options: "mA"},
+	//{trigger: "O", replacement: "\\overbrace{ ${VISUAL} }^{ $0 }", options: "mA"},
+	//{trigger: "B", replacement: "\\underset{ $0 }{ ${VISUAL} }", options: "mA"},
+	//{trigger: "C", replacement: "\\cancel{ ${VISUAL} }", options: "mA"},
+	//{trigger: "K", replacement: "\\cancelto{ $0 }{ ${VISUAL} }", options: "mA"},
+	//{trigger: "S", replacement: "\\sqrt{ ${VISUAL} }", options: "mA"},
 
     // ====================
     // CHEMISTRY

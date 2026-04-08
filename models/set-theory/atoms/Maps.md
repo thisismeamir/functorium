@@ -61,5 +61,5 @@ A map $f:X\to Y$ is called bijective if it is both injective and surjective.
 - A diagram of maps is called commutative if any composite maps between a pair of sets do not depend on how they are composed. This is also used in Category theory [[Commutative Diagrams]]
 - If $A\subset X$, and **inclusion map** $i:A\to X$ is defined by $i(a)=a$ for any $a\in A$. An inclusion map is often written as $i: A\hookrightarrow X$. The **identity map** $\mathrm{id}_{X}:X\to X$ is a special case of an inclusion map, for which $A=X$. 
 - If $f:X\to Y$ defined by $f:x \mapsto f(x)$ is bijective, there exists an inverse map $f^{-1}:Y\to X$, such that $f^{-1}: f(x)\to x$, which is also bijective. The maps $f$ and $f^{-1}$ satisfy $f\circ f^{-1}=\mathrm{id}_{Y}$ and $f^{-1}\circ f=\mathrm{id}_{X}$. Conversely if $f:X\to Y$ and $g: Y\to X$ satisfy $f \circ g=\mathrm{id}_{Y}$ and $g \circ f=\mathrm{id}_{X}$, then $f$ and $g$ and bijections. [[THSet-Composing Bijective Inverses Results in Identity]]
-
+- [[Continuous Maps]]
 - [[Homomorphism]]

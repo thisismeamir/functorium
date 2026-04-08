@@ -9,7 +9,7 @@ Designing programming languages is theory, exercise and aesthetic. In this model
 	- [[Model of Compilers]]
 	- [[atoms/Interpretation]]
 	- [[atoms/Intermediate Code]]
-	- [[Virtual Machines]]
+	- [[atoms/Virtual Machines]]
 	- [[Hybrid Methods]]
 	- [[Cross Compilation]]
 	- [[Reverse Compilers]]

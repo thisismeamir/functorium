@@ -1,3 +1,6 @@
+---
+sticker: lucide//atom
+---
 # Hybrid Methods
 
 If an intermediate language is employed, it's possible to combine compilation and interpretation. The compiler translates from the high-level language to this intermediate language, which is then interpreted on the machine executing the program. An interpreter written in a high-level language can be compiled on different platforms, facilitating portability; it only requires that the language used for the interpreter itself is already implemented on the new platform. C is commonly chosen for writing such interpreters due to its widespread availability and sufficient low-level control for performance.

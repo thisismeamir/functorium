@@ -5,7 +5,7 @@ Stern-Gerlach experiment, originally conceived by O. Stern in 1921 and carried o
 
 This experiment shows in an extreme way the need to change and depart from the concepts of classical physics. Certainly, a two-state system of the Stern-Gerlach type is the least classical and most quantum mechanical system. A solid understanding of problems involving two-state systems will turn out to be rewarding to any serious student of quantum mechanics.
 
-![[../../../attachments/Pasted image 20251117092638.png]]
+![[../../../../../attachments/Pasted image 20251117092638.png]]
 
 First, silver ($\text{Ag}$) atoms are heated in an oven, which has a small hole through which some of the silver atoms escape. The beam, then goes through a collimator and is then subjected to an inhomogeneous magnetic field produced by a pair of pole pieces, one of which has a very sharp edge. 
 
@@ -38,19 +38,19 @@ Instead, what we experimentally observe is that two "spots" are observed, corres
 
 ### The First Arrangement
 
-![[../../../attachments/Pasted image 20251117103330.png]]
+![[../../../../../attachments/Pasted image 20251117103330.png]]
 
 For the first arrangement, we do nothing special. Assume the naming convention $SG_z$ as the Stern-Gerlach apparatus in the $z$ direction (measuring the $\mu_z$). We filter the atoms coming from the first apparatus, keeping only $S_z+$ (means Spin in $z$ direction with value *up*). If we then put another $SG_z$ that with only atoms whose spin are $S_z+$ in it, we get no $S_z-$ (means spin in $z$ direction with value *down*). No wonder!
 
 ### The Second Arrangement
 
-![[../../../attachments/Pasted image 20251117104150.png]]
+![[../../../../../attachments/Pasted image 20251117104150.png]]
 
 In the second arrangement, we're still not doing anything controversial. Consider that after the first $SG_z$, once again I filter the beams of a specific outcome, and give them as an input to another apparatus. This time $SG_x$ (Stern-Gerlach Apparatus for measuring $\mu_x$ ). What I'd expect to see (apart from the quantization of spins) is to get about the same numbers of $S_x+$ as I get $S_z-$. Still, no wonder!
 
 ### Third Apparatus
 
-![[../../../attachments/Pasted image 20251117104223.png]]
+![[../../../../../attachments/Pasted image 20251117104223.png]]
 
 Lastly, I'd also filter the atoms coming out of the second apparatus $SG_x$ for a specific spin in $x$ value and feed them to another $SG_z$, the same apparatus we had at the beginning of this experiment. This time, I'd expect to see only $SG_z+$ atoms, which I filtered earlier.
 

@@ -5,7 +5,7 @@ In algebra, a homomorphism is a structure preserving map between two algebraic s
 
 # Definition
 
-A homomorphism is  map between two algebraic structures of the same type (two groups, two fields, two vector spaces), that preserves the operations of the structures. Formally, a map $f:A\to B$ preserves an operation $\mu$ of arity $k$; defined on both $A$ and $B$ if 
+A homomorphism is a map between two algebraic structures of the same type (two groups, two fields, two vector spaces), that preserves the operations of the structures. Formally, a map $f:A\to B$ preserves an operation $\mu$ of arity $k$; defined on both $A$ and $B$ if 
 
 $$
 \forall a_{i} \in A , i=1,2,\dots,k : f(\mu_{A} a_{1}a_{2}\dots a_{k}) = \mu_{B} f(a_{1})f(a_{2})\dots f(a_{k})

@@ -11,7 +11,7 @@ In order to start learning quantum mechanics, it is important to understand why 
 - [[Standard Approach to Quantum Mechanics]]
 - [[Information Theoretic Approach to Quantum Mechanics]]
 - [[Approximation Methods for Quantum Mechanical Systems]]
-- [[../statistical-physics/atoms/Model of Quantum Statistical Mechanics]]
+- [[../../../statistical-physics/atoms/Model of Quantum Statistical Mechanics]]
 - [[Relativistic Quantum Mechanics (Pre Quantum Field Theory)]]
 
 Apart from the standard theoretical topics, quantum mechanics is full of mysteries, interesting outcomes, and phenomenons that seem contradictory. 

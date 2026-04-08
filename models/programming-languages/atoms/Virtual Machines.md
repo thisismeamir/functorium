@@ -1,3 +1,6 @@
+---
+sticker: lucide//atom
+---
 # Virtual Machines in Programming Language Design (e.g., JVM)
 
 A virtual machine (VM) is a crucial component in the design of many modern programming languages and their runtime environments. It acts as an abstract computer, executing instructions from a bytecode representation of source code rather than directly on the host hardware. This abstraction provides significant benefits including portability, security, and optimization opportunities.

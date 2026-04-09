@@ -48,6 +48,7 @@ Topology is the branch of mathematics concerned with the properties of geometric
 		- [[Completely Normal Hausdorff]]
 		- [[Perfectly Normal Hausdorff]]
 		- [[atoms/Non-Hausdorff Spaces]]
+	- [[Bases and Countability]]
 - [[Topology Provables]]
 - [[List of Topologies]]
 

@@ -16,3 +16,7 @@ banner:
 - [[Model of Probability]]
 - [[Model of Programming Languages Design]]
 - [[Model of Tensor Algebra]]
+
+## Projects
+
+- [[]]

@@ -144,7 +144,7 @@ sticker: lucide//calendar-days
 	- [x] Fixing issues presented by Claude  [due:: 2026-02-13]  [completion:: 2026-02-13]
 	- [x] Writing Complete Analysis Report  [due:: 2026-02-13]  [completion:: 2026-02-13]
 	- [x] Setting up a meeting with David  [due:: 2026-02-13]  [completion:: 2026-03-05]
-	- [ ] Awaiting Response and possible 
+	- [x] Awaiting Response and possible  [completion:: 2026-04-10]
 - [ ] FCC Physics Events Database  
 	- [ ] Get familiar with [code base](https://fcc-physics-events.web.cern.ch/)
 	- [ ] Get familiar with [DIRAC](https://dirac.diracgrid.org/en/latest/AdministratorGuide/Resources/supercomputers.html)
@@ -159,6 +159,8 @@ sticker: lucide//calendar-days
 	- [ ] issue:131
 - FCC Particle Flow
 	- [ ] Getting Started with Particle Flow basics
+	- [ ] Understanding Pandora
+	- [ ] Understanding IDEA and CLD
 
 # General Readings and Studies
 - [ ] Monthly Mathematics Topic: **Homotopy Type Theory: Univalent Foundations**
@@ -461,7 +463,7 @@ sticker: lucide//calendar-days
 - **Part I: Mathematical Methods for General Relativity**
 	- [x] Linear Algebra (Following the Model of Linear Algebra Path)  [completion:: 2026-03-29]
 	- [ ] Topology and Manifolds (Following the Model of Topology Path)
-		- [ ] Topology
+		- [x] Topology  [completion:: 2026-04-10]
 		- [ ] Topological Manifolds
 		- [ ] Riemannian Manifolds
 		- [ ] Structures on Manifolds
@@ -553,11 +555,41 @@ sticker: lucide//calendar-days
 - [x] Invitation Letter  [completion:: 2026-02-19]
 - [x] Visa Applying  [completion:: 2026-02-25]
 - [x] Visa is given to me  [completion:: 2026-03-08]
-- [ ] Embassy has opened to get my visa from them.
-- [ ] Getting ready to go there by ground.
-- [ ] Hostel Reservation
-- [ ] Packing up
-- [ ] Flight Ticket
+- [x] Embassy has opened to get my visa from them.  [completion:: 2026-04-12]
+### 📦 Packing List for CERN (FCC Research, Hostel Stay)
+
+#### **Documents & Essentials**
+- [x] Passport/ID, visa if needed  [completion:: 2026-04-15]
+- [x] CERN invitation/booking confirmation  [completion:: 2026-04-15]
+- [ ] Health insurance card, vaccination proof
+- [ ] Some CHF cash
+- [ ] Printed FCC project papers/notes
+
+#### **Clothing (Layers for Swiss Weather)**
+- [x] 7-10 days underwear/socks/t-shirts  [completion:: 2026-04-13]
+- [x] 5 pants/jeans, 2 sweaters/fleece  [completion:: 2026-04-13]
+- [ ] Waterproof jacket, hat
+- [x] 2 pairs sturdy walking/shoes (closed-toe for labs)  [completion:: 2026-04-13]
+- [x] Sleepwear, swimsuit (if sauna)  [completion:: 2026-04-13]
+
+#### **Electronics & Work**
+- [ ] Laptop + charger, external drive
+- [ ] Phone + Swiss adapter (Type J), power bank
+- [ ] Headphones, USB cables
+- [ ] Notebook/pen for research
+
+#### **Toiletries & Health**
+- [x] Toothbrush/paste, soap/shampoo (travel size)  [completion:: 2026-04-13]
+- [x] Meds (painkillers, allergies), prescriptions  [completion:: 2026-04-15]
+- [ ] Food for the trip
+- [x] Reusable water bottle, towel  [completion:: 2026-04-15]
+- [ ] Laundry bag/detergent pods
+
+#### **Hostel & Daily Life**
+- [ ] Padlock for locker
+- [ ] Eco-bag, utensils (if no cafeteria access)
+
+Pack in 1 carry-on + backpack. CERN shop has basics. Safe trip!
 
 
 

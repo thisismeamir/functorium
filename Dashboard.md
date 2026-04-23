@@ -13,4 +13,6 @@ banner:
 - [[Model of Cosmology]]
 - [[Model of General Relativity]]
 - [[Model of Stochastic Processes]]
-- 
+- [[Model of Probability]]
+- [[Model of Programming Languages Design]]
+- [[Model of Tensor Algebra]]

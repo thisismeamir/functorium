@@ -10,9 +10,16 @@ banner:
 TABLE file.name
 FROM #model
 ```
-## Projects
+## Ongoing Projects
 
 ```dataview
-TABLE file.title
-FROM #project AND #ongoing 
+TABLE status, priority
+FROM #project AND #ongoing
+```
+
+## Previous Projects
+
+```dataview
+TABLE 
+FROM #project AND #done
 ```

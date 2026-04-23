@@ -1,6 +1,10 @@
 ---
 aliases:
-tags:
+status:
   - ongoing
-  - project
+priority:
+  - high
+tags:
+  - "#project"
+  - ongoing
 ---

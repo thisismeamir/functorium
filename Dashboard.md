@@ -10,4 +10,7 @@ banner:
 - [[Model of Linear Algebra]]
 - [[Model of Manifolds]]
 - [[Model of ROOT]]
-- [[]]
+- [[Model of Cosmology]]
+- [[Model of General Relativity]]
+- [[Model of Stochastic Processes]]
+- 

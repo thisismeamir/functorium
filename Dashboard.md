@@ -17,9 +17,9 @@ TABLE status, priority
 FROM #project AND #ongoing
 ```
 
-## Previous Projects
+## Agenda
 
 ```dataview
-TABLE 
-FROM #project AND #done
+LIST 
+WHERE any(file.tasks, (t) => !t.fullyCompleted)
 ```

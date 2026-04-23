@@ -4,19 +4,15 @@ banner:
 ---
 # Dashboard 
 
-## Current Models
+## Models
 
-- [[Model of Topology]]
-- [[Model of Linear Algebra]]
-- [[Model of Manifolds]]
-- [[Model of ROOT]]
-- [[Model of Cosmology]]
-- [[Model of General Relativity]]
-- [[Model of Stochastic Processes]]
-- [[Model of Probability]]
-- [[Model of Programming Languages Design]]
-- [[Model of Tensor Algebra]]
-
+```dataview
+TABLE file.name
+FROM #model
+```
 ## Projects
 
-- [[]]
+```dataview
+TABLE file.title
+FROM #project AND #ongoing 
+```

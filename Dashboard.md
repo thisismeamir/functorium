@@ -13,13 +13,21 @@ FROM #model
 ## Ongoing Projects
 
 ```dataview
-TABLE status, priority
-FROM #project AND #ongoing
+TABLE 
+FROM "agenda/projects"
 ```
 
 ## Agenda
+```dataview
+TASK
+FROM "agenda/projects"
+WHERE !completed
+GROUP BY file.name
+```
+## All Todo
 
 ```dataview
-LIST 
-WHERE any(file.tasks, (t) => !t.fullyCompleted)
+TASK  
+FROM ""  
+WHERE !completed
 ```

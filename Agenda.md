@@ -545,6 +545,15 @@ sticker: lucide//calendar-days
 - [ ] Website Design and Development
 	- [ ] Sitemap
 	- [ ] CMS development
+- [ ] Documents and Foundations
+	- [ ] ISK Manifestation Document
+	- [ ] Open Knowledge Foundation Documentation
+	- [ ] ISK Grand Plan Documentation Explaining Projects and Impact with a concrete planning for 2026--2030.
+	- [ ] ISK Essential Documentation
+		- [ ] Membership
+		- [ ] Project Initiations
+	- [ ] License development for open-science and open-knowledge initiatives, research and code in science
+
 
 # Travel
 
@@ -568,15 +577,15 @@ sticker: lucide//calendar-days
 #### **Clothing (Layers for Swiss Weather)**
 - [x] 7-10 days underwear/socks/t-shirts  [completion:: 2026-04-13]
 - [x] 5 pants/jeans, 2 sweaters/fleece  [completion:: 2026-04-13]
-- [ ] Waterproof jacket, hat
+- [x] Waterproof jacket, hat  [completion:: 2026-04-25]
 - [x] 2 pairs sturdy walking/shoes (closed-toe for labs)  [completion:: 2026-04-13]
 - [x] Sleepwear, swimsuit (if sauna)  [completion:: 2026-04-13]
 
 #### **Electronics & Work**
-- [ ] Laptop + charger, external drive
-- [ ] Phone + Swiss adapter (Type J), power bank
-- [ ] Headphones, USB cables
-- [ ] Notebook/pen for research
+- [x] Laptop + charger, external drive  [completion:: 2026-04-25]
+- [x] Phone + Swiss adapter (Type J), power bank  [completion:: 2026-04-25]
+- [x] Headphones, USB cables  [completion:: 2026-04-25]
+- [x] Notebook/pen for research  [completion:: 2026-04-25]
 
 #### **Toiletries & Health**
 - [x] Toothbrush/paste, soap/shampoo (travel size)  [completion:: 2026-04-13]
@@ -586,8 +595,8 @@ sticker: lucide//calendar-days
 - [ ] Laundry bag/detergent pods
 
 #### **Hostel & Daily Life**
-- [ ] Padlock for locker
-- [ ] Eco-bag, utensils (if no cafeteria access)
+- [x] Padlock for locker  [completion:: 2026-04-25]
+- [x] Eco-bag, utensils (if no cafeteria access)  [completion:: 2026-04-25]
 
 Pack in 1 carry-on + backpack. CERN shop has basics. Safe trip!
 

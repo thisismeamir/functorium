@@ -6,4 +6,4 @@ Computer scientists and software engineers have responded to these challenges by
 
 - [[Proof Assistants]]
 - [[Functional Programming]]
-	- [[Data and Functions]]
+	- [[Rocq Data and Functions]]

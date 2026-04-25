@@ -1,0 +1,13 @@
+- [ ] **Phase 1:** Deployment
+	- [ ] **Setting Up the Environment**: Setup the backend and a development database on lxplus and my computer to work on it. (due:: 2026-04-27) #code #ep-fcc #cern 
+	- [ ] **Understanding the Database**: Understand the backend code especially the parts related to the database data and how are we talking to the database.(due:: 2026-04-27) #code #ep-fcc #cern
+- [ ] **Phase 2:** API Design
+	- [ ] **Understand core requirements of our API**: Work with Juraj Michele and possibly a survey to understand the needs of users on what type of queries might be the most needed.
+	- [ ] **Development of API**: building the api from scratch.
+		- [ ] **Basic API**: a basic api for simple calls and arguments.
+		- [ ] **Filtering**: an engine for adding different types of filters (based on Json, and YAML files as well as other things)
+		- [ ] **Execution Layer**: Execution model to compute the write Database query from the given API call and the filterings.
+	- [ ] **Tests, and Optimization**: Testing the project, making sure that the code is healthy.
+	- [ ] **Statistics**: Develop relevant statistics on the database and the Json files in the database to plan for a better database and a migration script.
+	- [ ] **Database Migration**: Migrating from the old database to the new one.
+	- [ ] **DIRAC and RUCIO Implementations**: Implement for DIRAC and RUCIO means of using the API and notifications (possibly webhooks)

@@ -1,28 +1,28 @@
-- **Design Language Initiation** [completion:: 2026-03-24]
-  - **Foundations Documentation** [completion:: 2026-02-10]
+- [ ] **Design Language Initiation** [completion:: 2026-03-24]
+  - [ ] **Foundations Documentation** [completion:: 2026-02-10]
     - [ ] **Write design principles document**: Define the core values and visual philosophy guiding all ISK outputs — why things look the way they do. #documentation #foundations
     - [ ] **Define grid and spacing system**: Document the baseline grid, spacing scale, and layout rules for both digital and print contexts. #grid #layout #foundations
     - [ ] **Document iconography rules**: Establish guidelines for icon style, sizing, stroke weight, and usage across media. #icons #foundations
-  - **Typography Completion** [completion:: 2026-02-25]
+  - [ ] **Typography Completion** [completion:: 2026-02-25]
     - [ ] **Select and license typefaces**: Finalize primary and secondary font families, confirm licensing for web, print, and commercial use. #typography #licensing
     - [ ] **Define type scale**: Document heading levels, body, caption, and label sizes with ratios for all contexts. #typography #scale
     - [ ] **Write typography usage guidelines**: Specify do's and don'ts — pairing rules, weight usage, language/script support. #typography #guidelines
-  - **Color Palette** [due:: 2026-02-27] [completion:: 2026-03-24]
+  - [ ] **Color Palette** [due:: 2026-02-27] [completion:: 2026-03-24]
     - [ ] **Define primary and secondary color system**: Finalize all brand colors with hex, RGB, and CMYK values. #color #branding
     - [ ] **Document semantic color roles**: Map colors to UI states — info, success, warning, danger, neutral. #color #UI
     - [ ] **Run accessibility contrast audit**: Verify all color combinations meet WCAG AA or AAA standards. #color #accessibility
     - [ ] **Create dark mode palette variant**: Define how all colors adapt in dark contexts. #color #dark-mode
-  - **Logo and Brand Identity** [due:: 2026-02-27] [completion:: 2026-03-24]
+  - [ ] **Logo and Brand Identity** [due:: 2026-02-27] [completion:: 2026-03-24]
     - [ ] **Finalize logo variants**: Deliver full, icon-only, monochrome, and inverted versions. #logo #branding
     - [ ] **Define logo usage rules**: Document clear space, minimum size, and incorrect usage examples. #logo #guidelines
     - [ ] **Create brand identity sheet**: One-page summary of logo, colors, and typefaces for quick reference by collaborators. #branding #documentation
     - [ ] **Export logo asset package**: Deliver SVG, PNG, and PDF versions in all variants for all use cases. #logo #assets
-  - **Design Examples** [due:: 2026-03-26]
+  - [ ] **Design Examples** [due:: 2026-03-26]
     - [ ] **Collect real-world designed artifacts**: Gather actual ISK outputs once available — posts, documents, slides — to use as honest references. #examples #postponed
     - [ ] **Annotate examples with design rationale**: For each example, explain which design rules are applied and why. #examples #documentation
-  - **Nukleus Design System (ISK Identity)** [due:: 2026-05-01]
-    - **Nukleus for Digital Presence**
-      - **Social Media Kit**
+  - [ ] **Nukleus Design System (ISK Identity)** [due:: 2026-05-01]
+    - [ ] **Nukleus for Digital Presence**
+      - [ ] **Social Media Kit**
         - [ ] **Define social media canvas sizes**: Document all required dimensions per platform (Instagram, LinkedIn, Twitter/X, YouTube). #social-media #specifications
         - [ ] **Create illustration style guide**: Define line weight, fill style, color usage, and subject matter for brand illustrations. #illustration #guidelines
         - [ ] **Produce core illustration set**: Draw 10–15 base illustrations covering ISK's key themes — knowledge, collaboration, openness. #illustration #assets
@@ -32,7 +32,7 @@
         - [ ] **Define video and animation principles**: Document easing curves, duration scales, and transition styles. #motion #guidelines
         - [ ] **Produce intro and outro animations**: Reusable branded opening and closing sequences for all ISK video content. #motion #video #assets
         - [ ] **Create lower-third and caption templates**: Branded overlays for interviews, talks, and lecture recordings. #motion #video #assets
-      - **UI Components**
+      - [ ] **UI Components**
         - [ ] **Define design tokens**: Document all spacing, color, radius, shadow, and typography values as named tokens to be consumed by all component libraries. #tokens #design-system
         - [ ] **Design component library in Figma**: Produce the master component set in Figma before any code implementation begins. #figma #design-system
         - [ ] **Implement Vue component library**: Build ISK design system as a Vue 3 component library — buttons, forms, navigation, cards, modals, tables. #vue #frontend #components
@@ -41,13 +41,13 @@
         - [ ] **Write React component documentation**: Same documentation standard as Vue. #react #documentation
         - [ ] **Implement Kotlin Compose component library**: Adapt the token system and components for Android and Desktop via Jetpack Compose. #kotlin #android #desktop
         - [ ] **Publish component libraries to package registries**: Publish Vue and React packages to npm, Kotlin to Maven. #publishing #devops
-      - **Interactive Presentations**
+      - [ ] **Interactive Presentations**
         - [ ] **Evaluate presentation frameworks**: Compare options (Reveal.js, Slidev, custom) against ISK's needs for interactivity and branding. #presentations #research
         - [ ] **Build base presentation template**: Implement the chosen framework with ISK branding — title slide, section slide, content layouts. #presentations #design-system
         - [ ] **Add live demo and code embed support**: Enable embedding of runnable code or live demos within presentation slides. #presentations #interactive
         - [ ] **Document presentation authoring guide**: Write a guide for ISK members to create new presentations using the template. #presentations #documentation
-    - **Nukleus for Print**
-      - **Nukleus LaTeX Family**
+    - [ ] **Nukleus for Print**
+      - [ ] **Nukleus LaTeX Family**
         - [ ] **Set up shared LaTeX base package**: Create a common `.sty` file with shared tokens — colors, fonts, spacing — imported by all document classes. #latex #foundations
         - [ ] **Develop Nukleus Letter class**: LaTeX class for official correspondence with letterhead, address block, and signature area. #latex #letter #print
         - [ ] **Develop Nukleus Article class**: LaTeX class for research articles with abstract, section hierarchy, figure, and bibliography styling. #latex #article #research
@@ -55,14 +55,14 @@
         - [ ] **Develop Nukleus Beamer theme**: Beamer presentation theme with ISK-branded title, section, and content slide layouts. #latex #beamer #presentation
         - [ ] **Write LaTeX family documentation**: Usage guide, minimal working examples, and customization options for each class. #latex #documentation
         - [ ] **Publish LaTeX package to CTAN or GitHub**: Make the Nukleus family publicly available and versioned. #latex #open-source #publishing
-    - **Nukleus Motion Graphics**
+    - [ ] **Nukleus Motion Graphics**
       - [ ] **Write motion principles document**: Define easing standards, timing scales, and how motion expresses ISK values of clarity and openness. #motion #principles
       - [ ] **Produce logo animation**: An animated version of the ISK logo for use in video intros and digital splash screens. #motion #logo #assets
       - [ ] **Produce background loop library**: A set of subtle, loopable animated backgrounds for use in presentations and video content. #motion #assets
       - [ ] **Produce transition footage library**: Reusable animated transitions (wipes, fades, reveals) aligned with ISK motion principles. #motion #assets
       - [ ] **Create motion style guide**: Document all animation assets, their intended use cases, and export specifications. #motion #documentation
 
-- **Website Design and Development**
+- [ ] **Website Design and Development**
   - [ ] **Define target audiences and user journeys**: Before any design, map out who visits the ISK website and what they need to accomplish — discovering projects, joining, reading publications. #UX #research #website
   - [ ] **Create sitemap**: List all pages and sections, define hierarchy and navigation structure. #sitemap #IA #website
   - [ ] **Design wireframes for key pages**: Low-fidelity wireframes for homepage, projects, membership, and publications pages. #wireframes #UX #website
@@ -76,37 +76,37 @@
   - [ ] **SEO and accessibility audit**: Run audits before launch and resolve all critical issues. #SEO #accessibility #website
   - [ ] **Launch and post-launch monitoring**: Deploy to production and set up analytics, error tracking, and uptime monitoring. #launch #devops #website
 
-- **Documents and Foundations**
-  - **ISK Manifestation Document**
+- [ ] **Documents and Foundations**
+  - [ ] **ISK Manifestation Document**
     - [ ] **Draft ISK purpose and vision statement**: Write the foundational paragraph articulating what ISK is and why it exists. #manifesto #identity
     - [ ] **Write philosophical framework section**: Articulate ISK's stance on knowledge, openness, science, and society. #manifesto #philosophy
     - [ ] **Write organizational values section**: Define the concrete values ISK operates by and how they translate into action. #manifesto #values
     - [ ] **Review and ratify with founding members**: Circulate the draft, collect feedback, and reach consensus before publishing. #manifesto #governance
     - [ ] **Publish manifestation document publicly**: Release as a PDF and web page, versioned and dated. #manifesto #publishing
-  - **Open Knowledge Foundation Documentation**
+  - [ ] **Open Knowledge Foundation Documentation**
     - [ ] **Define ISK's open knowledge position**: Articulate what open knowledge means in ISK's context — philosophy and practical implications. #open-knowledge #philosophy
     - [ ] **Survey existing open knowledge frameworks**: Review Creative Commons, Open Definition, Budapest Declaration, etc., and document how ISK relates to each. #open-knowledge #research
     - [ ] **Write operational open knowledge standards**: How ISK itself applies open knowledge principles — what is always open, what exceptions exist, and why. #open-knowledge #standards
-  - **ISK Grand Plan Documentation (2026–2030)**
+  - [ ] **ISK Grand Plan Documentation (2026–2030)**
     - [ ] **List and describe all current and planned projects**: For each project, write a short description, goals, and expected impact. #grand-plan #projects
     - [ ] **Define impact metrics per project**: For each project, specify how success will be measured concretely. #grand-plan #metrics
     - [ ] **Write 2026 concrete action plan**: Month-by-month or quarter-by-quarter breakdown of what happens in 2026. #grand-plan #planning #2026
     - [ ] **Write 2027–2030 roadmap**: Year-by-year milestones for the medium-term horizon. #grand-plan #roadmap #2027-2030
     - [ ] **Estimate resource requirements**: For each year and project, outline human, financial, and infrastructure needs. #grand-plan #resources
     - [ ] **Review and publish grand plan**: Circulate internally, finalize, and publish as a public commitment document. #grand-plan #publishing
-  - **ISK Essential Documentation**
-    - **Membership**
+  - [ ] **ISK Essential Documentation**
+    - [ ] **Membership**
       - [ ] **Define membership tiers and criteria**: What kinds of membership exist, eligibility requirements, and what each tier entails. #membership #governance
       - [ ] **Write member rights and responsibilities**: What members can expect from ISK and what ISK expects from members. #membership #governance
       - [ ] **Design onboarding process**: Step-by-step flow from application to active membership, including welcome materials. #membership #onboarding
       - [ ] **Create membership application form or system**: Build the form or platform through which people apply to join. #membership #tooling
       - [ ] **Define offboarding and suspension process**: Document how membership ends — voluntarily or otherwise — and what that entails. #membership #governance
-    - **Project Initiations**
+    - [ ] **Project Initiations**
       - [ ] **Write project initiation template**: A standard document structure for proposing a new ISK project — problem, goals, scope, resources, timeline. #projects #template
       - [ ] **Define project approval process**: Who reviews proposals, what criteria are used, and how decisions are communicated. #projects #governance
       - [ ] **Define project lifecycle stages**: From initiation through active development to completion or archival. #projects #process
       - [ ] **Write project reporting standards**: How active projects communicate progress — frequency, format, and audience. #projects #reporting
-  - **License Development**
+  - [ ] **License Development**
     - [ ] **Audit existing open licenses**: Review CC, MIT, GPL, Apache, ODbL, and science-specific licenses for fit with ISK's needs. #license #research #open-source
     - [ ] **Define ISK licensing policy for research outputs**: Decide which license applies to publications, preprints, and datasets. #license #research
     - [ ] **Define ISK licensing policy for code**: Decide which license applies to all ISK software and tools. #license #code #open-source

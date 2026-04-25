@@ -1,19 +1,19 @@
-- **Coq and Formal Mathematics**
-  - **Foundations**
+- [ ] **Coq and Formal Mathematics**
+  - [ ] **Foundations**
     - [ ] **What is formal mathematics**: Understand the distinction between informal and formal proofs, and why mechanized verification matters in mathematics and software. #foundations #concepts
     - [ ] **The Curry-Howard correspondence**: Propositions as types, proofs as programs — the conceptual backbone of Coq and all proof assistants. #foundations #curry-howard #type-theory
     - [ ] **Intuitionistic vs classical logic**: Why Coq is intuitionistic by default, what is lost and gained, and how to recover classical reasoning. #foundations #logic #intuitionistic
     - [ ] **Dependent type theory basics**: Types that depend on values — the expressive power that makes encoding mathematics possible. #foundations #dependent-types #type-theory
     - [ ] **The Calculus of Inductive Constructions**: The formal system underlying Coq — universes, inductive types, and the conversion rule. #foundations #CIC #type-theory
-  - **Getting Started with Coq**
+  - [ ] **Getting Started with Coq**
     - [ ] **Installation and tooling setup**: Install Coq, configure an editor (VS Code with VsCoq or Emacs with Proof General), and run a first proof. #coq #setup #tooling
     - [ ] **The Coq REPL and proof state**: Read and interpret the goal window, hypotheses, and proof state at each tactic step. #coq #proofstate #dx
     - [ ] **Basic types and terms**: `nat`, `bool`, `list`, `option` — define and use the standard inductive types. #coq #types #basics
     - [ ] **Definitions and notation**: `Definition`, `Fixpoint`, `Notation`, and `Check` — write and inspect terms interactively. #coq #definitions #basics
     - [ ] **Simple propositions and proofs**: State and prove trivial goals using `exact`, `assumption`, `intro`, and `apply`. #coq #proofs #basics
     - [ ] **The `Compute` command and evaluation**: Evaluate terms by reduction, understand normal forms and computation rules. #coq #evaluation #basics
-  - **Proof Engineering**
-    - **Core Tactics**
+  - [ ] **Proof Engineering**
+    - [ ] **Core Tactics**
       - [ ] **Introduction and destruction**: `intro`, `intros`, `destruct`, `inversion` — decompose hypotheses and goals. #tactics #core
       - [ ] **Rewriting**: `rewrite`, `rewrite <-`, `subst` — replace equals for equals in goals and hypotheses. #tactics #rewriting
       - [ ] **Induction**: `induction`, `induction ... using` — prove properties of inductive types by structural induction. #tactics #induction
@@ -22,70 +22,82 @@
       - [ ] **The `simpl`, `unfold`, and `cbv` tactics**: Control reduction strategy during proof — when to unfold and when to leave definitions opaque. #tactics #reduction
       - [ ] **`assert` and forward reasoning**: Introduce intermediate lemmas inside a proof to structure complex arguments. #tactics #forward-reasoning
       - [ ] **`apply`, `eapply`, and unification**: Apply lemmas and hypotheses to goals, understand how Coq's unification fills in implicit arguments. #tactics #apply #unification
-    - **Proof Organization**
+    - [ ] **Proof Organization**
       - [ ] **Structuring proofs with bullets and braces**: Use `-`, `+`, `*`, and `{}` to structure multi-goal proofs readably. #proofs #structure #style
       - [ ] **Modular proofs with lemmas**: Factor out reusable subproofs as named lemmas — when and how to decompose. #proofs #modularity
       - [ ] **Proof by reflection**: Encode a decision procedure as a Coq function and use it to discharge goals by computation. #proofs #reflection #advanced
       - [ ] **`Program` and obligation management**: Use the `Program` mode to write dependently typed programs with proof obligations discharged separately. #proofs #program #obligations
-  - **Type Theory in Coq**
-    - **Inductive Types**
+  - [ ] **Type Theory in Coq**
+    - [ ] **Inductive Types**
       - [ ] **Defining inductive types**: Syntax, constructors, and the induction principle Coq generates automatically. #inductive-types #type-theory
       - [ ] **Recursive functions with `Fixpoint`**: Write structurally recursive functions, understand termination checking. #inductive-types #fixpoint #termination
       - [ ] **Parametric and polymorphic types**: `list A`, `option A` — type parameters and universe polymorphism. #inductive-types #polymorphism
       - [ ] **Mutual and nested inductive types**: Define mutually recursive types and trees with nested lists. #inductive-types #mutual #advanced
       - [ ] **Well-founded recursion**: Prove termination for functions that don't decrease on a constructor argument — `measure` and `well_founded_recursion`. #inductive-types #termination #advanced
-    - **Propositions and Proofs as Types**
+    - [ ] **Propositions and Proofs as Types**
       - [ ] **`Prop` vs `Set` vs `Type`**: Understand the universe hierarchy, proof irrelevance in `Prop`, and when to use each sort. #type-theory #universes #prop
       - [ ] **Existential and universal quantifiers as types**: `forall` as dependent product, `exists` as dependent sum — write and prove each. #type-theory #quantifiers
       - [ ] **Equality in type theory**: `eq`, `refl`, `J` eliminator — understand propositional equality and its limitations. #type-theory #equality
       - [ ] **Proof irrelevance and setoids**: When proofs of the same proposition are interchangeable, and how to rewrite along custom equivalences. #type-theory #proof-irrelevance #setoids
       - [ ] **Classical logic as an axiom**: Add `Classical` or `Excluded_Middle` and understand what axioms cost in terms of computational content. #type-theory #classical #axioms
-    - **Dependent Types**
+    - [ ] **Dependent Types**
       - [ ] **Dependent function types**: Functions whose return type depends on the input value — `forall n : nat, Vec A n`. #dependent-types #pi-types
       - [ ] **Sigma types and subset types**: Pairs where the second component's type depends on the first — `{x : A | P x}`. #dependent-types #sigma-types
       - [ ] **Indexed inductive types**: Inductive families indexed by values — `Vec`, `Fin`, `Le` — and their induction principles. #dependent-types #indexed-types
       - [ ] **`match` with dependent return types**: Write dependent pattern matches where the return type varies by constructor — the `return` annotation. #dependent-types #match
       - [ ] **The convoy pattern**: The standard idiom for dependent matches that need to thread information through cases. #dependent-types #convoy-pattern #idioms
-  - **Mathematical Libraries**
-    - **Coq Standard Library**
+  - [ ] **Mathematical Libraries**
+    - [ ] **Coq Standard Library**
       - [ ] **Arithmetic — `Arith` and `ZArith`**: Natural number and integer arithmetic lemmas, `omega`/`lia` for linear arithmetic. #stdlib #arithmetic
       - [ ] **Lists — `List`**: Standard list operations, `In`, `Forall`, `Exists`, and their proof lemmas. #stdlib #lists
       - [ ] **Logic — `Logic` and `Classical`**: Core logical connectives, functional extensionality, propositional extensionality. #stdlib #logic
       - [ ] **Relations and orders**: `Relation_Definitions`, `Orders`, partial and total orders, well-founded relations. #stdlib #relations #orders
-    - **Mathcomp / SSReflect**
+    - [ ] **Mathcomp / SSReflect**
       - [ ] **SSReflect proof style**: The reflect predicate, boolean reflection, and the `ssrbool` idiom — propositions decided by boolean functions. #mathcomp #ssreflect #reflection
       - [ ] **The `rewrite` and `have` tactics in SSReflect**: SSReflect's enhanced rewriting and forward-proof style. #mathcomp #tactics #ssreflect
       - [ ] **Finite types and `finType`**: The `finType` interface — types with decidable equality and enumerable elements. #mathcomp #fintype
       - [ ] **Algebra hierarchy in Mathcomp**: Groups, rings, fields, modules — the packed class infrastructure and how to use it. #mathcomp #algebra #hierarchy
       - [ ] **Combinatorics and counting**: Bigoperators, binomial coefficients, and combinatorial identities in Mathcomp. #mathcomp #combinatorics
-    - **Coq-HoTT**
+    - [ ] **Coq-HoTT**
       - [ ] **Homotopy type theory basics**: Paths as equalities, higher-dimensional structure of types, the univalence axiom. #HoTT #type-theory #paths
       - [ ] **Path induction and transport**: The J eliminator, transport along paths, and dependent paths. #HoTT #path-induction #transport
       - [ ] **Truncation levels**: Contractible types, propositions, sets, and groupoids — the h-level hierarchy. #HoTT #truncation #h-levels
       - [ ] **The univalence axiom**: Equivalence of types implies equality of types — its statement, use, and consequences. #HoTT #univalence #axioms
       - [ ] **Higher inductive types**: Types defined by both point constructors and path constructors — the circle, suspension, pushouts. #HoTT #HIT #advanced
-  - **Formalizing Mathematics**
-    - **Logic and Set Theory**
+  - [ ] **Formalizing Mathematics**
+    - [ ] **Logic and Set Theory**
       - [ ] **Propositional logic**: Encode and prove tautologies, completeness of propositional logic, and the connection to boolean algebra. #formalization #propositional-logic
       - [ ] **First-order logic**: Formalize FOL syntax, semantics, and provability in Coq as an object language. #formalization #FOL
       - [ ] **Naive set theory in type theory**: Encode sets as types or predicates, define union, intersection, and subset, prove standard identities. #formalization #set-theory
       - [ ] **Zermelo-Fraenkel axioms in Coq**: Formalize ZF axioms as propositions and derive basic consequences. #formalization #ZF #set-theory
-    - **Algebra**
+    - [ ] **Algebra**
       - [ ] **Monoids and groups**: Define the typeclass or record, prove standard lemmas, build examples from `nat` and `Z`. #formalization #algebra #groups
       - [ ] **Rings and fields**: Extend to rings, commutative rings, and fields — prove distributivity, characteristic properties. #formalization #algebra #rings
       - [ ] **Linear algebra**: Formalize vector spaces, linear maps, bases, and dimension over an arbitrary field. #formalization #linear-algebra
       - [ ] **Polynomial rings**: Define polynomials as lists of coefficients, prove ring axioms, degree lemmas, and evaluation homomorphism. #formalization #algebra #polynomials
-    - **Analysis and Topology**
+    - [ ] **Analysis and Topology**
       - [ ] **Real numbers in Coq**: The `Reals` library — axioms, basic arithmetic, and the completeness axiom. #formalization #reals #analysis
       - [ ] **Limits and continuity**: Formalize epsilon-delta definitions, prove composition and arithmetic of limits. #formalization #analysis #limits
       - [ ] **Metric spaces**: Encode metric spaces as typeclasses, prove triangle inequality consequences, open and closed sets. #formalization #topology #metric-spaces
       - [ ] **Topological spaces in Coq**: Encode topological spaces via open set predicates, prove standard lemmas, define continuity abstractly. #formalization #topology
-    - **Number Theory**
+    - [ ] **Number Theory**
       - [ ] **Divisibility and primes**: Define divisibility, prove Euclid's lemma, formalize the infinitude of primes. #formalization #number-theory #primes
       - [ ] **GCD and Bezout's identity**: Euclidean algorithm in Coq, prove Bezout's identity and its consequences. #formalization #number-theory #GCD
       - [ ] **Modular arithmetic**: Integers mod n as a quotient type, prove ring axioms for `Z/nZ`. #formalization #number-theory #modular-arithmetic
       - [ ] **Fermat's little theorem**: Formalize and prove using Mathcomp's group theory or direct combinatorial argument. #formalization #number-theory #fermat
-  - **Advanced Coq**
+  - [ ] **Advanced Coq**
     - [ ] **Universe polymorphism**: Write definitions that are polymorphic over universe levels — avoid universe inconsistencies in large libraries. #advanced #universes #polymorphism
     - [ ] **Canonical structures and typeclasses**: The two mechanisms for ad-hoc polymorphism in Coq — when to use each, and how Mathcomp uses canonical structures. #advanced #typeclasses #canonical-structures
-    - [ ] **Ltac and tacti
+    - [ ] **Ltac and tactic programming**: Write custom tactics in Ltac — pattern match on goals, loop over hypotheses, build reusable proof automation. #advanced #ltac #metaprogramming
+    - [ ] **Ltac2**: The typed successor to Ltac — safer, more compositional tactic programming. #advanced #ltac2 #tactics
+    - [ ] **`coq-elpi` and Elpi metaprogramming**: Extend Coq with Elpi programs — generate definitions, derive instances, and write elaboration hooks. #advanced #elpi #metaprogramming
+    - [ ] **Extraction to OCaml and Haskell**: Extract verified Coq programs to executable code, understand what gets erased and what remains. #advanced #extraction #verified-software
+    - [ ] **Coinductive types and corecursion**: `CoInductive`, `CoFixpoint`, and productivity — model infinite streams and processes. #advanced #coinduction #corecursion
+    - [ ] **Proof by large-scale automation with `crush`**: Build a powerful custom tactic combining `simpl`, `rewrite`, `inversion`, and `auto` for a specific domain. #advanced #automation #crush
+  - [ ] **Verified Software**
+    - [ ] **Specifying and verifying pure functions**: Write a function, state its correctness property as a `Theorem`, and prove it. #verified-software #specification
+    - [ ] **Verifying sorting algorithms**: Prove a sorting function returns a sorted permutation of its input — classic benchmark. #verified-software #sorting #algorithms
+    - [ ] **Verified data structures**: Prove functional correctness of binary search trees, balanced trees, or persistent queues. #verified-software #data-structures
+    - [ ] **Separation logic and imperative programs**: Use Iris or VST to reason about heap-manipulating programs in Coq. #verified-software #separation-logic #imperative
+    - [ ] **Certified compilers — CompCert overview**: Study the architecture of CompCert, the verified C compiler, as the flagship example of large-scale formal verification. #verified-software #compilers #compcert
+    - [ ] **Formalizing and verifying a small language**: Define a toy language's syntax, small-step semantics, type system, and prove type soundness (progress + preservation). #verified-software #PL-theory #type-soundness

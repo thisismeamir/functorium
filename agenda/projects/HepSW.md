@@ -1,5 +1,5 @@
-- **HepSW**
-  - **Manifest** [due:: 2026-02-20]
+- [ ] **HepSW**
+  - [ ] **Manifest** [due:: 2026-02-20]
     - [x] **Validator** [completion:: 2026-02-20]: Parse and validate manifest files against the schema — catch malformed fields, unknown keys, and type mismatches before any execution begins. #manifest #validation
     - [x] **Walker** [completion:: 2026-02-20]: Traverse the manifest graph recursively, resolving nested structures and visiting all nodes in dependency order. #manifest #traversal
     - [x] **Loader** [completion:: 2026-02-20]: Load manifests from disk or remote sources into memory, handling encoding, caching, and error recovery. #manifest #loader
@@ -9,7 +9,7 @@
     - [ ] **Sandboxing**: Execute manifest-declared build steps in an isolated environment — restrict filesystem, network, and process access to ensure reproducibility. #manifest #sandboxing #isolation
     - [ ] **Manifest versioning and compatibility checks**: Validate that a manifest's declared schema version is compatible with the current HepSW version before processing. #manifest #versioning #compatibility
     - [ ] **Manifest linting and warnings**: Beyond hard validation errors, emit actionable warnings for deprecated fields, suspicious version constraints, or missing recommended sections. #manifest #linting #dx
-  - **Recipe Execution** [due:: 2026-04-15]
+  - [ ] **Recipe Execution** [due:: 2026-04-15]
     - [ ] **Simple command execution** [due:: 2026-04-15]: Run individual recipe steps as shell commands, capture stdout/stderr, and propagate exit codes as build failures. #recipe #execution
     - [ ] **Monitoring and access control** [due:: 2026-04-15]: Track resource usage per step, enforce time and memory limits, and gate privileged operations behind capability checks. #recipe #monitoring #security
     - [ ] **Step dependency graph and ordering**: Parse inter-step dependencies declared in the recipe and execute steps in a valid topological order, parallelizing where safe. #recipe #dag #execution
@@ -18,14 +18,14 @@
     - [ ] **Pre- and post-build hooks**: Support lifecycle hooks that run before the first step and after the last — useful for setup, teardown, and artifact collection. #recipe #hooks #lifecycle
     - [ ] **Recipe dry-run mode**: Print the full sequence of commands that would be executed without running them — essential for debugging and CI previews. #recipe #dry-run #dx
     - [ ] **Error handling and retry logic**: Define behavior on step failure — abort, retry with backoff, or continue with degraded mode — configurable per recipe. #recipe #error-handling #resilience
-  - **Genie Manifest and Dependency Manifests**
+  - [ ] **Genie Manifest and Dependency Manifests**
     - [ ] **Design the Genie manifest schema**: Define the structure, required fields, and extension points of the Genie manifest format. #genie #manifest #schema
     - [ ] **Implement Genie manifest parser**: Extend the manifest loader and validator to handle Genie-specific fields and semantics. #genie #manifest #parser
     - [ ] **Define dependency manifest protocol**: Specify how third-party dependency manifests are structured, versioned, and linked from a parent manifest. #genie #dependencies #protocol
     - [ ] **Implement dependency manifest resolution**: Recursively fetch and validate all dependency manifests declared by a Genie manifest. #genie #dependencies #resolution
     - [ ] **Conflict resolution between dependency manifests**: Detect and resolve version or configuration conflicts when multiple dependency manifests declare overlapping packages. #genie #dependencies #conflicts
     - [ ] **Write Genie manifest authoring guide**: Document the full schema with examples, common patterns, and pitfalls for manifest authors. #genie #documentation
-  - **Index and Search** 
+  - [ ] **Index and Search** 
     - [x] **Index database connection and use** [completion:: 2026-02-19]: Establish and manage the connection to the local index database, expose a query interface for all index consumers. #index #database
     - [x] **Searching** [completion:: 2026-02-19]: Basic search over the index by package name. #index #search
       - [ ] **Modular search**: Refactor search into pluggable strategies — name search, description search, tag search — composable at call sites. #search #modularity #refactor
@@ -37,28 +37,28 @@
     - [x] **Sync local database with remote** [completion:: 2026-02-19]: Pull incremental updates from the remote index, apply them to the local database, and handle merge conflicts. #index #sync #database
     - [ ] **Index integrity verification**: Periodically check the local index for corruption, missing entries, or checksum mismatches against the remote. #index #integrity #reliability
     - [ ] **Index CLI commands**: Expose `hepsw index update`, `hepsw index status`, and `hepsw index rebuild` as first-class CLI commands. #index #CLI
-  - **Documentation** [priority:: highest]
-    - **Basics**
+  - [ ] **Documentation** [priority:: highest]
+    - [ ] **Basics**
       - [x] **How to initialize** [completion:: 2026-02-25]: Getting started guide — install HepSW, run `hepsw init`, and understand the resulting directory structure. #docs #basics #onboarding
       - [ ] **Searching** [due:: 2026-02-27]: Document all search commands, flags, and output formats with worked examples. #docs #basics #search
       - [ ] **Fetching** [due:: 2026-02-27]: Document how to fetch packages and manifests, including authentication, mirrors, and offline mode. #docs #basics #fetching
       - [ ] **Building** [due:: 2026-02-27]: End-to-end guide for building a package from a manifest — from fetch to installed artifact. #docs #basics #building
       - [ ] **Updating and removing packages**: Document `hepsw update` and `hepsw remove` workflows with examples of partial and full updates. #docs #basics #lifecycle
       - [ ] **Environment management basics**: Explain how HepSW manages build environments and how users interact with them. #docs #basics #environments
-    - **Manifests**
+    - [ ] **Manifests**
       - [ ] **Introduction to manifests**: What a manifest is, why it exists, and how it relates to packages, recipes, and dependencies. #docs #manifests #concepts
       - [ ] **Sections of a manifest**: Walk through every top-level section with purpose, syntax, and minimal examples. #docs #manifests #reference
       - [ ] **Configuration section**: Deep dive into all configuration keys, their types, defaults, and effect on build behavior. #docs #manifests #configuration
       - [ ] **Recipe section**: Document the recipe DSL — steps, variables, conditionals, and execution semantics. #docs #manifests #recipe
       - [ ] **Advanced manifest commands**: Document power-user features — hooks, overlays, conditional sections, and manifest inheritance. #docs #manifests #advanced
       - [ ] **Manifest schema reference**: Machine-readable JSON Schema or equivalent, auto-generated from source, linked from every relevant doc page. #docs #manifests #schema #reference
-    - **Building**
+    - [ ] **Building**
       - [ ] **Recipes deep dive**: Explain recipe execution in full — step ordering, parallelism, environment injection, and caching. #docs #building #recipes
       - [ ] **Pre-build considerations**: Compiler selection, sysroot configuration, cross-compilation, and platform-specific flags. #docs #building #pre-build
       - [ ] **Dependency management**: How transitive dependencies are resolved, pinned, and updated — lockfile semantics and conflict resolution. #docs #building #dependencies
       - [ ] **Build profiles and variants**: Document how to define and select build profiles (debug, release, sanitizers) within a manifest. #docs #building #profiles
       - [ ] **Reproducible builds guide**: Best practices and HepSW features for achieving bit-for-bit reproducible outputs. #docs #building #reproducibility
-    - **Advanced Topics**
+    - [ ] **Advanced Topics**
       - [ ] **Architecture of HepSW**: High-level system diagram — components, data flow, and responsibilities of each subsystem. #docs #advanced #architecture
       - [ ] **Architecture of the build system**: Internals of recipe execution, sandboxing, scheduling, and caching layers. #docs #advanced #build-system
       - [ ] **Analysis and software packaging**: How HepSW inspects build outputs, strips binaries, generates metadata, and packages artifacts. #docs #advanced #analysis #packaging
@@ -66,7 +66,7 @@
       - [ ] **API documentation**: Auto-generated reference for HepSW's public Rust/Python API surface with usage examples. #docs #advanced #API #reference
       - [ ] **Contribution guidelines**: Code style, PR process, test requirements, and release workflow for HepSW contributors. #docs #advanced #contributing
       - [ ] **Plugin and extension system**: How to write first- and third-party plugins that extend HepSW's behavior without forking the core. #docs #advanced #plugins
-    - **Troubleshooting**
+    - [ ] **Troubleshooting**
       - [ ] **Third-party manifest development**: Common mistakes when writing external manifests, how to test them locally, and submission checklist. #docs #troubleshooting #manifests
       - [ ] **Evaluations and walking of manifests**: Debug guide for when the walker or evaluator fails — how to read error traces and isolate the offending node. #docs #troubleshooting #walker #evaluator
       - [ ] **Build failures and log interpretation**: How to read build logs, identify the root cause step, and apply common fixes. #docs #troubleshooting #builds

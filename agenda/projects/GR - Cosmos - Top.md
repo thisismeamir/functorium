@@ -1,6 +1,6 @@
-- **Part I: Mathematical Methods for General Relativity**
-  - **Linear Algebra** [completion:: 2026-03-29]
-    - **Model of Linear Algebra**
+- [ ] **Part I: Mathematical Methods for General Relativity**
+  - [ ] **Linear Algebra** [completion:: 2026-03-29]
+    - [ ] **Model of Linear Algebra**
       - [x] **Properties of vector spaces**: Review axioms, subspaces, spans, and the algebraic structure underlying all of linear algebra. #linear-algebra #foundations
       - [x] **Systems of linear equations**: Gaussian elimination, row reduction, solution sets, and geometric interpretation. #linear-algebra #computation
       - [x] **Linear dependence and independence**: Criteria for dependence, rank, and their role in understanding solution spaces. #linear-algebra #foundations
@@ -12,9 +12,9 @@
       - [ ] **Dual spaces and covectors**: Introduce the dual space, linear functionals, and the co/contravariant distinction that pervades tensor calculus. #linear-algebra #dual-spaces #tensors
       - [ ] **Bilinear forms and the metric tensor**: Symmetric bilinear forms, signature, and the prototype of the spacetime metric. #linear-algebra #bilinear-forms #GR
       - [ ] **Version 1.0 of Model of Linear Algebra published** [due:: 2026-03-20] **Postponed**: Compile, review, and release the first complete version of the linear algebra learning model. #publishing #model #postponed
-  - **Topology and Manifolds**
-    - **Topology** [completion:: 2026-04-10]
-      - **Studying Topology for Manifolds**
+  - [ ] **Topology and Manifolds**
+    - [ ] **Topology** [completion:: 2026-04-10]
+      - [ ] **Studying Topology for Manifolds**
         - [x] **Topologies**: Open sets, topological spaces, and the axioms defining a topology. #topology #foundations
         - [x] **Convergence and continuity**: Sequences, nets, and continuous maps between topological spaces. #topology #continuity
         - [x] **Connectedness** [completion:: 2026-03-31]: Path-connectedness, connected components, and why connectedness matters for spacetime. #topology #connectedness
@@ -25,35 +25,35 @@
         - [ ] **Quotient and product topologies**: Constructing new spaces from old ones — essential for understanding fiber bundles and covering spaces. #topology #constructions
         - [ ] **Paracompactness and partitions of unity**: Technical condition required for constructing metrics and integrating on manifolds. #topology #paracompactness
         - [ ] **Version 1.0 of Model of Topology published**: Compile, review, and release the first complete version of the topology learning model. #publishing #model
-    - **Topological Manifolds**
+    - [ ] **Topological Manifolds**
       - [ ] **Definition and examples**: Locally Euclidean Hausdorff second-countable spaces — spheres, tori, projective spaces, and spacetime. #manifolds #topology
       - [ ] **Charts and atlases**: Coordinate charts, transition maps, and atlases as the bridge between abstract topology and coordinates. #manifolds #charts
       - [ ] **Smooth compatibility and smooth atlases**: Upgrade topological atlases to smooth ones by requiring smooth transition maps. #manifolds #smooth-structures
       - [ ] **Maps between manifolds**: Continuous and smooth maps, diffeomorphisms, and embeddings. #manifolds #maps
       - [ ] **Submanifolds and immersions**: Embedded and immersed submanifolds, tangent vectors at the boundary. #manifolds #submanifolds
       - [ ] **Manifolds with boundary**: Extend the theory to spaces with edges — relevant for domains in numerical relativity. #manifolds #boundary
-    - **Riemannian Manifolds**
+    - [ ] **Riemannian Manifolds**
       - [ ] **Tangent spaces and tangent bundles**: Abstractly define tangent vectors via derivations, assemble into the tangent bundle. #riemannian #tangent-bundle
       - [ ] **Cotangent spaces and 1-forms**: Dual of the tangent space, differential of a function as a covector. #riemannian #cotangent
       - [ ] **The Riemannian metric**: A smoothly varying inner product on the tangent bundle — the object that measures distances and angles. #riemannian #metric
       - [ ] **Lengths, angles, and volumes**: Use the metric to compute geometric quantities concretely. #riemannian #geometry
       - [ ] **Pseudo-Riemannian metrics and Lorentzian signature**: Generalize to indefinite metrics — the natural setting for spacetime in GR. #riemannian #lorentzian #GR
       - [ ] **Isometries and Killing vector fields**: Symmetries of the metric and their connection to conserved quantities. #riemannian #symmetry
-    - **Structures on Manifolds**
+    - [ ] **Structures on Manifolds**
       - [ ] **Vector fields and flows**: Smooth sections of the tangent bundle, integral curves, and the flow of a vector field. #manifolds #vector-fields
       - [ ] **Lie brackets and Lie derivatives**: Measure the failure of vector fields to commute — foundational for curvature. #manifolds #lie-theory
       - [ ] **Fiber bundles and principal bundles**: Abstract the idea of attaching a space to each point of a manifold — the language of gauge theory. #manifolds #bundles
       - [ ] **Connections and parallel transport**: Define how to move vectors along curves consistently — the prerequisite for covariant derivatives. #manifolds #connections
       - [ ] **Covariant derivative**: Differentiate tensor fields along directions on a manifold, generalizing the directional derivative. #manifolds #covariant-derivative
       - [ ] **Torsion and curvature tensors**: The two fundamental invariants of a connection — measure twisting and bending of the manifold. #manifolds #curvature #torsion
-  - **Differential Geometry**
-    - **Tensor Algebra**
+  - [ ] **Differential Geometry**
+    - [ ] **Tensor Algebra**
       - [ ] **Tensors as multilinear maps**: Define tensors abstractly, understand contravariant and covariant indices. #tensors #algebra
       - [ ] **Tensor products and contraction**: Build higher-rank tensors, lower indices via contraction with the metric. #tensors #algebra
       - [ ] **Symmetric and antisymmetric tensors**: Classify tensors by their symmetry properties, foreshadowing differential forms. #tensors #symmetry
       - [ ] **Abstract index notation**: Master the index notation used throughout GR literature — Einstein summation, raising/lowering, dummy indices. #tensors #notation
       - [ ] **Tensor fields on manifolds**: Upgrade from linear algebra to smoothly varying tensor fields — the objects GR is written in. #tensors #manifolds
-    - **Tensor Calculus**
+    - [ ] **Tensor Calculus**
       - [ ] **Levi-Civita connection**: The unique torsion-free metric-compatible connection — the one used in GR. #tensors #connection #GR
       - [ ] **Christoffel symbols**: Compute the components of the Levi-Civita connection in a coordinate basis. #tensors #christoffel
       - [ ] **Geodesics**: Curves whose tangent is parallel transported — the generalization of straight lines and the paths of free-falling particles. #tensors #geodesics #GR
@@ -61,94 +61,94 @@
       - [ ] **Ricci tensor and Ricci scalar**: Contractions of the Riemann tensor — the objects appearing directly in the Einstein field equations. #tensors #ricci #GR
       - [ ] **Bianchi identities**: Differential identities on the curvature tensor, implying conservation of the Einstein tensor. #tensors #bianchi
       - [ ] **The Einstein tensor**: Construct $G_{\mu\nu} = R_{\mu\nu} - \tfrac{1}{2}Rg_{\mu\nu}$ and understand its geometric meaning. #tensors #einstein-tensor #GR
-    - **Integration, Forms**
+    - [ ] **Integration, Forms**
       - [ ] **Differential forms**: Antisymmetric covariant tensor fields, wedge product, and the algebra of forms. #forms #integration
       - [ ] **Exterior derivative**: The coordinate-free generalization of grad, curl, and div — and its relation to the de Rham complex. #forms #exterior-derivative
       - [ ] **Orientation and volume forms**: Define integration on manifolds without a coordinate preference. #forms #orientation
       - [ ] **Stokes' theorem on manifolds**: The master theorem unifying all classical integral theorems in a coordinate-free language. #forms #stokes
       - [ ] **De Rham cohomology**: Topological invariants extracted from differential forms — connects geometry and topology. #forms #cohomology
       - [ ] **Integration of tensor fields**: Integrate scalars, forms, and densities over submanifolds — needed for action principles in GR. #forms #integration #GR
-  - **Advanced Topics**
-    - **Algebraic Topology**
+  - [ ] **Advanced Topics**
+    - [ ] **Algebraic Topology**
       - [ ] **Homotopy and fundamental group**: Classify loops on a space up to deformation — captures global topology missed by local geometry. #algebraic-topology #homotopy
       - [ ] **Higher homotopy groups**: Generalize the fundamental group to higher-dimensional spheres — relevant for spacetime topology. #algebraic-topology #homotopy
       - [ ] **Homology groups**: Algebraic invariants counting holes of different dimensions in a topological space. #algebraic-topology #homology
       - [ ] **Cohomology and Poincaré duality**: Dual picture of homology via cochains, and the duality between homology and cohomology on orientable manifolds. #algebraic-topology #cohomology
       - [ ] **Covering spaces and the universal cover**: Classify spaces with the same local structure — important for spacetime causal structure. #algebraic-topology #covering-spaces
       - [ ] **Characteristic classes**: Topological invariants of bundles — Chern, Pontryagin, Euler classes and their role in physics. #algebraic-topology #characteristic-classes
-    - **Category Theory**
+    - [ ] **Category Theory**
       - [ ] **Categories, functors, and natural transformations**: The basic language — objects, morphisms, and structure-preserving maps between categories. #category-theory #foundations
       - [ ] **Universal properties and limits**: Define constructions (products, pullbacks, limits) by what they do rather than how they're built. #category-theory #limits
       - [ ] **Adjoint functors**: One of the most pervasive structures in mathematics — and a unifying framework for many constructions in geometry. #category-theory #adjoints
       - [ ] **Sheaves and presheaves**: Local-to-global data on topological spaces — the modern foundation for differential geometry and physics. #category-theory #sheaves
       - [ ] **Topos theory overview**: Generalized spaces and their logic — optional deep dive connecting category theory to foundations. #category-theory #topos
-    - **Advanced Differential Geometry**
+    - [ ] **Advanced Differential Geometry**
       - [ ] **Riemannian comparison theorems**: Relate curvature bounds to topological and metric properties — Bonnet-Myers, Hadamard-Cartan. #diff-geometry #comparison
       - [ ] **Morse theory**: Study topology through critical points of smooth functions — connects analysis, topology, and physics. #diff-geometry #morse-theory
       - [ ] **Spin geometry and spinors**: Introduce spinor bundles and the Dirac operator — necessary for understanding fermions in curved spacetime. #diff-geometry #spinors
       - [ ] **Symplectic geometry**: The natural setting for Hamiltonian mechanics — symplectic manifolds, Poisson brackets, and canonical transformations. #diff-geometry #symplectic
       - [ ] **Complex and Kähler manifolds**: Manifolds with compatible complex, Riemannian, and symplectic structures — appear in string theory and twistor approaches. #diff-geometry #complex-geometry
 
-- **Part II: What is Relativity All About?**
-  - **Physics in Flat Spacetime**
-    - **Assumptions and the Idea**
+- [ ] **Part II: What is Relativity All About?**
+  - [ ] **Physics in Flat Spacetime**
+    - [ ] **Assumptions and the Idea**
       - [ ] **The two postulates of special relativity**: Constancy of the speed of light and equivalence of inertial frames — examine what they actually demand. #SR #postulates
       - [ ] **Failure of Newtonian simultaneity**: Why absolute time is incompatible with the postulates — the train thought experiment and its consequences. #SR #simultaneity
       - [ ] **Minkowski spacetime as a geometric object**: Spacetime as a four-dimensional affine space with indefinite metric, not space plus time. #SR #minkowski
-    - **Formalism of Special Relativity**
+    - [ ] **Formalism of Special Relativity**
       - [ ] **Spacetime diagrams and causal structure**: World lines, light cones, causal past and future — the geometry of SR. #SR #causal-structure
       - [ ] **Lorentz transformations**: Derive from the postulates, interpret geometrically as hyperbolic rotations in Minkowski space. #SR #lorentz
       - [ ] **Four-vectors and the metric**: Position, velocity, momentum, and force as four-vectors; the metric as the inner product. #SR #four-vectors
       - [ ] **Relativistic mechanics**: Energy-momentum four-vector, $E = mc^2$, and the invariant mass. #SR #mechanics
       - [ ] **Electromagnetism in covariant form**: The field tensor $F_{\mu\nu}$, Maxwell's equations as tensor equations, and gauge invariance. #SR #electromagnetism
       - [ ] **The stress-energy tensor**: Define $T^{\mu\nu}$ for matter and fields — the source term in the Einstein equations. #SR #stress-energy-tensor
-    - **What Just Happened?**
+    - [ ] **What Just Happened?**
       - [ ] **Time dilation and length contraction — geometric view**: Reinterpret these not as physical effects but as projections in Minkowski geometry. #SR #interpretation
       - [ ] **The twin paradox resolved**: Resolve via proper time and spacetime geometry, not acceleration hand-waving. #SR #twin-paradox
       - [ ] **From SR to GR — what must change**: Identify exactly which features of SR break in the presence of gravity and what they must be replaced with. #SR #GR #transition
       - [ ] **The equivalence principle — first encounter**: Understand the weak and strong equivalence principles and their physical content. #SR #equivalence-principle
-  - **General Relativity**
-    - **Assumptions and the Idea**
+  - [ ] **General Relativity**
+    - [ ] **Assumptions and the Idea**
       - [ ] **The equivalence principle — deep dive**: Local inertial frames, freely falling observers, and why gravity is not a force. #GR #equivalence-principle
       - [ ] **Gravity as spacetime curvature**: The central conceptual shift — matter curves spacetime, curved spacetime guides matter. #GR #curvature #foundations
       - [ ] **The role of the metric in GR**: The metric as the fundamental dynamical variable encoding both geometry and gravity. #GR #metric
       - [ ] **Diffeomorphism invariance and general covariance**: The physical requirement that laws hold in any coordinate system and what this demands of the theory. #GR #covariance
-    - **Finding a Theory of Gravitation**
+    - [ ] **Finding a Theory of Gravitation**
       - [ ] **Newtonian gravity as a limit**: Recover Newtonian gravity from GR in the weak-field slow-motion limit — fixing the form of the equations. #GR #newtonian-limit
       - [ ] **The geodesic equation as equation of motion**: Derive that freely falling particles follow geodesics of spacetime. #GR #geodesics
       - [ ] **Einstein's path to the field equations**: The historical and logical route — why $G_{\mu\nu} = 8\pi G \, T_{\mu\nu}$ is essentially the unique answer. #GR #field-equations #history
       - [ ] **The cosmological constant**: Its original introduction, abandonment, and return as dark energy. #GR #cosmological-constant
-    - **Building the Formalism**
+    - [ ] **Building the Formalism**
       - [ ] **The Einstein field equations in full**: Write out and interpret $G_{\mu\nu} + \Lambda g_{\mu\nu} = 8\pi G \, T_{\mu\nu}$, counting degrees of freedom. #GR #field-equations
       - [ ] **The Einstein-Hilbert action**: Derive the field equations from a variational principle — the action approach that generalizes naturally. #GR #action #variational
       - [ ] **Stress-energy tensors for matter fields**: Write $T_{\mu\nu}$ for dust, perfect fluids, scalar fields, and electromagnetism. #GR #stress-energy-tensor
       - [ ] **Conservation laws in GR**: $\nabla_\mu T^{\mu\nu} = 0$ and what energy conservation means in a curved spacetime. #GR #conservation
       - [ ] **Linearized GR and gravitational waves preview**: Perturb the metric around flat space — the first glimpse of wave solutions. #GR #linearized #gravitational-waves
 
-- **Part III: Expectations and Results**
-  - **Black Hole Physics**
+- [ ] **Part III: Expectations and Results**
+  - [ ] **Black Hole Physics**
     - [ ] **Causal structure and Penrose diagrams**: Represent the full causal structure of spacetimes compactly — horizons, singularities, infinity. #black-holes #causal-structure
     - [ ] **Event horizons and trapped surfaces**: Define horizons rigorously, distinguish event horizon from apparent horizon. #black-holes #horizons
     - [ ] **Singularity theorems**: Penrose and Hawking theorems — conditions under which singularities are inevitable. #black-holes #singularities
     - [ ] **Black hole thermodynamics**: Four laws of black hole mechanics and their analogy with thermodynamics. #black-holes #thermodynamics
     - [ ] **Hawking radiation overview**: Semiclassical derivation, the information paradox, and open questions. #black-holes #hawking-radiation
     - [ ] **Black hole entropy and the Bekenstein bound**: Area-entropy relation and what it suggests about quantum gravity. #black-holes #entropy
-  - **Solutions**
-    - **Schwarzschild**
+  - [ ] **Solutions**
+    - [ ] **Schwarzschild**
       - [ ] **Deriving the Schwarzschild metric**: Solve the vacuum field equations under spherical symmetry and staticity using Birkhoff's theorem. #schwarzschild #exact-solutions
       - [ ] **Geodesics in Schwarzschild spacetime**: Timelike and null geodesics, effective potential, and circular orbits. #schwarzschild #geodesics
       - [ ] **Classical tests of GR**: Mercury's perihelion precession, light deflection, gravitational redshift, Shapiro delay. #schwarzschild #tests-of-GR
       - [ ] **Schwarzschild black hole and its horizon**: Coordinate singularity vs curvature singularity, Kruskal extension, maximal analytic extension. #schwarzschild #black-holes
-    - **Kerr**
+    - [ ] **Kerr**
       - [ ] **Deriving the Kerr metric**: The rotating vacuum solution — understand its structure, parameters, and the difficulty of its derivation. #kerr #exact-solutions
       - [ ] **Ergosphere and frame dragging**: The region outside the horizon where rotation forces co-rotation — Lense-Thirring effect. #kerr #frame-dragging
       - [ ] **Geodesics and Carter constant**: The hidden symmetry allowing separation of geodesic equations in Kerr. #kerr #geodesics
       - [ ] **Penrose process and superradiance**: Extracting rotational energy from a Kerr black hole. #kerr #energy-extraction
-    - **Kerr-Newman**
+    - [ ] **Kerr-Newman**
       - [ ] **Kerr-Newman metric and parameters**: The general charged rotating black hole — mass, charge, and angular momentum. #kerr-newman #exact-solutions
       - [ ] **Uniqueness theorems**: The no-hair theorem — why Kerr-Newman is the unique stationary electrovacuum black hole. #kerr-newman #no-hair
       - [ ] **Physical relevance and astrophysical limitations**: Why astrophysical black holes are well-approximated by Kerr despite the generality of Kerr-Newman. #kerr-newman #astrophysics
-  - **Gravitational Waves**
+  - [ ] **Gravitational Waves**
     - [ ] **Linearized GR and gauge freedom**: Perturb around flat space, fix the Lorenz gauge, and derive the wave equation. #gravitational-waves #linearized-GR
     - [ ] **Plane wave solutions and polarizations**: The two polarizations $h_+$ and $h_\times$ and their effect on test particles. #gravitational-waves #polarizations
     - [ ] **Quadrupole formula and radiation**: Derive the leading-order gravitational wave luminosity from the mass quadrupole moment. #gravitational-waves #quadrupole
@@ -156,13 +156,13 @@
     - [ ] **Detection principles — LIGO/Virgo**: Interferometric detection, noise sources, matched filtering, and sensitivity curves. #gravitational-waves #detection #LIGO
     - [ ] **Observed events and parameter estimation**: Review GW150914 and subsequent detections — what was learned about the sources. #gravitational-waves #observations
 
-- **Part IV: Cosmology**
-  - **Principles**
+- [ ] **Part IV: Cosmology**
+  - [ ] **Principles**
     - [ ] **Cosmological principle**: Homogeneity and isotropy as foundational assumptions — their observational motivation and limitations. #cosmology #principles
     - [ ] **Olbers' paradox and the finite age of the universe**: Why a static infinite universe is inconsistent with observation. #cosmology #history
     - [ ] **Scales and hierarchical structure**: From solar systems to clusters to large-scale structure — when does the cosmological principle apply? #cosmology #structure
     - [ ] **Observational pillars of Big Bang cosmology**: Hubble expansion, CMB, and primordial nucleosynthesis as the three independent foundations. #cosmology #observations
-  - **Cosmology Basics**
+  - [ ] **Cosmology Basics**
     - [ ] **FLRW metric and derivation**: The unique metric consistent with homogeneity and isotropy — derive from symmetry. #cosmology #FLRW
     - [ ] **Friedmann equations**: Derive from the Einstein equations with a perfect fluid, interpret as energy conservation and acceleration. #cosmology #friedmann
     - [ ] **Cosmological parameters**: $H_0$, $\Omega_m$, $\Omega_\Lambda$, $\Omega_r$, $k$ — their definitions, current values, and how they shape cosmic history. #cosmology #parameters
@@ -170,7 +170,7 @@
     - [ ] **Redshift and the expanding universe**: Cosmological redshift as a consequence of metric expansion, not Doppler shift. #cosmology #redshift
     - [ ] **Cosmic epochs**: Radiation domination, matter domination, dark energy domination — transitions and their observational signatures. #cosmology #epochs
     - [ ] **Cosmic Microwave Background**: Origin at recombination, temperature anisotropies, and what the CMB encodes about early universe physics. #cosmology #CMB
-  - **Expectations and Results**
+  - [ ] **Expectations and Results**
     - [ ] **Big Bang nucleosynthesis**: Predict light element abundances from first principles and compare with observation. #cosmology #BBN
     - [ ] **Inflation**: Motivations (horizon, flatness, monopole problems), slow-roll dynamics, and observational signatures. #cosmology #inflation
     - [ ] **Dark matter evidence and candidates**: Rotation curves, lensing, CMB, and structure formation as evidence; WIMPs, axions, and alternatives. #cosmology #dark-matter
@@ -178,8 +178,8 @@
     - [ ] **Large-scale structure and power spectrum**: How small quantum fluctuations became the cosmic web — growth of perturbations. #cosmology #large-scale-structure
     - [ ] **Open questions in cosmology**: Hubble tension, $S_8$ tension, the nature of dark matter and dark energy, quantum gravity in the early universe. #cosmology #open-questions
 
-- **Part V: Numerical Relativity**
-  - **Numerical Relativity**
+- [ ] **Part V: Numerical Relativity**
+  - [ ] **Numerical Relativity**
     - [ ] **ADM formalism — 3+1 decomposition**: Split spacetime into space and time to turn Einstein equations into an initial value problem. #numerical-GR #ADM #3+1
     - [ ] **Constraint and evolution equations**: Separate the Einstein equations into constraints (satisfied on initial slice) and evolution equations. #numerical-GR #constraints
     - [ ] **Gauge choices in NR**: Lapse and shift as gauge freedom — BSSN moving puncture gauge and why it works. #numerical-GR #gauge
@@ -188,17 +188,17 @@
     - [ ] **Numerical methods for PDEs in GR**: Finite difference, finite element, and spectral methods adapted to curved spacetime. #numerical-GR #numerical-methods
     - [ ] **Boundary conditions and mesh refinement**: Outer boundaries, symmetry boundaries, and adaptive mesh refinement for resolving black holes. #numerical-GR #AMR
     - [ ] **Gravitational wave extraction**: Weyl scalar $\Psi_4$, Cauchy-characteristic extraction, and waveform post-processing. #numerical-GR #GW-extraction
-  - **Numerical Cosmology**
+  - [ ] **Numerical Cosmology**
     - [ ] **N-body simulations**: Tree algorithms, particle-mesh methods, and cosmological N-body codes (Gadget, AREPO). #numerical-cosmology #N-body
     - [ ] **Hydrodynamics in cosmology**: SPH and grid-based hydro for modeling baryonic matter in cosmic simulations. #numerical-cosmology #hydro
     - [ ] **Boltzmann codes and CMB power spectra**: CAMB and CLASS — computing CMB and matter power spectra from cosmological parameters. #numerical-cosmology #CMB #CAMB
     - [ ] **Simulation pipelines**: From initial conditions (second-order perturbation theory) through structure formation to observable statistics. #numerical-cosmology #pipeline
-  - **Solutions and Results**
+  - [ ] **Solutions and Results**
     - [ ] **Binary black hole mergers**: Review breakthrough simulations, waveform catalogues, and comparison with LIGO observations. #numerical-GR #BBH #results
     - [ ] **Neutron star mergers and multi-messenger astronomy**: GW170817 and what NR contributed to understanding the event. #numerical-GR #neutron-stars #results
     - [ ] **Critical phenomena in gravitational collapse**: Universality and scaling at the threshold of black hole formation. #numerical-GR #critical-collapse
     - [ ] **Cosmological simulation results**: IllustrisTNG, EAGLE, and what large-scale simulations tell us about galaxy formation and dark matter. #numerical-cosmology #results
-  - **Data Science in Gravitational Physics and Cosmology**
+  - [ ] **Data Science in Gravitational Physics and Cosmology**
     - [ ] **Matched filtering and signal detection**: The statistical framework for detecting GW signals buried in detector noise. #data-science #matched-filtering #LIGO
     - [ ] **Bayesian parameter estimation**: Posterior inference on source parameters using MCMC and nested sampling (LALInference, Bilby). #data-science #bayesian #parameter-estimation
     - [ ] **Machine learning for GW detection**: CNNs and other architectures for rapid detection and classification of GW events. #data-science #ML #GW

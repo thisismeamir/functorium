@@ -1,0 +1,117 @@
+- [ ] **Phase 1: Foundations and Core Tools**
+    - [ ] **ROOT Framework - Core Foundation**
+        - [ ] [ROOT Primer (Beginner's Guide)](https://root.cern.ch/root/htmldoc/guides/primer/ROOTPrimer.html) - Complete introduction to ROOT with hands-on examples
+        - [ ] [ROOT Manual](https://root.cern/manual/) - Comprehensive official documentation covering all aspects
+        - [ ] [First Steps with ROOT](https://root.cern/manual/first_steps_with_root/) - Getting started guide
+        - [ ] [ROOT Tutorials](https://root.cern/tutorials/) - Collection of C++ macros and Python scripts for learning
+        - [ ] [ROOT Reference Documentation](https://root.cern/doc/master/) - Complete API reference for advanced usage
+    - [ ] **Statistical Methods Foundation**
+        - [ ] [Statistical Data Analysis by Glen Cowan](https://www.pp.rhul.ac.uk/~cowan/sda/) - Classic textbook with exercises and solutions
+        - [ ] [Glen Cowan's Statistical Methods Lectures](http://www.pp.rhul.ac.uk/~cowan/stat_aachen.html) - Comprehensive lecture series with problem sheets
+        - [ ] [Statistical Methods for Data Analysis in Particle Physics by Luca Lista (3rd Edition, 2023)](https://link.springer.com/book/10.1007/978-3-031-19934-9) - Most recent edition with machine learning chapter
+        - [ ] [Data Analysis in Particle Physics by Cesare Bini (PDF)](https://www.roma1.infn.it/~bini/StatEPP_new.pdf) - Lecture notes from Sapienza Università
+    - [ ] **Python for HEP Analysis**
+        - [ ] [Uproot Documentation](https://uproot.readthedocs.io/en/latest/basic.html) - Getting started with modern Python ROOT I/O
+        - [ ] [Uproot Tutorial by Mason Proffitt](https://masonproffitt.github.io/uproot-tutorial/aio/index.html) - Complete hands-on tutorial
+        - [ ] [Awkward Array Documentation](https://github.com/scikit-hep/awkward-0.x) - Manipulating complex nested data structures
+        - [ ] [PyHEP 2021 Uproot and Awkward Tutorial](https://indico.cern.ch/event/1019958/contributions/4430420/) - Advanced topics including H→ZZ→4μ analysis
+- [ ] **Phase 2: Advanced Statistical Analysis**
+    - [ ] **RooFit and RooStats - Professional Statistical Modeling**
+        - [ ] [RooFit Manual (ROOT)](https://root.cern/manual/roofit/) - Official documentation for probability density functions
+        - [ ] [RooStats Workbook](https://roostatsworkbook.readthedocs.io/en/latest/) - Documentation with practical examples
+        - [ ] [RooStats Workbook GitHub](https://github.com/roofit-dev/RooStatsWorkbook) - Includes 2018 Terascale Statistics School materials
+        - [ ] [RooFit Basics Tutorial (CMS Combine)](https://cms-analysis.github.io/HiggsAnalysis-CombinedLimit/part5/roofit/) - Practical introduction to fitting
+        - [ ] [CMS Statistics Exercise](https://people.na.infn.it/~lista/Statistics/code/05-RooStats-CMS-DAS/TWiki.html) - Hands-on RooStats tutorial
+        - [ ] [NA62 RooFit/RooStats Tutorials](https://gitlab.cern.ch/NA62FW/NA62Stats) - Practical statistical treatment examples
+    - [ ] **Machine Learning with TMVA**
+        - [ ] [TMVA Manual (ROOT)](https://root.cern/manual/tmva/) - Complete guide to machine learning in ROOT
+        - [ ] [TMVA Users Guide (PDF)](https://root.cern.ch/download/doc/tmva/TMVAUsersGuide.pdf) - Comprehensive documentation
+        - [ ] [TMVA Classification Tutorial](https://root.cern/doc/master/TMVAClassification_8C.html) - Example code and documentation
+        - [ ] [MultiVariate Analysis Tutorial by Francesco Gravili (PDF)](https://agenda.infn.it/event/13733/contributions/20520/attachments/14642/16541/MVATutorial.pdf) - Step-by-step guide to MVA
+- [ ] **Phase 3: Simulation Tools and Frameworks**
+    - [ ] **Geant4 - Full Detector Simulation**
+        - [ ] [Getting Started with Geant4](https://geant4.web.cern.ch/docs/getting-started) - Introduction and installation guide
+        - [ ] [Geant4 Documentation](https://geant4.web.cern.ch//docs/) - Complete user guides and reference manuals
+        - [ ] [Geant4 Application Developers Guide](https://geant4.web.cern.ch/docs/) - How to build simulation applications
+        - [ ] [Geant4 Physics Reference Manual](https://geant4.web.cern.ch/docs/) - Detailed physics interactions documentation
+        - [ ] [Geant4 Tutorials](https://geant4.web.cern.ch/docs/tutorials) - Official tutorial materials
+        - [ ] [Geant4 Advanced Examples](https://geant4.web.cern.ch/docs/advanced_examples_doc/) - Realistic experimental applications
+    - [ ] **Delphes - Fast Parametric Simulation**
+        - [ ] [Delphes Website](https://delphes.github.io/) - Official documentation and resources
+        - [ ] [Delphes GitHub Repository](https://github.com/delphes/delphes) - Source code and quick start guide
+        - [ ] [DELPHES 3 Paper (arXiv:1307.6346)](https://arxiv.org/abs/1307.6346) - Technical description of the framework
+        - [ ] [Delphes Tutorial by Jan Eysermans (PDF)](https://indico.mit.edu/event/876/contributions/2816/attachments/1060/1744/US_FCC_MIT_26032024.pdf) - FCC workshop tutorial
+        - [ ] [Software Tutorial: LCIO and Delphes](https://indico.fnal.gov/event/45413/contributions/196321/attachments/135130/167579/ilc_tutorial2_potter.pdf) - Snowmass Energy Frontier tutorial
+    - [ ] **DD4hep - Detector Description Toolkit**
+        - [ ] [DD4hep GitHub Repository](https://github.com/AIDASoft/DD4hep) - Main source code and documentation
+        - [ ] [DD4hep User Manual (PDF)](https://dd4hep.web.cern.ch/dd4hep/usermanuals/DD4hepManual/DD4hepManual.pdf) - Complete technical documentation
+        - [ ] [DD4hep Introduction](https://dd4hep.web.cern.ch/dd4hep/usermanuals/DD4hepManual/DD4hepManualch1.html) - General overview and architecture
+        - [ ] [DD4hep Code Reference](https://dd4hep.web.cern.ch/dd4hep/reference/) - API documentation
+        - [ ] [DD4hep Paper (arXiv)](https://www.researchgate.net/publication/263050232_DD4hep_A_Detector_Description_Toolkit_for_High_Energy_Physics_Experiments) - Technical publication
+- [ ] **Phase 4: Event Data Models and Processing Frameworks**
+    - [ ] **EDM4hep - Common Event Data Model**
+        - [ ] [EDM4hep GitHub Repository](https://github.com/key4hep/EDM4hep) - Source code and basic documentation
+        - [ ] [EDM4hep API Reference](https://edm4hep.web.cern.ch/) - Doxygen documentation
+        - [ ] [EDM4hep Tutorial in Key4hep](https://key4hep.github.io/key4hep-doc/how-tos/key4hep-tutorials/edm4hep_analysis/edm4hep_api_intro.html) - Practical introduction
+        - [ ] [EDM4hep YAML Definition](https://github.com/key4hep/EDM4hep/blob/main/edm4hep.yaml) - Complete data model specification
+        - [ ] [EDM4hep Paper (ICHEP 2022)](https://agenda.infn.it/event/28874/contributions/169202/attachments/94583/129541/gaede_edm4hep_ichep22.pdf) - Technical presentation
+        - [ ] [EDM4hep and Podio (CDS)](https://cds.cern.ch/record/2814349/files/document.pdf) - Detailed technical documentation
+    - [ ] **Gaudi Framework**
+        - [ ] [Gaudi Documentation Homepage](https://gaudi-framework.readthedocs.io/en/latest/) - Main documentation portal
+        - [ ] [Gaudi Introduction](https://gaudi-framework.readthedocs.io/en/latest/old/GDG_Overview.html) - User guide and tutorial overview
+        - [ ] [Gaudi Architecture](https://gaudi-framework.readthedocs.io/en/latest/old/GDG_Architecture.html) - Framework design and concepts
+        - [ ] [Gaudi Services](https://gaudi-framework.readthedocs.io/en/latest/old/GDG_Services.html) - Framework services documentation
+        - [ ] [Gaudi Developers Guide](https://gaudi-framework.readthedocs.io/en/latest/old/GDG.html) - Complete reference
+- [ ] **Phase 5: Key4hep and FCC Software Stacks**
+    - [ ] **Key4hep Framework**
+        - [ ] [Key4hep Documentation](https://key4hep.github.io/key4hep-doc/) - Central documentation hub
+        - [ ] [Getting Started with Key4hep](https://key4hep.github.io/key4hep-doc/setup-and-getting-started/README.html) - Installation and setup
+        - [ ] [Key4hep Tutorials GitHub](https://github.com/key4hep/key4hep-tutorials) - Complete tutorial collection
+        - [ ] [Key4hep Introduction Tutorial](https://github.com/key4hep/key4hep-tutorials/blob/main/introduction_key4hep/README.md) - Prerequisites and basic introduction
+        - [ ] [Developing Key4hep Software](https://key4hep.github.io/key4hep-doc/developing-key4hep-software/README.html) - Developer documentation
+        - [ ] [k4FWCore GitHub](https://github.com/key4hep/k4FWCore) - Core components for Gaudi-based framework
+        - [ ] [k4SimGeant4 GitHub](https://github.com/key4hep/k4SimGeant4) - Geant4 simulation components
+    - [ ] **FCC Software Stack**
+        - [ ] [FCC Software Homepage](https://hep-fcc.github.io/FCCSW/) - Main entry point and links
+        - [ ] [FCC Tutorials](https://hep-fcc.github.io/fcc-tutorials/) - Complete tutorial collection
+        - [ ] [FCC Software Stack Overview](https://hep-fcc.github.io/FCCSW/stack/stack.html) - Software ecosystem description
+        - [ ] [FCCSW GitHub Repository](https://github.com/HEP-FCC/FCCSW) - High level repository
+        - [ ] [FCC Software Introduction Tutorial](https://hep-fcc.github.io/fcc-tutorials/main/software-basics/fccsw.html) - Getting started with FCCSW
+        - [ ] [FCC Prerequisites](https://hep-fcc.github.io/fcc-tutorials/main/software-basics/prerequisites.html) - Platform requirements and setup
+        - [ ] [FCC Software Forum](https://fccsw-forum.web.cern.ch/) - Support and discussions
+        - [ ] **FCC Fast Simulation and Analysis**
+            - [ ] [FCC Delphes Tutorial](https://github.com/HEP-FCC/fcc-tutorials/blob/main/fast-sim-and-analysis/k4simdelphes/doc/starterkit/FccFastSimDelphes/Readme.md) - Fast simulation with Delphes
+            - [ ] [FCCAnalyses Framework Problems and Solutions](https://hep-fcc.github.io/fcc-tutorials/main/fast-sim-and-analysis/FCCAnalysesProblemsAndSolutions.html) - Common issues and fixes
+- [ ] **Phase 6: Experiment-Specific Frameworks**
+    - [ ] **ATLAS Athena Framework**
+        - [ ] [Athena Introduction](https://atlas-software.docs.cern.ch/athena/basics/intro/) - Framework basics
+        - [ ] [ATLAS Software Documentation](https://atlassoftwaredocs.web.cern.ch/) - Complete documentation portal
+        - [ ] [ATLAS Analysis Software Tutorial](https://atlassoftwaredocs.web.cern.ch/analysis-software/ABtutorial/) - Hands-on xAOD analysis
+        - [ ] [Athena I/O and xAOD EDM](https://atlas-software.docs.cern.ch/athena/io/) - Data format and event data model
+        - [ ] [Athena Releases Documentation](https://atlas-software.docs.cern.ch/athena/developers/releases/) - Version management
+- [ ] **Phase 7: Practical Application with Real Data**
+    - [ ] **CERN Open Data**
+        - [ ] [CERN Open Data Portal](https://opendata.cern.ch/) - Main repository for open datasets
+        - [ ] [CMS Open Data Guide for Education](https://opendata.cern.ch/docs/cms-guide-for-education) - Educational resources
+        - [ ] [CMS HEP Tutorial](https://opendata.cern.ch/record/50) - One-week course with real CMS data
+        - [ ] [ATLAS Open Data](https://atlas.cern/Resources/Opendata) - ATLAS open data resources
+        - [ ] [Higgs Discovery Example](https://github.com/cms-opendata-analyses/HiggsExample20112012) - Re-discover the Higgs boson
+        - [ ] [About CMS Open Data](https://opendata.cern.ch/docs/about-cms) - Understanding CMS data formats
+        - [ ] [About ATLAS Open Data](https://opendata.cern.ch/docs/about-atlas) - Understanding ATLAS data formats
+- [ ] **Phase 8: Community Training and Best Practices**
+    - [ ] **HEP Software Foundation Training**
+        - [ ] [HSF Training Center](https://hepsoftwarefoundation.org/) - Central hub for HEP software training
+        - [ ] [HSF Training GitHub](https://github.com/hsf-training) - All training modules and materials
+        - [ ] [HSF/IRIS-HEP Software Basics Training](https://indico.cern.ch/event/1516608/) - Unix, Git, Python fundamentals
+        - [ ] [IRIS-HEP Training Program](https://iris-hep.org/ssc.html) - Complete training vision
+    - [ ] **Software Engineering for Physicists**
+        - [ ] [C++ in Particle Physics Guide](https://www.numberanalytics.com/blog/ultimate-guide-cpp-particle-physics) - Best practices overview
+        - [ ] [Introduction to C++ for Particle Physicists](https://www.whbell.net/resources/HepCppIntro/) - Course with HEP examples
+        - [ ] [C++ Programming for Physicists (PDF)](https://www.whbell.net/resources/HepCppIntro/HepCppIntroGuide-2009-06-03.pdf) - Comprehensive guide
+        - [ ] [Education and Training for Software Developers in Particle Physics](https://link.springer.com/article/10.1007/s41781-020-00046-8) - Pedagogical perspectives
+- [ ] **Phase 9: Advanced and Specialized Topics**
+    - [ ] **Advanced ROOT Features**
+        - [ ] [ROOT Data Analysis Framework](https://root.cern/manual/) - RDataFrame, advanced histograms, fitting
+        - [ ] [TMVA SOFIE](https://root.cern/manual/tmva/) - Fast inference for neural networks
+    - [ ] **Advanced Statistical Concepts**
+        - [ ] [Statistical Methods Lecture Notes (Glen Cowan PDF)](https://people.sc.fsu.edu/~sshanbhag/Cowan_Statistics.pdf) - Advanced statistical concepts

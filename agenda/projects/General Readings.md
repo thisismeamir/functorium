@@ -1,0 +1,16 @@
+- [ ] Monthly Mathematics Topic: **Homotopy Type Theory: Univalent Foundations**
+	- [ ] Reading Type Theory Chapter [due:: 2026-02-17] 
+	- [ ] Reading Homotopy Type Theory Chapter [due:: 2026-03-10] 
+- [ ] Programming Language Design and Implementation [due:: 2026-03-10] 
+	- [x] Chapter 1: A Brief History of Programming Languages
+	- [x] Chapter 2: Implementation Strategies
+	- [ ] Chapter 3: Syntax 
+	- [ ] Chapter 4: Memory Management
+	- [ ] Chapter 5: Scopes, Functions, and Parameter Passing
+	- [ ] Chapter 6: Control Sequences
+	- [ ] Chapter 7: Types
+	- [ ] Chapter 8: Modularization
+	- [ ] Chapter 9: Language Paradigms
+	- [ ] Chapter 10: Domain Specific Programming Languages
+	- [ ] Chapter 11: Specifying the Semantics of a Programming Languages
+	- [ ] Chapter 12: Exploring the Limits

@@ -1,3 +1,4 @@
+- [ ] (priority:: highest) Learning Schwarzschil Metric and propoerties. Derivation and more.
 - [ ] **Part I: Mathematical Methods for General Relativity**
   - [ ] **Linear Algebra** [completion:: 2026-03-29]
     - [ ] **Model of Linear Algebra**

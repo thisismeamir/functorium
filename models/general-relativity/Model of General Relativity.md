@@ -31,4 +31,5 @@ This model can be read on its own, but it is suggested that we have a look at ot
 		- [[atoms/Parallel Transportation]]
 		- [[atoms/Geodesics]]
 	- [[List of Solutions to Einstein Equations]]
+		- [[Schwarzschild Solution]]
 #model 

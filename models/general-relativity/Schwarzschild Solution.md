@@ -20,3 +20,11 @@ Notable features of this line element include:
 One additional reason why this line element is so special is that [[Birkhoff's Theorem]] tells us that any spherically symmetric solution to the Einstein equation outside a gravitating object, will be identical to Schwarzschil'd static solution.
 
 # Construction and Structural Understanding
+
+The solution of Schwarzschild is a solution in vacuum therefore, the stress-energy tensor in Einstein's Field Equation should be set to zero:
+
+$$
+T^{\mu\nu}=0
+$$
+Which implies Ricci tensor being zero as well:
+

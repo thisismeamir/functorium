@@ -27,5 +27,10 @@ We start by assuming the the metric field $g$ is static.
 
 - [[Static, Stationary and More]]
 
-This means that intervals between events are time independent and so components obe
+This means that intervals between events are time independent and so components obey
 
+$$
+\mathrm{d}g_{\alpha \beta} / \mathrm{d}t = 0.
+$$
+
+We also assume that the spherical symmetry means that world lines of constant $r$, $\theta$ and $\phi$ are orthogonal to $t=S$

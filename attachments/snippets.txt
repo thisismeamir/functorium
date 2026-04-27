@@ -594,7 +594,7 @@
 	{trigger: "checkmark", replacement: "\\checkmark", options: "mA"},
 	{trigger: "smiley", replacement: "\\smiley", options: "mA"},
 	{trigger: "frown", replacement: "\\frown", options: "mA"},
-
+    {trigger: "const.", replacement:"\\text{const.}", options: "mA"},
     // ====================
     // ENVIRONMENTS
     // ====================

@@ -28,3 +28,29 @@ T^{\mu\nu}=0
 $$
 Which implies Ricci tensor being zero as well:
 
+$$
+\begin{align}
+
+G_{\mu \nu}  & = 0 \\
+R_{\mu \nu} - \frac{1}{2}g_{\mu \nu}R  & = 0 \\
+g^{\mu \nu}R_{\mu \nu} &  = \frac{1}{2} g^{\mu \nu}g_{\mu \nu}R \\
+R  & =2R \\
+ \therefore R  & =0
+\end{align}
+$$
+
+## The Metric Ansatz
+
+Now we need to write down the most general case of a metric that is static and spherically symmetric and derive our solution from it. If the metric is to be spherically symmetric it means that it cannot depend on the values of $\theta,$ and $\phi$.  Also if the metric is to be static it cannot depend on time. 
+
+With this deduction the only coordinate left is the radius (assuming that we are speaking in the spherical coordinates). The Ansatz we put is the following:
+
+$$
+\mathrm{d}s^{2} = -e^{ 2\Phi } \mathrm{d}t^{2} + e^{ 2\Lambda }\mathrm{d}r^{2} + r^{2} (\mathrm{d}\Omega^{2}).
+$$
+
+Some key points to note of:
+
+1. The exponential parameterization is a choice to make sure that the signature doesn't change.
+2. We've already used coordinate freedom to set $g_{\theta \theta}= r^{2}$ (this is the definition of the areal radius $r$).
+3. We've 

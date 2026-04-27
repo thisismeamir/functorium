@@ -46,11 +46,13 @@ Now we need to write down the most general case of a metric that is static and s
 With this deduction the only coordinate left is the radius (assuming that we are speaking in the spherical coordinates). The Ansatz we put is the following:
 
 $$
-\mathrm{d}s^{2} = -e^{ 2\Phi } \mathrm{d}t^{2} + e^{ 2\Lambda }\mathrm{d}r^{2} + r^{2} (\mathrm{d}\Omega^{2}).
+\mathrm{d}s^{2} = -e^{ 2\alpha } \mathrm{d}t^{2} + e^{ 2\beta }\mathrm{d}r^{2} + r^{2} (\mathrm{d}\Omega^{2}).
 $$
 
 Some key points to note of:
 
 1. The exponential parameterization is a choice to make sure that the signature doesn't change.
 2. We've already used coordinate freedom to set $g_{\theta \theta}= r^{2}$ (this is the definition of the areal radius $r$).
-3. We've 
+3. We've also used symmetry to eliminate the $\mathrm{d}t\mathrm{d}r$ cross term.
+
+Spherical symmetry means the metric is invariant under the action of $SO(3)$. If $\alpha = \alpha(t,r,\theta,\phi)$ then a rotation would map $\alpha \to \alpha'$, which means the metric changes.

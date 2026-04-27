@@ -33,4 +33,4 @@ $$
 \mathrm{d}g_{\alpha \beta} / \mathrm{d}t = 0.
 $$
 
-We also assume that the spherical symmetry means that world lines of constant $r$, $\theta$ and $\phi$ are orthogonal to $t=S$
+We also assume that the spherical symmetry means that world lines of constant $r$, $\theta$ and $\phi$ are orthogonal to $t=$

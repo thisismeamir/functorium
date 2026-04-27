@@ -19,18 +19,4 @@ Notable features of this line element include:
 - It appears badly behaved at the origin, and also when $r=2M$, where the second term becomes singular.
 One additional reason why this line element is so special is that [[Birkhoff's Theorem]] tells us that any spherically symmetric solution to the Einstein equation outside a gravitating object, will be identical to Schwarzschil'd static solution.
 
-# Getting There
-
-## Justifications And Assumptions
-
-We start by assuming the the metric field $g$ is static.
-
-- [[Static, Stationary and More]]
-
-This means that intervals between events are time independent and so components obey
-
-$$
-\mathrm{d}g_{\alpha \beta} / \mathrm{d}t = 0.
-$$
-
-We also assume that the spherical symmetry means that world lines of constant $r$, $\theta$ and $\phi$ are orthogonal to $t=$
+# Construction and Structural Understanding

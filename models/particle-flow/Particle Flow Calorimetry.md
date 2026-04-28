@@ -15,5 +15,11 @@ In order to fully exploit particle flow calorimetry, the confusion must be reduc
 
 In terms of the hardware, accurate inner detector tracking is vital, alongside calorimeters that can longitudinally separate electromagnetic and hadronic showers.
 
+### ECAL
+
 The ECAL must therefore have a large ratio of radiation length to nuclear interaction length. Its Moliere radius must also be small, in order to reduce the transverse spread of electromagnetic showers and aid the separation of photons from nearby charged hadrons. ***The transverse and longitudinal sampling in the ECAL must be sufficient to allow separate clustering and identification of electromagnetic showers by the particle flow algorithms.***
+
+### HCAL
+
+The HCAL must offer longitudinal and transverse segmentation, sufficient to allow separation of neutral hadrons from nearby charged particles. **The HCAL should also aim to fully contain hadronic showers, so a small nuclear interaction length is desirable.** It will be a rather large component of the detector, so its cost and structural properties are also of importance.
 

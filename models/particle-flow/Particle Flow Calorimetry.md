@@ -8,3 +8,6 @@ It is this confusion that is the limiting factor for the particle flow calorimet
 
 - Failure to resolve neutral particles (photons or neutral hadrons) from nearby charged hadrons will result in loss of energy. The energy deposit of the neutral particle will be added to those of the charged particle, but the charged particle four-vector will be reconstructed using measurements from the inner detector tracker.
 - Failure to associate all the calorimeter energy deposits from a charged particle with correct inner detector track will lead to double counting of energy. The unassociated calorimeter energy  deposits will be used to create a fake neutral particle, whilst the track will still be used to provide the four-vector for the true charged particle.
+
+In order to fully exploit particle flow calorimetry, the confusion must be reduced to the lowest possible level. This places constraints on both the calorimeter hardware and the software pattern recognition algorithms.
+

@@ -401,4 +401,5 @@ around.
 
 - [ ] **Phase 1**: Preliminaries
 	- [ ] **Proposal Development**: Write the official proposal with planning and explanation of the project in mind.
+		- [ ] Just an abstract would suffice for now.
 	- [ ] **Preliminaries**: Reading important review papers on the topic, running basic implementation of ENTERPRISE and PTArcade.

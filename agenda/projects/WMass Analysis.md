@@ -1,1 +1,4 @@
-- [ ] **Meeting With David and Matteo**
+- [x] **Meeting With David and Matteo**
+- [ ] Correct the Jet Matching Algorithms Using ROOT
+	- [ ] Consult on matching algorithm.
+- [ ] Do Crystalball fitting with ROOfit

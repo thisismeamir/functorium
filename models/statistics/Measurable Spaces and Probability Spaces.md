@@ -23,3 +23,26 @@ $$
 A \cup B = \bigcup_{n=1}^{\infty} C_{n} \in \mathcal{F}
 $$
 Obviously $\Omega, \emptyset \in \mathcal{F}$ since by definition $A, A^{c}\in \mathcal{F}$ and so it $A \cup A^{c}= \Omega$ and thus so is the complement of $\Omega$, which is the empty set.
+
+We also note that the finite or countable intersection of elements of a $\sigma$-algebra $\mathcal{F}$ belongs to it as well. In fact if $(A_{n})$ is a finite or countable family in $\mathcal{F}$, combining the properties above get us:
+
+$$
+\bigcap_{n} A_{n} = \left( \bigcup_{n} A_{n}^{c} \right)^{c} \in \mathcal{F}
+$$
+as a consequence, we say that $\mathcal{F}$ is $\cap$-closed and $\sigma$-$\cap$-closed.
+
+## Measure
+
+**Definition:** A measure on the measurable space $(\Omega,\mathcal{F})$ is a function:
+
+$$
+\mu:\mathcal{F}\to [0,+\infty]
+$$
+
+such that:
+- $\mu(\emptyset) =0$
+- $\mu$ is $\sigma$-additive on $\mathcal{F}$, that is, for every sequence $(A_{n})_{n \in \mathbb{N}}$ of disjoint elements of $\mathcal{F}$ we have:
+
+$$
+\mu \left( \bigcup_{n=1}^{\infty} A_{n} \right)= \sum _{n=1}^{\infty}\mu(A_{n}). 
+$$

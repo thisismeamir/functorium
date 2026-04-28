@@ -38,3 +38,29 @@ I've had an idea here about some new mathematical theory:
 
 ---
 
+**Remark:** In a discrete probability space, consider the function:
+
+$$
+p: \Omega \to[0,1], p(\omega) = P(\{ \omega\}), \omega \in \Omega
+$$
+It is clear that $p$ is a non-negative function that has the property
+
+$$
+\sum _{\omega \in \Omega}p(\omega)= \sum _{\omega \in \Omega}P(\{ \omega \}) = P(\Omega) =1
+$$
+Note that the sums in this equation are series without non-negative terms and therefore, their value does not depend on the order of the addends. The second quality in it is a consequence of the $\sigma$-additivity of $P$.
+
+In fact, there is a bijective relationship between $p$ and $P$ in the sense that, given any non-negative function $p$ such that $\sum _{\omega \in \Omega}p(\omega)=1$, and setting:
+$$
+P(A)\coloneqq\sum _{\omega \in A}p(\omega), A\subseteq \Omega
+$$
+then $P$ is a discrete probability on $\Omega$.
+*In other words, a discrete probability is uniquely defined by the probabilities of individual elementary events.*
+
+---
+
+## Negligible and Almost Certain Sets
+
+**Definition:** In a probability space, we say that:
+- A subset $N$ of $\Omega$ is negligible for $P$ if $N\subseteq A$ with $A\in \mathcal{F}$ such that $P(A)=0$;
+- A subset $C$ of $\Omega$ is almost certain for $P$ if its complement is negligible or, equivalently, if there exists $B\in \mathcal{F}$ such that $B\subseteq C$ and $P(B)=1$.

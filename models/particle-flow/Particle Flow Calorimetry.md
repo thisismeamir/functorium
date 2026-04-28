@@ -23,3 +23,6 @@ The ECAL must therefore have a large ratio of radiation length to nuclear intera
 
 The HCAL must offer longitudinal and transverse segmentation, sufficient to allow separation of neutral hadrons from nearby charged particles. **The HCAL should also aim to fully contain hadronic showers, so a small nuclear interaction length is desirable.** It will be a rather large component of the detector, so its cost and structural properties are also of importance.
 
+---
+
+Fine granularity particle flow calorimetry lives or dies on the quality

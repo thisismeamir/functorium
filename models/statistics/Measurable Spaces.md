@@ -1,4 +1,4 @@
-# Measurable Spaces and Probability Spaces
+# Measurable Spaces
 
 Probability theory studies phenomena whose outcome is uncertain: these are called *random phenomena*. Trivial examples can be:
 
@@ -45,4 +45,16 @@ such that:
 
 $$
 \mu \left( \bigcup_{n=1}^{\infty} A_{n} \right)= \sum _{n=1}^{\infty}\mu(A_{n}). 
+$$
+
+**Remark:** Every measure $\mu$ is additive in the sense that, for every *finite* family $(A_{n})_{n \in \mathbb{N}}$ of disjoint sets in $\mathcal{F}$ we have:
+
+$$
+\mu \left( \bigcup_{k=1}^{n}A_{k} \right) = \sum _{k=1}^{n}\mu (A_{k})
+$$
+
+**Definition:** A measure $\mu$ on a measurable space $(\Omega, \mathcal{F})$ is said to be finite if $\mu(\Omega)<\infty$ and is said to be $\sigma$-finite if there exists a sequence $(A_{n})$ in $\mathcal{F}$ such that:
+
+$$
+\Omega = \bigcup_{n \in \mathbb{N}}A_{n} \text{ and } \mu(A_{n})< +\infty, n \in \mathbb{N}
 $$

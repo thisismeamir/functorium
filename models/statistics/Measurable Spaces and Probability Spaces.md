@@ -22,4 +22,4 @@ This is therefore, the reason that the toolkit of probability theory would be me
 $$
 A \cup B = \bigcup_{n=1}^{\infty} C_{n} \in \mathcal{F}
 $$
-Obviously $\Omega, \emptyset \in \mathcal{F}$ since by definition $A, A^{c}\in \mathcal{F}$ and so it $A \cup A^{c}$
+Obviously $\Omega, \emptyset \in \mathcal{F}$ since by definition $A, A^{c}\in \mathcal{F}$ and so it $A \cup A^{c}= \Omega$ and thus so is the complement of $\Omega$, which is the empty set.

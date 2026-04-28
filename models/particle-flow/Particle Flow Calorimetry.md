@@ -11,3 +11,9 @@ It is this confusion that is the limiting factor for the particle flow calorimet
 
 In order to fully exploit particle flow calorimetry, the confusion must be reduced to the lowest possible level. This places constraints on both the calorimeter hardware and the software pattern recognition algorithms.
 
+## Hardware
+
+In terms of the hardware, accurate inner detector tracking is vital, alongside calorimeters that can longitudinally separate electromagnetic and hadronic showers.
+
+The ECAL must therefore have a large ratio of radiation length to nuclear interaction length. Its Moliere radius must also be small, in order to reduce the transverse spread of electromagnetic showers and aid the separation of photons from nearby charged hadrons. ***The transverse and longitudinal sampling in the ECAL must be sufficient to allow separate clustering and identification of electromagnetic showers by the particle flow algorithms.***
+

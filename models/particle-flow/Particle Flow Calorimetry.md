@@ -23,6 +23,12 @@ The ECAL must therefore have a large ratio of radiation length to nuclear intera
 
 The HCAL must offer longitudinal and transverse segmentation, sufficient to allow separation of neutral hadrons from nearby charged particles. **The HCAL should also aim to fully contain hadronic showers, so a small nuclear interaction length is desirable.** It will be a rather large component of the detector, so its cost and structural properties are also of importance.
 
----
+## Software
 
-Fine granularity particle flow calorimetry lives or dies on the quality
+Fine granularity particle flow calorimetry lives or dies on the quality of the reconstruction of its particles. High performance software is required, in terms of algorithm sophistication, with reliable implementation, and in terms of the CPU and memory usage. 
+
+The algorithm must be able to exploit the granularity of the calorimeters, whilst making very few mistakes and processing events quickly. The most sensible approach is to implement a large number of *decoupled* pattern-recognition algorithms, each of which looks to reconstruct specific particle topologies, whilst carefully avoiding causing confusion.
+
+The fact that we need to write a large number of algorithms, motivates us to proceed for a central software framework, which can take care of memory management and book-keeping issues, allowing each algorithm to remain simple and focused on its particular pattern-recognition task.
+
+[[Pandora Algorithm]]

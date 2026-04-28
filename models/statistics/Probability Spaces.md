@@ -31,3 +31,10 @@ $$
 P(\{ \omega \})=\frac{1}{|\Omega|}, \omega \in \Omega
 $$
 that is, each outcome is equiprobable. The uniform probability corresponds to the classical concept of probability according to Laplace.
+
+
+I've had an idea here about some new mathematical theory:
+- [[Equipobabilization of Distributions]]
+
+---
+

@@ -1,5 +1,5 @@
 - [ ] **Phase 1:** Deployment
-	- [ ] **Setting Up the Environment**: Setup the backend and a development database on lxplus and my computer to work on it. (due:: 2026-04-27) #code #ep-fcc #cern 
+	- [x] **Setting Up the Environment**: Setup the backend and a development database on lxplus and my computer to work on it. (due:: 2026-04-27) #code #ep-fcc #cern
 	- [ ] **Understanding the Database**: Understand the backend code especially the parts related to the database data and how are we talking to the database.(due:: 2026-04-27) #code #ep-fcc #cern
 - [ ] **Phase 2:** API Design
 	- [ ] **Understand core requirements of our API**: Work with Juraj Michele and possibly a survey to understand the needs of users on what type of queries might be the most needed.

@@ -64,3 +64,12 @@ then $P$ is a discrete probability on $\Omega$.
 **Definition:** In a probability space, we say that:
 - A subset $N$ of $\Omega$ is negligible for $P$ if $N\subseteq A$ with $A\in \mathcal{F}$ such that $P(A)=0$;
 - A subset $C$ of $\Omega$ is almost certain for $P$ if its complement is negligible or, equivalently, if there exists $B\in \mathcal{F}$ such that $B\subseteq C$ and $P(B)=1$.
+
+We denote by $\mathcal{N}$ the family of negligible sets in $(\Omega, \mathcal{F},P)$.
+
+Negligible sets and almost certain sets are not necessarily events and therefore in general the probability $P(N)$ is not defined for $N$ negligible of almost certain.
+
+**Definition:** A probability space $(\Omega, \mathcal{F}, P)$ is complete if $\mathcal{N}\subseteq \mathcal{F}$.
+**Remark:** In a complete probability space $N$ and $C$ are events therefore we can say:
+- $N$ is negligible if and only if $P(N)=0$;
+- $C$ is almost certain if and only if $P(C)=1$.

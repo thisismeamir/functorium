@@ -1,3 +1,6 @@
+---
+sticker: lucide//atom
+---
 The flow of ideas between logic and computer science has not been unidirectional: Computer science has also made important contributions to logic, one of which is the development of software tools for helping construct proofs of logical propositions. These tools fall into two broad categories:
 
 - ***Automated Theorem Provers***: provide "push-button" operations: you give them a proposition and they run and return either true or false (and sometimes don't know and out of time). Although their reasoning capabilities are still limited, they have matured tremendously in recent decades and are used now in a multitude of settings.

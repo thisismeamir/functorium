@@ -1,3 +1,6 @@
+---
+sticker: lucide//atom
+---
 
 After Einstein wrote down the field equation of general relativity he did not expect it to admit exact solutions owning to its complexity. He himself used an approximate solution in his 1915 article about the perihelion of Mercury. 
 

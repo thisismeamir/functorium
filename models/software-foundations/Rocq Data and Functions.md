@@ -1,6 +1,7 @@
 ---
 aliases:
   - "Rocq: Data and Functions"
+sticker: lucide//atom
 ---
 # Data and Functions
 

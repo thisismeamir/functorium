@@ -1,3 +1,6 @@
+---
+sticker: lucide//atom
+---
 # Functional Programming
 
 The term _functional programming_ refers both to a collection of programming idioms that can be used in almost any programming language and to a family of programming languages designed to emphasize these idioms, including Haskell, OCaml, Standard ML, F#, Scala, Scheme, Racket, Common Lisp, Clojure, Erlang, F*, and Rocq.

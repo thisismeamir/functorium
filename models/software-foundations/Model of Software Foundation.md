@@ -1,3 +1,6 @@
+---
+sticker: lucide//hash
+---
 # Overview
 
 Building reliable software is hard -- really hard. The scale and complexity of modern systems, the number of people involved, and the range of demands placed on them make it challenging to build software that is even more-or-less correct, much less than 100% correct. At the same time, the increasing degree to which information processing is woven into every aspect of society greatly amplifies the cost of bugs and insecurities.

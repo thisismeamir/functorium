@@ -15,7 +15,7 @@ On the other hand, only relatively recently the different nature of such questio
 
 When approaching the study of Probability for the first time, confusion and misunderstandings may arise from not adequately distinguishing the different approaches (philosophical, statistical, and mathematical). It is thus important to notice the approach in any content in this model
 
-- [[Measure]]
+- [[Measurable Spaces and Probability Spaces]]
 
 Outdated Atoms:
 - [[atoms/Basics of Probability |Basics]]

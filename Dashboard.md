@@ -24,10 +24,3 @@ FROM "agenda/projects"
 WHERE !completed
 GROUP BY file.name
 ```
-## All Todo
-
-```dataview
-TASK  
-FROM ""  
-WHERE !completed
-```

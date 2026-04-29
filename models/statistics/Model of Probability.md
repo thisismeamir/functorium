@@ -25,3 +25,5 @@ Outdated Atoms:
 - [[atoms/Many Random Variables|Many Random Variables]]
 
 - [[Philosophy of Probability]]
+
+#model

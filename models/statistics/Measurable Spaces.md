@@ -1,3 +1,6 @@
+---
+sticker: lucide//atom
+---
 # Measurable Spaces
 
 Probability theory studies phenomena whose outcome is uncertain: these are called *random phenomena*. Trivial examples can be:

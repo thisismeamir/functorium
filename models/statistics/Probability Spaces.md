@@ -1,3 +1,6 @@
+---
+sticker: lucide//atom
+---
 # Probability
 
 **Definition:** A measure space $(\Omega, \mathcal{F}, \mu)$ in which $\mu(\Omega)=1$ is called a ***probability space***: in this case, we usually use the letter $P$ instead of $\mu$ and say that $P$ is a probability measure.

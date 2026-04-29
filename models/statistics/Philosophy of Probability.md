@@ -12,3 +12,5 @@ In this model we examine the philosophical arguments, analysis and development o
 - [[Cox Theorem]]
 - [[Subjective Probability]]
 - [[atoms/Objective Probability]]
+
+#model

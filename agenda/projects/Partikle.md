@@ -18,7 +18,17 @@ Another key factor of Partikle is a rich expressiveness as an outcome, instead o
 ```kotlin
 val simulation =  Simulation {
 	val beam = beamOf(Electron)
-	  .withEnergies { 10.GeV }
+		.forEach {
+			it.setEnergy(10.GeV)
+		}
 	val detector = CLCD
 }
+
+simulation.run()
+	.output("somewhere/on/the/disk")
+
+simulation.getHCALHits()
+	.plot()
 ```
+
+This way we ensure an easy way to experiment different ideas.

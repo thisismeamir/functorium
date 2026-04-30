@@ -1,6 +1,6 @@
-- [ ] Reading List should be made from the books and stuff.
+- [x] Reading List should be made from the books and stuff.
 - [ ] **Probability Theory I Book**
-	- [ ] Measurable spaces and Probability spaces
+	- [x] Measurable spaces and Probability spaces
 	- [ ] Finite spaces and Counting Problems
 	- [ ] Conditional Probability and Independence of Events
 	- [ ] Distributions

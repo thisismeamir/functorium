@@ -25,3 +25,13 @@ When we have a basis for a topology it is sufficient and often easier to check c
 
 Let $X$ and $Y$ be topological spaces and let $\mathcal{B}$ be a basis for $Y$. A map $f:X\to Y$ is continuous if and only if for every basis subset $B \in \mathcal{B}$, the subset $f^{-1}(B)$ is open in $X$.
 
+
+# Defining a Topology from a Basis
+
+It is often convenient to define a topology on $X$ by staring with some distinguished open subsets, and then defining all the other open subsets as unions of these. 
+
+> 
+> This is exactly how open subsets of a metric space are defined; first, the open balls are defined in terms of the metric, and then general open subsets are defined in terms of the open balls. In other words, we started with a basis, and used that to define the topology.
+> 
+
+But not every collection of sets can be a basis for a topology. Therefore we give the following proposition:

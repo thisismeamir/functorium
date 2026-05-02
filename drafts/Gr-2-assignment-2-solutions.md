@@ -122,4 +122,18 @@ $$
 \tau(E)=\int _{0}^{2GM} \frac{\mathrm{d}r}{\sqrt{ E^{2}-1+ \frac{2GM}{r} }}
 $$
 
-Obviously the denominator here is larger and thus the integration would be smaller. Therefore, for by monotonicity of integration
+Obviously the denominator here is larger and thus the integration would be smaller. Therefore, for by monotonicity of integration (Monotonicity refers to a function consistently increasing or decreasing across its domain without reversing direction) we have:
+
+$$
+\tau(E) < \tau(E=0)=\pi GM, \forall E > 0
+$$
+Our final work would be to turn this into the SI units and calculate for a mass measured in solar masses.
+
+$$
+\tau_{\max}= \pi GM / c^{3}
+$$
+and numerical calculations (of course with a calculator) would reveal:
+
+$$
+\tau_{\max} \approx 1.55 \times 10^{-5} \left( \frac{M}{M_{\odot}} \right) \sec. 
+$$

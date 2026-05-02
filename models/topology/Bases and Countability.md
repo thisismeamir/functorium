@@ -49,6 +49,4 @@ Whereas [[atoms/Hausdorff Space|Hausdorff Space]]property ensures that a topolog
 
 There are actually several countability properties that are useful. We begin with the weakest one. If $X$ is a topological space and $p \in X$, a collection $\mathcal{B}_{p}$ of neighborhoods of $p$ is called a neighborhood basis for $X$ at $p$ if every neighborhood of $p$ contains some $B \in \mathcal{B}_{p}$. We say that $X$ is first countable it there exists a countable neighborhood basis at each point.
 
-## First-Countable Space
-
-A First-cou
+- [[Countability]]

@@ -137,3 +137,5 @@ and numerical calculations (of course with a calculator) would reveal:
 $$
 \tau_{\max} \approx 1.55 \times 10^{-5} \left( \frac{M}{M_{\odot}} \right) \sec. 
 $$
+# 2
+

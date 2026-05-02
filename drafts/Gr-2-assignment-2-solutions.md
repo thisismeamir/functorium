@@ -156,6 +156,26 @@ $$
 \Gamma^{1}_{22} & =-e^{-2\beta(r)}r \\
 \Gamma^{1}_{33} & = -e^{-2\beta(r)}r\sin ^{2} \theta \\
 \Gamma^{2}_{21} & = \frac{1}{r} \\
+\Gamma^{2}_{33} & =-\cos \theta \sin \theta \\
+\Gamma^{3}_{13} & =\frac{1}{r} \\
+\Gamma^{3}_{23} & =\cot \theta \\
+\end{align}
+$$
+And their symmetric counter-parts (Calculated using xAct Mathematica). The next to compute is the Ricci tensor. For them we have only four diagonal components that are non-zero:
 
+$$
+\begin{align}
+R_{00}  & = \left[ e^{2\alpha-2\beta}\left( r \alpha'^{2}+\alpha'(2-r\beta')+r\alpha^{\prime\prime} \right)  \right] /r \\
+R_{11} & = -\alpha'^{2}+ \frac{2\beta'}{r}+\alpha'\beta'-\alpha^{\prime\prime}  \\
+R_{22} & = e^{-2\beta}\left( -1+e^{2\beta}-r \alpha'+r\beta' \right) \\
+R_{33} & = e^{-2\beta}\sin ^{2}\theta \left( -1+e^{2\beta}-r \alpha'+r\beta' \right)
+\end{align}
+$$
+Now we take a step back to EFEs. As one can easily derive:
+
+$$
+\begin{align}
+0 & = G_{\mu \nu}+\Lambda g_{\mu \nu} \\
+ & = 
 \end{align}
 $$

@@ -260,5 +260,32 @@ Matching Schwarzschild at $\Lambda=0$ requires $C_{1}=-2GM$. Thus:
 $$
 f(r) =1 -  \frac{2GM}{r} - \frac{\Lambda r^{3}}{e} 
 $$
-This is the Schwarzschil-de Sitter Metric.
+This is the Schwarzschil-de Sitter Metric. QED.
 
+---
+
+The Killing vectors give conserved energy $E$ and angular momentum $L$:
+$$
+E = f(r)\dot{t},\ \  L =r^{2}\dot{\phi}.
+$$
+The norm condition, restricted to $\theta = \frac{\pi}{2}$ for simplicity:
+
+$$
+ -f \dot{t}^{2} + f^{-1}\dot{r}^{2}+r^{2}\dot{\phi}^{2}=-\epsilon
+$$
+Where the right hand side is $0$ for massless and $-1$ for massive particles. Substituting the equations we have for energy and angular momentum:
+
+$$
+\dot{r}^{2}=E^{2}-f(r) \left( \epsilon + \frac{L^{2}}{r^{2}} \right) 
+$$
+Writing this as 
+
+$$
+\frac{1}{2}\dot{r}^{2}+V_{\text{eff}}=\frac{E^{2}}{2}
+$$
+
+We would have
+
+$$
+V_{\text{eff}}(r)= \frac{1}{2} f(r) \left( \epsilon+ \frac{L^{2}}{r^{2}} \right)= \frac{1}{2}\left( 1- \frac{2GM}{r}- \frac{\Lambda r^{3}}{3} \right)    \left( \epsilon+ \frac{L^{2}}{r^{2}} \right).
+$$

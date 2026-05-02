@@ -139,3 +139,9 @@ $$
 $$
 # 2
 
+We first start to solve the Einstein Field Equations for he general spherically symmetric metric. The most general spherically symmetric line element is
+
+$$
+\mathrm{d}s^{2}= -e^{2\alpha}\mathrm{d}t^{2}+e^{2\beta}\mathrm{d}r^{2}+r^{2}\mathrm{d}\theta + r^{2}\sin ^{2} \theta \mathrm{d}\phi^{2}
+$$
+	where $\alpha$ and $\beta$ are functions of $r$

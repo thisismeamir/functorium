@@ -72,5 +72,34 @@ QED.
 The Schwarzschild metric has a Killing vector $\xi^{\mu}=(1,0,0,0)$. The conserved quantity along a geodesic is:
 
 $$
-E =-g_{\mu n}
+E =-g_{\mu \nu}\xi^{\mu}\dot{x}^{\nu}= -g_{tt} \dot{t} = \left( 1 - \frac{2GM}{r} \right) \dot{t}.
+$$
+Which is the energy. We set the angular velocity component to zero because of the symmetry of our metric, thus we are with the norm condition below:
+
+$$
+-f \dot{t}^{2} +f^{-1} \dot{r}^{2}=-1;
+$$
+Substituting the conserved quantity (first solving for the time velocity component and then replacing it to the norm) we get
+
+$$
+-f \cdot \frac{E^{2}}{f^{2}} +f^{-1}\dot{r}^{2}=-1
+$$
+Solving this for $\dot{r}$ and noticing that $f$ won't be zero so we can cancel it in the left hands first term we have:
+
+$$
+\dot{r}^{2} = E^{2}-1 + \frac{2GM}{r}
+$$
+
+We then take $E\to0$, which exactly saturates the lower bound we found earlier.
+
+Let's evaluate $\tau_{\text{max}}$, using the constraint we found earlier and integrating the component to find $\tau$,
+
+$$
+\tau_{\text{max}} = \int _{0}^{2GM} \frac{\mathrm{d}r}{\sqrt{ \frac{2GM}{r} -1 }}
+$$
+
+I'll be using Mathematica for the dirty works of the calculations here, the indefinite integral would yield:
+
+$$
+- \sqrt{ -1 + \frac{2GM}{r} } r -2GM
 $$

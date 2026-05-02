@@ -144,4 +144,18 @@ We first start to solve the Einstein Field Equations for he general spherically 
 $$
 \mathrm{d}s^{2}= -e^{2\alpha}\mathrm{d}t^{2}+e^{2\beta}\mathrm{d}r^{2}+r^{2}\mathrm{d}\theta + r^{2}\sin ^{2} \theta \mathrm{d}\phi^{2}
 $$
-	where $\alpha$ and $\beta$ are functions of $r$
+where $\alpha$ and $\beta$ are functions of $r$.
+
+The nonzero Christoffel symbols are as follows:
+
+$$
+\begin{align}
+\Gamma^{0}_{01} & =\alpha'(r) \\
+\Gamma^{1}_{00} & = e^{2\alpha(r)-2\beta(r)} \alpha'(r) \\
+\Gamma^{1}_{11} & = \beta'(r) \\
+\Gamma^{1}_{22} & =-e^{-2\beta(r)}r \\
+\Gamma^{1}_{33} & = -e^{-2\beta(r)}r\sin ^{2} \theta \\
+\Gamma^{2}_{21} & = \frac{1}{r} \\
+
+\end{align}
+$$

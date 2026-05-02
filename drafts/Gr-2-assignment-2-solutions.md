@@ -203,4 +203,18 @@ R_{33}=\Lambda g_{33} & \to \Lambda r^{2}=e^{-2\beta}\left( -1 + e^{2\beta}-r \a
 $$
 The last two equations are the same therefore we would use only one from now on. It is obviously expected and nothing to be worried about.
 
-It is possible to derive some constraints from these equations.
+It is possible to derive some constraints from these equations. Take the first two equations, obviously:
+
+$$
+-e^{2\alpha}\Lambda=e^{2\alpha-2\beta}\left( \alpha'^{2}+\frac{2\alpha'}{r}-\alpha'\beta'+\alpha^{\prime\prime} \right) 
+$$
+can be written:
+
+$$
+-\Lambda\equiv e^{-2\beta}\left( \alpha'^{2}+\frac{2\alpha'}{r}-\alpha'\beta'+\alpha^{\prime\prime} \right) 
+$$
+and for the second one multiplying by $e^{-2\beta}$ would transform it to:
+
+$$
+
+$$

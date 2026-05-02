@@ -197,6 +197,10 @@ $$
 \begin{align}
 R_{00}= \Lambda g_{00}  & \to -\Lambda = e^{-2\beta}\left( r\alpha'^{2}+\alpha'(2-r\beta')+r\alpha^{\prime\prime} \right) / r \\
 R_{11}= \Lambda g_{11} & \to e^{2\beta}\Lambda = -\alpha'^{2}+ \frac{2\beta'}{r}+\alpha'\beta'-\alpha^{\prime\prime} \\
-R_{22}=\Lambda g_{22} & \to \Lambda r^{2}=e^{-2\beta}\left( -1 e^{2\beta}-r\alpha' +\beta'\right)
+R_{22}=\Lambda g_{22} & \to \Lambda r^{2}=e^{-2\beta}\left( -1+ e^{2\beta}-r\alpha' +r\beta'\right) \\
+R_{33}=\Lambda g_{33} & \to \Lambda r^{2}=e^{-2\beta}\left( -1 + e^{2\beta}-r \alpha' +r\beta' \right) 
 \end{align}
 $$
+The last two equations are the same therefore we would use only one from now on. It is obviously expected and nothing to be worried about.
+
+It is possible to derive some constraints from these equations.

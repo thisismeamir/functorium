@@ -101,5 +101,25 @@ $$
 I'll be using Mathematica for the dirty works of the calculations here, the indefinite integral would yield:
 
 $$
-- \sqrt{ -1 + \frac{2GM}{r} } r -2GM
+- \sqrt{ -1 + \frac{2GM}{r} } r -2GM \arctan \left[ \sqrt{ -1+ \frac{2GM}{r} } \right] 
 $$
+Taking the limit $r\to 0$ for the lower bound and substituting $2 GM$ for the upper bound gives
+
+$$
+\begin{cases}
+r\to 0 & - \sqrt{ -1 + \frac{2GM}{r} } r -2GM \arctan \left[ \sqrt{ -1+ \frac{2GM}{r} } \right] =- G M \pi \\
+r = 2GM & - \sqrt{ -1 + \frac{2GM}{r} } r -2GM \arctan \left[ \sqrt{ -1+ \frac{2GM}{r} } \right] =0
+\end{cases}
+$$
+Thus:
+
+$$
+\tau_{\text{max}} = GM \pi
+$$
+Why is this the maximum and not a minimum? It is possible to show for a general energy (not assuming it was zero), we can have the same integration:
+
+$$
+\tau(E)=\int _{0}^{2GM} \frac{\mathrm{d}r}{\sqrt{ E^{2}-1+ \frac{2GM}{r} }}
+$$
+
+Obviously the denominator here is larger and thus the integration would be smaller. Therefore, for by monotonicity of integration

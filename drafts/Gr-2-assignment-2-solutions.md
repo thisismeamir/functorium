@@ -216,5 +216,49 @@ $$
 and for the second one multiplying by $e^{-2\beta}$ would transform it to:
 
 $$
+\Lambda = e^{-2\beta}\left( -\alpha'^{2}+\frac{2\alpha'}{r}+\alpha'\beta'-\alpha^{\prime\prime} \right) 
+$$
+If we add these two together we get:
 
 $$
+\alpha' +\beta' =0
+$$
+
+Thus the two function variables are restricted to one function since:
+
+$$
+\alpha = -\beta + C
+$$
+the constant is absorbed by re-scaling the time coordinate thus:
+
+$$
+\alpha = -\beta
+$$
+
+Now substituting this into the third equation. Define $f(r)=e^{2\alpha}$ so $e^{-2\beta}=e^{2\alpha}=f$. Substitute $\alpha=-\beta$ into the equation:
+$$
+f(r\alpha'-r\beta'+1)-1=\Lambda r^{2}
+$$
+Since $\beta=-\alpha$, we have $\beta'=-\alpha'$, so $\alpha'-\beta'=2\alpha'$. Also $f'=2\alpha'f$, so $\alpha' =f' /2f$. Then $r \cdot 2\alpha' =r \frac{f'}{f}$:
+
+$$
+rf' +f -1=\Lambda r^{2}
+$$
+
+The left side contains terms that can be written as a full derivative:
+
+$$
+\frac{d}{dr}(rf)-1 = \Lambda r^{2} 
+$$
+We integrate and simplify:
+
+$$
+f(r) =1- \frac{\Lambda r^{3}}{e} + \frac{C_{1}}{r}
+$$
+Matching Schwarzschild at $\Lambda=0$ requires $C_{1}=-2GM$. Thus:
+
+$$
+f(r) =1 -  \frac{2GM}{r} - \frac{\Lambda r^{3}}{e} 
+$$
+This is the Schwarzschil-de Sitter Metric.
+

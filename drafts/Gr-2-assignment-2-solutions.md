@@ -176,6 +176,27 @@ Now we take a step back to EFEs. As one can easily derive:
 $$
 \begin{align}
 0 & = G_{\mu \nu}+\Lambda g_{\mu \nu} \\
- & = 
+ & = g^{\mu \nu}\left( \Lambda g_{\mu \nu}+ R_{\mu \nu}-\frac{1}{2}g_{\mu \nu}R \right) \\
+ &  =n\Lambda + \frac{2-n}{2} R, 
+\end{align}
+$$
+where $n$ is the dimension of the manifold. Substituting with 4 we have an equation:
+
+$$
+R = 4\Lambda
+$$
+Which means
+
+$$
+R_{\mu \nu}=\Lambda g_{\mu \nu}
+$$
+
+Resulting in these four equations:
+
+$$
+\begin{align}
+R_{00}= \Lambda g_{00}  & \to -\Lambda = e^{-2\beta}\left( r\alpha'^{2}+\alpha'(2-r\beta')+r\alpha^{\prime\prime} \right) / r \\
+R_{11}= \Lambda g_{11} & \to e^{2\beta}\Lambda = -\alpha'^{2}+ \frac{2\beta'}{r}+\alpha'\beta'-\alpha^{\prime\prime} \\
+R_{22}=\Lambda g_{22} & \to \Lambda r^{2}=e^{-2\beta}\left( -1 e^{2\beta}-r\alpha' +\beta'\right)
 \end{align}
 $$

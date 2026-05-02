@@ -48,3 +48,7 @@ If so, there is a unique topology on $X$ for which $\mathcal{B}$ is a basis, cal
 Whereas [[atoms/Hausdorff Space|Hausdorff Space]]property ensures that a topological space has "enough" open subsets to conform to our spatial intuition, for many purposes, it is useful to restrict attention to spaces that do not have too many open subsets. It would be too restrictive to ask for countably many open subsets, because even $\mathbb{R}$ has uncountably many. But it turns out that just the right balance is struck by requiring of a basis that is countable.
 
 There are actually several countability properties that are useful. We begin with the weakest one. If $X$ is a topological space and $p \in X$, a collection $\mathcal{B}_{p}$ of neighborhoods of $p$ is called a neighborhood basis for $X$ at $p$ if every neighborhood of $p$ contains some $B \in \mathcal{B}_{p}$. We say that $X$ is first countable it there exists a countable neighborhood basis at each point.
+
+## First-Countable Space
+
+A First-cou

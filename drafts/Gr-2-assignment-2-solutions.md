@@ -1,7 +1,6 @@
 # 1
 
 We start with the most universal identity we have, namely, the four-velocity is known mathematically to satisfy
-
 $$
 g_{\mu \nu} \frac{\mathrm{d}x^{\mu}}{\mathrm{d}\tau} \frac{\mathrm{d}x^{\nu}}{\mathrm{d}\tau} = -1. 
 $$
@@ -53,5 +52,25 @@ $$
 It is obvious that the term inside brackets is a positive term since $\dot{t}^{2}\geq 0$, and $\dot{\Omega}^{2} \geq 0$ therefore, inside the brackets would actually be greater equal to $1$. Therefore,
 
 $$
-\dot{r}^{2}=|f| \left[ 1 + |f| \dot{t}^{2} + r^{2} \dot{\Omega}^{2} \right] \geq |f|  
+\dot{r}^{2}=|f| \left[ 1 + |f| \dot{t}^{2} + r^{2} \dot{\Omega}^{2} \right] \geq |f| \cdot 1 
+$$
+Leading to the conclusion:
+
+$$
+\dot{r}^{2} \geq |f|
+$$
+Simplifying to:
+
+$$
+\left| \frac{\mathrm{d}r}{\mathrm{d}\tau} \right| = \sqrt{ \frac{2GM}{r}-1 }
+$$
+QED.
+
+
+---
+
+The Schwarzschild metric has a Killing vector $\xi^{\mu}=(1,0,0,0)$. The conserved quantity along a geodesic is:
+
+$$
+E =-g_{\mu n}
 $$

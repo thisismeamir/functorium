@@ -328,3 +328,5 @@ TSWLatexianTemp*
 ### For Functorium Notes and Markdowns I'm using Obsidian Therefore, we omit .obsidian directory:
 .obsidian/*
 .trash
+.makemd
+.makemd/*

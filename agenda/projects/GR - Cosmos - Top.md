@@ -1,4 +1,8 @@
-- [ ] (priority:: highest) Learning Schwarzschil Metric and propoerties. Derivation and more.
+- [x] (priority:: highest) Learning Schwarzschil Metric and propoerties. Derivation and more.
+- [ ] (priority:: highest) Cosmology Midterm study
+	- [ ] Dodelson Chapter 1
+	- [ ] Dodelson Chapter 2
+	- [ ] Dodelson Chapter 3
 - [ ] **Part I: Mathematical Methods for General Relativity**
   - [ ] **Linear Algebra** [completion:: 2026-03-29]
     - [ ] **Model of Linear Algebra**

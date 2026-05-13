@@ -77,5 +77,3 @@ def L.{x} (β : Type x) : Type x := Prod β β
 
 Lean provides a `fun` (or `\lambda`) keywords to create a function from an expression as follows:
 
-```lean
-```

@@ -8,3 +8,4 @@ sticker: lucide//hash
 	- [[The Cosmic Microwave Background]]
 	- [[Large-Scale Structure of the Universe]]
 	- [[Studying the Structure Statistically]]
+	- [[Lambda-CDM]]

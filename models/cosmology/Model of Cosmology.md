@@ -1,6 +1,9 @@
-- Modern Cosmology Reading
-	- [[Concordance Model of Cosmology]]
+---
+sticker: lucide//hash
+---
+- Overviews
+	- [[A Nutshell History of the Universe]]
 	- [[The Hubble Diagram]]
 	- [[Big Bang Nucleosynthesis]]
 	- [[The Cosmic Microwave Background]]
-	- [[Structure in the Universe]]
+	- [[Large-Scale Structure of the Universe]]

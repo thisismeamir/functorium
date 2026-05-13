@@ -1,8 +1,11 @@
+---
+sticker: lucide//atom
+---
 # Large-Scale Structure of the Universe
 
 ## Overview
 
-The existence of [[Large-Scale Structure]] in the universe was established well before the detection of [[The Cosmic Microwave Background]] anisotropies. Galaxy surveys of the local universe clearly demonstrated that galaxies are not distributed homogeneously — they cluster, forming filaments, voids, and walls.
+The existence of [[large-scale structure]] in the universe was established well before the detection of [[CMB]] anisotropies. Galaxy surveys of the local universe clearly demonstrated that galaxies are not distributed homogeneously — they cluster, forming filaments, voids, and walls.
 
 The number of galaxies and volume covered by such surveys has grown exponentially over time.
 
@@ -10,6 +13,7 @@ The number of galaxies and volume covered by such surveys has grown exponentiall
 
 Galaxies are not distributed randomly. The universe has structure on large scales. To understand this structure, we must develop the tools to study **perturbations** around the smooth [[FLRW]] background.
 
+![[Pasted image 20260513162656.png]]
 ## Linear vs. Nonlinear Perturbations
 
 To compare theory with observations, we must stay within regimes describable by **small (linear) perturbations**. The intermediate processes — collapse of matter into a [[galaxy]], [[star formation]], [[planet formation]], geology, etc. — are far too complex to be captured by linear theory.
@@ -19,7 +23,8 @@ To compare theory with observations, we must stay within regimes describable by 
 
 ## Why CMB and Large-Scale Structure?
 
-[[The Cosmic Microwave Background]] anisotropies are small because they originated at early times, when perturbations were still tiny. This makes two observational windows ideal for comparison with linear perturbation theory:
+[[CMB]] anisotropies are small because they originated at early times, when perturbations were still tiny. This makes two observational windows ideal for comparison with linear perturbation theory:
 
 1. **CMB anisotropies** — a snapshot of perturbations at [[recombination]]
 2. **Large-scale structure** — galaxy distributions on scales $\gtrsim 10 , \text{Mpc}$
+

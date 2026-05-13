@@ -1,11 +1,31 @@
-# Overview
+---
+sticker: lucide//atom
+---
+# The Hubble–Lemaître Law
 
-If the universe is expanding, then galaxies should be moving away from each other. We should therefore see galaxies receding from us. Hubble first found that distant galaxies are in fact all apparently receding from us, i.e. redshifted. He also noticed the trend that the velocity increases with distance. This is exactly what we expect in an expanding universe, for the physical distance between two galaxies is $d=ax$, where, $x$ is the comoving distance. In the absence of any comoving motion, $\dot{x}\equiv \mathrm{d}x / \mathrm{d}t =0$ (no peculiar velocity), the relative velocity $v$ is therefore equal to:
+## Galactic Recession and Hubble's Observation
 
-$$
-v = \frac{d}{dt} (ax)= \dot{a} x=H_{0} d  \ (v\ll c)
-$$
-Therefore, the apparent velocity should increase linearly with distance with a slope given by $H_{0}$, the Hubble constant. This equation is known as the Hubble-Lemaitre law. The value of the constant is simply determined by measuring the slope of the line in the Hubble diagram.
+If the universe is expanding, galaxies should be moving away from each other — and therefore away from us. [[Hubble]] first observed that distant galaxies are indeed all apparently receding, i.e. **[[redshifted]]**. He further noticed that **recession velocity increases with distance** — precisely what an expanding universe predicts.
 
 ![[Pasted image 20260507005625.png]]
+## Derivation
 
+The physical distance between two galaxies is:
+
+$$d = a , x$$
+
+where $x$ is the **[[comoving distance]]** and $a$ is the scale factor. In the absence of any peculiar motion ($\dot{x} = 0$), the relative velocity is:
+
+$$v = \frac{d}{dt}(ax) = \dot{a}, x = H_0 , d \qquad (v \ll c)$$
+
+So the apparent recession velocity increases **linearly with distance**, with slope $H_0$ — the **[[Hubble constant]]**.
+
+## The Hubble–Lemaître Law
+
+$$\boxed{v = H_0 , d}$$
+
+This relation is known as the **[[Hubble–Lemaître law]]**. Note the attribution to [[Lemaître]], who derived this relation theoretically before Hubble's observational confirmation.
+
+$H_0$ is determined empirically by measuring the slope of the **[[Hubble diagram]]** — a plot of recession velocity vs. distance for observed galaxies.
+
+> **Note:** The recession velocity here is not motion _through_ space but the stretching of space itself — which is why $v > c$ is permitted at large distances without violating relativity.

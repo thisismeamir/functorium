@@ -1,8 +1,11 @@
+---
+sticker: lucide//atom
+---
 # A Nutshell History of the Universe
 
 ## General Relativity as a Cosmological Tool
 
-The discovery of [[Model of General Relativity|General Relativity]] enabled, for the first time, answers to fundamental questions about the universe as a whole. The [[Big Bang]] paradigm rests on several observational pillars:
+The discovery of [[General Relativity]] enabled, for the first time, answers to fundamental questions about the universe as a whole. The [[Big Bang]] paradigm rests on several observational pillars:
 
 - The [[Hubble diagram]], measuring cosmic expansion
 - [[Big Bang Nucleosynthesis|Light element abundances]] consistent with BBN predictions
@@ -22,15 +25,16 @@ A direct consequence: the physical wavelength of light stretches proportionally 
 
 $$1 + z \equiv \frac{\lambda_\text{obs}}{\lambda_\text{emit}} = \frac{a_\text{obs}}{a_\text{emit}} = \frac{1}{a_\text{emit}}$$
 
+
 ## Geometry of the Universe
 
 Beyond the scale factor, the smooth universe is characterized by its **[[spatial curvature]]**. There are three possibilities:
 
-|Geometry|Curvature|Parallel paths|
-|---|---|---|
-|**Flat** (Euclidean)|$k = 0$|Stay parallel|
-|**Closed**|$k = +1$|Converge (like lines of longitude on a sphere)|
-|**Open**|$k = -1$|Diverge (like lines on a saddle)|
+| Geometry             | Curvature | Parallel paths                                 |
+| -------------------- | --------- | ---------------------------------------------- |
+| **Flat** (Euclidean) | $k = 0$   | Stay parallel                                  |
+| **Closed**           | $k = +1$  | Converge (like lines of longitude on a sphere) |
+| **Open**             | $k = -1$  | Diverge (like lines on a saddle)               |
 
 GR connects geometry to energy density. If $\rho > \rho_\text{cr}$, the universe is closed; if $\rho < \rho_\text{cr}$, open; if $\rho = \rho_\text{cr}$, flat. All current observations point to a **flat universe** — something inflation explains naturally.
 

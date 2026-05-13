@@ -1,4 +1,7 @@
-\# The Cosmic Microwave Background
+---
+sticker: lucide//atom
+---
+# The Cosmic Microwave Background
 
 ## Origin of the CMB
 
@@ -9,6 +12,7 @@ When the universe cooled to temperatures of order $T \sim 10^4 , \text{K}$ (ener
 
 Observing the CMB today means looking at photons that have traveled unimpeded since that early epoch — direct messengers from the early universe.
 
+![[Pasted image 20260513165002.png]]
 ## The Black-Body Spectrum
 
 Before last scattering, frequent interactions between photons and electrons kept the photon gas in **[[thermal equilibrium]]**, forcing it into a [[black-body]] (Planck) spectrum:

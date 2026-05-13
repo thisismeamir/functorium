@@ -7,3 +7,4 @@ sticker: lucide//hash
 	- [[Big Bang Nucleosynthesis]]
 	- [[The Cosmic Microwave Background]]
 	- [[Large-Scale Structure of the Universe]]
+	- [[Studying the Structure Statistically]]

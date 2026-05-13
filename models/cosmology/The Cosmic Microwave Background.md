@@ -1,21 +1,37 @@
-# Overview
+\# The Cosmic Microwave Background
 
-Another phenomenon that falls out of energies and a qualitative understanding of the evolution of the universe is the origin of the CMB. When the temperature of the radiation was of order $10^{4}\text{K}$ (corresponding to energies of order an $\text{eV}$), free electrons and protons combined to form neutral hydrogen. 
+## Origin of the CMB
 
-Before then, any hydrogen built was immediately decomposed by the high energy rays and particle collisions.
+When the universe cooled to temperatures of order $T \sim 10^4 , \text{K}$ (energies $\sim 1 , \text{eV}$), free electrons and protons combined to form neutral hydrogen — an epoch known as [[recombination]].
 
-After that epoch, at $z \simeq 1100$, the photons that comprise the CMB ceased interacting with any particles and traveled freely through space. When we observe them today, we are thus looking at messengers from an early moment in the universe's history.
+- **Before recombination:** any neutral hydrogen formed was immediately ionised again by high-energy photons and particle collisions. The universe was an opaque plasma.
+- **After recombination** ($z \simeq 1100$): photons decoupled from matter and streamed freely. This moment is called the **[[surface of last scattering]]**.
 
-For now, we're only concerned with the crucial fact that the interactions of photons with electrons before last scattering ensured that the photons were in equilibrium. That is, they should have a black-body spectrum. The specific intensity of a gas of photons with a black-body spectrum is:
+Observing the CMB today means looking at photons that have traveled unimpeded since that early epoch — direct messengers from the early universe.
 
-$$
-I _{v} = \frac{4\pi \hbar v^{3} / c^{2}}{\exp \left[ 
-2\pi \hbar v / k_{B}T
-\right] -1}
-$$
+## The Black-Body Spectrum
 
-Figure below shows a remarkable agreement between this prediction of Big Bang cosmology and the observations bu the FIRAS instrument abroad the COBE satellite. In fact, the CMB provides the best black-body spectrum ever measured. 
+Before last scattering, frequent interactions between photons and electrons kept the photon gas in **[[thermal equilibrium]]**, forcing it into a [[black-body]] (Planck) spectrum:
 
+$$I_\nu = \frac{4\pi \hbar \nu^3 / c^2}{\exp\left[2\pi\hbar\nu / k_B T\right] - 1}$$
 
+The [[FIRAS]] instrument aboard the [[COBE]] satellite confirmed this with extraordinary precision — the CMB is the best black-body spectrum ever measured.
 
-We have been told that detection of the $3\text{K}$ background by Penzias and Wilson in the mid-1960s was sufficient evidence to decide the controversy in favor of the Big Band over the Steady State universe. Penzias and Wilson, though, measured the radiation at just one wavelength. 
+## Discovery History
+
+- **1965 — [[Penzias and Wilson]]:** First detected the $\sim 3,\text{K}$ microwave background at a single wavelength. This was sufficient to settle the debate between the [[Big Bang]] and [[Steady State]] models in favor of the former.
+- **First ~25 years of CMB surveys:** No anisotropies detected. The early universe appeared remarkably smooth, reinforcing the picture of a homogeneous Big Bang.
+- **1992 — COBE:** Discovered CMB anisotropies for the first time, showing the early universe was _not_ perfectly smooth.
+
+## Anisotropies and Structure
+
+COBE revealed fractional temperature fluctuations of order:
+
+$$\frac{\delta T}{T} \sim 10^{-5}$$
+
+These tiny perturbations in the [[cosmic plasma]] are the seeds of all structure in the universe today. Since then, anisotropies have been mapped with increasing precision. Current frontiers include:
+
+- **[[CMB polarization]]** — encodes information about [[reionization]] and [[gravitational waves]]
+- **[[Gravitational lensing]] of the CMB** — imprinted by the intervening [[large-scale structure]]
+
+To understand all of these effects, we must go beyond the smooth background and study **inhomogeneities** — deviations from smoothness, also simply called **structure**.
